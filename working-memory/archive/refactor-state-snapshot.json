@@ -1,0 +1,118 @@
+{
+  "snapshot_metadata": {
+    "timestamp": "2025-06-01T14:58:19Z",
+    "snapshot_type": "pre_refactor_state",
+    "backup_location": "backups/pre_refactor_20250601_145819/",
+    "system_status": "advanced_features_complete_150_percent",
+    "refactor_plan_version": "v1.0.0"
+  },
+  
+  "current_system_state": {
+    "completion_percentage": 150,
+    "phase": "advanced_features_complete",
+    "features_deployed": [
+      "Real-time notification system",
+      "Interactive analytics widgets", 
+      "Drag-and-drop dashboard",
+      "AI-powered insights",
+      "V2 component system",
+      "FastAPI microservices"
+    ],
+    "active_services": {
+      "frontend_server": "http://localhost:8080",
+      "api_ports": [5001, 5002, 5003, 8000],
+      "databases": ["monitoring.db", "analytics.db", "ab_testing.db", "secure_ab_testing.db"]
+    }
+  },
+  
+  "refactor_plan_summary": {
+    "mission": "Reduce entropy, improve modularity, enhance long-term maintainability",
+    "target_architecture": {
+      "core": "Configuration and utilities",
+      "frontend": "Pages, assets, JS modules",
+      "components": "V2 component system (foundation, data-display, advanced)",
+      "backend": "API endpoints, services, models",
+      "data": "Consolidated databases and migrations",
+      "scripts": "Deployment, testing, maintenance",
+      "monitoring": "Analytics and monitoring systems"
+    },
+    "phases": [
+      "Phase 1: Folder structure creation",
+      "Phase 2: Safe file migration", 
+      "Phase 3: Code refactoring",
+      "Phase 4: Testing and validation",
+      "Phase 5: Optimization"
+    ]
+  },
+  
+  "identified_redundancies": {
+    "frontend_duplication": [
+      "src/frontend/ vs luciq/frontend/",
+      "Multiple HTML files with similar functionality",
+      "Scattered JavaScript files"
+    ],
+    "api_fragmentation": [
+      "src/api/ contains core APIs",
+      "Multiple service startup scripts", 
+      "Overlapping monitoring systems"
+    ],
+    "component_duplication": [
+      "V2 components in src/components/",
+      "Legacy components in HTML files",
+      "Inconsistent component usage patterns"
+    ],
+    "database_proliferation": [
+      "monitoring.db", "analytics.db", "ab_testing.db", "secure_ab_testing.db",
+      "Multiple similar database files",
+      "Inconsistent data storage patterns"
+    ]
+  },
+  
+  "migration_plan": {
+    "file_moves": {
+      "src/frontend/*": "frontend/pages/",
+      "src/components/*": "components/",
+      "src/api/*": "backend/api/",
+      "*.db": "data/databases/",
+      "test_*.py": "tests/",
+      "start_*.py": "scripts/deployment/"
+    },
+    "consolidations": {
+      "databases": "Single luciq_main.db with schemas",
+      "apis": "Unified API manager with quota tracking",
+      "components": "Standardized V2 component patterns",
+      "configuration": "Centralized settings management"
+    }
+  },
+  
+  "safety_measures": {
+    "backup_created": "backups/pre_refactor_20250601_145819/",
+    "git_safe_migrations": true,
+    "incremental_testing": true,
+    "rollback_plan": true,
+    "memory_system_preservation": true
+  },
+  
+  "expected_benefits": {
+    "entropy_reduction": "60% reduction in file redundancy",
+    "modularity_improvement": "Clear separation of concerns",
+    "maintainability_enhancement": "Standardized patterns",
+    "performance_optimization": "Optimized loading and execution",
+    "development_ease": "Clear project structure"
+  },
+  
+  "next_steps": {
+    "immediate": "Phase 1: Create new folder structure",
+    "priority": "Critical path implementation (Week 1)",
+    "validation": "Comprehensive testing after each phase",
+    "completion_target": "4-week implementation timeline"
+  },
+  
+  "preserved_systems": {
+    "working_memory": "All memory files backed up and preserved",
+    "session_continuity": "Auto-boot system maintained",
+    "production_features": "All 150% completion features protected",
+    "api_endpoints": "All endpoints maintained during migration",
+    "user_data": "All databases safely migrated"
+  }
+} 

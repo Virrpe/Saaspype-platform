@@ -1,0 +1,99 @@
+{
+  "cycle_number": 10,
+  "timestamp": "20250606_034824",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Daily FI discussion thread - Thursday, June 05, 2025",
+      "problem": "Please use this thread to have discussions which you don't feel warrant a new post to the sub. While the Rules for posting questions on the basics of personal finance/investing topics are relaxed a li...",
+      "solution": "Business opportunity addressing r/financialindependence community need",
+      "source": "financialindependence",
+      "cycle": 10,
+      "timestamp": "2025-06-06T03:48:19.408441",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/financialindependence/comments/1l3uhfp/daily_fi_discussion_thread_thursday_june_05_2025/",
+      "reddit_score": 40,
+      "reddit_comments": 226
+    },
+    {
+      "title": "Reddit Discovery: 31 years old currently. I didn't set out to FI/RE but I think I'm on the way the...",
+      "problem": "I started a career that has a great pension/retirement when I was 18. I am extremely grateful for the career I have and very thankful to have had this opportunity.\n\n31 years old right now. Base salary...",
+      "solution": "Business opportunity addressing r/financialindependence community need",
+      "source": "financialindependence",
+      "cycle": 10,
+      "timestamp": "2025-06-06T03:48:19.408441",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/financialindependence/comments/1l48rwo/31_years_old_currently_i_didnt_set_out_to_fire/",
+      "reddit_score": 12,
+      "reddit_comments": 22
+    },
+    {
+      "title": "Reddit Discovery: Goal Check In: 35M, NW 475k, Struggling with corporate upheaval",
+      "problem": "Hello all,\n\nLong time listener, first time caller - and thank you to everyone in this subreddit - it has been an incredible resource over the past few years.\u00a0\n\nWriting for the first time for two reaso...",
+      "solution": "Business opportunity addressing r/financialindependence community need",
+      "source": "financialindependence",
+      "cycle": 10,
+      "timestamp": "2025-06-06T03:48:19.408441",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/financialindependence/comments/1l3zn2i/goal_check_in_35m_nw_475k_struggling_with/",
+      "reddit_score": 25,
+      "reddit_comments": 4
+    },
+    {
+      "title": "Reddit Discovery: Thank You Thursday! Free Offerings and More - June 05, 2025",
+      "problem": "**This thread is your opportunity to thank the** r/Entrepreneur **community by offering free stuff, contests, discounts, electronic courses, ebooks and the best deals you know of.** \n\nPlease consolida...",
+      "solution": "Business opportunity addressing r/entrepreneur community need",
+      "source": "entrepreneur",
+      "cycle": 10,
+      "timestamp": "2025-06-06T03:48:24.873942",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/Entrepreneur/comments/1l3ufs2/thank_you_thursday_free_offerings_and_more_june/",
+      "reddit_score": 2,
+      "reddit_comments": 6
+    },
+    {
+      "title": "Reddit Discovery: Sick of Spam? Use the Report Button!",
+      "problem": "Annoyed by AI-written posts full of stealth promotion? We are, too. Whenever you see it, hit that report button! The majority of spam that makes it through our ever-evolving filters is never reported ...",
+      "solution": "Business opportunity addressing r/entrepreneur community need",
+      "source": "entrepreneur",
+      "cycle": 10,
+      "timestamp": "2025-06-06T03:48:24.873942",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/Entrepreneur/comments/1k1wam9/sick_of_spam_use_the_report_button/",
+      "reddit_score": 12,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: My business has fully matched my engineer salary",
+      "problem": "Hey guys, sharing because their is no one I would like to share this in real life with other than my wife \n\nI have officially matched my engineer salary of $6,400/month after taxes and 401k contributi...",
+      "solution": "Business opportunity addressing r/entrepreneur community need",
+      "source": "entrepreneur",
+      "cycle": 10,
+      "timestamp": "2025-06-06T03:48:24.873942",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/Entrepreneur/comments/1l3yz5w/my_business_has_fully_matched_my_engineer_salary/",
+      "reddit_score": 527,
+      "reddit_comments": 98
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 4.1,
+    "memory_percent": 76.7,
+    "disk_percent": 78.8,
+    "available_gb": 1.8276329040527344,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 10,
+    "total_ideas": 60,
+    "uptime_minutes": 134.57200527588526,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

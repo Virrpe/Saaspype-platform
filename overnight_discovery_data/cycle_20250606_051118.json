@@ -1,0 +1,99 @@
+{
+  "cycle_number": 18,
+  "timestamp": "20250606_051118",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Digital Nomads Monthly Megathread - June 2025",
+      "problem": "Hey r/digitalnomad\n\nThis thread is for chatting about being a DN. This includes the news about travel and visas, where people are living, commonly asked questions, as well as a general free chat throu...",
+      "solution": "Business opportunity addressing r/digitalnomad community need",
+      "source": "digitalnomad",
+      "cycle": 18,
+      "timestamp": "2025-06-06T05:11:12.902077",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/digitalnomad/comments/1l0gtnk/digital_nomads_monthly_megathread_june_2025/",
+      "reddit_score": 0,
+      "reddit_comments": 8
+    },
+    {
+      "title": "Reddit Discovery: Want to make a post? Read this first!",
+      "problem": "#Read the [WIKI](https://www.reddit.com/r/digitalnomad/wiki/index) before posting\n\n9 times out of 10 it will have the answers you are looking for. \n\n## Where is my post?\n\n**Why isn't my post showing u...",
+      "solution": "Business opportunity addressing r/digitalnomad community need",
+      "source": "digitalnomad",
+      "cycle": 18,
+      "timestamp": "2025-06-06T05:11:12.902077",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/digitalnomad/comments/vpcdi2/want_to_make_a_post_read_this_first/",
+      "reddit_score": 76,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: What it means to be happy.",
+      "problem": "After five years of living as a digital nomad, one of the most unexpected lessons I've learned is this: the greatest benefit of the lifestyle might not be the freedom, the travel, or the novelty. But ...",
+      "solution": "Business opportunity addressing r/digitalnomad community need",
+      "source": "digitalnomad",
+      "cycle": 18,
+      "timestamp": "2025-06-06T05:11:12.902077",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/digitalnomad/comments/1l410cj/what_it_means_to_be_happy/",
+      "reddit_score": 81,
+      "reddit_comments": 16
+    },
+    {
+      "title": "Reddit Discovery: I asked Pat\u202fFlynn your top passive income questions \u2013 here\u2019s the AMA interview",
+      "problem": "Pat Flynn, the \"crash test dummy of passive income\", sat down for an AMA chat about building sustainable passive income in 2025 and beyond. Pat shares his lessons from 15+ years online, the mindsets t...",
+      "solution": "Business opportunity addressing r/passive_income community need",
+      "source": "passive_income",
+      "cycle": 18,
+      "timestamp": "2025-06-06T05:11:18.335218",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/passive_income/comments/1l2r5d2/i_asked_pat_flynn_your_top_passive_income/",
+      "reddit_score": 12,
+      "reddit_comments": 4
+    },
+    {
+      "title": "Reddit Discovery: Best passive income ideas - May 2025 (Episode 21)",
+      "problem": "I came across a\u00a0[very insightful conversation](https://x.com/i/bookmarks/1865632624884216273)\u00a0this week about what it takes to a sustainable A.I. business. It's just going to get easier for anyone to ...",
+      "solution": "Business opportunity addressing r/passive_income community need",
+      "source": "passive_income",
+      "cycle": 18,
+      "timestamp": "2025-06-06T05:11:18.335218",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/passive_income/comments/1kjobgb/best_passive_income_ideas_may_2025_episode_21/",
+      "reddit_score": 48,
+      "reddit_comments": 9
+    },
+    {
+      "title": "Reddit Discovery: Ultimate Google Sheet for 2025!",
+      "problem": "Since the beginning of the year 2025 (and even a bit before) I've been tracking all the platforms that actually helped me earn some extra cash. I put together a [spreadsheet](https://docs.google.com/s...",
+      "solution": "Business opportunity addressing r/passive_income community need",
+      "source": "passive_income",
+      "cycle": 18,
+      "timestamp": "2025-06-06T05:11:18.335218",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/passive_income/comments/1l4c8yz/ultimate_google_sheet_for_2025/",
+      "reddit_score": 30,
+      "reddit_comments": 6
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 7.0,
+    "memory_percent": 77.5,
+    "disk_percent": 78.9,
+    "available_gb": 1.7690658569335938,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 18,
+    "total_ideas": 108,
+    "uptime_minutes": 217.46306009689968,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

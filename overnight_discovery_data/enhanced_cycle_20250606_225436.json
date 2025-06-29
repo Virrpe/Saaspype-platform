@@ -1,0 +1,75 @@
+{
+  "cycle_number": 1,
+  "timestamp": "20250606_225436",
+  "ideas_found": 3,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Share your startup - quarterly post",
+      "problem": "Share Your Startup - Q4 2023\n\n[**r/startups**](https://www.reddit.com/r/startups/) **wants to hear what you're working on!**\n\nTell us about your startup in a comment within this submission. Follow thi...",
+      "solution": "Business opportunity addressing r/startups community need",
+      "source": "startups",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:25.790762",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/startups/comments/1jwuuer/share_your_startup_quarterly_post/",
+      "reddit_score": 37,
+      "reddit_comments": 440
+    },
+    {
+      "title": "Reddit Discovery: Learn from my $38k mistake, i will not promote.",
+      "problem": "In March, I started poking around different app developing websites to build an iphone app. I\u2019m an engineer by trade, but it was too time consuming with my professional/personal life, I needed to hire...",
+      "solution": "Business opportunity addressing r/startups community need",
+      "source": "startups",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:25.790762",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/startups/comments/1l4xsrz/learn_from_my_38k_mistake_i_will_not_promote/",
+      "reddit_score": 33,
+      "reddit_comments": 18
+    },
+    {
+      "title": "Reddit Discovery: Feedback Friday",
+      "problem": "Welcome to this week\u2019s Feedback Thread!\n\n# Please use this thread appropriately to gather feedback:\n\n* Feel free to request general feedback or specific feedback in a certain area like user experience...",
+      "solution": "Business opportunity addressing r/startups community need",
+      "source": "startups",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:25.790762",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/startups/comments/1l4k7b7/feedback_friday/",
+      "reddit_score": 3,
+      "reddit_comments": 9
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 37.5,
+    "memory_percent": 82.7,
+    "disk_percent": 78.7,
+    "available_gb": 1.3577079772949219,
+    "healthy": true,
+    "warnings": []
+  },
+  "enhanced_metrics": {
+    "avg_quality_score": 3.6666666666666665,
+    "domain_distribution": {
+      "unknown": 3
+    },
+    "platform_distribution": {
+      "startups": 3
+    },
+    "discovery_types": {
+      "enhanced_multi_platform": 0,
+      "enhanced_llm_analysis": 0,
+      "platform_enhanced": 0,
+      "basic_discovery": 3
+    }
+  },
+  "runtime_stats": {
+    "total_cycles": 1,
+    "total_ideas": 3,
+    "uptime_minutes": 0.5021613597869873,
+    "avg_ideas_per_cycle": 3.0
+  }
+}

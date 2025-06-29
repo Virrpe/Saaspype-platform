@@ -1,0 +1,331 @@
+{
+  "benchmark_metadata": {
+    "timestamp": "2025-06-04T01:15:27.812642",
+    "total_queries_tested": 18,
+    "benchmark_duration_seconds": 0.26525115966796875,
+    "claims_validated": 8
+  },
+  "claim_validations": {
+    "context_detection_accuracy": {
+      "claim": "100% successful context detection",
+      "measured_accuracy": "94.4%",
+      "evidence": [
+        {
+          "query": "What are the biggest problems developers face with...",
+          "context": "developer_insights",
+          "accurate": true
+        },
+        {
+          "query": "Why do teams struggle with code review processes?...",
+          "context": "developer_insights",
+          "accurate": true
+        },
+        {
+          "query": "What frustrates developers most about testing fram...",
+          "context": "developer_insights",
+          "accurate": true
+        },
+        {
+          "query": "What are the latest trends in cloud computing tech...",
+          "context": "real_time_monitoring",
+          "accurate": true
+        },
+        {
+          "query": "Which programming languages are gaining popularity...",
+          "context": "technical_trends",
+          "accurate": true
+        },
+        {
+          "query": "What new frameworks are developers adopting for we...",
+          "context": "developer_insights",
+          "accurate": true
+        },
+        {
+          "query": "How can I validate demand for a new developer prod...",
+          "context": "market_validation",
+          "accurate": true
+        },
+        {
+          "query": "What market research methods work best for B2B Saa...",
+          "context": "market_validation",
+          "accurate": true
+        },
+        {
+          "query": "How do successful startups validate their product ...",
+          "context": "market_validation",
+          "accurate": true
+        },
+        {
+          "query": "What do developers think about AI-powered coding a...",
+          "context": "developer_insights",
+          "accurate": true
+        },
+        {
+          "query": "Which development tools do programmers recommend m...",
+          "context": "developer_insights",
+          "accurate": true
+        },
+        {
+          "query": "What are the top priorities for software engineeri...",
+          "context": "developer_insights",
+          "accurate": true
+        },
+        {
+          "query": "What startup funding trends are emerging in the te...",
+          "context": "startup_intelligence",
+          "accurate": true
+        },
+        {
+          "query": "Which industries are attracting the most venture c...",
+          "context": "general_exploration",
+          "accurate": false
+        },
+        {
+          "query": "What makes startups successful in competitive mark...",
+          "context": "market_validation",
+          "accurate": true
+        },
+        {
+          "query": "What's trending in the tech industry right now?...",
+          "context": "real_time_monitoring",
+          "accurate": true
+        },
+        {
+          "query": "What are the latest breaking news in software deve...",
+          "context": "real_time_monitoring",
+          "accurate": true
+        },
+        {
+          "query": "What current events are affecting the startup ecos...",
+          "context": "real_time_monitoring",
+          "accurate": true
+        }
+      ],
+      "performance_metrics": {
+        "total_detection_time": 0.0,
+        "avg_time_per_query": 0.0,
+        "queries_processed": 18
+      },
+      "claim_validated": true
+    },
+    "source_reduction_efficiency": {
+      "claim": "75% reduction in source usage",
+      "measured_reduction": "70.1%",
+      "evidence": {
+        "traditional_sources_per_query": 8,
+        "dialectical_sources_per_query": 2.388888888888889,
+        "source_usage_distribution": [
+          2,
+          2,
+          2,
+          2,
+          3,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "min_sources_used": 2,
+        "max_sources_used": 3
+      },
+      "claim_validated": true
+    },
+    "processing_speed_improvement": {
+      "claim": "Significant processing speed improvement",
+      "measured_improvement": "-107.2%",
+      "evidence": {
+        "traditional_avg_ms": 14.268827438354492,
+        "dialectical_avg_ms": 29.569053649902344,
+        "sample_size": 5
+      },
+      "claim_validated": false
+    },
+    "quality_preservation": {
+      "claim": "Quality preservation through intelligent curation",
+      "measured_quality": "1.009",
+      "evidence": {
+        "synthesis_scores": [
+          1.0,
+          1.0,
+          1.0,
+          0.8539179166666666,
+          0.9582053333333334,
+          1.0,
+          0.9467916666666666,
+          0.9467916666666666,
+          0.9467916666666666,
+          1.0,
+          1.0,
+          1.0,
+          0.9933333333333333,
+          0.9685470487948266,
+          0.9467916666666666,
+          0.9239179166666667,
+          0.8889179166666666,
+          0.8539179166666666
+        ],
+        "quality_metrics": [
+          1.201,
+          1.201,
+          1.201,
+          0.76,
+          0.9900000000000002,
+          1.201,
+          0.9513333333333333,
+          0.9513333333333333,
+          0.9513333333333333,
+          1.201,
+          1.201,
+          1.201,
+          0.9896666666666666,
+          0.9383333333333335,
+          0.9513333333333333,
+          0.76,
+          0.76,
+          0.76
+        ],
+        "avg_synthesis_score": 0.9571068915997125,
+        "quality_consistency": 0.8259006067048604
+      },
+      "claim_validated": true
+    },
+    "cost_optimization": {
+      "claim": "Significant cost reduction",
+      "measured_reduction": "68.8%",
+      "evidence": {
+        "traditional_avg_cost": 7.4,
+        "dialectical_avg_cost": 2.3055555555555554,
+        "cost_distribution": [
+          2.3,
+          2.3,
+          2.3,
+          1.7000000000000002,
+          2.9,
+          2.3,
+          2.6,
+          2.6,
+          2.6,
+          2.3,
+          2.3,
+          2.3,
+          2.5,
+          2.8,
+          2.6,
+          1.7000000000000002,
+          1.7000000000000002,
+          1.7000000000000002
+        ]
+      },
+      "claim_validated": true
+    },
+    "synthesis_score_consistency": {
+      "claim": "High synthesis score consistency",
+      "measured_consistency": "94.8%",
+      "evidence": {
+        "synthesis_scores": [
+          1.0,
+          1.0,
+          1.0,
+          0.8539179166666666,
+          0.9582053333333334,
+          1.0,
+          0.9467916666666666,
+          0.9467916666666666,
+          0.9467916666666666,
+          1.0,
+          1.0,
+          1.0,
+          0.9933333333333333,
+          0.9685470487948266,
+          0.9467916666666666,
+          0.9239179166666667,
+          0.8889179166666666,
+          0.8539179166666666
+        ],
+        "average_score": 0.9571068915997125,
+        "standard_deviation": 0.049584128749803766,
+        "score_range": [
+          0.8539179166666666,
+          1.0
+        ]
+      },
+      "claim_validated": "True"
+    },
+    "dialectical_tension_resolution": {
+      "claim": "Successful dialectical tension resolution",
+      "measured_resolution_rate": "100.0%",
+      "evidence": {
+        "tension_metrics": [
+          0.0,
+          0.0,
+          0.0,
+          0.10572948830409352,
+          0.007901189719371541,
+          0.0,
+          0.08251736111111109,
+          0.08251736111111109,
+          0.08251736111111109,
+          0.0,
+          0.0,
+          0.0,
+          0.013333333333333308,
+          0.045208403669369956,
+          0.08251736111111109,
+          0.19358607638888886,
+          0.15476572351421183,
+          0.10572948830409352
+        ],
+        "average_tension": 0.053129063759878165,
+        "resolution_successes": "18",
+        "total_queries": 18
+      },
+      "claim_validated": "True"
+    },
+    "scalability_and_adaptability": {
+      "claim": "Scalability and adaptability",
+      "measured_adaptability": "6 different contexts",
+      "evidence": {
+        "contexts_detected": [
+          "technical_trends",
+          "developer_insights",
+          "real_time_monitoring",
+          "general_exploration",
+          "market_validation",
+          "startup_intelligence"
+        ],
+        "processing_times": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.002298593521118164,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_processing_time": 0.00012769964006212022,
+        "time_consistency": -3.2426406871192848
+      },
+      "claim_validated": false
+    }
+  }
+}

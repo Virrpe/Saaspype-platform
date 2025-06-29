@@ -1,0 +1,48 @@
+{
+  "deployment_summary": {
+    "status": "not_ready",
+    "start_time": "2025-05-31T21:42:41.414919+00:00",
+    "end_time": "2025-05-31T21:43:37.391419+00:00",
+    "duration_seconds": 55.9765,
+    "services_launched": 3,
+    "health_checks_passed": 3,
+    "load_tests_completed": 0
+  },
+  "service_status": {
+    "ab_testing": {
+      "status": "running",
+      "port": 5001
+    },
+    "analytics": {
+      "status": "failed",
+      "port": 5002
+    },
+    "monitoring": {
+      "status": "running",
+      "port": 5003
+    },
+    "optimization": {
+      "status": "running",
+      "port": 5004
+    }
+  },
+  "production_endpoints": {
+    "ab_testing": "http://localhost:5001",
+    "analytics": "http://localhost:5002",
+    "monitoring": "http://localhost:5003",
+    "optimization": "http://localhost:5004",
+    "dashboard": "http://localhost:5003/dashboard"
+  },
+  "scaling_configuration": {
+    "max_concurrent_users": 1000,
+    "response_time_threshold": 500,
+    "cpu_threshold": 80,
+    "memory_threshold": 85,
+    "auto_scale_enabled": true
+  },
+  "system_metrics": {
+    "cpu_usage": 14.3,
+    "memory_usage": 79.3,
+    "available_memory_gb": 1.6235733032226562
+  }
+}

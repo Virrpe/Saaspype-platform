@@ -1,0 +1,368 @@
+{
+  "emergency_refactor_metadata": {
+    "created": "2025-01-15T01:30:00Z",
+    "type": "EMERGENCY_ARCHITECTURAL_REPAIR",
+    "status": "READY_FOR_EXECUTION",
+    "priority": "CRITICAL",
+    "scope": "Eliminate code duplication and fix architectural schizophrenia",
+    "goal": "Single source of truth with clean domain-driven architecture",
+    "estimated_duration": "3-4 hours",
+    "risk_level": "MEDIUM - Well-planned with backups"
+  },
+  
+  "crisis_analysis": {
+    "verified_problems": {
+      "massive_code_duplication": {
+        "auth_service": "679 lines duplicated exactly",
+        "database_service": "94 lines duplicated exactly", 
+        "metrics_service": "Confirmed duplicated",
+        "ideas_service": "Confirmed duplicated",
+        "total_duplicate_lines": "1500+ lines of pure waste"
+      },
+      
+      "architectural_schizophrenia": {
+        "flat_services": "src/api/services/ - 22 service files",
+        "domain_services": "src/api/domains/*/services/ - duplicated files",
+        "import_confusion": "Everything imports from flat services, domain services unused",
+        "maintenance_nightmare": "Bug fixes require multiple identical changes"
+      },
+      
+      "evidence_verified": {
+        "dialectical_verification": "COMPLETE",
+        "binary_comparison": "Files are byte-for-byte identical",
+        "import_analysis": "Domain routers import from flat services, not domain services",
+        "usage_analysis": "Domain services are completely orphaned"
+      }
+    }
+  },
+  
+  "refactor_strategy": {
+    "decision": "COMMIT TO DOMAIN-DRIVEN ARCHITECTURE",
+    "rationale": [
+      "Main.py already uses domain routers",
+      "Domain structure partially exists",
+      "Better scalability for Phase 6 features",
+      "Clear separation of concerns",
+      "Easier testing and maintenance"
+    ],
+    
+    "architecture_choice": {
+      "chosen": "src/api/domains/{domain}/services/",
+      "eliminated": "src/api/services/ (flat structure)",
+      "reasoning": "Domain-driven design better for complex business logic"
+    }
+  },
+  
+  "execution_phases": {
+    "phase_1": {
+      "name": "EMERGENCY_BACKUP_AND_PREP",
+      "duration": "15 minutes",
+      "steps": [
+        "Create emergency backup of current state",
+        "Verify backup integrity",
+        "Create rollback script",
+        "Stop API server safely"
+      ],
+      "validation": "Backup verified, rollback tested"
+    },
+    
+    "phase_2": {
+      "name": "ELIMINATE_DUPLICATES", 
+      "duration": "30 minutes",
+      "steps": [
+        "Delete orphaned domain service duplicates",
+        "Move flat services to appropriate domains",
+        "Update all import statements systematically",
+        "Remove empty flat services directory"
+      ],
+      "files_to_delete": [
+        "src/api/domains/auth/services/auth_service.py",
+        "src/api/domains/credibility/services/database_service.py",
+        "src/api/domains/credibility/services/metrics_service.py",
+        "src/api/domains/discovery/services/ideas_service.py"
+      ],
+      "validation": "No duplicate files exist, imports updated"
+    },
+    
+    "phase_3": {
+      "name": "REORGANIZE_SERVICES_BY_DOMAIN",
+      "duration": "45 minutes", 
+      "steps": [
+        "Move services to correct domain ownership",
+        "Create domain service ownership map",
+        "Update service initialization patterns",
+        "Fix circular import issues"
+      ],
+      "service_mapping": {
+        "auth": [
+          "auth_service.py"
+        ],
+        "discovery": [
+          "discovery_service.py",
+          "ideas_service.py",
+          "reddit_api_client.py"
+        ],
+        "intelligence": [
+          "semantic_analysis_engine.py",
+          "temporal_pattern_engine.py", 
+          "semantic_trend_integration.py",
+          "cross_platform_intelligence.py",
+          "market_intelligence_service.py",
+          "graph_trend_detector.py"
+        ],
+        "streaming": [
+          "streaming_trend_pipeline.py",
+          "websocket_broadcaster.py",
+          "multimodal_fusion_engine.py",
+          "signal_fusion_engine.py",
+          "advanced_trend_analyzer.py"
+        ],
+        "credibility": [
+          "source_credibility_engine.py",
+          "metrics_service.py",
+          "database_service.py",
+          "performance_monitor.py",
+          "error_handler.py"
+        ]
+      },
+      "validation": "Services organized by domain, no orphans"
+    },
+    
+    "phase_4": {
+      "name": "UPDATE_ALL_IMPORTS_SYSTEMATICALLY",
+      "duration": "60 minutes",
+      "steps": [
+        "Scan all Python files for old import patterns",
+        "Generate import replacement map",
+        "Execute systematic find-and-replace",
+        "Fix any import conflicts or circular dependencies"
+      ],
+      "import_updates": {
+        "auth_service": "from src.api.services.auth_service → from src.api.domains.auth.services.auth_service",
+        "discovery_service": "from src.api.services.discovery_service → from src.api.domains.discovery.services.discovery_service",
+        "ideas_service": "from src.api.services.ideas_service → from src.api.domains.discovery.services.ideas_service",
+        "metrics_service": "from src.api.services.metrics_service → from src.api.domains.credibility.services.metrics_service"
+      },
+      "validation": "All imports functional, no import errors"
+    },
+    
+    "phase_5": {
+      "name": "CREATE_DOMAIN_SERVICE_INTERFACES",
+      "duration": "45 minutes",
+      "steps": [
+        "Create __init__.py files for clean imports",
+        "Implement service discovery pattern",
+        "Add domain service registries",
+        "Create service health check endpoints"
+      ],
+      "deliverables": [
+        "src/api/domains/auth/services/__init__.py",
+        "src/api/domains/discovery/services/__init__.py", 
+        "src/api/domains/intelligence/services/__init__.py",
+        "src/api/domains/streaming/services/__init__.py",
+        "src/api/domains/credibility/services/__init__.py"
+      ],
+      "validation": "Clean imports work, service discovery functional"
+    },
+    
+    "phase_6": {
+      "name": "SPLIT_MONOLITHIC_SERVICES",
+      "duration": "90 minutes",
+      "steps": [
+        "Identify oversized service files (>30KB)",
+        "Split into focused service modules",
+        "Maintain backward compatibility",
+        "Update tests for new structure"
+      ],
+      "targets_for_splitting": {
+        "trend_detection_service.py": {
+          "current_size": "61KB, 1259 lines",
+          "split_into": [
+            "trend_detector.py",
+            "pattern_analyzer.py", 
+            "opportunity_generator.py"
+          ]
+        },
+        "temporal_pattern_engine.py": {
+          "current_size": "35KB, 849 lines",
+          "split_into": [
+            "temporal_analyzer.py",
+            "seasonality_detector.py",
+            "forecasting_engine.py"
+          ]
+        },
+        "semantic_analysis_engine.py": {
+          "current_size": "31KB, 747 lines", 
+          "split_into": [
+            "semantic_processor.py",
+            "nlp_engine.py",
+            "sentiment_analyzer.py"
+          ]
+        }
+      },
+      "validation": "Service modules <1000 lines, functionality preserved"
+    },
+    
+    "phase_7": {
+      "name": "COMPREHENSIVE_TESTING_AND_VALIDATION",
+      "duration": "30 minutes",
+      "steps": [
+        "Run all existing tests",
+        "Verify API startup",
+        "Test all endpoints",
+        "Validate service communication",
+        "Performance regression check"
+      ],
+      "success_criteria": [
+        "All tests pass",
+        "API starts without errors", 
+        "All endpoints respond correctly",
+        "No import errors",
+        "Performance maintained"
+      ],
+      "validation": "System fully functional after refactor"
+    }
+  },
+  
+  "detailed_file_operations": {
+    "files_to_delete": [
+      "src/api/domains/auth/services/auth_service.py",
+      "src/api/domains/credibility/services/database_service.py",
+      "src/api/domains/credibility/services/metrics_service.py", 
+      "src/api/domains/discovery/services/ideas_service.py",
+      "src/api/main_refactored.py",
+      "src/api/main_original_backup.py"
+    ],
+    
+    "files_to_move": [
+      {
+        "from": "src/api/services/auth_service.py",
+        "to": "src/api/domains/auth/services/auth_service.py",
+        "reason": "Auth domain ownership"
+      },
+      {
+        "from": "src/api/services/discovery_service.py", 
+        "to": "src/api/domains/discovery/services/discovery_service.py",
+        "reason": "Discovery domain ownership"
+      },
+      {
+        "from": "src/api/services/ideas_service.py",
+        "to": "src/api/domains/discovery/services/ideas_service.py", 
+        "reason": "Ideas are part of discovery"
+      },
+      {
+        "from": "src/api/services/reddit_api_client.py",
+        "to": "src/api/domains/discovery/services/reddit_api_client.py",
+        "reason": "Discovery domain dependency"
+      },
+      {
+        "from": "src/api/services/metrics_service.py",
+        "to": "src/api/domains/credibility/services/metrics_service.py",
+        "reason": "Credibility/monitoring domain"
+      },
+      {
+        "from": "src/api/services/database_service.py",
+        "to": "src/api/domains/credibility/services/database_service.py",
+        "reason": "Infrastructure/credibility domain"
+      }
+    ],
+    
+    "import_replacements": {
+      "global_patterns": [
+        {
+          "find": "from src.api.services.auth_service import",
+          "replace": "from src.api.domains.auth.services.auth_service import"
+        },
+        {
+          "find": "from src.api.services.discovery_service import",
+          "replace": "from src.api.domains.discovery.services.discovery_service import"
+        },
+        {
+          "find": "from src.api.services.ideas_service import", 
+          "replace": "from src.api.domains.discovery.services.ideas_service import"
+        },
+        {
+          "find": "from src.api.services.metrics_service import",
+          "replace": "from src.api.domains.credibility.services.metrics_service import"
+        }
+      ]
+    }
+  },
+  
+  "success_metrics": {
+    "code_reduction": {
+      "target": "Eliminate 1500+ duplicate lines",
+      "measurement": "Line count comparison before/after"
+    },
+    
+    "architectural_clarity": {
+      "target": "Single import source per service",
+      "measurement": "No duplicate service classes"
+    },
+    
+    "maintainability": {
+      "target": "Service files <1500 lines each",
+      "measurement": "File size analysis"
+    },
+    
+    "functionality": {
+      "target": "100% feature preservation", 
+      "measurement": "All tests pass, API functional"
+    }
+  },
+  
+  "rollback_plan": {
+    "trigger_conditions": [
+      "Tests fail after refactor",
+      "API fails to start",
+      "Critical import errors",
+      "Performance degradation >20%"
+    ],
+    
+    "rollback_steps": [
+      "Stop current operations",
+      "Restore from emergency backup",
+      "Verify system functionality",
+      "Document failure reasons"
+    ],
+    
+    "recovery_time": "15 minutes maximum"
+  },
+  
+  "post_refactor_benefits": {
+    "immediate": [
+      "1500+ duplicate lines eliminated",
+      "Single source of truth for services",
+      "Clear domain ownership",
+      "Easier maintenance"
+    ],
+    
+    "long_term": [
+      "Faster Phase 6 feature development",
+      "Better testing isolation",
+      "Cleaner service boundaries", 
+      "Reduced cognitive load for developers"
+    ]
+  },
+  
+  "risk_mitigation": {
+    "backup_strategy": "Full project backup before any changes",
+    "incremental_approach": "Phase-by-phase with validation",
+    "automated_testing": "Run tests after each phase",
+    "rollback_readiness": "Tested rollback procedure"
+  },
+  
+  "next_steps_after_completion": {
+    "immediate": [
+      "Update documentation to reflect new architecture",
+      "Create developer onboarding guide",
+      "Establish coding standards for domain services"
+    ],
+    
+    "phase_6_preparation": [
+      "Ready for advanced analytics dashboard",
+      "Clean foundation for real-time features",
+      "Scalable architecture for enterprise features"
+    ]
+  }
+} 

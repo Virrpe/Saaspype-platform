@@ -1,0 +1,99 @@
+[
+  {
+    "test": "API Health Check",
+    "success": true,
+    "timestamp": "2025-06-10T18:01:02.442533",
+    "data": {
+      "status": "healthy",
+      "timestamp": "2025-06-10T18:01:02.437518",
+      "version": "3.0.0-master-consolidation",
+      "components": {
+        "database": "healthy",
+        "reddit_api": "degraded",
+        "transformer_model": "healthy",
+        "overnight_discovery": "stopped",
+        "streaming_service": "0 connections"
+      },
+      "system_resources": {
+        "cpu_percent": 44.1,
+        "memory_percent": 79.1,
+        "disk_percent": 85.3
+      },
+      "consolidated_systems": {
+        "discovery_service": "operational",
+        "mega_scraper": "operational",
+        "intelligence_engine": "operational",
+        "streaming_service": "operational",
+        "overnight_engine": "ready",
+        "chat_service": "operational"
+      }
+    },
+    "error": null
+  },
+  {
+    "test": "Authentication System",
+    "success": false,
+    "timestamp": "2025-06-10T18:01:03.872377",
+    "data": null,
+    "error": "Login failed: 422"
+  },
+  {
+    "test": "Discovery Service - Reddit Analysis",
+    "success": false,
+    "timestamp": "2025-06-10T18:01:05.479409",
+    "data": null,
+    "error": "Status: 500, Response: {\"detail\":\"'total_score'\"}"
+  },
+  {
+    "test": "Intelligence Engine - Text Analysis",
+    "success": false,
+    "timestamp": "2025-06-10T18:01:06.494460",
+    "data": null,
+    "error": "Status: 422, Response: {\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"content\"],\"msg\":\"Field required\",\"input\":{\"text\":\"Our startup is struggling with customer acquisition costs. We need a better way to reach potential custome"
+  },
+  {
+    "test": "Mega Scraper - Multi-Platform",
+    "success": true,
+    "timestamp": "2025-06-10T18:01:18.944668",
+    "data": {
+      "platforms_scanned": 0,
+      "total_results": 0,
+      "sample_result": null,
+      "correlation_insights": [],
+      "scan_duration": null
+    },
+    "error": null
+  },
+  {
+    "test": "Chat Service - AI Assistant",
+    "success": false,
+    "timestamp": "2025-06-10T18:01:19.950809",
+    "data": null,
+    "error": "Status: 403, Response: {\"detail\":\"Not authenticated\"}"
+  },
+  {
+    "test": "System Capabilities",
+    "success": true,
+    "timestamp": "2025-06-10T18:01:20.952795",
+    "data": {
+      "total_endpoints": null,
+      "active_services": {
+        "discovery_service": "Crown jewel (999 lines)",
+        "mega_scraper": "Revolutionary system (695 lines)",
+        "intelligence_engine": "Multimodal fusion (2800+ lines)",
+        "streaming_service": "Real-time infrastructure (2100+ lines)",
+        "overnight_engine": "Autonomous automation (802+ lines)",
+        "chat_service": "AI-powered interface (380+ lines)"
+      },
+      "system_uptime": null,
+      "memory_usage": null,
+      "performance_metrics": {
+        "overnight_cycles_completed": 0,
+        "total_opportunities_found": 0,
+        "active_websocket_connections": 0,
+        "system_uptime": "operational"
+      }
+    },
+    "error": null
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "handoff_context": {
+    "timestamp": "2025-01-18T12:50:00Z",
+    "status": "ACTIVE",
+    "purpose": "Context preservation across agent handoffs and session boundaries",
+    
+    "current_workflow": {
+      "workflow_id": null,
+      "active_agents": [],
+      "current_step": null,
+      "next_handoff": null,
+      "context_stack": []
+    },
+    
+    "context_preservation": {
+      "user_intent": {
+        "original_request": "",
+        "current_focus": "",
+        "success_criteria": "",
+        "priority_level": ""
+      },
+      
+      "technical_context": {
+        "relevant_files": [],
+        "code_changes": [],
+        "dependencies": [],
+        "constraints": []
+      },
+      
+      "business_context": {
+        "objectives": [],
+        "stakeholders": [],
+        "timeline": "",
+        "budget_considerations": []
+      },
+      
+      "agent_history": {
+        "previous_agents": [],
+        "decisions_made": [],
+        "work_completed": [],
+        "pending_tasks": []
+      }
+    },
+    
+    "handoff_protocol": {
+      "outgoing_handoff": {
+        "timestamp": null,
+        "from_agent": "",
+        "to_agent": "",
+        "context_package": {
+          "summary": "",
+          "detailed_context": {},
+          "next_actions": [],
+          "critical_information": []
+        },
+        "verification": "Context integrity validated"
+      },
+      
+      "incoming_handoff": {
+        "timestamp": null,
+        "from_agent": "",
+        "context_received": {},
+        "context_validation": "PENDING",
+        "ready_to_proceed": false
+      }
+    },
+    
+    "session_continuity": {
+      "cross_session_memory": {
+        "persistent_context": {},
+        "long_term_objectives": [],
+        "recurring_patterns": [],
+        "learned_preferences": []
+      },
+      
+      "resumption_capability": {
+        "last_active_workflow": null,
+        "interruption_point": null,
+        "resumption_context": {},
+        "auto_resume_enabled": true
+      }
+    },
+    
+    "memory_validation": {
+      "integrity_checks": {
+        "context_completeness": "VALID",
+        "handoff_chain_intact": "VALID", 
+        "memory_corruption": "NONE_DETECTED",
+        "last_validation": "2025-01-18T12:50:00Z"
+      },
+      
+      "recovery_protocols": {
+        "context_reconstruction": "Available",
+        "agent_state_recovery": "Available",
+        "workflow_restoration": "Available",
+        "emergency_fallback": "Available"
+      }
+    }
+  }
+} 

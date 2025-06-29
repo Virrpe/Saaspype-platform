@@ -1,0 +1,99 @@
+{
+  "cycle_number": 8,
+  "timestamp": "20250606_032752",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Product Launch Post",
+      "problem": "Post about all your upcoming product launches here!",
+      "solution": "Business opportunity addressing r/nocode community need",
+      "source": "nocode",
+      "cycle": 8,
+      "timestamp": "2025-06-06T03:27:47.558498",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/nocode/comments/176fe1v/product_launch_post/",
+      "reddit_score": 107,
+      "reddit_comments": 317
+    },
+    {
+      "title": "Reddit Discovery: Is it possible to automate this??",
+      "problem": "Is it possible to automate the following tasks (even partially if not fully):\n\n1) Putting searches into web search engines,\n2) Collecting and coping website or webpage content in word document,\n3) Cro...",
+      "solution": "Business opportunity addressing r/nocode community need",
+      "source": "nocode",
+      "cycle": 8,
+      "timestamp": "2025-06-06T03:27:47.558498",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/nocode/comments/1l499iw/is_it_possible_to_automate_this/",
+      "reddit_score": 2,
+      "reddit_comments": 6
+    },
+    {
+      "title": "Reddit Discovery: What's your favorite fish?",
+      "problem": "I know around 35+ vibe coding platforms, seems to be so many fish in the sea! Which is your favorite? And is it worth investing in creating a better platform? Are people really able to create a manage...",
+      "solution": "Business opportunity addressing r/nocode community need",
+      "source": "nocode",
+      "cycle": 8,
+      "timestamp": "2025-06-06T03:27:47.558498",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/nocode/comments/1l4aseo/whats_your_favorite_fish/",
+      "reddit_score": 1,
+      "reddit_comments": 6
+    },
+    {
+      "title": "Reddit Discovery: Digital Nomads Monthly Megathread - June 2025",
+      "problem": "Hey r/digitalnomad\n\nThis thread is for chatting about being a DN. This includes the news about travel and visas, where people are living, commonly asked questions, as well as a general free chat throu...",
+      "solution": "Business opportunity addressing r/digitalnomad community need",
+      "source": "digitalnomad",
+      "cycle": 8,
+      "timestamp": "2025-06-06T03:27:52.938887",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/digitalnomad/comments/1l0gtnk/digital_nomads_monthly_megathread_june_2025/",
+      "reddit_score": 0,
+      "reddit_comments": 8
+    },
+    {
+      "title": "Reddit Discovery: Want to make a post? Read this first!",
+      "problem": "#Read the [WIKI](https://www.reddit.com/r/digitalnomad/wiki/index) before posting\n\n9 times out of 10 it will have the answers you are looking for. \n\n## Where is my post?\n\n**Why isn't my post showing u...",
+      "solution": "Business opportunity addressing r/digitalnomad community need",
+      "source": "digitalnomad",
+      "cycle": 8,
+      "timestamp": "2025-06-06T03:27:52.938887",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/digitalnomad/comments/vpcdi2/want_to_make_a_post_read_this_first/",
+      "reddit_score": 74,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: What it means to be happy.",
+      "problem": "After five years of living as a digital nomad, one of the most unexpected lessons I've learned is this: the greatest benefit of the lifestyle might not be the freedom, the travel, or the novelty. But ...",
+      "solution": "Business opportunity addressing r/digitalnomad community need",
+      "source": "digitalnomad",
+      "cycle": 8,
+      "timestamp": "2025-06-06T03:27:52.938887",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/digitalnomad/comments/1l410cj/what_it_means_to_be_happy/",
+      "reddit_score": 75,
+      "reddit_comments": 14
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 3.5,
+    "memory_percent": 76.3,
+    "disk_percent": 78.8,
+    "available_gb": 1.8603057861328125,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 8,
+    "total_ideas": 48,
+    "uptime_minutes": 114.03975435495377,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

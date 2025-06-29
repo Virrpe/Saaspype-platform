@@ -1,0 +1,99 @@
+{
+  "cycle_number": 28,
+  "timestamp": "20250606_065616",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: I asked Pat\u202fFlynn your top passive income questions \u2013 here\u2019s the AMA interview",
+      "problem": "Pat Flynn, the \"crash test dummy of passive income\", sat down for an AMA chat about building sustainable passive income in 2025 and beyond. Pat shares his lessons from 15+ years online, the mindsets t...",
+      "solution": "Business opportunity addressing r/passive_income community need",
+      "source": "passive_income",
+      "cycle": 28,
+      "timestamp": "2025-06-06T06:56:11.518227",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/passive_income/comments/1l2r5d2/i_asked_pat_flynn_your_top_passive_income/",
+      "reddit_score": 10,
+      "reddit_comments": 4
+    },
+    {
+      "title": "Reddit Discovery: Best passive income ideas - May 2025 (Episode 21)",
+      "problem": "I came across a\u00a0[very insightful conversation](https://x.com/i/bookmarks/1865632624884216273)\u00a0this week about what it takes to a sustainable A.I. business. It's just going to get easier for anyone to ...",
+      "solution": "Business opportunity addressing r/passive_income community need",
+      "source": "passive_income",
+      "cycle": 28,
+      "timestamp": "2025-06-06T06:56:11.518227",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/passive_income/comments/1kjobgb/best_passive_income_ideas_may_2025_episode_21/",
+      "reddit_score": 47,
+      "reddit_comments": 9
+    },
+    {
+      "title": "Reddit Discovery: Ultimate Google Sheet for 2025!",
+      "problem": "Since the beginning of the year 2025 (and even a bit before) I've been tracking all the platforms that actually helped me earn some extra cash. I put together a [spreadsheet](https://docs.google.com/s...",
+      "solution": "Business opportunity addressing r/passive_income community need",
+      "source": "passive_income",
+      "cycle": 28,
+      "timestamp": "2025-06-06T06:56:11.518227",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/passive_income/comments/1l4c8yz/ultimate_google_sheet_for_2025/",
+      "reddit_score": 52,
+      "reddit_comments": 7
+    },
+    {
+      "title": "Reddit Discovery: best and fastest way to make around $7k in under a year?",
+      "problem": "i want to buy myself a car by the end of my high school days but am unable to work a typical job like at mcdonalds or something as a result of the labour laws in my country. \ni need a way to somewhat ...",
+      "solution": "Business opportunity addressing r/sidehustle community need",
+      "source": "sidehustle",
+      "cycle": 28,
+      "timestamp": "2025-06-06T06:56:16.853505",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sidehustle/comments/1l45gdu/best_and_fastest_way_to_make_around_7k_in_under_a/",
+      "reddit_score": 17,
+      "reddit_comments": 69
+    },
+    {
+      "title": "Reddit Discovery: Lookinh to make 60k extra in 6 months",
+      "problem": "I have two kitchen jobs and make a little over 5k a month. I have about 40k in debt from college and i can pay that with what I make from my two jobs. However it leaves little left in order to fullfil...",
+      "solution": "Business opportunity addressing r/sidehustle community need",
+      "source": "sidehustle",
+      "cycle": 28,
+      "timestamp": "2025-06-06T06:56:16.853505",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sidehustle/comments/1l40l3e/lookinh_to_make_60k_extra_in_6_months/",
+      "reddit_score": 32,
+      "reddit_comments": 62
+    },
+    {
+      "title": "Reddit Discovery: Anybody have a walking (steps) reward app they really like?",
+      "problem": "I\u2019m looking to stack a couple of different ones.\nI don\u2019t really want to share my location, and use a full time vpn. Some walking apps don\u2019t like that.",
+      "solution": "Business opportunity addressing r/sidehustle community need",
+      "source": "sidehustle",
+      "cycle": 28,
+      "timestamp": "2025-06-06T06:56:16.853505",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sidehustle/comments/1l4d62a/anybody_have_a_walking_steps_reward_app_they/",
+      "reddit_score": 6,
+      "reddit_comments": 1
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 4.2,
+    "memory_percent": 78.0,
+    "disk_percent": 78.9,
+    "available_gb": 1.7234039306640625,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 28,
+    "total_ideas": 168,
+    "uptime_minutes": 322.4383313298225,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

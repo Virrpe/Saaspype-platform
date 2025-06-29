@@ -1,0 +1,492 @@
+{
+  "timestamp": "20250606_005547",
+  "source_file": "bulletproof_intelligence_analysis_20250606_005321.json",
+  "total_ideas_analyzed": 10,
+  "verification_criteria": {
+    "market_size": {
+      "weight": 0.25,
+      "indicators": {
+        "large": [
+          "billion",
+          "million users",
+          "enterprise",
+          "saas",
+          "b2b"
+        ],
+        "medium": [
+          "thousand",
+          "small business",
+          "niche",
+          "specialized"
+        ],
+        "small": [
+          "personal",
+          "hobby",
+          "side project"
+        ]
+      }
+    },
+    "revenue_potential": {
+      "weight": 0.25,
+      "indicators": {
+        "high": [
+          "arr",
+          "mrr",
+          "subscription",
+          "recurring",
+          "enterprise",
+          "b2b"
+        ],
+        "medium": [
+          "one-time",
+          "service",
+          "consulting",
+          "freelance"
+        ],
+        "low": [
+          "free",
+          "ad-supported",
+          "donation"
+        ]
+      }
+    },
+    "technical_feasibility": {
+      "weight": 0.2,
+      "indicators": {
+        "easy": [
+          "api",
+          "wrapper",
+          "dashboard",
+          "simple tool",
+          "automation"
+        ],
+        "medium": [
+          "platform",
+          "app",
+          "integration",
+          "ai tool"
+        ],
+        "hard": [
+          "infrastructure",
+          "hardware",
+          "complex ai",
+          "blockchain"
+        ]
+      }
+    },
+    "market_validation": {
+      "weight": 0.15,
+      "indicators": {
+        "validated": [
+          "show hn",
+          "launched",
+          "users",
+          "customers",
+          "revenue"
+        ],
+        "partial": [
+          "prototype",
+          "beta",
+          "testing",
+          "feedback"
+        ],
+        "unvalidated": [
+          "idea",
+          "concept",
+          "planning"
+        ]
+      }
+    },
+    "competition": {
+      "weight": 0.1,
+      "indicators": {
+        "low": [
+          "alternative",
+          "open source",
+          "new approach",
+          "niche"
+        ],
+        "medium": [
+          "better",
+          "faster",
+          "cheaper",
+          "simpler"
+        ],
+        "high": [
+          "dominated",
+          "saturated",
+          "giants"
+        ]
+      }
+    },
+    "time_to_market": {
+      "weight": 0.05,
+      "indicators": {
+        "fast": [
+          "mvp",
+          "simple",
+          "api",
+          "tool",
+          "automation"
+        ],
+        "medium": [
+          "app",
+          "platform",
+          "service"
+        ],
+        "slow": [
+          "infrastructure",
+          "complex",
+          "enterprise"
+        ]
+      }
+    }
+  },
+  "verified_ideas": [
+    {
+      "rank": 8,
+      "title": "Show HN: iOS Screen Time from a REST API",
+      "url": "https://www.thescreentimenetwork.com/api/",
+      "source": "hacker_news",
+      "original_score": 2,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 5.0,
+        "technical_feasibility": 8.5,
+        "market_validation": 8.5,
+        "competition": 5.0,
+        "time_to_market": 8.5
+      },
+      "weighted_score": 6.4,
+      "source_multiplier": 1.2,
+      "final_score": 7.68,
+      "grade": "B",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Explore subscription/recurring revenue models",
+        "High-quality source - consider immediate prototyping",
+        "Already launched - analyze user feedback and traction"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "No clear indicators found",
+        "technical_feasibility": "Strong easy indicator: 'api'",
+        "market_validation": "Strong validated indicator: 'show hn'",
+        "competition": "No clear indicators found",
+        "time_to_market": "Strong fast indicator: 'api'"
+      }
+    },
+    {
+      "rank": 1,
+      "title": "Hitting $1.2M ARR within a year with productized design servicesNick built a $1.2M ARR design service by focusing on one thing: roasts.",
+      "url": "https://www.indiehackers.com/post/services/hitting-1-2m-arr-within-a-year-with-productized-design-services-RQaHrYUKBzkPoqnfMbHq",
+      "source": "indie_hackers",
+      "original_score": 5,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 8.5,
+        "technical_feasibility": 5.0,
+        "market_validation": 5.0,
+        "competition": 5.0,
+        "time_to_market": 6.0
+      },
+      "weighted_score": 5.925,
+      "source_multiplier": 1.2,
+      "final_score": 7.109999999999999,
+      "grade": "B",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Start with MVP - focus on core functionality first",
+        "Validate with potential customers before building",
+        "Proven revenue model - study their approach"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "Strong high indicator: 'arr'",
+        "technical_feasibility": "No clear indicators found",
+        "market_validation": "No clear indicators found",
+        "competition": "No clear indicators found",
+        "time_to_market": "Medium indicator: 'service'"
+      }
+    },
+    {
+      "rank": 2,
+      "title": "Converge (YC S23) Well-capitalized New York startup seeks product developers",
+      "url": "https://www.runconverge.com/careers",
+      "source": "hacker_news",
+      "original_score": 3,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 5.0,
+        "technical_feasibility": 8.5,
+        "market_validation": 5.0,
+        "competition": 5.0,
+        "time_to_market": 8.5
+      },
+      "weighted_score": 5.875,
+      "source_multiplier": 1.2,
+      "final_score": 7.05,
+      "grade": "B",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Explore subscription/recurring revenue models",
+        "Validate with potential customers before building",
+        "High-quality source - consider immediate prototyping"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "No clear indicators found",
+        "technical_feasibility": "Strong easy indicator: 'api'",
+        "market_validation": "No clear indicators found",
+        "competition": "No clear indicators found",
+        "time_to_market": "Strong fast indicator: 'api'"
+      }
+    },
+    {
+      "rank": 3,
+      "title": "Acquiring Baremetrics and setting his sights on $10M ARR",
+      "url": "https://www.indiehackers.com/post/tech/acquiring-baremetrics-and-setting-his-sights-on-10m-arr-j4pRR51ReC22qypJ1mQb",
+      "source": "indie_hackers",
+      "original_score": 3,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 8.5,
+        "technical_feasibility": 5.0,
+        "market_validation": 5.0,
+        "competition": 5.0,
+        "time_to_market": 5.0
+      },
+      "weighted_score": 5.875,
+      "source_multiplier": 1.2,
+      "final_score": 7.05,
+      "grade": "B",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Start with MVP - focus on core functionality first",
+        "Validate with potential customers before building",
+        "Proven revenue model - study their approach"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "Strong high indicator: 'arr'",
+        "technical_feasibility": "No clear indicators found",
+        "market_validation": "No clear indicators found",
+        "competition": "No clear indicators found",
+        "time_to_market": "No clear indicators found"
+      }
+    },
+    {
+      "rank": 9,
+      "title": "Show HN: ClickStack – Open-source Datadog alternative by ClickHouse and HyperDX",
+      "url": "https://github.com/hyperdxio/hyperdx",
+      "source": "hacker_news",
+      "original_score": 2,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 5.0,
+        "technical_feasibility": 5.0,
+        "market_validation": 8.5,
+        "competition": 8.5,
+        "time_to_market": 5.0
+      },
+      "weighted_score": 5.875,
+      "source_multiplier": 1.2,
+      "final_score": 7.05,
+      "grade": "B",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Explore subscription/recurring revenue models",
+        "Start with MVP - focus on core functionality first",
+        "High-quality source - consider immediate prototyping"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "No clear indicators found",
+        "technical_feasibility": "No clear indicators found",
+        "market_validation": "Strong validated indicator: 'show hn'",
+        "competition": "Strong low indicator: 'alternative'",
+        "time_to_market": "No clear indicators found"
+      }
+    },
+    {
+      "rank": 7,
+      "title": "Show HN: String Flux – Simplify everyday string transformations for developers",
+      "url": "https://stringflux.io",
+      "source": "hacker_news",
+      "original_score": 2,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 5.0,
+        "technical_feasibility": 5.0,
+        "market_validation": 8.5,
+        "competition": 5.0,
+        "time_to_market": 5.0
+      },
+      "weighted_score": 5.525,
+      "source_multiplier": 1.2,
+      "final_score": 6.63,
+      "grade": "C+",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Explore subscription/recurring revenue models",
+        "Start with MVP - focus on core functionality first",
+        "High-quality source - consider immediate prototyping"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "No clear indicators found",
+        "technical_feasibility": "No clear indicators found",
+        "market_validation": "Strong validated indicator: 'show hn'",
+        "competition": "No clear indicators found",
+        "time_to_market": "No clear indicators found"
+      }
+    },
+    {
+      "rank": 10,
+      "title": "Just launched SupaUI, a UI-first color palette generator for devs & designers",
+      "url": "https://www.indiehackers.com/post/just-launched-supaui-a-ui-first-color-palette-generator-for-devs-designers-3e046651c4",
+      "source": "indie_hackers",
+      "original_score": 2,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 5.0,
+        "technical_feasibility": 5.0,
+        "market_validation": 8.5,
+        "competition": 5.0,
+        "time_to_market": 5.0
+      },
+      "weighted_score": 5.525,
+      "source_multiplier": 1.2,
+      "final_score": 6.63,
+      "grade": "C+",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Explore subscription/recurring revenue models",
+        "Start with MVP - focus on core functionality first"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "No clear indicators found",
+        "technical_feasibility": "No clear indicators found",
+        "market_validation": "Strong validated indicator: 'launched'",
+        "competition": "No clear indicators found",
+        "time_to_market": "No clear indicators found"
+      }
+    },
+    {
+      "rank": 4,
+      "title": "My business has fully matched my engineer salary",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3yz5w/my_business_has_fully_matched_my_engineer_salary/",
+      "source": "reddit_entrepreneur",
+      "original_score": 3,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 5.0,
+        "technical_feasibility": 5.0,
+        "market_validation": 5.0,
+        "competition": 5.0,
+        "time_to_market": 5.0
+      },
+      "weighted_score": 5.0,
+      "source_multiplier": 1.0,
+      "final_score": 5.0,
+      "grade": "C",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Explore subscription/recurring revenue models",
+        "Start with MVP - focus on core functionality first",
+        "Validate with potential customers before building"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "No clear indicators found",
+        "technical_feasibility": "No clear indicators found",
+        "market_validation": "No clear indicators found",
+        "competition": "No clear indicators found",
+        "time_to_market": "No clear indicators found"
+      }
+    },
+    {
+      "rank": 5,
+      "title": "What would you do if someone offered you 2x your startup’s earnings to quit and be an employee?",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1l41d5c/what_would_you_do_if_someone_offered_you_2x_your/",
+      "source": "reddit_entrepreneur",
+      "original_score": 3,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 5.0,
+        "technical_feasibility": 5.0,
+        "market_validation": 5.0,
+        "competition": 5.0,
+        "time_to_market": 5.0
+      },
+      "weighted_score": 5.0,
+      "source_multiplier": 1.0,
+      "final_score": 5.0,
+      "grade": "C",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Explore subscription/recurring revenue models",
+        "Start with MVP - focus on core functionality first",
+        "Validate with potential customers before building"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "No clear indicators found",
+        "technical_feasibility": "No clear indicators found",
+        "market_validation": "No clear indicators found",
+        "competition": "No clear indicators found",
+        "time_to_market": "No clear indicators found"
+      }
+    },
+    {
+      "rank": 6,
+      "title": "What is the best business decision you took in 2025 as an entrepreneur?",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3w8sj/what_is_the_best_business_decision_you_took_in/",
+      "source": "reddit_entrepreneur",
+      "original_score": 3,
+      "quality_scores": {
+        "market_size": 5.0,
+        "revenue_potential": 5.0,
+        "technical_feasibility": 5.0,
+        "market_validation": 5.0,
+        "competition": 5.0,
+        "time_to_market": 5.0
+      },
+      "weighted_score": 5.0,
+      "source_multiplier": 1.0,
+      "final_score": 5.0,
+      "grade": "C",
+      "recommendations": [
+        "Research market size - consider enterprise/B2B angle",
+        "Explore subscription/recurring revenue models",
+        "Start with MVP - focus on core functionality first",
+        "Validate with potential customers before building"
+      ],
+      "analysis_details": {
+        "market_size": "No clear indicators found",
+        "revenue_potential": "No clear indicators found",
+        "technical_feasibility": "No clear indicators found",
+        "market_validation": "No clear indicators found",
+        "competition": "No clear indicators found",
+        "time_to_market": "No clear indicators found"
+      }
+    }
+  ],
+  "grade_distribution": {
+    "B": 5,
+    "C+": 2,
+    "C": 3
+  },
+  "categories": {
+    "Developer Tools": 3,
+    "Design Tools": 4,
+    "Open Source": 1,
+    "Business/Revenue": 2
+  },
+  "recommendations": {
+    "immediate_pursuit": 0,
+    "further_research": 7,
+    "high_risk": 3
+  }
+}

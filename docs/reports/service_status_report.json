@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-06-01T02:39:19.339039",
+  "services": {
+    "secure_ab_testing": {
+      "port": 5001,
+      "status": "running",
+      "healthy": true,
+      "endpoint": "http://localhost:5001/health"
+    },
+    "analytics": {
+      "port": 5002,
+      "status": "running",
+      "healthy": true,
+      "endpoint": "http://localhost:5002/health"
+    },
+    "monitoring": {
+      "port": 5003,
+      "status": "running",
+      "healthy": true,
+      "endpoint": "http://localhost:5003/health"
+    },
+    "main_api": {
+      "port": 8000,
+      "status": "running",
+      "healthy": true,
+      "endpoint": "http://localhost:8000/health"
+    }
+  },
+  "summary": {
+    "total_services": 4,
+    "running_services": 4,
+    "healthy_services": 4
+  }
+}

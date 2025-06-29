@@ -1,0 +1,359 @@
+{
+  "master_refactor_metadata": {
+    "created": "2025-01-14T21:00:00Z",
+    "type": "MASTER_REFACTOR_EXECUTION_PLAN",
+    "status": "READY_FOR_EXECUTION",
+    "priority": "IMMEDIATE",
+    "scope": "Complete project structure refactoring - Root + Subfolders",
+    "goal": "Professional project structure ready for Phase 6 development",
+    "session_continuity": "Can be resumed from any chat session",
+    "current_phase": "PREPARATION"
+  },
+  
+  "execution_overview": {
+    "total_phases": 8,
+    "estimated_duration": "4-5 hours total",
+    "approach": "Root refactor first, then subfolder refactor",
+    "validation_checkpoints": "After each major phase",
+    "rollback_strategy": "Full backup + incremental checkpoints"
+  },
+  
+  "current_project_state": {
+    "root_directory_problems": {
+      "file_count": "70+ files cluttering root",
+      "test_files": "20+ test_*.py files scattered",
+      "database_files": "Multiple .db files in root",
+      "documentation": "Mixed with code files",
+      "scripts": "start_*, docker_* everywhere",
+      "impact": "Extremely difficult to navigate and maintain"
+    },
+    
+    "subfolder_problems": {
+      "main_py_size": "84KB, 1964 lines - monolithic",
+      "services_directory": "23 service files in single directory",
+      "large_files": "trend_detection_service.py (61KB), temporal_pattern_engine.py (35KB)",
+      "working_memory": "30+ files with no organization",
+      "impact": "Hard to scale and add Phase 6 features"
+    }
+  },
+  
+  "phase_1_root_refactor": {
+    "status": "READY",
+    "duration": "2 hours",
+    "goal": "Clean root directory with professional structure",
+    "backup_required": true,
+    
+    "steps": {
+      "step_1_backup": {
+        "duration": "5 minutes",
+        "commands": [
+          "mkdir -p backups/pre-refactor-$(date +%Y%m%d-%H%M%S)",
+          "cp -r . backups/pre-refactor-$(date +%Y%m%d-%H%M%S)/",
+          "echo 'Backup created successfully'"
+        ],
+        "validation": "Verify backup contains all files"
+      },
+      
+      "step_2_create_structure": {
+        "duration": "10 minutes",
+        "commands": [
+          "mkdir -p tests/{auth,api,integration,streaming,unit,fixtures}",
+          "mkdir -p docs/{development,deployment,architecture,reports}",
+          "mkdir -p scripts/{deployment,development,testing,data}",
+          "mkdir -p data/{databases,logs,exports,backups}",
+          "mkdir -p config/{environment,docker,nginx}",
+          "mkdir -p tools/{validators,generators,analyzers}"
+        ],
+        "validation": "Verify all new directories created"
+      },
+      
+      "step_3_move_test_files": {
+        "duration": "20 minutes",
+        "file_moves": {
+          "test_auth*.py": "tests/auth/",
+          "test_api*.py": "tests/api/",
+          "test_reddit*.py": "tests/integration/",
+          "test_streaming*.py": "tests/streaming/",
+          "test_multimodal*.py": "tests/streaming/",
+          "test_credibility*.py": "tests/api/",
+          "test_quality*.py": "tests/integration/",
+          "test_pytorch*.py": "tests/unit/",
+          "test_phase2*.py": "tests/integration/",
+          "test_intelligence*.py": "tests/api/",
+          "test_real*.py": "tests/unit/"
+        },
+        "validation": "Verify no test_*.py files remain in root"
+      },
+      
+      "step_4_move_documentation": {
+        "duration": "15 minutes",
+        "file_moves": {
+          "PHASE_*_COMPLETION_REPORT.md": "docs/reports/",
+          "VERIFICATION_*.md": "docs/development/",
+          "DOCKER_SETUP_GUIDE.md": "docs/deployment/",
+          "README-Docker.md": "docs/deployment/",
+          "QUALITY_DASHBOARD_IMPLEMENTATION.md": "docs/development/",
+          "GROUNDBREAKING_METHODS_SUMMARY.md": "docs/architecture/",
+          "PYTORCH_FIX_SUMMARY.md": "docs/development/",
+          "SYSTEM_STATUS_REPORT.md": "docs/development/",
+          "LOCAL_DEVELOPMENT_STATUS.md": "docs/development/",
+          "CURRENT_STATE_SAVE.md": "docs/development/",
+          "FINAL_SYSTEM_STATE.md": "docs/development/",
+          "Luciq_*.md": "docs/",
+          "docker-verification-report.md": "docs/deployment/"
+        },
+        "validation": "Verify documentation properly organized"
+      },
+      
+      "step_5_move_scripts": {
+        "duration": "15 minutes",
+        "file_moves": {
+          "start_*.py": "scripts/development/",
+          "start_*.bat": "scripts/deployment/",
+          "start_*.sh": "scripts/deployment/",
+          "docker-start.*": "scripts/deployment/",
+          "migrate_database_for_auth.py": "scripts/data/",
+          "verify_*.py": "scripts/testing/",
+          "generate_report.py": "tools/generators/"
+        },
+        "validation": "Verify scripts properly categorized"
+      },
+      
+      "step_6_move_data_files": {
+        "duration": "10 minutes",
+        "file_moves": {
+          "*.db": "data/databases/",
+          "*.html": "data/exports/",
+          "save_confirmation.log": "data/logs/"
+        },
+        "validation": "Verify data files organized"
+      },
+      
+      "step_7_move_tools": {
+        "duration": "15 minutes",
+        "file_moves": {
+          "real_data_validator.py": "tools/validators/",
+          "groundbreaking_methods.py": "tools/analyzers/",
+          "reach_industry_standards.py": "tools/analyzers/",
+          "industry_standard_scoring.py": "tools/analyzers/",
+          "boost_signals.py": "tools/analyzers/"
+        },
+        "validation": "Verify tools properly categorized"
+      },
+      
+      "step_8_move_configs": {
+        "duration": "10 minutes",
+        "file_moves": {
+          "nginx.conf": "config/nginx/",
+          "production.env": "config/environment/"
+        },
+        "validation": "Verify configs organized"
+      },
+      
+      "step_9_update_docker_paths": {
+        "duration": "20 minutes",
+        "tasks": [
+          "Update docker-compose.yml volume paths",
+          "Update Dockerfile COPY paths", 
+          "Update .dockerignore patterns",
+          "Update script references in start files"
+        ],
+        "validation": "docker-compose build succeeds"
+      },
+      
+      "step_10_validation": {
+        "duration": "10 minutes",
+        "checks": [
+          "Root directory only has essential files",
+          "All tests moved to tests/ subdirectories",
+          "Documentation organized in docs/",
+          "Scripts categorized in scripts/",
+          "Docker configuration updated",
+          "No broken file references"
+        ]
+      }
+    }
+  },
+  
+  "phase_2_subfolder_refactor": {
+    "status": "PENDING",
+    "duration": "2-3 hours",
+    "goal": "Domain-driven architecture in src/, organized memory",
+    "depends_on": "phase_1_root_refactor",
+    
+    "steps": {
+      "step_1_api_structure": {
+        "duration": "60 minutes",
+        "tasks": [
+          "Create src/api domain structure",
+          "Break down 84KB main.py file",
+          "Organize endpoints by domain",
+          "Separate services by domain"
+        ]
+      },
+      
+      "step_2_service_splitting": {
+        "duration": "45 minutes", 
+        "tasks": [
+          "Split trend_detection_service.py (61KB)",
+          "Split temporal_pattern_engine.py (35KB)",
+          "Organize services by business domain",
+          "Update import statements"
+        ]
+      },
+      
+      "step_3_frontend_organization": {
+        "duration": "30 minutes",
+        "tasks": [
+          "Organize components by complexity",
+          "Create Phase 6 ready structure",
+          "Separate JS by functionality",
+          "Organize styles by scope"
+        ]
+      },
+      
+      "step_4_memory_organization": {
+        "duration": "20 minutes",
+        "tasks": [
+          "Categorize working-memory files",
+          "Separate agent state from roadmaps",
+          "Organize reports and documentation",
+          "Clean up archive structure"
+        ]
+      },
+      
+      "step_5_final_validation": {
+        "duration": "15 minutes",
+        "checks": [
+          "API server starts successfully",
+          "All imports work correctly",
+          "Docker build succeeds",
+          "Key tests pass"
+        ]
+      }
+    }
+  },
+  
+  "session_continuity": {
+    "progress_tracking": {
+      "file": "working-memory/refactor-progress.json",
+      "updates": "After each step completion",
+      "format": {
+        "current_phase": "phase_1_root_refactor",
+        "current_step": "step_3_move_test_files",
+        "completion_percentage": "35%",
+        "last_checkpoint": "2025-01-14T21:30:00Z",
+        "next_action": "Continue with step_4_move_documentation"
+      }
+    },
+    
+    "auto_resume_instructions": {
+      "chat_greeting": "When user says 'hi' or 'continue refactor', automatically load refactor-progress.json and show current status",
+      "status_format": "📋 Refactor Status: {current_phase} - {current_step} ({completion_percentage} complete)",
+      "next_action_prompt": "Ready to continue with: {next_action}. Shall I proceed?",
+      "completion_check": "If all phases complete, suggest beginning Phase 6 Sprint 1"
+    },
+    
+    "rollback_instructions": {
+      "if_issues": "If any step fails, restore from most recent checkpoint",
+      "backup_location": "backups/pre-refactor-* directories",
+      "validation_required": "Always test API startup after major changes"
+    }
+  },
+  
+  "automation_scripts": {
+    "root_refactor_script": {
+      "file": "scripts/automation/execute-root-refactor.sh",
+      "description": "Automated script for root directory refactoring",
+      "safety": "Includes backup creation and validation checkpoints"
+    },
+    
+    "progress_tracker": {
+      "file": "scripts/automation/track-refactor-progress.py",
+      "description": "Updates progress tracking file after each step",
+      "integration": "Called automatically during refactoring"
+    },
+    
+    "validation_suite": {
+      "file": "scripts/automation/validate-refactor.py", 
+      "description": "Comprehensive validation after each phase",
+      "checks": ["File moves", "Import paths", "Docker build", "API startup"]
+    }
+  },
+  
+  "expected_final_structure": {
+    "root_directory": {
+      "files_remaining": "~15 essential files only",
+      "structure": "Professional, clean, navigable",
+      "benefit": "10x easier to find files"
+    },
+    
+    "organized_directories": {
+      "tests/": "All tests categorized by type",
+      "docs/": "All documentation organized by purpose", 
+      "scripts/": "All scripts categorized by function",
+      "data/": "All data files properly stored",
+      "config/": "All configuration organized",
+      "tools/": "All utilities categorized"
+    },
+    
+    "src_structure": {
+      "api/": "Domain-driven architecture",
+      "frontend/": "Component-based organization",
+      "services/": "Business logic by domain",
+      "benefit": "Ready for Phase 6 development"
+    }
+  },
+  
+  "phase_6_readiness": {
+    "analytics_structure": "Ready for Sprint 1 analytics dashboard",
+    "monitoring_structure": "Ready for Sprint 2 production monitoring", 
+    "user_management": "Ready for Sprint 3 enhanced features",
+    "api_marketplace": "Ready for Sprint 4 monetization"
+  },
+  
+  "immediate_next_steps": {
+    "if_starting_fresh": [
+      "Load working-memory/refactor-progress.json",
+      "Check current phase and step",
+      "Show progress status to user",
+      "Ask permission to continue"
+    ],
+    
+    "if_resuming": [
+      "Continue from last checkpoint",
+      "Execute next step in sequence",
+      "Update progress tracking",
+      "Validate after each step"
+    ],
+    
+    "if_completed": [
+      "Verify final structure",
+      "Run comprehensive validation",
+      "Begin Phase 6 Sprint 1 preparation"
+    ]
+  },
+  
+  "success_criteria": {
+    "root_refactor_complete": {
+      "root_files": "≤15 essential files only",
+      "test_organization": "All test files in tests/ subdirectories",
+      "doc_organization": "All docs in docs/ subdirectories", 
+      "docker_working": "docker-compose build succeeds"
+    },
+    
+    "subfolder_refactor_complete": {
+      "main_py_size": "≤500 lines",
+      "service_organization": "Services organized by domain",
+      "api_startup": "python scripts/development/start_api_v2.py works",
+      "import_paths": "All imports functional"
+    },
+    
+    "phase_6_ready": {
+      "analytics_dirs": "Analytics structure created",
+      "monitoring_dirs": "Monitoring structure created",
+      "clean_architecture": "Domain-driven organization complete",
+      "developer_experience": "Professional, navigable structure"
+    }
+  }
+} 

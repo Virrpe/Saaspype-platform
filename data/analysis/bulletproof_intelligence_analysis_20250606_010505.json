@@ -1,0 +1,104 @@
+{
+  "timestamp": "20250606_010505",
+  "source_file": "real_web_scraping_updated_20250606_004645.json",
+  "performance_metrics": {
+    "total_items": 57,
+    "duration_seconds": 13.528005,
+    "items_per_second": 4.213481588748674,
+    "success_rate": 1.0,
+    "failed_sources": 0
+  },
+  "source_performance": {
+    "hacker_news": 10,
+    "ycombinator_show": 8,
+    "indie_hackers": 4,
+    "github_trending": 10,
+    "dev_to": 1,
+    "medium_startup": 3,
+    "reddit_entrepreneur": 10,
+    "launching_next": 6,
+    "maker_log": 5
+  },
+  "data_quality": {
+    "overall_quality_score": 8.882456140350877,
+    "average_title_length": 40.70175438596491,
+    "quality_items_count": 56
+  },
+  "business_opportunities": [
+    {
+      "title": "Hitting $1.2M ARR within a year with productized design servicesNick built a $1.2M ARR design service by focusing on one thing: roasts.",
+      "url": "https://www.indiehackers.com/post/services/hitting-1-2m-arr-within-a-year-with-productized-design-services-RQaHrYUKBzkPoqnfMbHq",
+      "source": "indie_hackers",
+      "business_score": 5
+    },
+    {
+      "title": "Converge (YC S23) Well-capitalized New York startup seeks product developers",
+      "url": "https://www.runconverge.com/careers",
+      "source": "hacker_news",
+      "business_score": 3
+    },
+    {
+      "title": "Acquiring Baremetrics and setting his sights on $10M ARR",
+      "url": "https://www.indiehackers.com/post/tech/acquiring-baremetrics-and-setting-his-sights-on-10m-arr-j4pRR51ReC22qypJ1mQb",
+      "source": "indie_hackers",
+      "business_score": 3
+    },
+    {
+      "title": "My business has fully matched my engineer salary",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3yz5w/my_business_has_fully_matched_my_engineer_salary/",
+      "source": "reddit_entrepreneur",
+      "business_score": 3
+    },
+    {
+      "title": "What would you do if someone offered you 2x your startup’s earnings to quit and be an employee?",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1l41d5c/what_would_you_do_if_someone_offered_you_2x_your/",
+      "source": "reddit_entrepreneur",
+      "business_score": 3
+    },
+    {
+      "title": "What is the best business decision you took in 2025 as an entrepreneur?",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3w8sj/what_is_the_best_business_decision_you_took_in/",
+      "source": "reddit_entrepreneur",
+      "business_score": 3
+    },
+    {
+      "title": "Show HN: String Flux – Simplify everyday string transformations for developers",
+      "url": "https://stringflux.io",
+      "source": "hacker_news",
+      "business_score": 2
+    },
+    {
+      "title": "Show HN: iOS Screen Time from a REST API",
+      "url": "https://www.thescreentimenetwork.com/api/",
+      "source": "hacker_news",
+      "business_score": 2
+    },
+    {
+      "title": "Show HN: ClickStack – Open-source Datadog alternative by ClickHouse and HyperDX",
+      "url": "https://github.com/hyperdxio/hyperdx",
+      "source": "hacker_news",
+      "business_score": 2
+    },
+    {
+      "title": "Just launched SupaUI, a UI-first color palette generator for devs & designers",
+      "url": "https://www.indiehackers.com/post/just-launched-supaui-a-ui-first-color-palette-generator-for-devs-designers-3e046651c4",
+      "source": "indie_hackers",
+      "business_score": 2
+    }
+  ],
+  "technology_trends": {
+    "ai": 4,
+    "api": 4,
+    "tool": 2,
+    "startup": 4,
+    "open_source": 2,
+    "saas": 1,
+    "developer": 2,
+    "productivity": 1
+  },
+  "recommendations": {
+    "immediate_actions": 4,
+    "next_steps": 4,
+    "system_status": "BULLETPROOF_OPERATIONAL"
+  }
+}

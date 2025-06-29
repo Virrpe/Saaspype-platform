@@ -1,0 +1,81 @@
+{
+  "cycle_number": 101,
+  "timestamp": "20250606_012714",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Overnight Pain Point: r/sales opportunity",
+      "problem": "Real pain point from r/sales community",
+      "solution": "Business opportunity in sales niche",
+      "source": "sales",
+      "cycle": 101,
+      "timestamp": "2025-06-06T01:27:09.434431",
+      "confidence_score": 4,
+      "discovery_type": "fallback_scraping"
+    },
+    {
+      "title": "Overnight Pain Point: r/sales opportunity",
+      "problem": "Real pain point from r/sales community",
+      "solution": "Business opportunity in sales niche",
+      "source": "sales",
+      "cycle": 101,
+      "timestamp": "2025-06-06T01:27:09.434431",
+      "confidence_score": 3,
+      "discovery_type": "fallback_scraping"
+    },
+    {
+      "title": "Overnight Pain Point: r/sales opportunity",
+      "problem": "Real pain point from r/sales community",
+      "solution": "Business opportunity in sales niche",
+      "source": "sales",
+      "cycle": 101,
+      "timestamp": "2025-06-06T01:27:09.434431",
+      "confidence_score": 2,
+      "discovery_type": "fallback_scraping"
+    },
+    {
+      "title": "Overnight Pain Point: r/ecommerce opportunity",
+      "problem": "Real pain point from r/ecommerce community",
+      "solution": "Business opportunity in ecommerce niche",
+      "source": "ecommerce",
+      "cycle": 101,
+      "timestamp": "2025-06-06T01:27:14.476546",
+      "confidence_score": 5,
+      "discovery_type": "fallback_scraping"
+    },
+    {
+      "title": "Overnight Pain Point: r/ecommerce opportunity",
+      "problem": "Real pain point from r/ecommerce community",
+      "solution": "Business opportunity in ecommerce niche",
+      "source": "ecommerce",
+      "cycle": 101,
+      "timestamp": "2025-06-06T01:27:14.476546",
+      "confidence_score": 2,
+      "discovery_type": "fallback_scraping"
+    },
+    {
+      "title": "Overnight Pain Point: r/ecommerce opportunity",
+      "problem": "Real pain point from r/ecommerce community",
+      "solution": "Business opportunity in ecommerce niche",
+      "source": "ecommerce",
+      "cycle": 101,
+      "timestamp": "2025-06-06T01:27:14.476546",
+      "confidence_score": 3,
+      "discovery_type": "fallback_scraping"
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 14.3,
+    "memory_percent": 74.9,
+    "disk_percent": 78.8,
+    "available_gb": 1.9666824340820312,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 101,
+    "total_ideas": 506,
+    "uptime_minutes": 0,
+    "avg_ideas_per_cycle": 5.00990099009901
+  }
+}

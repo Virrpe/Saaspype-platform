@@ -1,0 +1,2089 @@
+{
+  "timestamp": "20250606_002755",
+  "duration_seconds": 17.487069,
+  "subreddits_analyzed": [
+    "entrepreneur",
+    "startups",
+    "smallbusiness",
+    "freelance",
+    "SaaS",
+    "business",
+    "marketing",
+    "webdev",
+    "productivity",
+    "indiehackers",
+    "Entrepreneur",
+    "sales",
+    "ecommerce",
+    "consulting",
+    "remotework"
+  ],
+  "total_stats": {
+    "posts_analyzed": 75,
+    "pain_points_found": 29,
+    "opportunities_generated": 29,
+    "business_ideas_generated": 58,
+    "ideas_per_second": 3.316736498266233,
+    "success_rate": 0.7733333333333333
+  },
+  "subreddit_stats": {
+    "entrepreneur": {
+      "posts_analyzed": 5,
+      "pain_points_found": 3,
+      "opportunities_generated": 3,
+      "concepts_generated": 0
+    },
+    "startups": {
+      "posts_analyzed": 5,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "smallbusiness": {
+      "posts_analyzed": 5,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "freelance": {
+      "posts_analyzed": 5,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "SaaS": {
+      "posts_analyzed": 5,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "business": {
+      "posts_analyzed": 5,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "marketing": {
+      "posts_analyzed": 5,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "webdev": {
+      "posts_analyzed": 5,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "productivity": {
+      "posts_analyzed": 5,
+      "pain_points_found": 3,
+      "opportunities_generated": 3,
+      "concepts_generated": 0
+    },
+    "indiehackers": {
+      "posts_analyzed": 5,
+      "pain_points_found": 3,
+      "opportunities_generated": 3,
+      "concepts_generated": 0
+    },
+    "Entrepreneur": {
+      "posts_analyzed": 5,
+      "pain_points_found": 3,
+      "opportunities_generated": 3,
+      "concepts_generated": 0
+    },
+    "sales": {
+      "posts_analyzed": 5,
+      "pain_points_found": 1,
+      "opportunities_generated": 1,
+      "concepts_generated": 0
+    },
+    "ecommerce": {
+      "posts_analyzed": 5,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "consulting": {
+      "posts_analyzed": 5,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "remotework": {
+      "posts_analyzed": 5,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    }
+  },
+  "business_ideas": [
+    {
+      "idea_title": "Solution: You have no excuse not to build somethin...",
+      "problem_statement": "You have no excuse not to build something",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "entrepreneur",
+      "confidence_score": 3,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Marketing Solution: Before You Hire Another \"Marketing\" Agen...",
+      "problem_statement": "Before You Hire Another \"Marketing\" Agency, Read This. Stop Wasting Money!",
+      "business_model": "SaaS",
+      "target_market": "Marketing",
+      "revenue_potential": "Medium",
+      "source_subreddit": "entrepreneur",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Created a Knowledge Hub for Founders...",
+      "problem_statement": "Created a Knowledge Hub for Founders",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "entrepreneur",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: You have no excuse not to build something......",
+      "problem_statement": "You have no excuse not to build something...",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "entrepreneur",
+      "confidence_score": 5,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Created a Knowledge Hub for Founders......",
+      "problem_statement": "Created a Knowledge Hub for Founders...",
+      "business_model": "SaaS",
+      "target_market": "general",
+      "revenue_potential": "medium",
+      "source_subreddit": "entrepreneur",
+      "confidence_score": 2,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Before You Hire Another \"Marketing\" Agency, Read T...",
+      "problem_statement": "Before You Hire Another \"Marketing\" Agency, Read T...",
+      "business_model": "SaaS",
+      "target_market": "marketing",
+      "revenue_potential": "medium",
+      "source_subreddit": "entrepreneur",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Marketing Solution: Marketing strategies for Startups - I wi...",
+      "problem_statement": "Marketing strategies for Startups - I will not promote",
+      "business_model": "SaaS",
+      "target_market": "Marketing",
+      "revenue_potential": "Medium",
+      "source_subreddit": "startups",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Experience with this Chinese manufacture...",
+      "problem_statement": "Experience with this Chinese manufacturer (i will not promote)",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "startups",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: Marketing strategies for Startups - I will not pro...",
+      "problem_statement": "Marketing strategies for Startups - I will not pro...",
+      "business_model": "SaaS",
+      "target_market": "marketing",
+      "revenue_potential": "medium",
+      "source_subreddit": "startups",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Experience with this Chinese manufacturer (i will ...",
+      "problem_statement": "Experience with this Chinese manufacturer (i will ...",
+      "business_model": "SaaS",
+      "target_market": "general",
+      "revenue_potential": "medium",
+      "source_subreddit": "startups",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Freelancer Tool: Freelance Journey\u2019s Mistake: Being Greed...",
+      "problem_statement": "Freelance Journey\u2019s Mistake: Being Greedy.",
+      "business_model": "SaaS",
+      "target_market": "Freelancers",
+      "revenue_potential": "Medium",
+      "source_subreddit": "freelance",
+      "confidence_score": 6,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: I filed a legal claim after being unpaid...",
+      "problem_statement": "I filed a legal claim after being unpaid for work I completed \u2014 and I\u2019m done staying silent about how women in creative roles are treated.",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "freelance",
+      "confidence_score": 10,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: Freelance Journey\u2019s Mistake: Being Greedy.......",
+      "problem_statement": "Freelance Journey\u2019s Mistake: Being Greedy....",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "freelance",
+      "confidence_score": 10,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: I filed a legal claim after being unpaid for work ...",
+      "problem_statement": "I filed a legal claim after being unpaid for work ...",
+      "business_model": "SaaS",
+      "target_market": "legal",
+      "revenue_potential": "medium",
+      "source_subreddit": "freelance",
+      "confidence_score": 10,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: Built an AI tool that finds + fixes unde...",
+      "problem_statement": "Built an AI tool that finds + fixes underperforming emails- would love your honest feedback before launching",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "SaaS",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: What\u2019s your experience with finding co f...",
+      "problem_statement": "What\u2019s your experience with finding co founders",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "SaaS",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: What\u2019s your experience with finding co founders......",
+      "problem_statement": "What\u2019s your experience with finding co founders...",
+      "business_model": "SaaS",
+      "target_market": "general",
+      "revenue_potential": "medium",
+      "source_subreddit": "SaaS",
+      "confidence_score": 2,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Built an AI tool that finds + fixes underperformin...",
+      "problem_statement": "Built an AI tool that finds + fixes underperformin...",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "SaaS",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Marketing Solution: Guys this is marketing subreddit, I need...",
+      "problem_statement": "Guys this is marketing subreddit, I need advice on how to market a website specialised in leads generation",
+      "business_model": "SaaS",
+      "target_market": "Marketing",
+      "revenue_potential": "Medium",
+      "source_subreddit": "marketing",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Job posting: Looking for a marketer...",
+      "problem_statement": "Job posting: Looking for a marketer",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "marketing",
+      "confidence_score": 3,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: Job posting: Looking for a marketer......",
+      "problem_statement": "Job posting: Looking for a marketer...",
+      "business_model": "SaaS",
+      "target_market": "marketing",
+      "revenue_potential": "medium",
+      "source_subreddit": "marketing",
+      "confidence_score": 5,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Guys this is marketing subreddit, I need advice on...",
+      "problem_statement": "Guys this is marketing subreddit, I need advice on...",
+      "business_model": "SaaS",
+      "target_market": "marketing",
+      "revenue_potential": "medium",
+      "source_subreddit": "marketing",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: How are you using AI in your web dev wor...",
+      "problem_statement": "How are you using AI in your web dev workflow (if at all)?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "webdev",
+      "confidence_score": 2,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Do I own my own website, or does my comp...",
+      "problem_statement": "Do I own my own website, or does my company?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "webdev",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: How are you using AI in your web dev workflow (if ...",
+      "problem_statement": "How are you using AI in your web dev workflow (if ...",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "webdev",
+      "confidence_score": 4,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Do I own my own website, or does my company?......",
+      "problem_statement": "Do I own my own website, or does my company?...",
+      "business_model": "SaaS",
+      "target_market": "marketing",
+      "revenue_potential": "medium",
+      "source_subreddit": "webdev",
+      "confidence_score": 2,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: Getting good studying results but I\u2019m ve...",
+      "problem_statement": "Getting good studying results but I\u2019m very inefficient",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "productivity",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Best free or cheap online tool or applet...",
+      "problem_statement": "Best free or cheap online tool or applet to see multiple people\u2019s availability?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "productivity",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Does reflective journaling actually help...",
+      "problem_statement": "Does reflective journaling actually help with learning?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "productivity",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: Getting good studying results but I\u2019m very ineffic...",
+      "problem_statement": "Getting good studying results but I\u2019m very ineffic...",
+      "business_model": "SaaS",
+      "target_market": "legal",
+      "revenue_potential": "medium",
+      "source_subreddit": "productivity",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Best free or cheap online tool or applet to see mu...",
+      "problem_statement": "Best free or cheap online tool or applet to see mu...",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "productivity",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Does reflective journaling actually help with lear...",
+      "problem_statement": "Does reflective journaling actually help with lear...",
+      "business_model": "SaaS",
+      "target_market": "education",
+      "revenue_potential": "medium",
+      "source_subreddit": "productivity",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: I made guacamole-cli: a simple to-do lis...",
+      "problem_statement": "I made guacamole-cli: a simple to-do list that sets your wallpaper! \ud83e\udd51",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "indiehackers",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Solo/lean SaaS founders \u2014 how do you kee...",
+      "problem_statement": "Solo/lean SaaS founders \u2014 how do you keep users from quietly slipping away?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "indiehackers",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Day 01: Decoding How Proofy Went from In...",
+      "problem_statement": "Day 01: Decoding How Proofy Went from Invisible to Winning in SEO",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "indiehackers",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: I made guacamole-cli: a simple to-do list that set...",
+      "problem_statement": "I made guacamole-cli: a simple to-do list that set...",
+      "business_model": "SaaS",
+      "target_market": "general",
+      "revenue_potential": "medium",
+      "source_subreddit": "indiehackers",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Solo/lean SaaS founders \u2014 how do you keep users fr...",
+      "problem_statement": "Solo/lean SaaS founders \u2014 how do you keep users fr...",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "indiehackers",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Day 01: Decoding How Proofy Went from Invisible to...",
+      "problem_statement": "Day 01: Decoding How Proofy Went from Invisible to...",
+      "business_model": "SaaS",
+      "target_market": "marketing",
+      "revenue_potential": "medium",
+      "source_subreddit": "indiehackers",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: You have no excuse not to build somethin...",
+      "problem_statement": "You have no excuse not to build something",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "Entrepreneur",
+      "confidence_score": 3,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Marketing Solution: Before You Hire Another \"Marketing\" Agen...",
+      "problem_statement": "Before You Hire Another \"Marketing\" Agency, Read This. Stop Wasting Money!",
+      "business_model": "SaaS",
+      "target_market": "Marketing",
+      "revenue_potential": "Medium",
+      "source_subreddit": "Entrepreneur",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Created a Knowledge Hub for Founders...",
+      "problem_statement": "Created a Knowledge Hub for Founders",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "Entrepreneur",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: You have no excuse not to build something......",
+      "problem_statement": "You have no excuse not to build something...",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "Entrepreneur",
+      "confidence_score": 5,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Created a Knowledge Hub for Founders......",
+      "problem_statement": "Created a Knowledge Hub for Founders...",
+      "business_model": "SaaS",
+      "target_market": "general",
+      "revenue_potential": "medium",
+      "source_subreddit": "Entrepreneur",
+      "confidence_score": 2,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Before You Hire Another \"Marketing\" Agency, Read T...",
+      "problem_statement": "Before You Hire Another \"Marketing\" Agency, Read T...",
+      "business_model": "SaaS",
+      "target_market": "marketing",
+      "revenue_potential": "medium",
+      "source_subreddit": "Entrepreneur",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: Signed a new offer for more $$, but now ...",
+      "problem_statement": "Signed a new offer for more $$, but now my current company wants to invest in me, did I jump too soon?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "sales",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: Signed a new offer for more $$, but now my current...",
+      "problem_statement": "Signed a new offer for more $$, but now my current...",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "sales",
+      "confidence_score": 3,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: Practical AI for E-commerce: Real Value,...",
+      "problem_statement": "Practical AI for E-commerce: Real Value, No Hype",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "ecommerce",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Product Labels are Legally Required for ...",
+      "problem_statement": "Product Labels are Legally Required for These 4 Things (Don\u2019t Overlook #3)",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "ecommerce",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: Practical AI for E-commerce: Real Value, No Hype.....",
+      "problem_statement": "Practical AI for E-commerce: Real Value, No Hype...",
+      "business_model": "SaaS",
+      "target_market": "software",
+      "revenue_potential": "medium",
+      "source_subreddit": "ecommerce",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Product Labels are Legally Required for These 4 Th...",
+      "problem_statement": "Product Labels are Legally Required for These 4 Th...",
+      "business_model": "SaaS",
+      "target_market": "legal",
+      "revenue_potential": "medium",
+      "source_subreddit": "ecommerce",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: Stalling out at Deloitte\u2014Should I pivot ...",
+      "problem_statement": "Stalling out at Deloitte\u2014Should I pivot with an MBA, certifications, or something else?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "consulting",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Founder/Consultants...",
+      "problem_statement": "Founder/Consultants",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "consulting",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: Founder/Consultants......",
+      "problem_statement": "Founder/Consultants...",
+      "business_model": "SaaS",
+      "target_market": "hr",
+      "revenue_potential": "medium",
+      "source_subreddit": "consulting",
+      "confidence_score": 2,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: Stalling out at Deloitte\u2014Should I pivot with an MB...",
+      "problem_statement": "Stalling out at Deloitte\u2014Should I pivot with an MB...",
+      "business_model": "SaaS",
+      "target_market": "finance",
+      "revenue_potential": "medium",
+      "source_subreddit": "consulting",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution: Looking for experienced closers (remote)...",
+      "problem_statement": "Looking for experienced closers (remote)(USA only)",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "remotework",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: How do you make virtual meetings feel mo...",
+      "problem_statement": "How do you make virtual meetings feel more personal and less robotic?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "remotework",
+      "confidence_score": 1,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution for: Looking for experienced closers (remote)(USA only)...",
+      "problem_statement": "Looking for experienced closers (remote)(USA only)...",
+      "business_model": "SaaS",
+      "target_market": "general",
+      "revenue_potential": "medium",
+      "source_subreddit": "remotework",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    },
+    {
+      "idea_title": "Solution for: How do you make virtual meetings feel more persona...",
+      "problem_statement": "How do you make virtual meetings feel more persona...",
+      "business_model": "SaaS",
+      "target_market": "general",
+      "revenue_potential": "medium",
+      "source_subreddit": "remotework",
+      "confidence_score": 1,
+      "discovery_method": "opportunity_extraction"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "You have no excuse not to build something",
+      "description": "Thanks to ChatGPT, I've spent the last five days hacking together about 19-20% of what will be an extraordinarily complex, data-driven travel website (imagine Expedia + TripAdvisor. Normally, building something at this scale would cost tens to hundreds of thousands of dollars in dev time or require a full-blown engineering team. I tried this back in 2018 and gave up. But this time?\n\nIn 4 days I have a half-functional front-end that handles \n\n* Searches, filters, and dynamic results. \n* A backend...",
+      "source": "r/entrepreneur",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1l4bzep/you_have_no_excuse_not_to_build_something/",
+      "industry": "software",
+      "pain_indicators": [
+        "automated",
+        "scale"
+      ],
+      "engagement_score": 16,
+      "discovered_at": "2025-06-06T00:27:39.013833",
+      "reddit_metrics": {
+        "score": 9,
+        "upvote_ratio": 0.91,
+        "num_comments": 7,
+        "author": "T-rex_smallhands",
+        "created_utc": 1749160919.0
+      },
+      "selftext": "Thanks to ChatGPT, I've spent the last five days hacking together about 19-20% of what will be an extraordinarily complex, data-driven travel website (imagine Expedia + TripAdvisor. Normally, building something at this scale would cost tens to hundreds of thousands of dollars in dev time or require a full-blown engineering team. I tried this back in 2018 and gave up. But this time?\n\nIn 4 days I have a half-functional front-end that handles \n\n* Searches, filters, and dynamic results. \n* A backend that stores structured data, serves APIs, and handles authentication. \n* An automated data pipeline feeding real-world content into the system. \n* The foundation for AI-driven features like review summarization and itinerary planning. \n\nAnd I'm doing it all for the hefty rate of $20/month for premium ChatGPT. So anything thinking they can't start a company because they can't build something - get off your ass and start! :)",
+      "business_potential": "medium",
+      "score": 3,
+      "num_comments": 7,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "automated",
+        "scale"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "entrepreneur"
+    },
+    {
+      "title": "Before You Hire Another \"Marketing\" Agency, Read This. Stop Wasting Money!",
+      "description": "Over the last decade, I\u2019ve seen a pattern repeat itself across dozens of companies: businesses hire a marketing agency expecting results, only to walk away disappointed months later.\n\nThe usual assumption? The agency wasn\u2019t good enough.  \nThe more likely reality? The agency wasn\u2019t the right fit for the job.\n\nMost agencies are really good at a few specific things maybe SEO, paid ads, or content. But many businesses bring them on expecting them to handle everything: branding, strategy, lead gen, o...",
+      "source": "r/entrepreneur",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1l4b34h/before_you_hire_another_marketing_agency_read/",
+      "industry": "marketing",
+      "pain_indicators": [
+        "automation",
+        "growth"
+      ],
+      "engagement_score": 3,
+      "discovered_at": "2025-06-06T00:27:39.013833",
+      "reddit_metrics": {
+        "score": 0,
+        "upvote_ratio": 0.5,
+        "num_comments": 3,
+        "author": "willkode",
+        "created_utc": 1749158672.0
+      },
+      "selftext": "Over the last decade, I\u2019ve seen a pattern repeat itself across dozens of companies: businesses hire a marketing agency expecting results, only to walk away disappointed months later.\n\nThe usual assumption? The agency wasn\u2019t good enough.  \nThe more likely reality? The agency wasn\u2019t the right fit for the job.\n\nMost agencies are really good at a few specific things maybe SEO, paid ads, or content. But many businesses bring them on expecting them to handle everything: branding, strategy, lead gen, organic growth, social, email, automation the list goes on.\n\nThis often leads to:\n\n* Overextended teams delivering generic work\n* Strategy being built *after* execution begins\n* Multiple marketing channels being mismanaged by one team\n* Agencies getting blamed for results they were never built to deliver\n\nAnd that\u2019s where the disconnect happens.\n\nAgencies aren\u2019t meant to replace marketing leadership.  \nThey\u2019re meant to execute on a plan.\n\nBut without a clear strategy in place and someone on the client side guiding that vision, you end up with:\n\n* Pretty deliverables that don\u2019t move the needle\n* Burned budgets trying to \u201cfix\u201d bad campaigns\n* And months of lost momentum\n\n**What\u2019s the fix?**  \nIt starts with better decision-making before the agency is hired.\n\nThat means understanding which channels are right for your business, what success should actually look like, and choosing execution partners based on those insights not just portfolio or pitch.\n\nMarketing isn\u2019t a one-size-fits-all operation. It never has been.\n\nHappy to answer any questions on marketing, and how to hire the right agency. Or hear some horror stories and how you overcame a bad hire.  P.S: I'm not a marketing agency!!!",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 3,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "automation",
+        "growth"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "entrepreneur"
+    },
+    {
+      "title": "Created a Knowledge Hub for Founders",
+      "description": "Hey all! \n\nI'm trying to be as genuine as possible in this sea of Karma farming, \"my project makes me 20k a month on accident\", and Chatgpt written posts. \n\nA few weeks ago, I posted on reddit to get feedback on my Startup consulting idea. It was pretty simple, for early to mid stage startups with the usual issues of scaling, defining and standardizing. Well, I got some pretty amazing input and decided to reshift a bit. \nI'm now somewhat proud to present the first s eak peak of my evolved idea: ...",
+      "source": "r/entrepreneur",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1l48y8m/created_a_knowledge_hub_for_founders/",
+      "industry": "general",
+      "pain_indicators": [
+        "scaling",
+        "scaling"
+      ],
+      "engagement_score": 6,
+      "discovered_at": "2025-06-06T00:27:39.013833",
+      "reddit_metrics": {
+        "score": 3,
+        "upvote_ratio": 1.0,
+        "num_comments": 3,
+        "author": "trianglefor2",
+        "created_utc": 1749153478.0
+      },
+      "selftext": "Hey all! \n\nI'm trying to be as genuine as possible in this sea of Karma farming, \"my project makes me 20k a month on accident\", and Chatgpt written posts. \n\nA few weeks ago, I posted on reddit to get feedback on my Startup consulting idea. It was pretty simple, for early to mid stage startups with the usual issues of scaling, defining and standardizing. Well, I got some pretty amazing input and decided to reshift a bit. \nI'm now somewhat proud to present the first s eak peak of my evolved idea: a Startup Resource Hub. \n\nInstead of browsing the Internet for countles hours, watching entrepreneurship videos, reading blog articles and subscribing to startup newsletters, I've build \"The Sneaker Ceo\". \n\nThe idea behind it is super basic. I'm trying to compile my 10+ years as a founder (both good and bad), mentor and MVP tester of over 40 Startups in the US, LATAM and EU area, and dumping everything into my website. \n\nMy idea is to provide weekly ebooks (self written, not prompted), share youtube videos that actually make sense, Book reviews that actually help (I guess we are all sick and tired of \"How to win friends and ...), as well as templates for structuring and scaling that I have either used myself or created with Founders along the way.  Maybe a newsletter as well, but I have no experience if those are even a thing anymore and I honestly don't want to create clutter and/or spam.\n\nI would really appreciate it if you could give me feedback on that idea, the overall feel of the landing page and it's contents. I'm providing you with I think around 50 pages worth of information (1 Ebook free, 2 after sign up), tear it to shreds, tell me that I don't have a business case or that there is no need for it, whatever you say will help more than you think. \n\nThank you! ",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 3,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "scaling",
+        "scaling"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "entrepreneur"
+    },
+    {
+      "title": "Marketing strategies for Startups - I will not promote",
+      "description": "I am relatively new to the startup world and am looking for marketing tips. As a solo founder it seems like a lot of work to try and find PMF, build out app, and simultaneously market. Has anyone else been in a similar scenario to me and have good advice to share? It also seems like a lot of work to stay actice on all channels (X, Reddit, Facebook, Tiktok etc.). Has anyone tried any of the semi-famous AI marketing tools like Buffer, Hootsuite, FeedHive, Jasper, etc. and are they any good for sma...",
+      "source": "r/startups",
+      "url": "https://reddit.com/r/startups/comments/1l4akwe/marketing_strategies_for_startups_i_will_not/",
+      "industry": "marketing",
+      "pain_indicators": [
+        "expensive"
+      ],
+      "engagement_score": 4,
+      "discovered_at": "2025-06-06T00:27:40.119324",
+      "reddit_metrics": {
+        "score": 2,
+        "upvote_ratio": 1.0,
+        "num_comments": 2,
+        "author": "OddCricket9832",
+        "created_utc": 1749157447.0
+      },
+      "selftext": "I am relatively new to the startup world and am looking for marketing tips. As a solo founder it seems like a lot of work to try and find PMF, build out app, and simultaneously market. Has anyone else been in a similar scenario to me and have good advice to share? It also seems like a lot of work to stay actice on all channels (X, Reddit, Facebook, Tiktok etc.). Has anyone tried any of the semi-famous AI marketing tools like Buffer, Hootsuite, FeedHive, Jasper, etc. and are they any good for small startups like myself (they all seem very expensive)?\n\nAny tips are appreciated!",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 2,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "expensive"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "startups"
+    },
+    {
+      "title": "Experience with this Chinese manufacturer (i will not promote)",
+      "description": "I am creating a swimwear startup and need a top quality manufacturer. I have found one in China that seems to fit all my criteria:\n\nWisrise (Dongguan City, Guangdong Province)\n\nDoes anyone have any experience with this company? If not, is there anything I should look for or ask before proceeding (ie. anything to ask them when conversing or make sure to verify)?\n\nDue to limited startup costs I am unable to visit the factory, so any feedback would be greatly appreciated.\n\n\"i will not promote\"",
+      "source": "r/startups",
+      "url": "https://reddit.com/r/startups/comments/1l46iw6/experience_with_this_chinese_manufacturer_i_will/",
+      "industry": "general",
+      "pain_indicators": [
+        "limited"
+      ],
+      "engagement_score": 3,
+      "discovered_at": "2025-06-06T00:27:40.119324",
+      "reddit_metrics": {
+        "score": 0,
+        "upvote_ratio": 0.5,
+        "num_comments": 3,
+        "author": "smurfette_042",
+        "created_utc": 1749147668.0
+      },
+      "selftext": "I am creating a swimwear startup and need a top quality manufacturer. I have found one in China that seems to fit all my criteria:\n\nWisrise (Dongguan City, Guangdong Province)\n\nDoes anyone have any experience with this company? If not, is there anything I should look for or ask before proceeding (ie. anything to ask them when conversing or make sure to verify)?\n\nDue to limited startup costs I am unable to visit the factory, so any feedback would be greatly appreciated.\n\n\"i will not promote\"",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 3,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "limited"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "startups"
+    },
+    {
+      "title": "Freelance Journey\u2019s Mistake: Being Greedy.",
+      "description": "4 months ago i applied for a freelance project for an NGO. I was selected for interview, we went over the project details and later i sent quotation. i asked for 10K usd and through mail negotiation we agreed on 6K. \n\nThe project was to recreate all the illustrations for 4 different school subjects from grade 5 to 9. Almost around 40 units for each class. Along with pages templates for each subject.\n\nLong story short, the job duration was 3 months, they had a library of pre existing illustration...",
+      "source": "r/freelance",
+      "url": "https://reddit.com/r/freelance/comments/1l31z3s/freelance_journeys_mistake_being_greedy/",
+      "industry": "software",
+      "pain_indicators": [
+        "expanding"
+      ],
+      "engagement_score": 30,
+      "discovered_at": "2025-06-06T00:27:42.780848",
+      "reddit_metrics": {
+        "score": 22,
+        "upvote_ratio": 1.0,
+        "num_comments": 8,
+        "author": "doner_shawerma",
+        "created_utc": 1749032434.0
+      },
+      "selftext": "4 months ago i applied for a freelance project for an NGO. I was selected for interview, we went over the project details and later i sent quotation. i asked for 10K usd and through mail negotiation we agreed on 6K. \n\nThe project was to recreate all the illustrations for 4 different school subjects from grade 5 to 9. Almost around 40 units for each class. Along with pages templates for each subject.\n\nLong story short, the job duration was 3 months, they had a library of pre existing illustrations i had to puzzle to make the illustration needed, translate and do graphic design work, adapted to the branding style, i had to illustrate many things from scratch, google for hours for non AI generated copyright free images\u2026.\n\nIt was hell of project and they were happy I managed to finish on time, even before the deadline (rip my neck) and uploaded the files on their drive, as well as my communication with the teachers, creative coordinator was clear and on the point. They were happy.\n\nAlthough the payment was 2 months delayed due to International restrictions, i got payed eventually. \n\n2 weeks ago, I received a proposal for another project with another project manager within the same NGO. \nI had to ask him about the details and he said he needed a illustration consultant and he needs six illustrations over the four month period of the project . \n\nhe asked for my quote now my only mistake is I researched the project who\u2019s funding it, found its a generous grant. I quoted 1,600 USD flat fee.\n\nAnd since I\u2019m a consultant, not a freelancer typically I will have to start from conceptualizing from zero and with my fair judgement. Not given a task to do 1 2 3\n\nI emailed him a follow up email yesterday, and today he emailed me that they selected another candidate. They are still impressed with my work and they will keep coordinating for future project and blah blah blah blah.. \n\nI guess what is hurting less is they approached me, not i applied to them again. And my mistake ig is sending a flat fee rate without further asking for details about the illustrations themselves. Instead i researched the market standards price.\n\nAnd what hurts is perhaps not getting any more proposals from them. Especially when their projects are expanding.\n\nAnd i am a self taught artist, i do value my work and myself\u2026 1600 is reasonable for a grant project, over 4 months period\u2026 according to internet\u2026. And according to the sound in my head i might\u2019ve been a bit greedy.\n\nFrom now on quotation is a conversation. \nAsk for details, budgets, send detailed breakdown of the fees. ",
+      "business_potential": "medium",
+      "score": 6,
+      "num_comments": 8,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "expanding"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "freelance"
+    },
+    {
+      "title": "I filed a legal claim after being unpaid for work I completed \u2014 and I\u2019m done staying silent about how women in creative roles are treated.",
+      "description": "This is a bit of a long story, but here\u2019s the short version:\n\nI\u2019m a creative professional (designer, strategist, art director) with 20+ years of experience. I was hired (by a friend of 25 years) last year by a mid-size company in the film and television production industry to manage their internal and external art direction, branding and design. I delivered a ton of new assets \u2026 including photography, rate cards, catalog layouts, spec sheets, logos\u2014 the calibre of work that makes a business look...",
+      "source": "r/freelance",
+      "url": "https://reddit.com/r/freelance/comments/1l1vhwi/i_filed_a_legal_claim_after_being_unpaid_for_work/",
+      "industry": "legal",
+      "pain_indicators": [
+        "process"
+      ],
+      "engagement_score": 237,
+      "discovered_at": "2025-06-06T00:27:42.780848",
+      "reddit_metrics": {
+        "score": 153,
+        "upvote_ratio": 0.9,
+        "num_comments": 84,
+        "author": "TruthseekerTO",
+        "created_utc": 1748902750.0
+      },
+      "selftext": "This is a bit of a long story, but here\u2019s the short version:\n\nI\u2019m a creative professional (designer, strategist, art director) with 20+ years of experience. I was hired (by a friend of 25 years) last year by a mid-size company in the film and television production industry to manage their internal and external art direction, branding and design. I delivered a ton of new assets \u2026 including photography, rate cards, catalog layouts, spec sheets, logos\u2014 the calibre of work that makes a business look polished and credible. It took almost a year to put all this together from scratch. \n\nEverything was submitted. Everything was used.\n\nBut when I submitted my final invoice, the owner refused to pay unless I handed over all my working files. Files that were never part of the agreement, never needed \u2026 until after they replaced me with a new agency. They wanted everything so they could pass it on. No license agreement. No compensation. No acknowledgement of scope creep or value.\n\nInstead of paying, they stalled. Dismissed my emails. Tried to bully me into silence and extort my original working files with vehement refusal to pay my invoice. I was told I was grossly overcharging for my time and the work completed was not approved. They were trying to rewrite the narrative of this story to excuse the bad behaviour demonstrated at my expense. \n\nI filed a Small Claims Court case.\n\nAnd I want to say this \u2014 because I know a lot of women here will understand:\n\nWe get praised when we\u2019re agreeable, fast, and \u201cteam players.\u201d\nBut when we draw a line professionally, legally and with boundaries \u2014 suddenly we\u2019re \u201chard to work with.\u201d\n\nWell, I\u2019ve stopped worrying about being palatable. And I know the calibre of my work is excellent. \n\nI\u2019m not sharing this for revenge.\nI\u2019m sharing it because:\n\n1) Too many professional women in freelance, contract or creative roles are exploited by disorganized and/or male-dominated team. \n\n2) We\u2019re expected to deliver premium work \u2014 and in return get ghosted or gaslit.\n\n3) We\u2019re supposed to be \u201cgrateful\u201d instead of being compensated.\n\nNo more.\n\nDocument your work. Stand up for your rates. File when you have to.\nSilence is what they\u2019re counting on. And it\u2019s the one thing I\u2019m no longer offering.\n\nI\u2019m still in the middle of the claim process, but I already know I did the right thing. And I hope if someone here needs the push to do the same \u2014 you take this as your sign.\n\nYou and your work are worth so much more than you will be acknowledged for \u2014 or paid for. ",
+      "business_potential": "medium",
+      "score": 10,
+      "num_comments": 84,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "process"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "freelance"
+    },
+    {
+      "title": "Built an AI tool that finds + fixes underperforming emails- would love your honest feedback before launching",
+      "description": "Hey all, \n\nOver the past few months I\u2019ve been building a small AI tool designed to help email marketers figure out why their campaigns aren\u2019t converting (and how to fix them).\n\nNot just a \u201crewrite this email\u201d tool.\nIt gives you insight \u2192 strategic fix \u2192 forecasted uplift.\n\nWhy this exists:\n\nI used to waste hours reviewing campaign metrics and trying to guess what caused poor CTR or reply rates.\n\nThis tool scans your email + performance data and tells you:\n\n\u2013 What\u2019s underperforming (subject line?...",
+      "source": "r/SaaS",
+      "url": "https://reddit.com/r/SaaS/comments/1l4cbgw/built_an_ai_tool_that_finds_fixes_underperforming/",
+      "industry": "software",
+      "pain_indicators": [
+        "confusing"
+      ],
+      "engagement_score": 1,
+      "discovered_at": "2025-06-06T00:27:43.866555",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 0,
+        "author": "Exotic-Woodpecker205",
+        "created_utc": 1749161806.0
+      },
+      "selftext": "Hey all, \n\nOver the past few months I\u2019ve been building a small AI tool designed to help email marketers figure out why their campaigns aren\u2019t converting (and how to fix them).\n\nNot just a \u201crewrite this email\u201d tool.\nIt gives you insight \u2192 strategic fix \u2192 forecasted uplift.\n\nWhy this exists:\n\nI used to waste hours reviewing campaign metrics and trying to guess what caused poor CTR or reply rates.\n\nThis tool scans your email + performance data and tells you:\n\n\u2013 What\u2019s underperforming (subject line? CTA? structure?)\n\u2013 How to fix it using proven frameworks\n\u2013 What kind of uplift you might expect (based on real data)\n\nIt\u2019s designed for in-house CRM marketers or agency teams working with non-eCommerce B2C brands (like fintech, SaaS, etc), especially those using Klaviyo or similar ESPs.\n\nHow it works (3-minute flow):\n\n1. You answer 5\u20137 quick prompts:\n- What\u2019s the goal of this email? (e.g. fix onboarding email, improve newsletter)\n- Paste subject line + body + CTA\n- Add open/click/convert rates (optional and helps accuracy)\n\n2. The AI analyses your inputs:\n- Spots the weak points (e.g. \u201cCTA buried, no urgency\u201d)\n- Recommends a fix (e.g. \u201cReframe copy using PAS\u201d)\n- Forecasts the potential uplift (e.g. \u201c+\u00a3210/month\u201d)\n- Explains why that fix works (with evidence or examples)\n\n3. You can then request a second suggestion, or scan another campaign.\n\nIt takes &lt;5 mins per report.\n\n\u2705 Real example output (onboarding email with poor CTR):\n\nInput:\n- Subject: \u201cWelcome to smarter saving\u201d\n- CTR: 2.1%\n- Goal: Increase engagement in onboarding Step 2\n\nAI Output:\n\nFix Suggestion: Use PAS framework to restructure body:\n\u2013 Problem: \u201cSaving feels impossible when you\u2019re doing it alone.\u201d\n\u2013 Agitate: \u201cMost people only save \u00a350/month without a system.\u201d\n\u2013 Solution: \u201cOur auto-save tools help users save \u00a3250/month.\u201d\nCTA stays the same, but body builds more tension \u2192 solution\n\n\ud83d\udcc8 Forecasted uplift: +\u00a3180\u2013\u00a3320/month\n\ud83d\udca1 Why this works: Based on historical CTR lift (15\u201325%) when emotion-based copy is layered over features in onboarding flows\n\nWhat I\u2019d love your input on:\n\n1. Would you (or your team) actually use something like this? Why or why not?\n\n2. Does the flow feel confusing or annoying based on what you\u2019ve seen?\n\n3. Does the fix output feel useful \u2014 or still too surface-level?\n\n4. What would make this actually trustworthy and usable to you?\n\n5. Is anything missing that you\u2019d expect from a tool like this?\n\nI\u2019d seriously appreciate any feedback and especially from people managing real email performance. I don\u2019t want to ship something that sounds good but gets ignored in practice.\n\nP.S. If you\u2019d be up for trying it and getting a custom report on one of your emails - just drop a DM.\n\nNot selling anything, just gathering smart feedback before pushing this out more widely.\n\nThanks in advance ",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 0,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "confusing"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "SaaS"
+    },
+    {
+      "title": "What\u2019s your experience with finding co founders",
+      "description": "Hi everyone, I\u2019ve been working on a product for a while now, and I\u2019ve made some decent progress especially compared to where I was when I started, I\u2019m almost done with the core features of what I believe will make for a decent (maybe over featured) MVP, however I think I\u2019m taking too much time building this, and I\u2019m starting to think that a co founder (hopefully someone smarter than me) could really help speed things up, especially since I\u2019m just refining features I\u2019ve already worked on\n\nThe cur...",
+      "source": "r/SaaS",
+      "url": "https://reddit.com/r/SaaS/comments/1l4c2ax/whats_your_experience_with_finding_co_founders/",
+      "industry": "general",
+      "pain_indicators": [
+        "speed"
+      ],
+      "engagement_score": 6,
+      "discovered_at": "2025-06-06T00:27:43.866555",
+      "reddit_metrics": {
+        "score": 2,
+        "upvote_ratio": 1.0,
+        "num_comments": 4,
+        "author": "haroldobasi",
+        "created_utc": 1749161133.0
+      },
+      "selftext": "Hi everyone, I\u2019ve been working on a product for a while now, and I\u2019ve made some decent progress especially compared to where I was when I started, I\u2019m almost done with the core features of what I believe will make for a decent (maybe over featured) MVP, however I think I\u2019m taking too much time building this, and I\u2019m starting to think that a co founder (hopefully someone smarter than me) could really help speed things up, especially since I\u2019m just refining features I\u2019ve already worked on\n\nThe current reason I haven\u2019t done this yet is that in my (very little) startup experience, co founders only really work on an idea passionately if they are \n\n1. Getting paid\n2. Really really believe in the idea as much as the original founder \n\nEvery case I\u2019ve been exposed to so far that had a cofounder that didn\u2019t get the above, didn\u2019t take the project seriously enough and ended up just leaving \n\nOfc I could always just try and see how it goes, but I thought I\u2019d ask around here first and see the general sentiment around this kind of thing ",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 4,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "speed"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "SaaS"
+    },
+    {
+      "title": "Guys this is marketing subreddit, I need advice on how to market a website specialised in leads generation",
+      "description": "Guys this is marketing subreddit, I need advice on how to market a website specialised in leads generation, I have some selling points, like price, automation etc. And I am gonna add more and more things to it. Any advice?",
+      "source": "r/marketing",
+      "url": "https://reddit.com/r/marketing/comments/1l4b1y8/guys_this_is_marketing_subreddit_i_need_advice_on/",
+      "industry": "marketing",
+      "pain_indicators": [
+        "automation"
+      ],
+      "engagement_score": 3,
+      "discovered_at": "2025-06-06T00:27:46.257346",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 2,
+        "author": "No_Distribution7150",
+        "created_utc": 1749158593.0
+      },
+      "selftext": "Guys this is marketing subreddit, I need advice on how to market a website specialised in leads generation, I have some selling points, like price, automation etc. And I am gonna add more and more things to it. Any advice?",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 2,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "automation"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "marketing"
+    },
+    {
+      "title": "Job posting: Looking for a marketer",
+      "description": "\nRequirements (non-negotiable):\n\n- predict the future\n- never fail\n- deliver overnight results\n- run 12 campaigns at once\n- work miracles on a $0 budget\n- explain marketing to non-marketers daily\n- accept feedback from 6 execs with zero marketing experience\n\nCompensation:\n\n- exposure\n- a \u201cseat at the table\u201d \n- occasional company pizza\n\nSound familiar?\n\nThis is why marketers burn out.\nThis is why good strategy dies.\nThis is why marketing gets labeled as \u201cfluff.\u201d",
+      "source": "r/marketing",
+      "url": "https://reddit.com/r/marketing/comments/1l4ay3o/job_posting_looking_for_a_marketer/",
+      "industry": "marketing",
+      "pain_indicators": [
+        "budget"
+      ],
+      "engagement_score": 16,
+      "discovered_at": "2025-06-06T00:27:46.257346",
+      "reddit_metrics": {
+        "score": 11,
+        "upvote_ratio": 1.0,
+        "num_comments": 5,
+        "author": "hotimessga",
+        "created_utc": 1749158334.0
+      },
+      "selftext": "\nRequirements (non-negotiable):\n\n- predict the future\n- never fail\n- deliver overnight results\n- run 12 campaigns at once\n- work miracles on a $0 budget\n- explain marketing to non-marketers daily\n- accept feedback from 6 execs with zero marketing experience\n\nCompensation:\n\n- exposure\n- a \u201cseat at the table\u201d \n- occasional company pizza\n\nSound familiar?\n\nThis is why marketers burn out.\nThis is why good strategy dies.\nThis is why marketing gets labeled as \u201cfluff.\u201d",
+      "business_potential": "medium",
+      "score": 3,
+      "num_comments": 5,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "budget"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "marketing"
+    },
+    {
+      "title": "How are you using AI in your web dev workflow (if at all)?",
+      "description": "Hey, devs! How are you actually using AI in your everyday work? And do you use it at all? Curious to hear thoughts on AI from this community.\n\nLike, are you:\n\n* Using Copilot or ChatGPT to scaffold code or debug faster?\n* Automating routine backend/admin tasks?\n* Embedding AI into your apps (search, chat, or personalization)?\n\nI'm now experimenting with making it more like an autonomous partner, not just a code generator that waits for prompts.\n\nWould love to hear what you've tried or why you're...",
+      "source": "r/webdev",
+      "url": "https://reddit.com/r/webdev/comments/1l47wvi/how_are_you_using_ai_in_your_web_dev_workflow_if/",
+      "industry": "software",
+      "pain_indicators": [
+        "workflow",
+        "automating",
+        "faster"
+      ],
+      "engagement_score": 12,
+      "discovered_at": "2025-06-06T00:27:47.364069",
+      "reddit_metrics": {
+        "score": 0,
+        "upvote_ratio": 0.29,
+        "num_comments": 12,
+        "author": "Pavel_at_Nimbus",
+        "created_utc": 1749150953.0
+      },
+      "selftext": "Hey, devs! How are you actually using AI in your everyday work? And do you use it at all? Curious to hear thoughts on AI from this community.\n\nLike, are you:\n\n* Using Copilot or ChatGPT to scaffold code or debug faster?\n* Automating routine backend/admin tasks?\n* Embedding AI into your apps (search, chat, or personalization)?\n\nI'm now experimenting with making it more like an autonomous partner, not just a code generator that waits for prompts.\n\nWould love to hear what you've tried or why you're staying away for now.",
+      "business_potential": "medium",
+      "score": 2,
+      "num_comments": 12,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "workflow",
+        "automating",
+        "faster"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "webdev"
+    },
+    {
+      "title": "Do I own my own website, or does my company?",
+      "description": "15 years ago I made a website. Over the years that website has earned me advertising revenue. Initially that revenue went directly to me, eventually I incorporated a company and the advertising revenue began going to that company. I paid taxes on it, and took out dividends. That company was kind of an umbrella company that I used to provide freelancing services. I also set it up so that it paid for web hosting and domain registry for the website above, some client websites, and many other small ...",
+      "source": "r/webdev",
+      "url": "https://reddit.com/r/webdev/comments/1l47nry/do_i_own_my_own_website_or_does_my_company/",
+      "industry": "marketing",
+      "pain_indicators": [
+        "process"
+      ],
+      "engagement_score": 8,
+      "discovered_at": "2025-06-06T00:27:47.364069",
+      "reddit_metrics": {
+        "score": 0,
+        "upvote_ratio": 0.3,
+        "num_comments": 8,
+        "author": "spar_x",
+        "created_utc": 1749150349.0
+      },
+      "selftext": "15 years ago I made a website. Over the years that website has earned me advertising revenue. Initially that revenue went directly to me, eventually I incorporated a company and the advertising revenue began going to that company. I paid taxes on it, and took out dividends. That company was kind of an umbrella company that I used to provide freelancing services. I also set it up so that it paid for web hosting and domain registry for the website above, some client websites, and many other small side-projects I built. I continued to work and develop the website over the years, I must have spent a thousand hours developing it personally. I never got paid for all these hours, and I never formally transferred ownership of the website in question, or any other website for that matter, to that company.  That company by the way has always been wholly mine as its sole owner.\n\nNone of the brands or websites were ever listed as assets of the company. The company, my company, has essentially been paying for web hosting and domain registry, and benefit from advertising revenue. I am now in the process of dissolving that company and I am not doing any sale or transfer of assets because in my opinion, the company does not own any assets. 95% of its revenue came from my freelancing services, unrelated to the website I'm asking about.\n\nSomeone is now interested in possibly purchasing that website from me. And so that's why I am now, for the first time, asking this rhetorical question.. who owns my website? I think it's pretty clear cut that it's me personally, but I wanted to ask for a second opinion.\n\nThanks!",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 8,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "process"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "webdev"
+    },
+    {
+      "title": "Getting good studying results but I\u2019m very inefficient",
+      "description": "So I have a Law exam (so I need lots of repetition) in just short of 20 days and 200 pages left so it's pretty manageable and my average pages per day are like 30 including repetition so I will have lots of time to revise too. My problem is that I randomly get distracted during these sessions and I end up having to study all day because of all the time I lose. When I lock in I learn very quickly but distraction is making me double my study time. Yes I do take 15min breaks about every hour and a ...",
+      "source": "r/productivity",
+      "url": "https://reddit.com/r/productivity/comments/1l49ygm/getting_good_studying_results_but_im_very/",
+      "industry": "legal",
+      "pain_indicators": [
+        "quickly"
+      ],
+      "engagement_score": 1,
+      "discovered_at": "2025-06-06T00:27:48.520046",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 0,
+        "author": "TheTore_",
+        "created_utc": 1749155917.0
+      },
+      "selftext": "So I have a Law exam (so I need lots of repetition) in just short of 20 days and 200 pages left so it's pretty manageable and my average pages per day are like 30 including repetition so I will have lots of time to revise too. My problem is that I randomly get distracted during these sessions and I end up having to study all day because of all the time I lose. When I lock in I learn very quickly but distraction is making me double my study time. Yes I do take 15min breaks about every hour and a half, anything less feels too short for me and feel like I could keep going. Got any advice for me?",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 0,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "quickly"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "Best free or cheap online tool or applet to see multiple people\u2019s availability?",
+      "description": "I\u2019m trying to schedule rehearsals for a show between myself and six other people all with insanely unpredictable and busy schedules (so a weekly scheduler is not an option), and I usually use the lovely when2meet.com but it has one limitation: it doesn\u2019t allow you to check availability beyond a month from the day you set it up. I need an app or tool that works like when2meet but allows me to do so for the months of July and August. A cursory Google search showed multiple apps, all which require ...",
+      "source": "r/productivity",
+      "url": "https://reddit.com/r/productivity/comments/1l489zf/best_free_or_cheap_online_tool_or_applet_to_see/",
+      "industry": "software",
+      "pain_indicators": [
+        "limitation"
+      ],
+      "engagement_score": 1,
+      "discovered_at": "2025-06-06T00:27:48.520046",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 0,
+        "author": "dorksided787",
+        "created_utc": 1749151835.0
+      },
+      "selftext": "I\u2019m trying to schedule rehearsals for a show between myself and six other people all with insanely unpredictable and busy schedules (so a weekly scheduler is not an option), and I usually use the lovely when2meet.com but it has one limitation: it doesn\u2019t allow you to check availability beyond a month from the day you set it up. I need an app or tool that works like when2meet but allows me to do so for the months of July and August. A cursory Google search showed multiple apps, all which require some sort of \u201ccancellable\u201d subscription. \ud83e\udd2e\n\nI saw GMail has a new function for finding availability but it requires inputting it day by day. I need something that works like when2meet where people simply click and drag over all the specific hours in days over weeks or months they are available and shows you who overlaps with whom.\n\nI\u2019m okay with paying some money for this applet or tool but my ADHD ass refuses to sign up for a free trial for a subscription that I\u2019ll inevitably forget to cancel later.",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 0,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "limitation"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "Does reflective journaling actually help with learning?",
+      "description": "**TL;DR:** Studied 700 students who kept reflective journals for a year. The connection between \"deep reflection\" and better grades was weaker than expected, but those who wrote consistently seemed to understand their learning process better. It's not a magic bullet, but it's not useless either.\n\n**Why I looked into this**\n\nI've tried different types of journaling multiple times over the years - gratitude journals, morning pages, reflection prompts, etc.. Failed at doing this several times and t...",
+      "source": "r/productivity",
+      "url": "https://reddit.com/r/productivity/comments/1l46mfs/does_reflective_journaling_actually_help_with/",
+      "industry": "education",
+      "pain_indicators": [
+        "process"
+      ],
+      "engagement_score": 2,
+      "discovered_at": "2025-06-06T00:27:48.520046",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 1,
+        "author": "x3enos",
+        "created_utc": 1749147907.0
+      },
+      "selftext": "**TL;DR:** Studied 700 students who kept reflective journals for a year. The connection between \"deep reflection\" and better grades was weaker than expected, but those who wrote consistently seemed to understand their learning process better. It's not a magic bullet, but it's not useless either.\n\n**Why I looked into this**\n\nI've tried different types of journaling multiple times over the years - gratitude journals, morning pages, reflection prompts, etc.. Failed at doing this several times and thought: \"Is the problem in me?\".\n\nAfter my latest failed attempt, I got curious: is there actually any research about \"journaling helps with learning and self-improvement\", or am I just trying to be more organize? I decided to google some research and found this particularly interesting study with nearly 700 students that actually measured the effects, and thought it was worth sharing the findings here.\n\n**What the research found**\n\nScientists decided to test this properly with nearly 700 first-year students over an entire academic year (2007-2008). Students kept journals where they wrote about what they understood, what confused them, how they were learning, etc. Then they ran all that text through analysis software to measure the depth of reflection.\n\nResearch shows that students who keep reflective journals think about their learning in three main ways: critical analysis, learning strategies, and synthesizing what they've learned.\n\n**The results**\n\nThe connection between \"reflection depth\" and actual grades? Correlation analysis showed it was weak to moderate at best. Not exactly the dramatic improvement you'd expect from all the hype.\n\n**BUT** \\- and this is important - students who wrote thoughtfully and consistently seemed to develop better awareness of how they learn and what they actually understood. Reflective writing develops self-awareness and critical thinking, which matters beyond just grades.\n\n**Why the mixed results?**\n\nFew theories:\n\n* Most people don't really know how to reflect effectively (school teaches us to pass tests, not ask \"why don't I understand thermodynamics?\")\n* Students might have been writing just to check a box for their professor\n* Maybe reflection isn't about immediate grade improvement - it's about understanding yourself and how your mind works\n\n**My takeaway**\n\nReflective journaling helps, but it's not linear and definitely not magic. It's a tool, not a cheat code. Don't expect to wake up as a genius tomorrow, but you might become more aware of your own thinking patterns.\n\n**Should you try it?** If you can be honest with yourself (which is harder than it sounds), go for it. But that's not about instant effect. The benefit seems to be gradual self-awareness, not dramatic performance boosts. Actually this thought helps me to try journaling again.\n\n*Side note: One student wrote \"No man is an island\" in their journal, quoting John Donne's Meditation XVII from 1624. Sometimes students are deeper than we give them credit for. Or they just read good Instagram quotes.*",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 1,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "process"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "I made guacamole-cli: a simple to-do list that sets your wallpaper! \ud83e\udd51",
+      "description": "I just finished building\u00a0**guacamole-cli**\u00a0\u2014 it\u2019s a super simple CLI tool to add/remove todos and automatically set your desktop wallpaper with your current tasks.\n\n  \nRight now, it\u2019s only been tested on KDE Plasma, but if you want to help out, maybe we can make it work everywhere (or just make it cooler, lol).\n\nIf you\u2019re interested in checking it out or contributing, here\u2019s the repo:  \n\ud83d\udc49\u00a0[https://github.com/dauniel000/guacamole-cli](https://github.com/dauniel000/guacamole-cli)\n\nI had a lot of f...",
+      "source": "r/indiehackers",
+      "url": "https://reddit.com/r/indiehackers/comments/1l4bphl/i_made_guacamolecli_a_simple_todo_list_that_sets/",
+      "industry": "general",
+      "pain_indicators": [
+        "automatically"
+      ],
+      "engagement_score": 1,
+      "discovered_at": "2025-06-06T00:27:49.761272",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 0,
+        "author": "Dauniell",
+        "created_utc": 1749160217.0
+      },
+      "selftext": "I just finished building\u00a0**guacamole-cli**\u00a0\u2014 it\u2019s a super simple CLI tool to add/remove todos and automatically set your desktop wallpaper with your current tasks.\n\n  \nRight now, it\u2019s only been tested on KDE Plasma, but if you want to help out, maybe we can make it work everywhere (or just make it cooler, lol).\n\nIf you\u2019re interested in checking it out or contributing, here\u2019s the repo:  \n\ud83d\udc49\u00a0[https://github.com/dauniel000/guacamole-cli](https://github.com/dauniel000/guacamole-cli)\n\nI had a lot of fun making this and honestly, I\u2019ll probably use it every day.  \nWhat do you think? Any ideas or feedback?",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 0,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "automatically"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "indiehackers"
+    },
+    {
+      "title": "Solo/lean SaaS founders \u2014 how do you keep users from quietly slipping away?",
+      "description": "Hey folks \n\nI\u2019m curious how solo and lean SaaS teams think about **customer churn** \u2014 especially when there\u2019s no dedicated Customer Success team.\n\nA few questions I\u2019ve been exploring:\n\n* How do you know when users are starting to drift or go inactive?\n\n* Do you ever wish you could detect churn *before* it happens?\n* Know which users are at risk or quietly slipping away?\n\n* Do you take any proactive steps to re-engage users before they churn?\n\nI\u2019m asking because I\u2019ve been building something to he...",
+      "source": "r/indiehackers",
+      "url": "https://reddit.com/r/indiehackers/comments/1l4bouq/sololean_saas_founders_how_do_you_keep_users_from/",
+      "industry": "software",
+      "pain_indicators": [
+        "not working"
+      ],
+      "engagement_score": 2,
+      "discovered_at": "2025-06-06T00:27:49.761272",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 1,
+        "author": "Kwesi_dev",
+        "created_utc": 1749160171.0
+      },
+      "selftext": "Hey folks \n\nI\u2019m curious how solo and lean SaaS teams think about **customer churn** \u2014 especially when there\u2019s no dedicated Customer Success team.\n\nA few questions I\u2019ve been exploring:\n\n* How do you know when users are starting to drift or go inactive?\n\n* Do you ever wish you could detect churn *before* it happens?\n* Know which users are at risk or quietly slipping away?\n\n* Do you take any proactive steps to re-engage users before they churn?\n\nI\u2019m asking because I\u2019ve been building something to help with these exact challenges and would love to hear what\u2019s been working (or not working) for you.\n\nIf it\u2019s okay, I\u2019ll drop the link to what I\u2019m working on in the comments \u2014 happy to chat and learn from your experience.\n\nThanks!",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 1,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "not working"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "indiehackers"
+    },
+    {
+      "title": "Day 01: Decoding How Proofy Went from Invisible to Winning in SEO",
+      "description": "Yo Reddit, I\u2019m a Gen Z founder, and I\u00a0*get*\u00a0it\u2014SaaS startups get wrecked by invisibility.\n\nIf you\u2019re a dev grinding on your SaaS, you\u2019ve prob felt this pain.\n\nToday, I\u2019m dropping Proofy\u2019s story, an email verification startup that went from zero to\u00a0*hero*.\n\nIt\u2019s a wild ride, so let\u2019s get into it.\n\nProofy launched in May 2018 with a dope idea.\n\nThey built a tool to clean email lists for businesses.\n\nKeeps marketing emails from getting yeeted into spam.\n\nNiche, but straight-up valuable for US compa...",
+      "source": "r/indiehackers",
+      "url": "https://reddit.com/r/indiehackers/comments/1l4a5ib/day_01_decoding_how_proofy_went_from_invisible_to/",
+      "industry": "marketing",
+      "pain_indicators": [
+        "speed",
+        "broken"
+      ],
+      "engagement_score": 1,
+      "discovered_at": "2025-06-06T00:27:49.761272",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 0,
+        "author": "justdoitbro_",
+        "created_utc": 1749156398.0
+      },
+      "selftext": "Yo Reddit, I\u2019m a Gen Z founder, and I\u00a0*get*\u00a0it\u2014SaaS startups get wrecked by invisibility.\n\nIf you\u2019re a dev grinding on your SaaS, you\u2019ve prob felt this pain.\n\nToday, I\u2019m dropping Proofy\u2019s story, an email verification startup that went from zero to\u00a0*hero*.\n\nIt\u2019s a wild ride, so let\u2019s get into it.\n\nProofy launched in May 2018 with a dope idea.\n\nThey built a tool to clean email lists for businesses.\n\nKeeps marketing emails from getting yeeted into spam.\n\nNiche, but straight-up valuable for US companies.\n\nSmall team, big vibes\u2014thought customers would flock.\n\nSpoiler: They didn\u2019t.\n\n* Small team, no marketing muscle.\n* Assumed users would just\u00a0*find*\u00a0them.\n* Site was ready, but traffic was\u00a0*crickets*.\n\nFor two years, Proofy was straight-up\u00a0*invisible*.\n\nWebsite traffic? Barely 2,000 users a month.\n\nSEO was a total L\u2014random, no plan, no KPIs.\n\nBlog posts? Zilch conversions.\n\nPeople searching \u201cemail verification\u201d? Couldn\u2019t find Proofy.\n\nThe demand was there, but they were\u00a0*ghosted*\u00a0on Google.\n\n* No clear SEO strategy.\n* Content didn\u2019t match what users searched.\n* Site was a technical mess, losing Google\u2019s love.\n* Customers needed them, but Proofy was MIA.\n\nIn March 2020, Proofy said \u201cbet\u201d and teamed up with Luxeo Team, an SEO squad.\n\nBig brain moment: Their tool wasn\u2019t the issue\u2014it was\u00a0*visibility*.\n\nCustomers were out there, searching for email verification.\n\nProofy just wasn\u2019t popping up.\n\nTime to flip the script.\n\n* Luxeo ran a full audit.\n* Found a ton of \u201cyikes\u201d problems.\n* Needed a proper SEO glow-up.\n* No more vibes-based marketing.\n\nLuxeo dropped a game plan, no cap.\n\nThey hit the problem from three angles: tech, on-page, and content.\n\nHere\u2019s how they cooked:\n\n* **Tech Fixes**:\n   * Site had broken links everywhere.\n   * No robots.txt or sitemap.xml.\n   * Admin pages were\u00a0*indexable*\u2014major oof.\n   * Load times slower than a 90s modem.\n   * Fixed it all to make Google stan the site.\n* **On-Page Sauce**:\n   * Headers were a mess\u2014restructured H1-H6.\n   * Added schema markup for spicy search snippets.\n   * Threw in AMP for mobile speed.\n   * Slapped clear CTAs to get users to sign up.\n* **Content That Slaps**:\n   * Old content? Not hitting search terms.\n   * Deep keyword research found high-intent queries.\n   * Built new landing pages for those searches.\n   * Made pages that screamed \u201cwe solve your problem.\u201d\n\nSix months later, Proofy was\u00a0*popping off*.\n\nOrganic traffic?\u00a0*10x*\u2014from 2,000 to 20,000 users a month.\n\nGoogle searches for email verification? Proofy was top-tier.\n\nConversions started hitting different.\n\nThey went from ghosted to\u00a0*goated*\u00a0in the SaaS game.\n\n* Tech fixes = Google could crawl them.\n* On-page tweaks = users loved the vibe.\n* New landing pages = snagged high-intent traffic.\n* Visibility problem?\u00a0*Deleted*.\n\nProofy\u2019s story is a W for any SaaS founder.\n\nYour product can be fire, but if no one sees it, you\u2019re cooked.\n\nThey had demand\u2014they just had to\u00a0*show up*.\n\nSmart SEO turned them from invisible to\u00a0*unstoppable*.\n\nPart 2\u2019s coming, where we spill how they kept the sauce going.\n\nFollow\u00a0[u/justdoitbro\\_](https://www.reddit.com/user/justdoitbro_/)\u00a0to get more like this!  \n",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 0,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "speed",
+        "broken"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "indiehackers"
+    },
+    {
+      "title": "You have no excuse not to build something",
+      "description": "Thanks to ChatGPT, I've spent the last five days hacking together about 19-20% of what will be an extraordinarily complex, data-driven travel website (imagine Expedia + TripAdvisor. Normally, building something at this scale would cost tens to hundreds of thousands of dollars in dev time or require a full-blown engineering team. I tried this back in 2018 and gave up. But this time?\n\nIn 4 days I have a half-functional front-end that handles \n\n* Searches, filters, and dynamic results. \n* A backend...",
+      "source": "r/Entrepreneur",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1l4bzep/you_have_no_excuse_not_to_build_something/",
+      "industry": "software",
+      "pain_indicators": [
+        "automated",
+        "scale"
+      ],
+      "engagement_score": 16,
+      "discovered_at": "2025-06-06T00:27:50.908318",
+      "reddit_metrics": {
+        "score": 9,
+        "upvote_ratio": 0.91,
+        "num_comments": 7,
+        "author": "T-rex_smallhands",
+        "created_utc": 1749160919.0
+      },
+      "selftext": "Thanks to ChatGPT, I've spent the last five days hacking together about 19-20% of what will be an extraordinarily complex, data-driven travel website (imagine Expedia + TripAdvisor. Normally, building something at this scale would cost tens to hundreds of thousands of dollars in dev time or require a full-blown engineering team. I tried this back in 2018 and gave up. But this time?\n\nIn 4 days I have a half-functional front-end that handles \n\n* Searches, filters, and dynamic results. \n* A backend that stores structured data, serves APIs, and handles authentication. \n* An automated data pipeline feeding real-world content into the system. \n* The foundation for AI-driven features like review summarization and itinerary planning. \n\nAnd I'm doing it all for the hefty rate of $20/month for premium ChatGPT. So anything thinking they can't start a company because they can't build something - get off your ass and start! :)",
+      "business_potential": "medium",
+      "score": 3,
+      "num_comments": 7,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "automated",
+        "scale"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "Entrepreneur"
+    },
+    {
+      "title": "Before You Hire Another \"Marketing\" Agency, Read This. Stop Wasting Money!",
+      "description": "Over the last decade, I\u2019ve seen a pattern repeat itself across dozens of companies: businesses hire a marketing agency expecting results, only to walk away disappointed months later.\n\nThe usual assumption? The agency wasn\u2019t good enough.  \nThe more likely reality? The agency wasn\u2019t the right fit for the job.\n\nMost agencies are really good at a few specific things maybe SEO, paid ads, or content. But many businesses bring them on expecting them to handle everything: branding, strategy, lead gen, o...",
+      "source": "r/Entrepreneur",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1l4b34h/before_you_hire_another_marketing_agency_read/",
+      "industry": "marketing",
+      "pain_indicators": [
+        "automation",
+        "growth"
+      ],
+      "engagement_score": 3,
+      "discovered_at": "2025-06-06T00:27:50.908318",
+      "reddit_metrics": {
+        "score": 0,
+        "upvote_ratio": 0.5,
+        "num_comments": 3,
+        "author": "willkode",
+        "created_utc": 1749158672.0
+      },
+      "selftext": "Over the last decade, I\u2019ve seen a pattern repeat itself across dozens of companies: businesses hire a marketing agency expecting results, only to walk away disappointed months later.\n\nThe usual assumption? The agency wasn\u2019t good enough.  \nThe more likely reality? The agency wasn\u2019t the right fit for the job.\n\nMost agencies are really good at a few specific things maybe SEO, paid ads, or content. But many businesses bring them on expecting them to handle everything: branding, strategy, lead gen, organic growth, social, email, automation the list goes on.\n\nThis often leads to:\n\n* Overextended teams delivering generic work\n* Strategy being built *after* execution begins\n* Multiple marketing channels being mismanaged by one team\n* Agencies getting blamed for results they were never built to deliver\n\nAnd that\u2019s where the disconnect happens.\n\nAgencies aren\u2019t meant to replace marketing leadership.  \nThey\u2019re meant to execute on a plan.\n\nBut without a clear strategy in place and someone on the client side guiding that vision, you end up with:\n\n* Pretty deliverables that don\u2019t move the needle\n* Burned budgets trying to \u201cfix\u201d bad campaigns\n* And months of lost momentum\n\n**What\u2019s the fix?**  \nIt starts with better decision-making before the agency is hired.\n\nThat means understanding which channels are right for your business, what success should actually look like, and choosing execution partners based on those insights not just portfolio or pitch.\n\nMarketing isn\u2019t a one-size-fits-all operation. It never has been.\n\nHappy to answer any questions on marketing, and how to hire the right agency. Or hear some horror stories and how you overcame a bad hire.  P.S: I'm not a marketing agency!!!",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 3,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "automation",
+        "growth"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "Entrepreneur"
+    },
+    {
+      "title": "Created a Knowledge Hub for Founders",
+      "description": "Hey all! \n\nI'm trying to be as genuine as possible in this sea of Karma farming, \"my project makes me 20k a month on accident\", and Chatgpt written posts. \n\nA few weeks ago, I posted on reddit to get feedback on my Startup consulting idea. It was pretty simple, for early to mid stage startups with the usual issues of scaling, defining and standardizing. Well, I got some pretty amazing input and decided to reshift a bit. \nI'm now somewhat proud to present the first s eak peak of my evolved idea: ...",
+      "source": "r/Entrepreneur",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1l48y8m/created_a_knowledge_hub_for_founders/",
+      "industry": "general",
+      "pain_indicators": [
+        "scaling",
+        "scaling"
+      ],
+      "engagement_score": 6,
+      "discovered_at": "2025-06-06T00:27:50.908318",
+      "reddit_metrics": {
+        "score": 3,
+        "upvote_ratio": 1.0,
+        "num_comments": 3,
+        "author": "trianglefor2",
+        "created_utc": 1749153478.0
+      },
+      "selftext": "Hey all! \n\nI'm trying to be as genuine as possible in this sea of Karma farming, \"my project makes me 20k a month on accident\", and Chatgpt written posts. \n\nA few weeks ago, I posted on reddit to get feedback on my Startup consulting idea. It was pretty simple, for early to mid stage startups with the usual issues of scaling, defining and standardizing. Well, I got some pretty amazing input and decided to reshift a bit. \nI'm now somewhat proud to present the first s eak peak of my evolved idea: a Startup Resource Hub. \n\nInstead of browsing the Internet for countles hours, watching entrepreneurship videos, reading blog articles and subscribing to startup newsletters, I've build \"The Sneaker Ceo\". \n\nThe idea behind it is super basic. I'm trying to compile my 10+ years as a founder (both good and bad), mentor and MVP tester of over 40 Startups in the US, LATAM and EU area, and dumping everything into my website. \n\nMy idea is to provide weekly ebooks (self written, not prompted), share youtube videos that actually make sense, Book reviews that actually help (I guess we are all sick and tired of \"How to win friends and ...), as well as templates for structuring and scaling that I have either used myself or created with Founders along the way.  Maybe a newsletter as well, but I have no experience if those are even a thing anymore and I honestly don't want to create clutter and/or spam.\n\nI would really appreciate it if you could give me feedback on that idea, the overall feel of the landing page and it's contents. I'm providing you with I think around 50 pages worth of information (1 Ebook free, 2 after sign up), tear it to shreds, tell me that I don't have a business case or that there is no need for it, whatever you say will help more than you think. \n\nThank you! ",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 3,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "scaling",
+        "scaling"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "Entrepreneur"
+    },
+    {
+      "title": "Signed a new offer for more $$, but now my current company wants to invest in me, did I jump too soon?",
+      "description": "**25F \u2013 Took a new job but second-guessing it**\n\nI\u2019m currently a BDM at a mid-size company making $68K, no commission (live just outside of Silicon Valley in California). The GM who hired me was let go 6 months in, and a new VP came in. The former GM advised me to have a backup plan but not sure what he really meant by that.. I'm now the only salesperson, so I\u2019ve inherited all accounts and was told there's room to grow, with a raise and commission structure coming next year.\n\nDuring that uncerta...",
+      "source": "r/sales",
+      "url": "https://reddit.com/r/sales/comments/1l4bjhb/signed_a_new_offer_for_more_but_now_my_current/",
+      "industry": "software",
+      "pain_indicators": [
+        "growing",
+        "growth"
+      ],
+      "engagement_score": 9,
+      "discovered_at": "2025-06-06T00:27:52.014764",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 8,
+        "author": "Basic_Professor2650",
+        "created_utc": 1749159796.0
+      },
+      "selftext": "**25F \u2013 Took a new job but second-guessing it**\n\nI\u2019m currently a BDM at a mid-size company making $68K, no commission (live just outside of Silicon Valley in California). The GM who hired me was let go 6 months in, and a new VP came in. The former GM advised me to have a backup plan but not sure what he really meant by that.. I'm now the only salesperson, so I\u2019ve inherited all accounts and was told there's room to grow, with a raise and commission structure coming next year.\n\nDuring that uncertainty, I accepted a $86K offer at a larger company as a Sales Specialist (no commission either), just supporting AEs. The VP there personally referred me and said he\u2019d mentor me. Even after telling him i wasn't sure and that I was happy where I was at, he pushed for me to make the jump. (although i was still uncertain about the plans for our department). On our VPs recent visit to our HQ, they expressed interest in me growing my career at the company. but also said our inside sales was on the verge of getting let go to (im assuming to rebuild the sales team and cut expenses as his workload is small)\n\nI signed the offer, but now that my current company is showing interest in my growth, I\u2019m unsure if I made the right call.\n\nI\u2019ve been in tech sales for 3 years, starting in inside sales at a big Silicon Valley company. Maybe I'm second guessing myself because I'm nervous for the change. Any advice?",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 8,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "growing",
+        "growth"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "sales"
+    },
+    {
+      "title": "Practical AI for E-commerce: Real Value, No Hype",
+      "description": "I've been diving into Reddit discussions to understand how AI can genuinely help e-commerce websites. Spoiler: there\u2019s no magic AI that does everything for everyone. The real value comes from targeted, specific use cases that solve actual problems. Here\u2019s what I\u2019ve found works.\n\nFor business owners and developers, here\u2019s a list of AI applications with solid impact:\n\n1. **Smarter Email Automation**: Craft email replies that feel personal and helpful, not just generic links. For small businesses g...",
+      "source": "r/ecommerce",
+      "url": "https://reddit.com/r/ecommerce/comments/1l49s0g/practical_ai_for_ecommerce_real_value_no_hype/",
+      "industry": "software",
+      "pain_indicators": [
+        "automation",
+        "streamlined",
+        "cheapest"
+      ],
+      "engagement_score": 2,
+      "discovered_at": "2025-06-06T00:27:53.057679",
+      "reddit_metrics": {
+        "score": 0,
+        "upvote_ratio": 0.5,
+        "num_comments": 2,
+        "author": "abd297",
+        "created_utc": 1749155476.0
+      },
+      "selftext": "I've been diving into Reddit discussions to understand how AI can genuinely help e-commerce websites. Spoiler: there\u2019s no magic AI that does everything for everyone. The real value comes from targeted, specific use cases that solve actual problems. Here\u2019s what I\u2019ve found works.\n\nFor business owners and developers, here\u2019s a list of AI applications with solid impact:\n\n1. **Smarter Email Automation**: Craft email replies that feel personal and helpful, not just generic links. For small businesses getting 300+ emails a week, this can save hours and reduce the need for a dedicated support agent, which can get pricey.\n2. **Chatbots That Actually Help**: A well-built chatbot using RAG (Retrieval-Augmented Generation) can handle 60-80% of customer queries. This boosts satisfaction by giving quick, accurate answers to common questions.\n3. **Intelligent Search for Better Conversions**: Use tools like Shopify\u2019s free Search &amp; Discovery app or invest in paid semantic search services. These make it easier for customers to find what they want, driving more sales.\n4. **Customer Analytics for Personalization**: Understand customer behavior to tailor their experience. This is why platforms like Facebook and Instagram are so good at selling through ads. They personalize feeds to keep you engaged. It\u2019s underused in e-commerce but powerful.\n5. **Streamlined Operations**: AI can optimize logistics, like finding the cheapest delivery options by comparing costs or figuring out how to pack items efficiently (e.g., stacking lawn chairs in a carton to maximize space).\n\nHope this sparks some ideas! Did I miss any noteworthy AI use cases? Drop them in the comments!",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 2,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "automation",
+        "streamlined",
+        "cheapest"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "ecommerce"
+    },
+    {
+      "title": "Product Labels are Legally Required for These 4 Things (Don\u2019t Overlook #3)",
+      "description": "Selling physical products online means your labels need to do more than look good. They have to meet legal standards. It\u2019s a detail that\u2019s easy to miss, especially when you're scaling, switching suppliers, or designing packaging for the first time. One common oversight we notice in custom print orders is businesses missing essential legal requirements on product labels. And this can lead to bigger issues down the line.\n\nHere\u2019s what most U.S. product labels are required to include:\n\n1. **What the...",
+      "source": "r/ecommerce",
+      "url": "https://reddit.com/r/ecommerce/comments/1l47z2j/product_labels_are_legally_required_for_these_4/",
+      "industry": "legal",
+      "pain_indicators": [
+        "scaling"
+      ],
+      "engagement_score": 1,
+      "discovered_at": "2025-06-06T00:27:53.057679",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 0,
+        "author": "uprinting",
+        "created_utc": 1749151103.0
+      },
+      "selftext": "Selling physical products online means your labels need to do more than look good. They have to meet legal standards. It\u2019s a detail that\u2019s easy to miss, especially when you're scaling, switching suppliers, or designing packaging for the first time. One common oversight we notice in custom print orders is businesses missing essential legal requirements on product labels. And this can lead to bigger issues down the line.\n\nHere\u2019s what most U.S. product labels are required to include:\n\n1. **What the product is** (identity)\n2. **Net quantity** (weight, volume, or count)\n3. **Your business name &amp; address** (responsible party info, including the manufacturer, packer, or distributor's details)\n4. **Disclosures** based on your product type (ingredients, allergens, warnings)\n\n\\#3 is a common one to miss, especially if you're using dropshippers, private label products, or 3PLs. Leaving off your business address can get you flagged on platforms or cause trust issues with buyers.\n\nIf you're unsure what applies to your niche, the [FTC\u2019s FPLA summary](https://www.ftc.gov/legal-library/browse/statutes/fair-packaging-labeling-act) and [FDA\u2019s food/cosmetic labeling guide](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-food-labeling-guide) are great starting points.",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 0,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "scaling"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "ecommerce"
+    },
+    {
+      "title": "Stalling out at Deloitte\u2014Should I pivot with an MBA, certifications, or something else?",
+      "description": "Hi all, I\u2019m trying to figure out the next move in my career and could really use some advice.\n\nFor context:\n\nI work at Deloitte and was transferred into the government practice last year. This also happened to be my promotion year, so I had to build a whole new network from scratch. This wasn\u2019t a voluntary transfer\u2014I was told to switch or risk being let go.\nI\u2019m currently a Senior Consultant, making $155K plus a bonus that\u2019s usually 10-15%. While I\u2019m still technically on track for promotion, I fe...",
+      "source": "r/consulting",
+      "url": "https://reddit.com/r/consulting/comments/1l4aex9/stalling_out_at_deloitteshould_i_pivot_with_an/",
+      "industry": "finance",
+      "pain_indicators": [
+        "growth"
+      ],
+      "engagement_score": 3,
+      "discovered_at": "2025-06-06T00:27:54.114226",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 2,
+        "author": "MediumFlyingWolverin",
+        "created_utc": 1749157053.0
+      },
+      "selftext": "Hi all, I\u2019m trying to figure out the next move in my career and could really use some advice.\n\nFor context:\n\nI work at Deloitte and was transferred into the government practice last year. This also happened to be my promotion year, so I had to build a whole new network from scratch. This wasn\u2019t a voluntary transfer\u2014I was told to switch or risk being let go.\nI\u2019m currently a Senior Consultant, making $155K plus a bonus that\u2019s usually 10-15%. While I\u2019m still technically on track for promotion, I feel like I\u2019ve stalled out. My skill set is very basic. A bigger concern for me long term is that the work I do is usually just an add-on to larger contracts, not the kind of work that drives the market. A lot of SMs have been leaving because the work we sell isn\u2019t big enough to be a market maker.\n\nI\u2019m 31, and I don\u2019t love the idea of taking two years off for an MBA, especially since I wouldn\u2019t even be starting until next year. Plus, if I stayed at Deloitte, I\u2019m pretty sure I would have to come back in at the Senior Consultant level post-MBA, which feels a little awkward. I\u2019m also not sure how I\u2019d frame it for references if I applied for business school, and I don\u2019t know if I could realistically get support for our MBA sponsorship program.\n\nBasically, I'd like to make more money, in a field with higher growth.\n\nI\u2019m torn between pursuing a full-time MBA, doing certifications, or finding some other pivot entirely. Would love to hear from people who\u2019ve been in a similar situation. What would you do?",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 2,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "growth"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "consulting"
+    },
+    {
+      "title": "Founder/Consultants",
+      "description": "For those of you who own your businesses/firms, how did you ramp up lead generation when you brought on your first employee?\n\nAbout to bring on my first 1099 contractor, while my leads are pretty solid, I'm unsure how growing firms extend their reach nationwide (USA).",
+      "source": "r/consulting",
+      "url": "https://reddit.com/r/consulting/comments/1l443lx/founderconsultants/",
+      "industry": "hr",
+      "pain_indicators": [
+        "growing"
+      ],
+      "engagement_score": 6,
+      "discovered_at": "2025-06-06T00:27:54.114226",
+      "reddit_metrics": {
+        "score": 4,
+        "upvote_ratio": 1.0,
+        "num_comments": 2,
+        "author": "Spare_Independent_91",
+        "created_utc": 1749142045.0
+      },
+      "selftext": "For those of you who own your businesses/firms, how did you ramp up lead generation when you brought on your first employee?\n\nAbout to bring on my first 1099 contractor, while my leads are pretty solid, I'm unsure how growing firms extend their reach nationwide (USA).",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 2,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "growing"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "consulting"
+    },
+    {
+      "title": "Looking for experienced closers (remote)(USA only)",
+      "description": "Ive recently started a digital agency, I sell growth systems to specific businesses in America. I\u2019m looking to hire and train people who have experience in sales. Full time/Part time\n\nAverage deal closed will range from $1500-$5000 profit. 50% split. Please DM me with whatever questions you have, i\u2019ll be glad to answer them.",
+      "source": "r/remotework",
+      "url": "https://reddit.com/r/remotework/comments/1l4cj4x/looking_for_experienced_closers_remoteusa_only/",
+      "industry": "general",
+      "pain_indicators": [
+        "growth"
+      ],
+      "engagement_score": 1,
+      "discovered_at": "2025-06-06T00:27:55.249432",
+      "reddit_metrics": {
+        "score": 1,
+        "upvote_ratio": 1.0,
+        "num_comments": 0,
+        "author": "Primary-Grass1103",
+        "created_utc": 1749162372.0
+      },
+      "selftext": "Ive recently started a digital agency, I sell growth systems to specific businesses in America. I\u2019m looking to hire and train people who have experience in sales. Full time/Part time\n\nAverage deal closed will range from $1500-$5000 profit. 50% split. Please DM me with whatever questions you have, i\u2019ll be glad to answer them.",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 0,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "growth"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "remotework"
+    },
+    {
+      "title": "How do you make virtual meetings feel more personal and less robotic?",
+      "description": "Hey everyone \ud83d\udc4b\n\nOne challenge I\u2019ve noticed with remote work is how easy it is for virtual meetings to feel... well, kind of robotic. With cameras off, short agendas, and limited small talk, it\u2019s hard to build real connections\u2014especially across teams or with new coworkers.\n\nFor those of you who\u2019ve been doing remote work for a while, do you have any tips or strategies for making virtual meetings feel more personal and engaging? Things like icebreakers, rituals, or even just settings that help fost...",
+      "source": "r/remotework",
+      "url": "https://reddit.com/r/remotework/comments/1l4bz6g/how_do_you_make_virtual_meetings_feel_more/",
+      "industry": "general",
+      "pain_indicators": [
+        "limited"
+      ],
+      "engagement_score": 2,
+      "discovered_at": "2025-06-06T00:27:55.249432",
+      "reddit_metrics": {
+        "score": 2,
+        "upvote_ratio": 0.75,
+        "num_comments": 0,
+        "author": "HeadAbrocoma8158",
+        "created_utc": 1749160902.0
+      },
+      "selftext": "Hey everyone \ud83d\udc4b\n\nOne challenge I\u2019ve noticed with remote work is how easy it is for virtual meetings to feel... well, kind of robotic. With cameras off, short agendas, and limited small talk, it\u2019s hard to build real connections\u2014especially across teams or with new coworkers.\n\nFor those of you who\u2019ve been doing remote work for a while, do you have any tips or strategies for making virtual meetings feel more personal and engaging? Things like icebreakers, rituals, or even just settings that help foster better conversation?\n\nWould love to hear what\u2019s worked for you!",
+      "business_potential": "medium",
+      "score": 1,
+      "num_comments": 0,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "limited"
+      ],
+      "retrieved_via": "fallback_json_api",
+      "source_subreddit": "remotework"
+    }
+  ],
+  "opportunities": [
+    {
+      "title": "SaaS Solution for: You have no excuse not to build something...",
+      "score": 5,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "entrepreneur",
+      "pain_point_indicators": [
+        "automated",
+        "scale"
+      ],
+      "source_post": "You have no excuse not to build something",
+      "reddit_metrics": {
+        "score": 9,
+        "num_comments": 7,
+        "upvote_ratio": 0.91
+      },
+      "source_subreddit": "entrepreneur"
+    },
+    {
+      "title": "SaaS Solution for: Created a Knowledge Hub for Founders...",
+      "score": 2,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "entrepreneur",
+      "pain_point_indicators": [
+        "scaling",
+        "scaling"
+      ],
+      "source_post": "Created a Knowledge Hub for Founders",
+      "reddit_metrics": {
+        "score": 3,
+        "num_comments": 3,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "entrepreneur"
+    },
+    {
+      "title": "SaaS Solution for: Before You Hire Another \"Marketing\" Agency, Read T...",
+      "score": 1,
+      "domain": "marketing",
+      "business_potential": "medium",
+      "subreddit": "entrepreneur",
+      "pain_point_indicators": [
+        "automation",
+        "growth"
+      ],
+      "source_post": "Before You Hire Another \"Marketing\" Agency, Read This. Stop Wasting Money!",
+      "reddit_metrics": {
+        "score": 0,
+        "num_comments": 3,
+        "upvote_ratio": 0.5
+      },
+      "source_subreddit": "entrepreneur"
+    },
+    {
+      "title": "SaaS Solution for: Marketing strategies for Startups - I will not pro...",
+      "score": 1,
+      "domain": "marketing",
+      "business_potential": "medium",
+      "subreddit": "startups",
+      "pain_point_indicators": [
+        "expensive"
+      ],
+      "source_post": "Marketing strategies for Startups - I will not promote",
+      "reddit_metrics": {
+        "score": 2,
+        "num_comments": 2,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "startups"
+    },
+    {
+      "title": "SaaS Solution for: Experience with this Chinese manufacturer (i will ...",
+      "score": 1,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "startups",
+      "pain_point_indicators": [
+        "limited"
+      ],
+      "source_post": "Experience with this Chinese manufacturer (i will not promote)",
+      "reddit_metrics": {
+        "score": 0,
+        "num_comments": 3,
+        "upvote_ratio": 0.5
+      },
+      "source_subreddit": "startups"
+    },
+    {
+      "title": "SaaS Solution for: Freelance Journey\u2019s Mistake: Being Greedy....",
+      "score": 10,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "freelance",
+      "pain_point_indicators": [
+        "expanding"
+      ],
+      "source_post": "Freelance Journey\u2019s Mistake: Being Greedy.",
+      "reddit_metrics": {
+        "score": 22,
+        "num_comments": 8,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "freelance"
+    },
+    {
+      "title": "SaaS Solution for: I filed a legal claim after being unpaid for work ...",
+      "score": 10,
+      "domain": "legal",
+      "business_potential": "medium",
+      "subreddit": "freelance",
+      "pain_point_indicators": [
+        "process"
+      ],
+      "source_post": "I filed a legal claim after being unpaid for work I completed \u2014 and I\u2019m done staying silent about how women in creative roles are treated.",
+      "reddit_metrics": {
+        "score": 153,
+        "num_comments": 84,
+        "upvote_ratio": 0.9
+      },
+      "source_subreddit": "freelance"
+    },
+    {
+      "title": "SaaS Solution for: What\u2019s your experience with finding co founders...",
+      "score": 2,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "SaaS",
+      "pain_point_indicators": [
+        "speed"
+      ],
+      "source_post": "What\u2019s your experience with finding co founders",
+      "reddit_metrics": {
+        "score": 2,
+        "num_comments": 4,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "SaaS"
+    },
+    {
+      "title": "SaaS Solution for: Built an AI tool that finds + fixes underperformin...",
+      "score": 1,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "SaaS",
+      "pain_point_indicators": [
+        "confusing"
+      ],
+      "source_post": "Built an AI tool that finds + fixes underperforming emails- would love your honest feedback before launching",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "SaaS"
+    },
+    {
+      "title": "SaaS Solution for: Job posting: Looking for a marketer...",
+      "score": 5,
+      "domain": "marketing",
+      "business_potential": "medium",
+      "subreddit": "marketing",
+      "pain_point_indicators": [
+        "budget"
+      ],
+      "source_post": "Job posting: Looking for a marketer",
+      "reddit_metrics": {
+        "score": 11,
+        "num_comments": 5,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "marketing"
+    },
+    {
+      "title": "SaaS Solution for: Guys this is marketing subreddit, I need advice on...",
+      "score": 1,
+      "domain": "marketing",
+      "business_potential": "medium",
+      "subreddit": "marketing",
+      "pain_point_indicators": [
+        "automation"
+      ],
+      "source_post": "Guys this is marketing subreddit, I need advice on how to market a website specialised in leads generation",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 2,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "marketing"
+    },
+    {
+      "title": "SaaS Solution for: How are you using AI in your web dev workflow (if ...",
+      "score": 4,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "webdev",
+      "pain_point_indicators": [
+        "workflow",
+        "automating",
+        "faster"
+      ],
+      "source_post": "How are you using AI in your web dev workflow (if at all)?",
+      "reddit_metrics": {
+        "score": 0,
+        "num_comments": 12,
+        "upvote_ratio": 0.29
+      },
+      "source_subreddit": "webdev"
+    },
+    {
+      "title": "SaaS Solution for: Do I own my own website, or does my company?...",
+      "score": 2,
+      "domain": "marketing",
+      "business_potential": "medium",
+      "subreddit": "webdev",
+      "pain_point_indicators": [
+        "process"
+      ],
+      "source_post": "Do I own my own website, or does my company?",
+      "reddit_metrics": {
+        "score": 0,
+        "num_comments": 8,
+        "upvote_ratio": 0.3
+      },
+      "source_subreddit": "webdev"
+    },
+    {
+      "title": "SaaS Solution for: Getting good studying results but I\u2019m very ineffic...",
+      "score": 1,
+      "domain": "legal",
+      "business_potential": "medium",
+      "subreddit": "productivity",
+      "pain_point_indicators": [
+        "quickly"
+      ],
+      "source_post": "Getting good studying results but I\u2019m very inefficient",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "SaaS Solution for: Best free or cheap online tool or applet to see mu...",
+      "score": 1,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "productivity",
+      "pain_point_indicators": [
+        "limitation"
+      ],
+      "source_post": "Best free or cheap online tool or applet to see multiple people\u2019s availability?",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "SaaS Solution for: Does reflective journaling actually help with lear...",
+      "score": 1,
+      "domain": "education",
+      "business_potential": "medium",
+      "subreddit": "productivity",
+      "pain_point_indicators": [
+        "process"
+      ],
+      "source_post": "Does reflective journaling actually help with learning?",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 1,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "SaaS Solution for: I made guacamole-cli: a simple to-do list that set...",
+      "score": 1,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "indiehackers",
+      "pain_point_indicators": [
+        "automatically"
+      ],
+      "source_post": "I made guacamole-cli: a simple to-do list that sets your wallpaper! \ud83e\udd51",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "indiehackers"
+    },
+    {
+      "title": "SaaS Solution for: Solo/lean SaaS founders \u2014 how do you keep users fr...",
+      "score": 1,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "indiehackers",
+      "pain_point_indicators": [
+        "not working"
+      ],
+      "source_post": "Solo/lean SaaS founders \u2014 how do you keep users from quietly slipping away?",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 1,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "indiehackers"
+    },
+    {
+      "title": "SaaS Solution for: Day 01: Decoding How Proofy Went from Invisible to...",
+      "score": 1,
+      "domain": "marketing",
+      "business_potential": "medium",
+      "subreddit": "indiehackers",
+      "pain_point_indicators": [
+        "speed",
+        "broken"
+      ],
+      "source_post": "Day 01: Decoding How Proofy Went from Invisible to Winning in SEO",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "indiehackers"
+    },
+    {
+      "title": "SaaS Solution for: You have no excuse not to build something...",
+      "score": 5,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "Entrepreneur",
+      "pain_point_indicators": [
+        "automated",
+        "scale"
+      ],
+      "source_post": "You have no excuse not to build something",
+      "reddit_metrics": {
+        "score": 9,
+        "num_comments": 7,
+        "upvote_ratio": 0.91
+      },
+      "source_subreddit": "Entrepreneur"
+    },
+    {
+      "title": "SaaS Solution for: Created a Knowledge Hub for Founders...",
+      "score": 2,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "Entrepreneur",
+      "pain_point_indicators": [
+        "scaling",
+        "scaling"
+      ],
+      "source_post": "Created a Knowledge Hub for Founders",
+      "reddit_metrics": {
+        "score": 3,
+        "num_comments": 3,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "Entrepreneur"
+    },
+    {
+      "title": "SaaS Solution for: Before You Hire Another \"Marketing\" Agency, Read T...",
+      "score": 1,
+      "domain": "marketing",
+      "business_potential": "medium",
+      "subreddit": "Entrepreneur",
+      "pain_point_indicators": [
+        "automation",
+        "growth"
+      ],
+      "source_post": "Before You Hire Another \"Marketing\" Agency, Read This. Stop Wasting Money!",
+      "reddit_metrics": {
+        "score": 0,
+        "num_comments": 3,
+        "upvote_ratio": 0.5
+      },
+      "source_subreddit": "Entrepreneur"
+    },
+    {
+      "title": "SaaS Solution for: Signed a new offer for more $$, but now my current...",
+      "score": 3,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "sales",
+      "pain_point_indicators": [
+        "growing",
+        "growth"
+      ],
+      "source_post": "Signed a new offer for more $$, but now my current company wants to invest in me, did I jump too soon?",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 8,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "sales"
+    },
+    {
+      "title": "SaaS Solution for: Practical AI for E-commerce: Real Value, No Hype...",
+      "score": 1,
+      "domain": "software",
+      "business_potential": "medium",
+      "subreddit": "ecommerce",
+      "pain_point_indicators": [
+        "automation",
+        "streamlined",
+        "cheapest"
+      ],
+      "source_post": "Practical AI for E-commerce: Real Value, No Hype",
+      "reddit_metrics": {
+        "score": 0,
+        "num_comments": 2,
+        "upvote_ratio": 0.5
+      },
+      "source_subreddit": "ecommerce"
+    },
+    {
+      "title": "SaaS Solution for: Product Labels are Legally Required for These 4 Th...",
+      "score": 1,
+      "domain": "legal",
+      "business_potential": "medium",
+      "subreddit": "ecommerce",
+      "pain_point_indicators": [
+        "scaling"
+      ],
+      "source_post": "Product Labels are Legally Required for These 4 Things (Don\u2019t Overlook #3)",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "ecommerce"
+    },
+    {
+      "title": "SaaS Solution for: Founder/Consultants...",
+      "score": 2,
+      "domain": "hr",
+      "business_potential": "medium",
+      "subreddit": "consulting",
+      "pain_point_indicators": [
+        "growing"
+      ],
+      "source_post": "Founder/Consultants",
+      "reddit_metrics": {
+        "score": 4,
+        "num_comments": 2,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "consulting"
+    },
+    {
+      "title": "SaaS Solution for: Stalling out at Deloitte\u2014Should I pivot with an MB...",
+      "score": 1,
+      "domain": "finance",
+      "business_potential": "medium",
+      "subreddit": "consulting",
+      "pain_point_indicators": [
+        "growth"
+      ],
+      "source_post": "Stalling out at Deloitte\u2014Should I pivot with an MBA, certifications, or something else?",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 2,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "consulting"
+    },
+    {
+      "title": "SaaS Solution for: Looking for experienced closers (remote)(USA only)...",
+      "score": 1,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "remotework",
+      "pain_point_indicators": [
+        "growth"
+      ],
+      "source_post": "Looking for experienced closers (remote)(USA only)",
+      "reddit_metrics": {
+        "score": 1,
+        "num_comments": 0,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "remotework"
+    },
+    {
+      "title": "SaaS Solution for: How do you make virtual meetings feel more persona...",
+      "score": 1,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "remotework",
+      "pain_point_indicators": [
+        "limited"
+      ],
+      "source_post": "How do you make virtual meetings feel more personal and less robotic?",
+      "reddit_metrics": {
+        "score": 2,
+        "num_comments": 0,
+        "upvote_ratio": 0.75
+      },
+      "source_subreddit": "remotework"
+    }
+  ],
+  "idea_categories": {
+    "General": 24,
+    "Marketing": 4,
+    "software": 9,
+    "general": 7,
+    "marketing": 7,
+    "Freelancers": 1,
+    "legal": 3,
+    "education": 1,
+    "hr": 1,
+    "finance": 1
+  }
+}

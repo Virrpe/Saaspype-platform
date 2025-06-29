@@ -1,0 +1,272 @@
+{
+  "timestamp": "2025-06-12T22:14:10.281411",
+  "summary": {
+    "total_tests": 5,
+    "passed": 5,
+    "failed": 0,
+    "errors": 0,
+    "success_rate": 100.0
+  },
+  "test_results": [
+    {
+      "test_case": "High Growth Startup Opportunity",
+      "status": "PASSED",
+      "predictive_score": 0.4360657943981333,
+      "score_in_expected_range": false,
+      "response_time": 4.3216331005096436,
+      "insights_count": 1,
+      "validation_results": {
+        "has_predictive_score": true,
+        "has_forecasting": true,
+        "has_insights": true,
+        "has_timing_analysis": true,
+        "has_recommendations": true,
+        "has_competitive_advantage": true,
+        "has_capabilities": true,
+        "has_foundation_analysis": true,
+        "correct_phase": true,
+        "correct_engine": true,
+        "overall_valid": true
+      },
+      "details": {
+        "phase": "Phase 4: Advanced Analytics & Predictive Intelligence",
+        "engine_version": "predictive_analytics_engine_v1.0",
+        "forecasting": {
+          "trend_forecast_30d": 0.46037868075000005,
+          "trend_forecast_90d": 0.38467196436,
+          "trend_forecast_12m": 0.4,
+          "momentum_score": 0.5115318675,
+          "timing_optimization": 0.48083995545,
+          "predictive_confidence": 1.0,
+          "opportunity_window": "medium_term"
+        },
+        "timing": {
+          "current_market_conditions": {
+            "market_sentiment": "neutral",
+            "volatility_level": "moderate",
+            "growth_trajectory": "stable"
+          },
+          "entry_windows": {
+            "short_term": {
+              "score": 0.7,
+              "risk": 0.4,
+              "reward": 0.7
+            },
+            "medium_term": {
+              "score": 0.6,
+              "risk": 0.3,
+              "reward": 0.6
+            }
+          },
+          "optimal_timing_recommendation": {
+            "window": "short_term",
+            "score": 0.7,
+            "confidence": 1.0
+          },
+          "confidence_level": 1.0,
+          "market_momentum": 0.5115318675
+        },
+        "recommendations_count": 4
+      }
+    },
+    {
+      "test_case": "Emerging Market Trend",
+      "status": "PASSED",
+      "predictive_score": 0.49871584936,
+      "score_in_expected_range": false,
+      "response_time": 1.4395458698272705,
+      "insights_count": 2,
+      "validation_results": {
+        "has_predictive_score": true,
+        "has_forecasting": true,
+        "has_insights": true,
+        "has_timing_analysis": true,
+        "has_recommendations": true,
+        "has_competitive_advantage": true,
+        "has_capabilities": true,
+        "has_foundation_analysis": true,
+        "correct_phase": true,
+        "correct_engine": true,
+        "overall_valid": true
+      },
+      "details": {
+        "phase": "Phase 4: Advanced Analytics & Predictive Intelligence",
+        "engine_version": "predictive_analytics_engine_v1.0",
+        "forecasting": {
+          "trend_forecast_30d": 0.5735480500000001,
+          "trend_forecast_90d": 0.505303652,
+          "trend_forecast_12m": 0.44000000000000006,
+          "momentum_score": 0.5761645000000001,
+          "timing_optimization": 0.5745946300000001,
+          "predictive_confidence": 1.0,
+          "opportunity_window": "medium_term"
+        },
+        "timing": {
+          "current_market_conditions": {
+            "market_sentiment": "neutral",
+            "volatility_level": "moderate",
+            "growth_trajectory": "stable"
+          },
+          "entry_windows": {
+            "short_term": {
+              "score": 0.7,
+              "risk": 0.4,
+              "reward": 0.7
+            },
+            "medium_term": {
+              "score": 0.6,
+              "risk": 0.3,
+              "reward": 0.6
+            }
+          },
+          "optimal_timing_recommendation": {
+            "window": "short_term",
+            "score": 0.7,
+            "confidence": 1.0
+          },
+          "confidence_level": 1.0,
+          "market_momentum": 0.5761645000000001
+        },
+        "recommendations_count": 4
+      }
+    },
+    {
+      "test_case": "Seasonal Business Pattern",
+      "status": "PASSED",
+      "predictive_score": 0.41051304000000005,
+      "score_in_expected_range": false,
+      "response_time": 1.4823782444000244,
+      "insights_count": 1,
+      "validation_results": {
+        "has_predictive_score": true,
+        "has_forecasting": true,
+        "has_insights": true,
+        "has_timing_analysis": true,
+        "has_recommendations": true,
+        "has_competitive_advantage": true,
+        "has_capabilities": true,
+        "has_foundation_analysis": true,
+        "correct_phase": true,
+        "correct_engine": true,
+        "overall_valid": true
+      },
+      "details": {
+        "phase": "Phase 4: Advanced Analytics & Predictive Intelligence",
+        "engine_version": "predictive_analytics_engine_v1.0",
+        "forecasting": {
+          "trend_forecast_30d": 0.41233995,
+          "trend_forecast_90d": 0.36652440000000003,
+          "trend_forecast_12m": 0.4,
+          "momentum_score": 0.4581555,
+          "timing_optimization": 0.43066617,
+          "predictive_confidence": 1.0,
+          "opportunity_window": "medium_term"
+        },
+        "timing": {
+          "current_market_conditions": {
+            "market_sentiment": "neutral",
+            "volatility_level": "moderate",
+            "growth_trajectory": "stable"
+          },
+          "entry_windows": {
+            "short_term": {
+              "score": 0.7,
+              "risk": 0.4,
+              "reward": 0.7
+            },
+            "medium_term": {
+              "score": 0.6,
+              "risk": 0.3,
+              "reward": 0.6
+            }
+          },
+          "optimal_timing_recommendation": {
+            "window": "short_term",
+            "score": 0.7,
+            "confidence": 1.0
+          },
+          "confidence_level": 1.0,
+          "market_momentum": 0.4581555
+        },
+        "recommendations_count": 4
+      }
+    },
+    {
+      "test_case": "Volatile Market Opportunity",
+      "status": "PASSED",
+      "predictive_score": 0.3830771532,
+      "score_in_expected_range": true,
+      "response_time": 1.4387125968933105,
+      "insights_count": 1,
+      "validation_results": {
+        "has_predictive_score": true,
+        "has_forecasting": true,
+        "has_insights": true,
+        "has_timing_analysis": true,
+        "has_recommendations": true,
+        "has_competitive_advantage": true,
+        "has_capabilities": true,
+        "has_foundation_analysis": true,
+        "correct_phase": true,
+        "correct_engine": true,
+        "overall_valid": true
+      },
+      "details": {
+        "phase": "Phase 4: Advanced Analytics & Predictive Intelligence",
+        "engine_version": "predictive_analytics_engine_v1.0",
+        "forecasting": {
+          "trend_forecast_30d": 0.39161925000000003,
+          "trend_forecast_90d": 0.27500374000000005,
+          "trend_forecast_12m": 0.4,
+          "momentum_score": 0.43513250000000003,
+          "timing_optimization": 0.40902455000000004,
+          "predictive_confidence": 1.0,
+          "opportunity_window": "medium_term"
+        },
+        "timing": {
+          "current_market_conditions": {
+            "market_sentiment": "neutral",
+            "volatility_level": "moderate",
+            "growth_trajectory": "stable"
+          },
+          "entry_windows": {
+            "short_term": {
+              "score": 0.7,
+              "risk": 0.4,
+              "reward": 0.7
+            },
+            "medium_term": {
+              "score": 0.6,
+              "risk": 0.3,
+              "reward": 0.6
+            }
+          },
+          "optimal_timing_recommendation": {
+            "window": "short_term",
+            "score": 0.7,
+            "confidence": 1.0
+          },
+          "confidence_level": 1.0,
+          "market_momentum": 0.43513250000000003
+        },
+        "recommendations_count": 4
+      }
+    },
+    {
+      "test_case": "Phase 4 Capabilities",
+      "status": "PASSED",
+      "capabilities_count": 9,
+      "features_count": 10,
+      "has_competitive_info": true
+    }
+  ],
+  "performance": {
+    "avg_response_time": 2.1705674529075623,
+    "response_times": [
+      4.3216331005096436,
+      1.4395458698272705,
+      1.4823782444000244,
+      1.4387125968933105
+    ]
+  }
+}

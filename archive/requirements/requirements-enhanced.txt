@@ -1,0 +1,51 @@
+# Luciq Enhanced - Phase 23: First AI Engine Integration
+# Incremental AI enhancement with semantic analysis
+
+# Basic FastAPI (from minimal)
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Basic data handling
+pandas==2.1.4
+numpy==1.25.2
+
+# HTTP requests
+requests==2.31.0
+httpx>=0.26.0
+
+# JSON and config
+orjson==3.9.10
+python-dotenv==1.0.0
+
+# CORS
+python-multipart==0.0.6
+
+# Enhanced AI Dependencies - Lightweight Semantic Analysis
+# Note: These are minimal AI packages to test enhancement without breaking containers
+
+# Text processing (lightweight)
+nltk==3.8.1
+textblob==0.17.1
+
+# Basic machine learning (no heavy models)
+scikit-learn==1.3.2
+
+# Word analysis (lightweight)
+wordfreq==3.0.3
+
+# Basic sentiment analysis (no transformers)
+vaderSentiment==3.3.2
+
+# Text preprocessing
+unidecode==1.3.7
+
+# Database
+sqlalchemy==2.0.25
+
+# Logging and monitoring
+structlog==23.2.0
+
+# Configuration management
+pydantic==2.5.2
+pydantic-settings==2.1.0 

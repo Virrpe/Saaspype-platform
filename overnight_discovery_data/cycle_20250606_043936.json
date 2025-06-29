@@ -1,0 +1,99 @@
+{
+  "cycle_number": 15,
+  "timestamp": "20250606_043936",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: What post flairs should we have?",
+      "problem": "Hey members, **I need your help to improve this sub**. I will start with post-flairs for better content filtering. Please share some suggestions for what post flairs we should have on this sub. \n\n  \nH...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 15,
+      "timestamp": "2025-06-06T04:39:30.742638",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1hb28jr/what_post_flairs_should_we_have/",
+      "reddit_score": 16,
+      "reddit_comments": 8
+    },
+    {
+      "title": "Reddit Discovery: Hey members, meet your new mod!",
+      "problem": "Hello to all the members of r/indiehackers \ud83d\udc4b\n\n# Who am I?\n\nI'm **Prakhar**, a creative web developer, and an aspiring indie hacker. I call myself aspiring because I haven't earned anything from my pro...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 15,
+      "timestamp": "2025-06-06T04:39:30.742638",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1g1qn9y/hey_members_meet_your_new_mod/",
+      "reddit_score": 20,
+      "reddit_comments": 18
+    },
+    {
+      "title": "Reddit Discovery: SaaS Founders: I built AnnotateWeb (featured in Morning Brew) in days using a ne...",
+      "problem": "Hey everyone,\n\nWanted to share a different way to think about building products or adding features, especially if you're a solo founder or small team looking to move fast.\n\nI recently launched Annotat...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 15,
+      "timestamp": "2025-06-06T04:39:30.742638",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1l42kna/saas_founders_i_built_annotateweb_featured_in/",
+      "reddit_score": 11,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: Weekly Who's Hiring Post for June 02, 2025",
+      "problem": "***For the job seekers, simply comment on a job posting listed or DM that user if you are interested. Any comment on the main post that is not a job posting will be removed.***\n\nWelcome to the weekly ...",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 15,
+      "timestamp": "2025-06-06T04:39:36.166340",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l1hfqo/weekly_whos_hiring_post_for_june_02_2025/",
+      "reddit_score": 2,
+      "reddit_comments": 2
+    },
+    {
+      "title": "Reddit Discovery: Weekly R/Sales Wednesday Night Live Chat Starts at 7PM CST",
+      "problem": "&amp;#x200B;\n\n[Use this link to join our official server.](https://discord.gg/9NpC5zzAng)",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 15,
+      "timestamp": "2025-06-06T04:39:36.166340",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l34znm/weekly_rsales_wednesday_night_live_chat_starts_at/",
+      "reddit_score": 1,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: Green flags when looking at new sales jobs?",
+      "problem": "What in the interview or research made you go \u201cchief this is it\u201d",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 15,
+      "timestamp": "2025-06-06T04:39:36.166340",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l4eiyg/green_flags_when_looking_at_new_sales_jobs/",
+      "reddit_score": 31,
+      "reddit_comments": 30
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 3.8,
+    "memory_percent": 77.3,
+    "disk_percent": 78.8,
+    "available_gb": 1.7820701599121094,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 15,
+    "total_ideas": 90,
+    "uptime_minutes": 185.76021190087002,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

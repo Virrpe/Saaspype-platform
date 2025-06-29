@@ -1,0 +1,86 @@
+{
+  "cycle_number": 41,
+  "timestamp": "20250606_091644",
+  "ideas_found": 5,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Upcoming AmA: \"Bootstrapped, building 20 products simultaneously, competing on p...",
+      "problem": "Hey folks, Daniel here from\u00a0[r/SaaS](https://www.reddit.com/r/SaaS/)\u00a0with a new upcoming AmA.\n\nThis time, we'll have Neeraj Singh from [BigBinary](https://www.bigbinary.com/) and the [Neeto suite](htt...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 41,
+      "timestamp": "2025-06-06T09:16:38.992992",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1kwi1is/upcoming_ama_bootstrapped_building_20_products/",
+      "reddit_score": 9,
+      "reddit_comments": 5
+    },
+    {
+      "title": "Reddit Discovery: Weekly Feedback Post - SaaS Products, Ideas, Companies",
+      "problem": "This is a weekly post where you're free to post your SaaS ideas, products, companies etc. that need feedback. Here, people who are willing to share feedback are going to join conversations. Posts aski...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 41,
+      "timestamp": "2025-06-06T09:16:38.997322",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l32n01/weekly_feedback_post_saas_products_ideas_companies/",
+      "reddit_score": 3,
+      "reddit_comments": 2
+    },
+    {
+      "title": "Reddit Discovery: It finally happened \u2014 got my first paying user today!",
+      "problem": "I was seriously thinking of shutting down my product yesterday. After a week of marketing and receiving mixed feedback, I started to feel like it just wasn\u2019t going to work out.\n\nBut this morning, I wo...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 41,
+      "timestamp": "2025-06-06T09:16:38.997322",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l4l04i/it_finally_happened_got_my_first_paying_user_today/",
+      "reddit_score": 34,
+      "reddit_comments": 50
+    },
+    {
+      "title": "Reddit Discovery: The Evil That is American Business",
+      "problem": "I'm an old timer. I began work in the US around 1980. I was there during the monopolies of AT&amp;T, IBM, etc. I had gone to technical school after getting my degree in English and became a programmer...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 41,
+      "timestamp": "2025-06-06T09:16:44.356249",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l3z0j1/the_evil_that_is_american_business/",
+      "reddit_score": 73,
+      "reddit_comments": 62
+    },
+    {
+      "title": "Reddit Discovery: Should I move forward with this job?",
+      "problem": "I\u2019m working with someone I know on their small business startup for the last year. Once the business gets going, I will be one of their starting independent contractors. Me and a few other independent...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 41,
+      "timestamp": "2025-06-06T09:16:44.356249",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l4j264/should_i_move_forward_with_this_job/",
+      "reddit_score": 2,
+      "reddit_comments": 1
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 57.7,
+    "memory_percent": 71.9,
+    "disk_percent": 78.9,
+    "available_gb": 2.2097129821777344,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 41,
+    "total_ideas": 245,
+    "uptime_minutes": 462.8967103878657,
+    "avg_ideas_per_cycle": 5.975609756097561
+  }
+}

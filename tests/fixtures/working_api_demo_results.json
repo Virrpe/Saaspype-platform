@@ -1,0 +1,1750 @@
+{
+  "health": "\u2705 OPERATIONAL",
+  "intelligence": [
+    {
+      "test_case": "Customer Acquisition Pain Point",
+      "params": {
+        "content": "Our startup is struggling with customer acquisition costs. We need a better way to reach potential customers without spending too much on advertising."
+      },
+      "result": {
+        "content_length": 150,
+        "platform": "reddit",
+        "basic_analysis": {
+          "word_count": 23,
+          "character_count": 150,
+          "sentence_count": 2,
+          "has_question": false,
+          "has_exclamation": false,
+          "capitalization_ratio": 0.013333333333333334
+        },
+        "sentiment_analysis": {
+          "compound": 0.0516,
+          "positive": 0.149,
+          "negative": 0.104,
+          "neutral": 0.746,
+          "sentiment_label": "positive"
+        },
+        "nlp_analysis": {
+          "entities": [],
+          "noun_phrases": [
+            "Our startup",
+            "customer acquisition costs",
+            "We",
+            "a better way",
+            "potential customers",
+            "advertising"
+          ],
+          "pos_distribution": {
+            "PRON": 2,
+            "NOUN": 7,
+            "AUX": 1,
+            "VERB": 4,
+            "ADP": 3,
+            "PUNCT": 2,
+            "DET": 1,
+            "ADJ": 2,
+            "PART": 1,
+            "ADV": 2
+          },
+          "token_count": 25
+        },
+        "transformer_analysis": {
+          "transformer_sentiment": "negative",
+          "confidence": 0.7082189321517944,
+          "model_used": "cardiffnlp/twitter-roberta-base-sentiment-latest"
+        },
+        "business_analysis": {
+          "business_score": 3,
+          "keyword_matches": {
+            "startup": 1,
+            "business": 0,
+            "entrepreneur": 0,
+            "saas": 0,
+            "revenue": 0,
+            "customer": 2,
+            "market": 0,
+            "solution": 0,
+            "problem": 0,
+            "opportunity": 0
+          },
+          "industry_scores": {
+            "software": 0,
+            "finance": 0,
+            "marketing": 1,
+            "healthcare": 0,
+            "ecommerce": 0
+          },
+          "likely_industry": "marketing",
+          "has_business_context": true
+        },
+        "fusion_score": {
+          "component_scores": {
+            "content_quality": 0.23,
+            "sentiment_strength": 0.0516,
+            "business_relevance": 0.3,
+            "complexity": 0.0
+          },
+          "weights": {
+            "content_quality": 0.2,
+            "sentiment_strength": 0.2,
+            "business_relevance": 0.4,
+            "complexity": 0.2
+          },
+          "overall_score": 0.17632,
+          "score_level": "low"
+        },
+        "processing_time_seconds": 3.5128750801086426,
+        "timestamp": "2025-06-10T18:03:48.220285"
+      }
+    },
+    {
+      "test_case": "Market Opportunity Analysis",
+      "params": {
+        "content": "The SaaS market is growing rapidly. Companies are looking for better business intelligence tools that don't cost $50,000 per year like existing solutions."
+      },
+      "result": {
+        "content_length": 154,
+        "platform": "reddit",
+        "basic_analysis": {
+          "word_count": 23,
+          "character_count": 154,
+          "sentence_count": 2,
+          "has_question": false,
+          "has_exclamation": false,
+          "capitalization_ratio": 0.025974025974025976
+        },
+        "sentiment_analysis": {
+          "compound": 0.872,
+          "positive": 0.398,
+          "negative": 0.0,
+          "neutral": 0.602,
+          "sentiment_label": "positive"
+        },
+        "nlp_analysis": {
+          "entities": [
+            {
+              "text": "50,000",
+              "label": "MONEY"
+            }
+          ],
+          "noun_phrases": [
+            "The SaaS market",
+            "Companies",
+            "better business intelligence tools",
+            "that",
+            "year",
+            "existing solutions"
+          ],
+          "pos_distribution": {
+            "DET": 1,
+            "NOUN": 8,
+            "AUX": 3,
+            "VERB": 4,
+            "ADV": 1,
+            "PUNCT": 2,
+            "ADP": 3,
+            "ADJ": 1,
+            "PRON": 1,
+            "PART": 1,
+            "SYM": 1,
+            "NUM": 1
+          },
+          "token_count": 27
+        },
+        "transformer_analysis": {
+          "transformer_sentiment": "positive",
+          "confidence": 0.7380720376968384,
+          "model_used": "cardiffnlp/twitter-roberta-base-sentiment-latest"
+        },
+        "business_analysis": {
+          "business_score": 4,
+          "keyword_matches": {
+            "startup": 0,
+            "business": 1,
+            "entrepreneur": 0,
+            "saas": 1,
+            "revenue": 0,
+            "customer": 0,
+            "market": 1,
+            "solution": 1,
+            "problem": 0,
+            "opportunity": 0
+          },
+          "industry_scores": {
+            "software": 2,
+            "finance": 0,
+            "marketing": 0,
+            "healthcare": 0,
+            "ecommerce": 0
+          },
+          "likely_industry": "software",
+          "has_business_context": true
+        },
+        "fusion_score": {
+          "component_scores": {
+            "content_quality": 0.23,
+            "sentiment_strength": 0.872,
+            "business_relevance": 0.4,
+            "complexity": 0.05
+          },
+          "weights": {
+            "content_quality": 0.2,
+            "sentiment_strength": 0.2,
+            "business_relevance": 0.4,
+            "complexity": 0.2
+          },
+          "overall_score": 0.3904,
+          "score_level": "low"
+        },
+        "processing_time_seconds": 0.7031891345977783,
+        "timestamp": "2025-06-10T18:03:48.931619"
+      }
+    }
+  ],
+  "mega_scraper": [
+    {
+      "success": true,
+      "duration_seconds": 11.886807,
+      "total_signals": 40,
+      "sources_scraped": 15,
+      "source_results": {
+        "reddit": {
+          "signals_count": 39,
+          "status": "success"
+        },
+        "hackernews": {
+          "signals_count": 1,
+          "status": "success"
+        },
+        "github": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "twitter": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "producthunt": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "indiehackers": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "ycombinator": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "betalist": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "angellist": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "crunchbase": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "medium": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "linkedin": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "discord": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "telegram": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "quora": {
+          "signals_count": 0,
+          "status": "success"
+        }
+      },
+      "signals": [
+        {
+          "platform": "reddit",
+          "content": "Seeking Advice: VC vs. Crowdfunding for Startup Funding &amp; LLC-to-C-Corp Transition - I will not promote Hi all,\nI\u2019m a startup founder with a two-year-old prototype, gearing up to raise funds. I have a few questions and would love your insights:\n1.  Raising Funds: VCs vs. Crowdfunding (e.g., WeFunder)Wha",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:30:14",
+          "url": "https://reddit.com/r/startups/comments/1l81q3n/seeking_advice_vc_vs_crowdfunding_for_startup/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 1,
+            "business_score": 3,
+            "industry": "finance"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Seeking Marketing and Health Pro Partners (I will not promote) Hi r/startups!\n\nI'm a software developer, and I've built a clinic management app designed to streamline operations for small to medium-sized clinics. The app handles\u00a0**patient management, appointment ",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:18:53",
+          "url": "https://reddit.com/r/startups/comments/1l81fp9/seeking_marketing_and_health_pro_partners_i_will/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 1,
+            "business_score": 8,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Looking to meet creatives and early stage founders in Europe - i will not promote As title says I\u2019m traveling across Europe all Summer and want to chat with creatives and founders.\n\nIdeally people who had received minimum or no press, but are just as passionate and dedicated as the",
+          "score": 0.05,
+          "timestamp": "2025-06-10T15:56:06",
+          "url": "https://reddit.com/r/startups/comments/1l7zdl8/looking_to_meet_creatives_and_early_stage/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 3,
+            "business_score": 2,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "I will seek how to promote, but i will not promote Hello! I launched a B2C last month and recently added a feature that actually makes it a two sided marketplace.\n\nBeen hitting up all the socials and doing outreach where my ICPs hang out.  I\u2019ve got cl",
+          "score": 0.06,
+          "timestamp": "2025-06-10T15:49:30",
+          "url": "https://reddit.com/r/startups/comments/1l7z7z4/i_will_seek_how_to_promote_but_i_will_not_promote/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 7,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How do early-stage PII based products(emails, messages, phones) build user trust? [i will not promote] I'm building an automation tool that processes emails to trigger workflows - things like auto-adding rows to sheets, creating CRM tickets, building custom newsletters, etc.\n\nNaturally, the first react",
+          "score": 0.02,
+          "timestamp": "2025-06-10T13:04:56",
+          "url": "https://reddit.com/r/startups/comments/1l7vvkm/how_do_earlystage_pii_based_productsemails/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 1,
+            "business_score": 4,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Most startup founders know their product. Fewer know how to explain it.(I will not promote) I\u2019ve spent the last month working on how I explain what I\u2019m building. Not just for investors or customers , for myself.\n\nIt\u2019s surprisingly hard. I knew what I was building, but I didn\u2019t know how to ta",
+          "score": 0.19,
+          "timestamp": "2025-06-10T09:30:40",
+          "url": "https://reddit.com/r/startups/comments/1l7smve/most_startup_founders_know_their_product_fewer/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 18,
+            "business_score": 3,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Tech talent in remote-first setups, i will not promote Hi guys,\n\nAfter several hiring cycles in a remote-first setup, I've noticed a recurring issue: great candidates sometimes get filtered out too early in the screening phase, while other times, too much",
+          "score": 0.03,
+          "timestamp": "2025-06-10T07:50:48",
+          "url": "https://reddit.com/r/startups/comments/1l7r5h4/tech_talent_in_remotefirst_setups_i_will_not/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 15,
+            "business_score": 3,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Startup PM Struggles (I will not promote) **Seed-Stage Sorcery**\n\nIt\u2019s 6:58 p.m. on a Monday and you\u2019re camped in the free-beer alcove of a downtown SoMa WeWork, eating yesterday\u2019s kombu-wrapped sushi straight from a compostable clamshell wit",
+          "score": 0.02,
+          "timestamp": "2025-06-10T03:58:10",
+          "url": "https://reddit.com/r/startups/comments/1l7mz3p/startup_pm_struggles_i_will_not_promote/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 2,
+            "business_score": 4,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "The hardest part of being an entrepreneur has nothing to do with business Nobody tells you this when you're starting out:\n\nThe hardest part isn't cash flow.\n\nIt\u2019s not customers.\n\nIt\u2019s not even the work.\n\nIt\u2019s that your **friends and family don\u2019t get it**.\n\nYou\u2019re building s",
+          "score": 0.04,
+          "timestamp": "2025-06-10T17:45:26",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l823zo/the_hardest_part_of_being_an_entrepreneur_has/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 2,
+            "business_score": 3,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Has anyone actually built a business that is generating revenue? I wanna hear real stories about people creating businesses !\n\nFor my product is still in development and will be ready by this month probably.",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:33:55",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l81tgc/has_anyone_actually_built_a_business_that_is/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 7,
+            "business_score": 3,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How I built a \u20ac1,000/month AI influencer from scratch About 6 months ago I started building an AI influencer account on Instagram, just as an experiment. I had no big budget, no followers, and no clue if it would work.\n\nFast forward to now it\u2019s making me",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:23:35",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l81k18/how_i_built_a_1000month_ai_influencer_from_scratch/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 7,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Need advice on improving online visibility for a orthopedic surgeon Hey everyone,  \nI\u2019m an orthopedic surgeon with a small private practice I opened about six years ago. It\u2019s just me, a PA, and one front desk assistant. Most of our patients come from physician referra",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:16:39",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l81doo/need_advice_on_improving_online_visibility_for_a/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 2,
+            "business_score": 1,
+            "industry": "marketing"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Funds for Product Start Up Hey all, I currently own a Digital Marketing agency but I have been wanting to spin up a product that I have been working on for several years but I want it completely separate and don't want it to af",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:15:02",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l81c7d/funds_for_product_start_up/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 3,
+            "business_score": 5,
+            "industry": "marketing"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How do you find customers? I have experience in digital marketing, WordPress &amp; WooCommerce development, building WordPress affiliate platforms, affiliate marketing, online advertising, SEO &amp; link building (including bla",
+          "score": 0.02,
+          "timestamp": "2025-06-10T17:12:34",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l819y4/how_do_you_find_customers/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 2,
+            "business_score": 5,
+            "industry": "marketing"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "OK I made something, but still working to refine it. So I made a **pre-alpha version** of my app I have been working - LinkWeave.\n\n**LinkWeave** is an SEO internal linking tool that identifies and suggestions actionable insights for internal linking opt",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:02:18",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l810ax/ok_i_made_something_but_still_working_to_refine_it/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 1,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Let me help you with your startup (lawyer) Hi all- I\u2019m a new call (ex-big law) lawyer in Ontario Canada who has been working with startups in Canada, US and Europe for the last 10 years. \n\nI\u2019m looking to grow my reach and would love to partner",
+          "score": 0.02,
+          "timestamp": "2025-06-10T16:57:37",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l80vvy/let_me_help_you_with_your_startup_lawyer/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 1,
+            "business_score": 2,
+            "industry": "ecommerce"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Need advice: Got 920 users for my desktop pet app, what's next for marketing? **Background:**\npet app (Windows) that turns any GIF into a desktop pet. Been working on it for 4+ months and marketing with just Reddit posts for 50 days.\n\n**Current stats:**\n\n- 920 users (still in d",
+          "score": 0.01,
+          "timestamp": "2025-06-10T16:51:31",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l80qdm/need_advice_got_920_users_for_my_desktop_pet_app/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 1,
+            "business_score": 2,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How to actually relax while running your own thing? When running a startup the line between work and chill is fading away. I feel like I\u2019m losing touch with people and myself. How to maintain peace of mind, how to relax on daily life &amp; vacation? \n",
+          "score": 0.03,
+          "timestamp": "2025-06-10T16:51:00",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l80pxa/how_to_actually_relax_while_running_your_own_thing/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 1,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "You shouldn't always try to pitch your solution in a sales call. Sometimes, the most helpful thing you can do is help someone realize they're focused on solving the wrong problem.\n\nYesterday, I had a call with a founder who is trying to figure out where to start wi",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:43:27",
+          "url": "https://reddit.com/r/SaaS/comments/1l8225j/you_shouldnt_always_try_to_pitch_your_solution_in/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 2,
+            "industry": "marketing"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "What are you working on? Share your SAAS Project! Share your current projects below with:\n\n\n\nShort, one sentence, description of your product.\n\nStatus: Landing page / MVP / Beta / Launched\n\nLink (if you have one)\n\n\n\nI'll go first:\n\n\n\nTherapyWithAI - ",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:41:48",
+          "url": "https://reddit.com/r/SaaS/comments/1l820nz/what_are_you_working_on_share_your_saas_project/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 2,
+            "business_score": 2,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Building SaaS for MSPs is wild\u2014every customer wants the same thing... differently. Been working in the MSP space for a while now, and building SaaS for this market has been a fun kind of chaos.\n\nEvery MSP *says* they want quoting, renewals, pipeline tracking, etc. But once you start",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:36:06",
+          "url": "https://reddit.com/r/SaaS/comments/1l81vfc/building_saas_for_msps_is_wildevery_customer/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 3,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "\ud83d\udd25 90% OFF - Perplexity AI PRO 1-Year Plan - Limited Time SUPER PROMO! Get access to Perplexity AI PRO for a full 12 months at a massive discount!\n\nWe\u2019re offering voucher codes for the 1-year plan.\n\n\ud83d\uded2 Order here: [CHEAPGPT.STORE](https://cheapgpts.store/Perplexity)\n\n\n\ud83d\udcb3 P",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:30:10",
+          "url": "https://reddit.com/r/SaaS/comments/1l81q0n/90_off_perplexity_ai_pro_1year_plan_limited_time/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Critique/feedback my first SaaS project Hi there,   \nFor the past 2 years I always felt that having a clear picture of my financial situation was time and energy-consuming since I have to login in each of my bank accounts, check my stock br",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:21:03",
+          "url": "https://reddit.com/r/SaaS/comments/1l81hpp/critiquefeedback_my_first_saas_project/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Launched my SaaS in just 10hours 3 years using broken email tools. Then I built my own in 10 hours.\n\nI spent 3 years stuck with a prototype email verification and cold email marketing engine.\n\nIt worked.\n\nBut barely.\n\nRecently, I sta",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:21:03",
+          "url": "https://reddit.com/r/SaaS/comments/1l81hp8/launched_my_saas_in_just_10hours/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 5,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "I have 24 signups, 31 alternatives but no paid users in my saas. What am I doing wrong? I launched altified about a month ago. Altified allows users to share alternative projects they've build.\n\nEver since the launch, i have 3.7k page views, 24 signups and 31 submitted alternatives but n",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:08:27",
+          "url": "https://reddit.com/r/SaaS/comments/1l8160k/i_have_24_signups_31_alternatives_but_no_paid/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Built an agentic AI system, that costs less than a cent per conversation The biggest challenge with AI agents is the cost.  These are super expensive to run, making it difficult to use them at scale.   \nI built a simple AI pipeline that:\n\n* Muti-agent network (&gt;20 agent",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:04:22",
+          "url": "https://reddit.com/r/SaaS/comments/1l8129d/built_an_agentic_ai_system_that_costs_less_than_a/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How did your revenue or customer base change after going digital? Did it meet your expectations? ",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:54:49",
+          "url": "https://reddit.com/r/business/comments/1l82cls/how_did_your_revenue_or_customer_base_change/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "What HR events or workshops have actually made a positive difference in your everyday work life?\ud83d\udca1 Hi everyone!\n\nI could really use your help. \ud83d\ude4f\n\nI\u2019m new in HR and work for a company with about 300 employees, and now I\u2019ve just been put in charge of planning our annual Strategy Day. I\u2019m super excite",
+          "score": 0.0,
+          "timestamp": "2025-06-10T15:58:16",
+          "url": "https://reddit.com/r/business/comments/1l7zfd2/what_hr_events_or_workshops_have_actually_made_a/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 1,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Customizing my product I was wondering how people who are selling products decide how to customize them. I am starting a stationery store and will be selling customized journals that have engraved words on the covers in dif",
+          "score": 0.02,
+          "timestamp": "2025-06-10T14:45:12",
+          "url": "https://reddit.com/r/business/comments/1l7xsq9/customizing_my_product/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 0,
+            "business_score": 4,
+            "industry": "ecommerce"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Anyone using cold email for partnerships instead of direct sales? Most outreach advice seems built around selling a product or service, but I'm looking more for collabs and affiliate partners. Wondering if anyone's done cold email for that and what kind of approach ",
+          "score": 0.01,
+          "timestamp": "2025-06-10T13:29:36",
+          "url": "https://reddit.com/r/business/comments/1l7wbgf/anyone_using_cold_email_for_partnerships_instead/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 3,
+            "business_score": 1,
+            "industry": "ecommerce"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Branded and ranked a service site from scratch - Where can I sell a high-ticket, pre-revenue domain? I bought a domain 3+ years ago and slowly turned it into a branded service website with strong SEO.\n\nIt now ranks at the top of Google for key terms and even pops up in LLM outputs.\n\nThough it\u2019s pre-r",
+          "score": 0.01,
+          "timestamp": "2025-06-10T10:26:40",
+          "url": "https://reddit.com/r/business/comments/1l7tft7/branded_and_ranked_a_service_site_from_scratch/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 1,
+            "business_score": 4,
+            "industry": "ecommerce"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Which platform is best work for you as a founder? ",
+          "score": 0.0,
+          "timestamp": "2025-06-10T10:01:02",
+          "url": "https://reddit.com/r/business/comments/1l7t2rl/which_platform_is_best_work_for_you_as_a_founder/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 3,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "I just want a job that isn't sales or fast food. Why is it impossible to find any entry-level position anymore? I graduated from college last spring and have been valeting as a source of income ever since, just to survive while finding a real job. I",
+          "score": 0.03,
+          "timestamp": "2025-06-10T09:48:17",
+          "url": "https://reddit.com/r/business/comments/1l7svz2/i_just_want_a_job_that_isnt_sales_or_fast_food/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 15,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Doordash announces $1.2 billion SevenRooms deal, misses revenue expectations ",
+          "score": 0.09,
+          "timestamp": "2025-06-10T08:58:17",
+          "url": "https://reddit.com/r/business/comments/1l7s5ym/doordash_announces_12_billion_sevenrooms_deal/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Do you fill out surveys for other founders? Hey everyone! I\u2019m researching startup validation struggles and would appreciate your input. Quick 2-minute survey about the obstacles you\u2019ve hit trying to figure out if people want what you\u2019re buildin",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:10:32",
+          "url": "https://reddit.com/r/indiehackers/comments/1l8180p/do_you_fill_out_surveys_for_other_founders/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Constru\u00ed uma extens\u00e3o para Salesforce que pode virar um SaaS - ArcPilot \ud83d\ude80 Fala pessoal! Queria compartilhar um projeto que comecei por necessidade pr\u00f3pria e que acho que pode ter um potencial comercial interessante.\n\n# O problema (muito real) que me motivou\n\nQuem trabalha c",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:10:16",
+          "url": "https://reddit.com/r/indiehackers/comments/1l817rl/constru\u00ed_uma_extens\u00e3o_para_salesforce_que_pode/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 0,
+            "business_score": 2,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Day 3 of building tools I would use \ud83d\udd27 Day 3 of building tools I would use \ud83d\udd27:  \n  \n\\- \ud83d\udce6 Project:\u00a0[mockgen.click](http://mockgen.click/)\u00a0\\- to create professional App Store &amp; Google Play screenshots.  \n\\- Might open source it soon.\n\nFin",
+          "score": 0.03,
+          "timestamp": "2025-06-10T15:14:47",
+          "url": "https://reddit.com/r/indiehackers/comments/1l7yfrm/day_3_of_building_tools_i_would_use/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Just one opportunity Hi everyone,\n\nI\u2019m a third-year college student in a tough spot after my scholarship was abruptly revoked. I\u2019ve spent the past month desperately looking for work I even tried home deliveries last week,",
+          "score": 0.02,
+          "timestamp": "2025-06-10T15:06:01",
+          "url": "https://reddit.com/r/indiehackers/comments/1l7y8ri/just_one_opportunity/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 3,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Help me changing the way companies collect &amp; analyses customer reviews \u2b50\ufe0f This is my launch on product hunt, for revvio. Revvio is the truspilot AI boosted. Analyse your reviews and understand your customers.",
+          "score": 0.01,
+          "timestamp": "2025-06-10T14:43:48",
+          "url": "https://reddit.com/r/indiehackers/comments/1l7xrop/help_me_changing_the_way_companies_collect/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 0,
+            "business_score": 2,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "hackernews",
+          "content": "Launch HN: BitBoard (YC X25) \u2013 AI agents for healthcare back-offices",
+          "score": 0.096,
+          "timestamp": "2025-06-10T17:09:30",
+          "url": "https://news.ycombinator.com/item?id=44237769",
+          "metadata": {
+            "hn_score": 8,
+            "descendants": 2
+          }
+        }
+      ],
+      "analysis": {
+        "total_signals": 40,
+        "platform_distribution": {
+          "reddit": 39,
+          "hackernews": 1
+        },
+        "top_keywords": {
+          "startup": 9,
+          "market": 9,
+          "saas": 7,
+          "customer": 7,
+          "launch": 7,
+          "revenue": 4,
+          "business": 3,
+          "funding": 3,
+          "problem": 2,
+          "entrepreneur": 1
+        },
+        "hour_distribution": {
+          "17": 21,
+          "15": 5,
+          "13": 2,
+          "9": 2,
+          "7": 1,
+          "3": 1,
+          "16": 3,
+          "14": 2,
+          "10": 2,
+          "8": 1
+        },
+        "top_signals": [
+          {
+            "platform": "reddit",
+            "content": "Most startup founders know their product. Fewer know how to explain it.(I will not promote) I\u2019ve spent the last month working on how I explain what I\u2019m building. Not just for investors or customers , for myself.\n\nIt\u2019s surprisingly hard. I knew what I was building, but I didn\u2019t know how to ta",
+            "score": 0.19,
+            "timestamp": "2025-06-10T09:30:40",
+            "url": "https://reddit.com/r/startups/comments/1l7smve/most_startup_founders_know_their_product_fewer/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 18,
+              "business_score": 3,
+              "industry": "software"
+            }
+          },
+          {
+            "platform": "hackernews",
+            "content": "Launch HN: BitBoard (YC X25) \u2013 AI agents for healthcare back-offices",
+            "score": 0.096,
+            "timestamp": "2025-06-10T17:09:30",
+            "url": "https://news.ycombinator.com/item?id=44237769",
+            "metadata": {
+              "hn_score": 8,
+              "descendants": 2
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "Doordash announces $1.2 billion SevenRooms deal, misses revenue expectations ",
+            "score": 0.09,
+            "timestamp": "2025-06-10T08:58:17",
+            "url": "https://reddit.com/r/business/comments/1l7s5ym/doordash_announces_12_billion_sevenrooms_deal/",
+            "metadata": {
+              "subreddit": "business",
+              "comments": 0,
+              "business_score": 1,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "I will seek how to promote, but i will not promote Hello! I launched a B2C last month and recently added a feature that actually makes it a two sided marketplace.\n\nBeen hitting up all the socials and doing outreach where my ICPs hang out.  I\u2019ve got cl",
+            "score": 0.06,
+            "timestamp": "2025-06-10T15:49:30",
+            "url": "https://reddit.com/r/startups/comments/1l7z7z4/i_will_seek_how_to_promote_but_i_will_not_promote/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 7,
+              "business_score": 1,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "Looking to meet creatives and early stage founders in Europe - i will not promote As title says I\u2019m traveling across Europe all Summer and want to chat with creatives and founders.\n\nIdeally people who had received minimum or no press, but are just as passionate and dedicated as the",
+            "score": 0.05,
+            "timestamp": "2025-06-10T15:56:06",
+            "url": "https://reddit.com/r/startups/comments/1l7zdl8/looking_to_meet_creatives_and_early_stage/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 3,
+              "business_score": 2,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "The hardest part of being an entrepreneur has nothing to do with business Nobody tells you this when you're starting out:\n\nThe hardest part isn't cash flow.\n\nIt\u2019s not customers.\n\nIt\u2019s not even the work.\n\nIt\u2019s that your **friends and family don\u2019t get it**.\n\nYou\u2019re building s",
+            "score": 0.04,
+            "timestamp": "2025-06-10T17:45:26",
+            "url": "https://reddit.com/r/Entrepreneur/comments/1l823zo/the_hardest_part_of_being_an_entrepreneur_has/",
+            "metadata": {
+              "subreddit": "entrepreneur",
+              "comments": 2,
+              "business_score": 3,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "Tech talent in remote-first setups, i will not promote Hi guys,\n\nAfter several hiring cycles in a remote-first setup, I've noticed a recurring issue: great candidates sometimes get filtered out too early in the screening phase, while other times, too much",
+            "score": 0.03,
+            "timestamp": "2025-06-10T07:50:48",
+            "url": "https://reddit.com/r/startups/comments/1l7r5h4/tech_talent_in_remotefirst_setups_i_will_not/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 15,
+              "business_score": 3,
+              "industry": "software"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "How to actually relax while running your own thing? When running a startup the line between work and chill is fading away. I feel like I\u2019m losing touch with people and myself. How to maintain peace of mind, how to relax on daily life &amp; vacation? \n",
+            "score": 0.03,
+            "timestamp": "2025-06-10T16:51:00",
+            "url": "https://reddit.com/r/Entrepreneur/comments/1l80pxa/how_to_actually_relax_while_running_your_own_thing/",
+            "metadata": {
+              "subreddit": "entrepreneur",
+              "comments": 1,
+              "business_score": 1,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "I just want a job that isn't sales or fast food. Why is it impossible to find any entry-level position anymore? I graduated from college last spring and have been valeting as a source of income ever since, just to survive while finding a real job. I",
+            "score": 0.03,
+            "timestamp": "2025-06-10T09:48:17",
+            "url": "https://reddit.com/r/business/comments/1l7svz2/i_just_want_a_job_that_isnt_sales_or_fast_food/",
+            "metadata": {
+              "subreddit": "business",
+              "comments": 15,
+              "business_score": 1,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "Day 3 of building tools I would use \ud83d\udd27 Day 3 of building tools I would use \ud83d\udd27:  \n  \n\\- \ud83d\udce6 Project:\u00a0[mockgen.click](http://mockgen.click/)\u00a0\\- to create professional App Store &amp; Google Play screenshots.  \n\\- Might open source it soon.\n\nFin",
+            "score": 0.03,
+            "timestamp": "2025-06-10T15:14:47",
+            "url": "https://reddit.com/r/indiehackers/comments/1l7yfrm/day_3_of_building_tools_i_would_use/",
+            "metadata": {
+              "subreddit": "indiehackers",
+              "comments": 0,
+              "business_score": 1,
+              "industry": "software"
+            }
+          }
+        ],
+        "average_score": 0.02215,
+        "analysis_timestamp": "2025-06-10T18:04:00.887290"
+      },
+      "timestamp": "2025-06-10T18:04:00.906085"
+    },
+    {
+      "success": true,
+      "duration_seconds": 12.2186,
+      "total_signals": 40,
+      "sources_scraped": 15,
+      "source_results": {
+        "reddit": {
+          "signals_count": 39,
+          "status": "success"
+        },
+        "hackernews": {
+          "signals_count": 1,
+          "status": "success"
+        },
+        "github": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "twitter": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "producthunt": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "indiehackers": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "ycombinator": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "betalist": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "angellist": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "crunchbase": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "medium": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "linkedin": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "discord": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "telegram": {
+          "signals_count": 0,
+          "status": "success"
+        },
+        "quora": {
+          "signals_count": 0,
+          "status": "success"
+        }
+      },
+      "signals": [
+        {
+          "platform": "reddit",
+          "content": "Seeking Advice: VC vs. Crowdfunding for Startup Funding &amp; LLC-to-C-Corp Transition - I will not promote Hi all,\nI\u2019m a startup founder with a two-year-old prototype, gearing up to raise funds. I have a few questions and would love your insights:\n1.  Raising Funds: VCs vs. Crowdfunding (e.g., WeFunder)Wha",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:30:14",
+          "url": "https://reddit.com/r/startups/comments/1l81q3n/seeking_advice_vc_vs_crowdfunding_for_startup/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 1,
+            "business_score": 3,
+            "industry": "finance"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Seeking Marketing and Health Pro Partners (I will not promote) Hi r/startups!\n\nI'm a software developer, and I've built a clinic management app designed to streamline operations for small to medium-sized clinics. The app handles\u00a0**patient management, appointment ",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:18:53",
+          "url": "https://reddit.com/r/startups/comments/1l81fp9/seeking_marketing_and_health_pro_partners_i_will/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 1,
+            "business_score": 8,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Looking to meet creatives and early stage founders in Europe - i will not promote As title says I\u2019m traveling across Europe all Summer and want to chat with creatives and founders.\n\nIdeally people who had received minimum or no press, but are just as passionate and dedicated as the",
+          "score": 0.05,
+          "timestamp": "2025-06-10T15:56:06",
+          "url": "https://reddit.com/r/startups/comments/1l7zdl8/looking_to_meet_creatives_and_early_stage/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 3,
+            "business_score": 2,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "I will seek how to promote, but i will not promote Hello! I launched a B2C last month and recently added a feature that actually makes it a two sided marketplace.\n\nBeen hitting up all the socials and doing outreach where my ICPs hang out.  I\u2019ve got cl",
+          "score": 0.06,
+          "timestamp": "2025-06-10T15:49:30",
+          "url": "https://reddit.com/r/startups/comments/1l7z7z4/i_will_seek_how_to_promote_but_i_will_not_promote/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 7,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How do early-stage PII based products(emails, messages, phones) build user trust? [i will not promote] I'm building an automation tool that processes emails to trigger workflows - things like auto-adding rows to sheets, creating CRM tickets, building custom newsletters, etc.\n\nNaturally, the first react",
+          "score": 0.02,
+          "timestamp": "2025-06-10T13:04:56",
+          "url": "https://reddit.com/r/startups/comments/1l7vvkm/how_do_earlystage_pii_based_productsemails/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 1,
+            "business_score": 4,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Most startup founders know their product. Fewer know how to explain it.(I will not promote) I\u2019ve spent the last month working on how I explain what I\u2019m building. Not just for investors or customers , for myself.\n\nIt\u2019s surprisingly hard. I knew what I was building, but I didn\u2019t know how to ta",
+          "score": 0.21,
+          "timestamp": "2025-06-10T09:30:40",
+          "url": "https://reddit.com/r/startups/comments/1l7smve/most_startup_founders_know_their_product_fewer/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 18,
+            "business_score": 3,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Tech talent in remote-first setups, i will not promote Hi guys,\n\nAfter several hiring cycles in a remote-first setup, I've noticed a recurring issue: great candidates sometimes get filtered out too early in the screening phase, while other times, too much",
+          "score": 0.03,
+          "timestamp": "2025-06-10T07:50:48",
+          "url": "https://reddit.com/r/startups/comments/1l7r5h4/tech_talent_in_remotefirst_setups_i_will_not/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 15,
+            "business_score": 3,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Startup PM Struggles (I will not promote) **Seed-Stage Sorcery**\n\nIt\u2019s 6:58 p.m. on a Monday and you\u2019re camped in the free-beer alcove of a downtown SoMa WeWork, eating yesterday\u2019s kombu-wrapped sushi straight from a compostable clamshell wit",
+          "score": 0.03,
+          "timestamp": "2025-06-10T03:58:10",
+          "url": "https://reddit.com/r/startups/comments/1l7mz3p/startup_pm_struggles_i_will_not_promote/",
+          "metadata": {
+            "subreddit": "startups",
+            "comments": 2,
+            "business_score": 4,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "The hardest part of being an entrepreneur has nothing to do with business Nobody tells you this when you're starting out:\n\nThe hardest part isn't cash flow.\n\nIt\u2019s not customers.\n\nIt\u2019s not even the work.\n\nIt\u2019s that your **friends and family don\u2019t get it**.\n\nYou\u2019re building s",
+          "score": 0.04,
+          "timestamp": "2025-06-10T17:45:26",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l823zo/the_hardest_part_of_being_an_entrepreneur_has/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 2,
+            "business_score": 3,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Has anyone actually built a business that is generating revenue? I wanna hear real stories about people creating businesses !\n\nFor my product is still in development and will be ready by this month probably.",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:33:55",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l81tgc/has_anyone_actually_built_a_business_that_is/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 7,
+            "business_score": 3,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How I built a \u20ac1,000/month AI influencer from scratch About 6 months ago I started building an AI influencer account on Instagram, just as an experiment. I had no big budget, no followers, and no clue if it would work.\n\nFast forward to now it\u2019s making me",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:23:35",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l81k18/how_i_built_a_1000month_ai_influencer_from_scratch/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 7,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Need advice on improving online visibility for a orthopedic surgeon Hey everyone,  \nI\u2019m an orthopedic surgeon with a small private practice I opened about six years ago. It\u2019s just me, a PA, and one front desk assistant. Most of our patients come from physician referra",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:16:39",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l81doo/need_advice_on_improving_online_visibility_for_a/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 2,
+            "business_score": 1,
+            "industry": "marketing"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Funds for Product Start Up Hey all, I currently own a Digital Marketing agency but I have been wanting to spin up a product that I have been working on for several years but I want it completely separate and don't want it to af",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:15:02",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l81c7d/funds_for_product_start_up/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 3,
+            "business_score": 5,
+            "industry": "marketing"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How do you find customers? I have experience in digital marketing, WordPress &amp; WooCommerce development, building WordPress affiliate platforms, affiliate marketing, online advertising, SEO &amp; link building (including bla",
+          "score": 0.02,
+          "timestamp": "2025-06-10T17:12:34",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l819y4/how_do_you_find_customers/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 2,
+            "business_score": 5,
+            "industry": "marketing"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "OK I made something, but still working to refine it. So I made a **pre-alpha version** of my app I have been working - LinkWeave.\n\n**LinkWeave** is an SEO internal linking tool that identifies and suggestions actionable insights for internal linking opt",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:02:18",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l810ax/ok_i_made_something_but_still_working_to_refine_it/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 1,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Let me help you with your startup (lawyer) Hi all- I\u2019m a new call (ex-big law) lawyer in Ontario Canada who has been working with startups in Canada, US and Europe for the last 10 years. \n\nI\u2019m looking to grow my reach and would love to partner",
+          "score": 0.02,
+          "timestamp": "2025-06-10T16:57:37",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l80vvy/let_me_help_you_with_your_startup_lawyer/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 1,
+            "business_score": 2,
+            "industry": "ecommerce"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Need advice: Got 920 users for my desktop pet app, what's next for marketing? **Background:**\npet app (Windows) that turns any GIF into a desktop pet. Been working on it for 4+ months and marketing with just Reddit posts for 50 days.\n\n**Current stats:**\n\n- 920 users (still in d",
+          "score": 0.01,
+          "timestamp": "2025-06-10T16:51:31",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l80qdm/need_advice_got_920_users_for_my_desktop_pet_app/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 1,
+            "business_score": 2,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How to actually relax while running your own thing? When running a startup the line between work and chill is fading away. I feel like I\u2019m losing touch with people and myself. How to maintain peace of mind, how to relax on daily life &amp; vacation? \n",
+          "score": 0.03,
+          "timestamp": "2025-06-10T16:51:00",
+          "url": "https://reddit.com/r/Entrepreneur/comments/1l80pxa/how_to_actually_relax_while_running_your_own_thing/",
+          "metadata": {
+            "subreddit": "entrepreneur",
+            "comments": 1,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "You shouldn't always try to pitch your solution in a sales call. Sometimes, the most helpful thing you can do is help someone realize they're focused on solving the wrong problem.\n\nYesterday, I had a call with a founder who is trying to figure out where to start wi",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:43:27",
+          "url": "https://reddit.com/r/SaaS/comments/1l8225j/you_shouldnt_always_try_to_pitch_your_solution_in/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 2,
+            "industry": "marketing"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "What are you working on? Share your SAAS Project! Share your current projects below with:\n\n\n\nShort, one sentence, description of your product.\n\nStatus: Landing page / MVP / Beta / Launched\n\nLink (if you have one)\n\n\n\nI'll go first:\n\n\n\nTherapyWithAI - ",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:41:48",
+          "url": "https://reddit.com/r/SaaS/comments/1l820nz/what_are_you_working_on_share_your_saas_project/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 2,
+            "business_score": 2,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Building SaaS for MSPs is wild\u2014every customer wants the same thing... differently. Been working in the MSP space for a while now, and building SaaS for this market has been a fun kind of chaos.\n\nEvery MSP *says* they want quoting, renewals, pipeline tracking, etc. But once you start",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:36:06",
+          "url": "https://reddit.com/r/SaaS/comments/1l81vfc/building_saas_for_msps_is_wildevery_customer/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 3,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "\ud83d\udd25 90% OFF - Perplexity AI PRO 1-Year Plan - Limited Time SUPER PROMO! Get access to Perplexity AI PRO for a full 12 months at a massive discount!\n\nWe\u2019re offering voucher codes for the 1-year plan.\n\n\ud83d\uded2 Order here: [CHEAPGPT.STORE](https://cheapgpts.store/Perplexity)\n\n\n\ud83d\udcb3 P",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:30:10",
+          "url": "https://reddit.com/r/SaaS/comments/1l81q0n/90_off_perplexity_ai_pro_1year_plan_limited_time/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Critique/feedback my first SaaS project Hi there,   \nFor the past 2 years I always felt that having a clear picture of my financial situation was time and energy-consuming since I have to login in each of my bank accounts, check my stock br",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:21:03",
+          "url": "https://reddit.com/r/SaaS/comments/1l81hpp/critiquefeedback_my_first_saas_project/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Launched my SaaS in just 10hours 3 years using broken email tools. Then I built my own in 10 hours.\n\nI spent 3 years stuck with a prototype email verification and cold email marketing engine.\n\nIt worked.\n\nBut barely.\n\nRecently, I sta",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:21:03",
+          "url": "https://reddit.com/r/SaaS/comments/1l81hp8/launched_my_saas_in_just_10hours/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 5,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "I have 24 signups, 31 alternatives but no paid users in my saas. What am I doing wrong? I launched altified about a month ago. Altified allows users to share alternative projects they've build.\n\nEver since the launch, i have 3.7k page views, 24 signups and 31 submitted alternatives but n",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:08:27",
+          "url": "https://reddit.com/r/SaaS/comments/1l8160k/i_have_24_signups_31_alternatives_but_no_paid/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Built an agentic AI system, that costs less than a cent per conversation The biggest challenge with AI agents is the cost.  These are super expensive to run, making it difficult to use them at scale.   \nI built a simple AI pipeline that:\n\n* Muti-agent network (&gt;20 agent",
+          "score": 0.0,
+          "timestamp": "2025-06-10T17:04:22",
+          "url": "https://reddit.com/r/SaaS/comments/1l8129d/built_an_agentic_ai_system_that_costs_less_than_a/",
+          "metadata": {
+            "subreddit": "SaaS",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "How did your revenue or customer base change after going digital? Did it meet your expectations? ",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:54:49",
+          "url": "https://reddit.com/r/business/comments/1l82cls/how_did_your_revenue_or_customer_base_change/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "What HR events or workshops have actually made a positive difference in your everyday work life?\ud83d\udca1 Hi everyone!\n\nI could really use your help. \ud83d\ude4f\n\nI\u2019m new in HR and work for a company with about 300 employees, and now I\u2019ve just been put in charge of planning our annual Strategy Day. I\u2019m super excite",
+          "score": 0.0,
+          "timestamp": "2025-06-10T15:58:16",
+          "url": "https://reddit.com/r/business/comments/1l7zfd2/what_hr_events_or_workshops_have_actually_made_a/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 1,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Customizing my product I was wondering how people who are selling products decide how to customize them. I am starting a stationery store and will be selling customized journals that have engraved words on the covers in dif",
+          "score": 0.02,
+          "timestamp": "2025-06-10T14:45:12",
+          "url": "https://reddit.com/r/business/comments/1l7xsq9/customizing_my_product/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 0,
+            "business_score": 4,
+            "industry": "ecommerce"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Anyone using cold email for partnerships instead of direct sales? Most outreach advice seems built around selling a product or service, but I'm looking more for collabs and affiliate partners. Wondering if anyone's done cold email for that and what kind of approach ",
+          "score": 0.01,
+          "timestamp": "2025-06-10T13:29:36",
+          "url": "https://reddit.com/r/business/comments/1l7wbgf/anyone_using_cold_email_for_partnerships_instead/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 3,
+            "business_score": 1,
+            "industry": "ecommerce"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Branded and ranked a service site from scratch - Where can I sell a high-ticket, pre-revenue domain? I bought a domain 3+ years ago and slowly turned it into a branded service website with strong SEO.\n\nIt now ranks at the top of Google for key terms and even pops up in LLM outputs.\n\nThough it\u2019s pre-r",
+          "score": 0.01,
+          "timestamp": "2025-06-10T10:26:40",
+          "url": "https://reddit.com/r/business/comments/1l7tft7/branded_and_ranked_a_service_site_from_scratch/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 1,
+            "business_score": 4,
+            "industry": "ecommerce"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Which platform is best work for you as a founder? ",
+          "score": 0.0,
+          "timestamp": "2025-06-10T10:01:02",
+          "url": "https://reddit.com/r/business/comments/1l7t2rl/which_platform_is_best_work_for_you_as_a_founder/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 3,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "I just want a job that isn't sales or fast food. Why is it impossible to find any entry-level position anymore? I graduated from college last spring and have been valeting as a source of income ever since, just to survive while finding a real job. I",
+          "score": 0.03,
+          "timestamp": "2025-06-10T09:48:17",
+          "url": "https://reddit.com/r/business/comments/1l7svz2/i_just_want_a_job_that_isnt_sales_or_fast_food/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 15,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Doordash announces $1.2 billion SevenRooms deal, misses revenue expectations ",
+          "score": 0.11,
+          "timestamp": "2025-06-10T08:58:17",
+          "url": "https://reddit.com/r/business/comments/1l7s5ym/doordash_announces_12_billion_sevenrooms_deal/",
+          "metadata": {
+            "subreddit": "business",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Do you fill out surveys for other founders? Hey everyone! I\u2019m researching startup validation struggles and would appreciate your input. Quick 2-minute survey about the obstacles you\u2019ve hit trying to figure out if people want what you\u2019re buildin",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:10:32",
+          "url": "https://reddit.com/r/indiehackers/comments/1l8180p/do_you_fill_out_surveys_for_other_founders/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "general"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Constru\u00ed uma extens\u00e3o para Salesforce que pode virar um SaaS - ArcPilot \ud83d\ude80 Fala pessoal! Queria compartilhar um projeto que comecei por necessidade pr\u00f3pria e que acho que pode ter um potencial comercial interessante.\n\n# O problema (muito real) que me motivou\n\nQuem trabalha c",
+          "score": 0.01,
+          "timestamp": "2025-06-10T17:10:16",
+          "url": "https://reddit.com/r/indiehackers/comments/1l817rl/constru\u00ed_uma_extens\u00e3o_para_salesforce_que_pode/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 0,
+            "business_score": 2,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Day 3 of building tools I would use \ud83d\udd27 Day 3 of building tools I would use \ud83d\udd27:  \n  \n\\- \ud83d\udce6 Project:\u00a0[mockgen.click](http://mockgen.click/)\u00a0\\- to create professional App Store &amp; Google Play screenshots.  \n\\- Might open source it soon.\n\nFin",
+          "score": 0.03,
+          "timestamp": "2025-06-10T15:14:47",
+          "url": "https://reddit.com/r/indiehackers/comments/1l7yfrm/day_3_of_building_tools_i_would_use/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 0,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Just one opportunity Hi everyone,\n\nI\u2019m a third-year college student in a tough spot after my scholarship was abruptly revoked. I\u2019ve spent the past month desperately looking for work I even tried home deliveries last week,",
+          "score": 0.02,
+          "timestamp": "2025-06-10T15:06:01",
+          "url": "https://reddit.com/r/indiehackers/comments/1l7y8ri/just_one_opportunity/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 3,
+            "business_score": 1,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "reddit",
+          "content": "Help me changing the way companies collect &amp; analyses customer reviews \u2b50\ufe0f This is my launch on product hunt, for revvio. Revvio is the truspilot AI boosted. Analyse your reviews and understand your customers.",
+          "score": 0.01,
+          "timestamp": "2025-06-10T14:43:48",
+          "url": "https://reddit.com/r/indiehackers/comments/1l7xrop/help_me_changing_the_way_companies_collect/",
+          "metadata": {
+            "subreddit": "indiehackers",
+            "comments": 0,
+            "business_score": 2,
+            "industry": "software"
+          }
+        },
+        {
+          "platform": "hackernews",
+          "content": "Launch HN: BitBoard (YC X25) \u2013 AI agents for healthcare back-offices",
+          "score": 0.096,
+          "timestamp": "2025-06-10T17:09:30",
+          "url": "https://news.ycombinator.com/item?id=44237769",
+          "metadata": {
+            "hn_score": 8,
+            "descendants": 2
+          }
+        }
+      ],
+      "analysis": {
+        "total_signals": 40,
+        "platform_distribution": {
+          "reddit": 39,
+          "hackernews": 1
+        },
+        "top_keywords": {
+          "startup": 9,
+          "market": 9,
+          "saas": 7,
+          "customer": 7,
+          "launch": 7,
+          "revenue": 4,
+          "business": 3,
+          "funding": 3,
+          "problem": 2,
+          "entrepreneur": 1
+        },
+        "hour_distribution": {
+          "17": 21,
+          "15": 5,
+          "13": 2,
+          "9": 2,
+          "7": 1,
+          "3": 1,
+          "16": 3,
+          "14": 2,
+          "10": 2,
+          "8": 1
+        },
+        "top_signals": [
+          {
+            "platform": "reddit",
+            "content": "Most startup founders know their product. Fewer know how to explain it.(I will not promote) I\u2019ve spent the last month working on how I explain what I\u2019m building. Not just for investors or customers , for myself.\n\nIt\u2019s surprisingly hard. I knew what I was building, but I didn\u2019t know how to ta",
+            "score": 0.21,
+            "timestamp": "2025-06-10T09:30:40",
+            "url": "https://reddit.com/r/startups/comments/1l7smve/most_startup_founders_know_their_product_fewer/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 18,
+              "business_score": 3,
+              "industry": "software"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "Doordash announces $1.2 billion SevenRooms deal, misses revenue expectations ",
+            "score": 0.11,
+            "timestamp": "2025-06-10T08:58:17",
+            "url": "https://reddit.com/r/business/comments/1l7s5ym/doordash_announces_12_billion_sevenrooms_deal/",
+            "metadata": {
+              "subreddit": "business",
+              "comments": 0,
+              "business_score": 1,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "hackernews",
+            "content": "Launch HN: BitBoard (YC X25) \u2013 AI agents for healthcare back-offices",
+            "score": 0.096,
+            "timestamp": "2025-06-10T17:09:30",
+            "url": "https://news.ycombinator.com/item?id=44237769",
+            "metadata": {
+              "hn_score": 8,
+              "descendants": 2
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "I will seek how to promote, but i will not promote Hello! I launched a B2C last month and recently added a feature that actually makes it a two sided marketplace.\n\nBeen hitting up all the socials and doing outreach where my ICPs hang out.  I\u2019ve got cl",
+            "score": 0.06,
+            "timestamp": "2025-06-10T15:49:30",
+            "url": "https://reddit.com/r/startups/comments/1l7z7z4/i_will_seek_how_to_promote_but_i_will_not_promote/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 7,
+              "business_score": 1,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "Looking to meet creatives and early stage founders in Europe - i will not promote As title says I\u2019m traveling across Europe all Summer and want to chat with creatives and founders.\n\nIdeally people who had received minimum or no press, but are just as passionate and dedicated as the",
+            "score": 0.05,
+            "timestamp": "2025-06-10T15:56:06",
+            "url": "https://reddit.com/r/startups/comments/1l7zdl8/looking_to_meet_creatives_and_early_stage/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 3,
+              "business_score": 2,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "The hardest part of being an entrepreneur has nothing to do with business Nobody tells you this when you're starting out:\n\nThe hardest part isn't cash flow.\n\nIt\u2019s not customers.\n\nIt\u2019s not even the work.\n\nIt\u2019s that your **friends and family don\u2019t get it**.\n\nYou\u2019re building s",
+            "score": 0.04,
+            "timestamp": "2025-06-10T17:45:26",
+            "url": "https://reddit.com/r/Entrepreneur/comments/1l823zo/the_hardest_part_of_being_an_entrepreneur_has/",
+            "metadata": {
+              "subreddit": "entrepreneur",
+              "comments": 2,
+              "business_score": 3,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "Tech talent in remote-first setups, i will not promote Hi guys,\n\nAfter several hiring cycles in a remote-first setup, I've noticed a recurring issue: great candidates sometimes get filtered out too early in the screening phase, while other times, too much",
+            "score": 0.03,
+            "timestamp": "2025-06-10T07:50:48",
+            "url": "https://reddit.com/r/startups/comments/1l7r5h4/tech_talent_in_remotefirst_setups_i_will_not/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 15,
+              "business_score": 3,
+              "industry": "software"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "Startup PM Struggles (I will not promote) **Seed-Stage Sorcery**\n\nIt\u2019s 6:58 p.m. on a Monday and you\u2019re camped in the free-beer alcove of a downtown SoMa WeWork, eating yesterday\u2019s kombu-wrapped sushi straight from a compostable clamshell wit",
+            "score": 0.03,
+            "timestamp": "2025-06-10T03:58:10",
+            "url": "https://reddit.com/r/startups/comments/1l7mz3p/startup_pm_struggles_i_will_not_promote/",
+            "metadata": {
+              "subreddit": "startups",
+              "comments": 2,
+              "business_score": 4,
+              "industry": "software"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "How to actually relax while running your own thing? When running a startup the line between work and chill is fading away. I feel like I\u2019m losing touch with people and myself. How to maintain peace of mind, how to relax on daily life &amp; vacation? \n",
+            "score": 0.03,
+            "timestamp": "2025-06-10T16:51:00",
+            "url": "https://reddit.com/r/Entrepreneur/comments/1l80pxa/how_to_actually_relax_while_running_your_own_thing/",
+            "metadata": {
+              "subreddit": "entrepreneur",
+              "comments": 1,
+              "business_score": 1,
+              "industry": "general"
+            }
+          },
+          {
+            "platform": "reddit",
+            "content": "I just want a job that isn't sales or fast food. Why is it impossible to find any entry-level position anymore? I graduated from college last spring and have been valeting as a source of income ever since, just to survive while finding a real job. I",
+            "score": 0.03,
+            "timestamp": "2025-06-10T09:48:17",
+            "url": "https://reddit.com/r/business/comments/1l7svz2/i_just_want_a_job_that_isnt_sales_or_fast_food/",
+            "metadata": {
+              "subreddit": "business",
+              "comments": 15,
+              "business_score": 1,
+              "industry": "general"
+            }
+          }
+        ],
+        "average_score": 0.023399999999999997,
+        "analysis_timestamp": "2025-06-10T18:04:35.229582"
+      },
+      "timestamp": "2025-06-10T18:04:35.235025"
+    }
+  ],
+  "discovery": [
+    {
+      "endpoint": "/api/discovery/subreddits",
+      "method": "GET",
+      "data": {
+        "subreddits": [
+          "startups",
+          "Entrepreneur",
+          "SaaS",
+          "freelance",
+          "smallbusiness",
+          "indiehackers",
+          "entrepreneur",
+          "business",
+          "marketing",
+          "webdev",
+          "productivity",
+          "consulting",
+          "remotework",
+          "devtools"
+        ],
+        "total": 14
+      }
+    },
+    {
+      "endpoint": "/api/discovery/overnight/status",
+      "method": "GET",
+      "data": {
+        "is_running": false,
+        "session_stats": {
+          "start_time": null,
+          "cycles_completed": 0,
+          "total_opportunities": 0,
+          "cpu_usage": [],
+          "memory_usage": []
+        },
+        "uptime_seconds": 0
+      }
+    }
+  ]
+}

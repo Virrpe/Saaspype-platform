@@ -1,0 +1,99 @@
+{
+  "cycle_number": 2,
+  "timestamp": "20250606_230906",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: New rule for /r/smallbusiness proposed - please comment",
+      "problem": "We've stuck to the same rules here for a very long time. They've served us well but with the rise in AI we may need to make a few adjustments. One I'd like to implement is to enable mods to remove pos...",
+      "solution": "Business opportunity addressing r/smallbusiness community need",
+      "source": "smallbusiness",
+      "cycle": 2,
+      "timestamp": "2025-06-06T23:08:59.611454",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/smallbusiness/comments/1kuhjyi/new_rule_for_rsmallbusiness_proposed_please/",
+      "reddit_score": 130,
+      "reddit_comments": 115
+    },
+    {
+      "title": "Reddit Discovery: Promote your business, week of June 2, 2025",
+      "problem": "Post business promotion messages here including special offers especially if you cater to small business.  \n\n**Be considerate. Make your message concise.**    \n\n**Note:** To prevent your messages from...",
+      "solution": "Business opportunity addressing r/smallbusiness community need",
+      "source": "smallbusiness",
+      "cycle": 2,
+      "timestamp": "2025-06-06T23:08:59.611454",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/smallbusiness/comments/1l17ds4/promote_your_business_week_of_june_2_2025/",
+      "reddit_score": 37,
+      "reddit_comments": 272
+    },
+    {
+      "title": "Reddit Discovery: I\u2019ve spent $173,000 on LinkedIn, Reddit, Meta &amp; Google ads for B2B\u2014here\u2019s wh...",
+      "problem": "(And before anyone says it. Yes I revised this with ChatGPT because my thoughts can be scattered sometimes but this isn\u2019t BS. Just trying to help.)\n\nNot here to flex. Just want to share what 1+ years,...",
+      "solution": "Business opportunity addressing r/smallbusiness community need",
+      "source": "smallbusiness",
+      "cycle": 2,
+      "timestamp": "2025-06-06T23:08:59.611454",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/smallbusiness/comments/1l51rs0/ive_spent_173000_on_linkedin_reddit_meta_google/",
+      "reddit_score": 13,
+      "reddit_comments": 56
+    },
+    {
+      "title": "Reddit Discovery: Please Read This Before Posting or Commenting",
+      "problem": "**Violating [the rules of this subreddit](https://www.reddit.com/r/freelance/about/rules) will cause your post/comment will be removed and you will be banned PERMANENTLY. This is your only warning!** ...",
+      "solution": "Business opportunity addressing r/freelance community need",
+      "source": "freelance",
+      "cycle": 2,
+      "timestamp": "2025-06-06T23:09:06.989846",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/freelance/comments/9imfv9/please_read_this_before_posting_or_commenting/",
+      "reddit_score": 386,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: Freelance Journey\u2019s Mistake: Being Greedy.",
+      "problem": "4 months ago i applied for a freelance project for an NGO. I was selected for interview, we went over the project details and later i sent quotation. i asked for 10K usd and through mail negotiation w...",
+      "solution": "Business opportunity addressing r/freelance community need",
+      "source": "freelance",
+      "cycle": 2,
+      "timestamp": "2025-06-06T23:09:06.989846",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/freelance/comments/1l31z3s/freelance_journeys_mistake_being_greedy/",
+      "reddit_score": 27,
+      "reddit_comments": 11
+    },
+    {
+      "title": "Reddit Discovery: I filed a legal claim after being unpaid for work I completed \u2014 and I\u2019m done sta...",
+      "problem": "This is a bit of a long story, but here\u2019s the short version:\n\nI\u2019m a creative professional (designer, strategist, art director) with 20+ years of experience. I was hired (by a friend of 25 years) last ...",
+      "solution": "Business opportunity addressing r/freelance community need",
+      "source": "freelance",
+      "cycle": 2,
+      "timestamp": "2025-06-06T23:09:06.989846",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/freelance/comments/1l1vhwi/i_filed_a_legal_claim_after_being_unpaid_for_work/",
+      "reddit_score": 189,
+      "reddit_comments": 85
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 9.5,
+    "memory_percent": 82.9,
+    "disk_percent": 78.7,
+    "available_gb": 1.3395729064941406,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 2,
+    "total_ideas": 12,
+    "uptime_minutes": 14.80014533996582,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

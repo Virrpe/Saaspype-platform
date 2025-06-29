@@ -1,0 +1,99 @@
+{
+  "cycle_number": 26,
+  "timestamp": "20250606_063419",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Starting a new job in consulting? Post here for questions about new hire advice,...",
+      "problem": "As per the title, post anything related to starting a new job / internship in here. PM mods if you don't get an answer after a few days and we'll try to fill in the gaps or nudge a regular to answer f...",
+      "solution": "Business opportunity addressing r/consulting community need",
+      "source": "consulting",
+      "cycle": 26,
+      "timestamp": "2025-06-06T06:34:13.627912",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/consulting/comments/1ifajri/starting_a_new_job_in_consulting_post_here_for/",
+      "reddit_score": 14,
+      "reddit_comments": 84
+    },
+    {
+      "title": "Reddit Discovery: Interested in becoming a consultant? Post here for basic questions, recruitment ...",
+      "problem": "Post anything related to learning about the consulting industry, recruitment advice, company / group research, or general insecurity in here. \n\n**If asking for feedback, please provide...**\n\na) the ty...",
+      "solution": "Business opportunity addressing r/consulting community need",
+      "source": "consulting",
+      "cycle": 26,
+      "timestamp": "2025-06-06T06:34:13.627912",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/consulting/comments/1k629yf/interested_in_becoming_a_consultant_post_here_for/",
+      "reddit_score": 9,
+      "reddit_comments": 94
+    },
+    {
+      "title": "Reddit Discovery: I don\u2019t think I can hack it as a consultant",
+      "problem": "I don\u2019t know why I\u2019m posting this. I\u2019ve been a consultant with the same firm for six years. I\u2019ve been promoted in that time and had good performance reviews. But I\u2019m really struggling. I returned from...",
+      "solution": "Business opportunity addressing r/consulting community need",
+      "source": "consulting",
+      "cycle": 26,
+      "timestamp": "2025-06-06T06:34:13.627912",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/consulting/comments/1l43lg7/i_dont_think_i_can_hack_it_as_a_consultant/",
+      "reddit_score": 73,
+      "reddit_comments": 15
+    },
+    {
+      "title": "Reddit Discovery: Remote Job Posts - Megathread",
+      "problem": "Hiring remote workers? Post your job in the comments.\n\nAll posts must have salary range &amp; geographic range.\n\nIf it doesn\u2019t have a salary, it\u2019s not a job.",
+      "solution": "Business opportunity addressing r/remotework community need",
+      "source": "remotework",
+      "cycle": 26,
+      "timestamp": "2025-06-06T06:34:19.023347",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/remotework/comments/1kyqg7q/remote_job_posts_megathread/",
+      "reddit_score": 14,
+      "reddit_comments": 7
+    },
+    {
+      "title": "Reddit Discovery: r/remotework needs a new mod or two",
+      "problem": "The sub is growing, and attracting spam, at a level that\u2019s starting to outstrip the current mod team\u2019s ability to clean up. \n\nA few requirements:\n- Your account ought to be quite aged. &gt;5 years.\n- ...",
+      "solution": "Business opportunity addressing r/remotework community need",
+      "source": "remotework",
+      "cycle": 26,
+      "timestamp": "2025-06-06T06:34:19.023347",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/remotework/comments/1kwuop7/rremotework_needs_a_new_mod_or_two/",
+      "reddit_score": 17,
+      "reddit_comments": 12
+    },
+    {
+      "title": "Reddit Discovery: You have my optimized resume.  Why, in 2025, must I enter it all again?",
+      "problem": "Mostly I just keep moving on because I\u2019m looking for a post-retirement job and my history goes back to the 1980s.    However, I have a kind-of-niche skill and want to get onto the radar of those jobs....",
+      "solution": "Business opportunity addressing r/remotework community need",
+      "source": "remotework",
+      "cycle": 26,
+      "timestamp": "2025-06-06T06:34:19.023347",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/remotework/comments/1l40rds/you_have_my_optimized_resume_why_in_2025_must_i/",
+      "reddit_score": 29,
+      "reddit_comments": 11
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 3.3,
+    "memory_percent": 77.9,
+    "disk_percent": 78.9,
+    "available_gb": 1.7335472106933594,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 26,
+    "total_ideas": 156,
+    "uptime_minutes": 300.4744953552882,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

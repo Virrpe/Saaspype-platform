@@ -1,0 +1,403 @@
+{
+  "timestamp": "20250606_004645",
+  "duration_seconds": 13.528005,
+  "total_items": 57,
+  "sources_scraped": 9,
+  "results": {
+    "hacker_news": [
+      {
+        "title": "Tokasaurus: An LLM Inference Engine for High-Throughput Workloads",
+        "url": "https://scalingintelligence.stanford.edu/blogs/tokasaurus/",
+        "score": 37,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.625172"
+      },
+      {
+        "title": "APL Interpreter – An implementation of APL, written in Haskell (2024)",
+        "url": "https://scharenbroch.dev/projects/apl-interpreter/",
+        "score": 22,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.625172"
+      },
+      {
+        "title": "The impossible predicament of the death newts",
+        "url": "https://crookedtimber.org/2025/06/05/occasional-paper-the-impossible-predicament-of-the-death-newts/",
+        "score": 363,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.625172"
+      },
+      {
+        "title": "Seven Days at the Bin Store",
+        "url": "https://defector.com/seven-days-at-the-bin-store",
+        "score": 113,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.625172"
+      },
+      {
+        "title": "Show HN: String Flux – Simplify everyday string transformations for developers",
+        "url": "https://stringflux.io",
+        "score": 5,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.625172"
+      },
+      {
+        "title": "Show HN: iOS Screen Time from a REST API",
+        "url": "https://www.thescreentimenetwork.com/api/",
+        "score": 66,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.626208"
+      },
+      {
+        "title": "Show HN: ClickStack – Open-source Datadog alternative by ClickHouse and HyperDX",
+        "url": "https://github.com/hyperdxio/hyperdx",
+        "score": 126,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.626208"
+      },
+      {
+        "title": "SkyRoof: New Ham Satellite Tracking and SDR Receiver Software",
+        "url": "https://www.rtl-sdr.com/skyroof-new-ham-satellite-tracking-and-sdr-receiver-software/",
+        "score": 19,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.627239"
+      },
+      {
+        "title": "The Universal Tech Tree",
+        "url": "https://asteriskmag.com/issues/10/the-universal-tech-tree",
+        "score": 37,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.627239"
+      },
+      {
+        "title": "Converge (YC S23) Well-capitalized New York startup seeks product developers",
+        "url": "https://www.runconverge.com/careers",
+        "score": 0,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:46:32.628412"
+      }
+    ],
+    "ycombinator_show": [
+      {
+        "title": "String Flux – Simplify everyday string transformations for developers",
+        "url": "https://stringflux.io",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:46:33.848978"
+      },
+      {
+        "title": "iOS Screen Time from a REST API",
+        "url": "https://www.thescreentimenetwork.com/api/",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:46:33.848978"
+      },
+      {
+        "title": "ClickStack – Open-source Datadog alternative by ClickHouse and HyperDX",
+        "url": "https://github.com/hyperdxio/hyperdx",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:46:33.848978"
+      },
+      {
+        "title": "Container Use for Agents",
+        "url": "https://github.com/dagger/container-use",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:46:33.848978"
+      },
+      {
+        "title": "Grab a Random ArXiv Paper",
+        "url": "https://jepedersen.dk/arxiv.html",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:46:33.848978"
+      },
+      {
+        "title": "I made a 3D SVG Renderer that projects textures without rasterization",
+        "url": "https://seve.blog/p/i-made-a-3d-svg-renderer-that-projects",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:46:33.848978"
+      },
+      {
+        "title": "MCP-Cloud – One-click hosting for MCP servers (50 templates)",
+        "url": "https://mcp-cloud.ai/",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:46:33.848978"
+      },
+      {
+        "title": "Create LLM graders and run evals in JavaScript with one file",
+        "url": "https://github.com/bolt-foundry/bolt-foundry/tree/main/packages/bff-eval",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:46:33.848978"
+      }
+    ],
+    "indie_hackers": [
+      {
+        "title": "Acquiring Baremetrics and setting his sights on $10M ARR",
+        "url": "https://www.indiehackers.com/post/tech/acquiring-baremetrics-and-setting-his-sights-on-10m-arr-j4pRR51ReC22qypJ1mQb",
+        "source": "indie_hackers",
+        "scraped_at": "2025-06-06T00:46:35.329564"
+      },
+      {
+        "title": "Where to deploy your AI agent for fast growth",
+        "url": "https://www.indiehackers.com/post/where-to-deploy-your-ai-agent-for-fast-growth-2b921247e0",
+        "source": "indie_hackers",
+        "scraped_at": "2025-06-06T00:46:35.329564"
+      },
+      {
+        "title": "Just launched SupaUI, a UI-first color palette generator for devs & designers",
+        "url": "https://www.indiehackers.com/post/just-launched-supaui-a-ui-first-color-palette-generator-for-devs-designers-3e046651c4",
+        "source": "indie_hackers",
+        "scraped_at": "2025-06-06T00:46:35.329564"
+      },
+      {
+        "title": "Hitting $1.2M ARR within a year with productized design servicesNick built a $1.2M ARR design service by focusing on one thing: roasts.",
+        "url": "https://www.indiehackers.com/post/services/hitting-1-2m-arr-within-a-year-with-productized-design-services-RQaHrYUKBzkPoqnfMbHq",
+        "source": "indie_hackers",
+        "scraped_at": "2025-06-06T00:46:35.329564"
+      }
+    ],
+    "github_trending": [
+      {
+        "title": "frdel /agent-zero",
+        "description": "Agent Zero AI framework",
+        "url": "https://github.com/frdel/agent-zero",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.600235"
+      },
+      {
+        "title": "nautechsystems /nautilus_trader",
+        "description": "A high-performance algorithmic trading platform and event-driven backtester",
+        "url": "https://github.com/nautechsystems/nautilus_trader",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      },
+      {
+        "title": "scrapy /scrapy",
+        "description": "Scrapy, a fast high-level web crawling & scraping framework for Python.",
+        "url": "https://github.com/scrapy/scrapy",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      },
+      {
+        "title": "onlook-dev /onlook",
+        "description": "The Cursor for Designers • An Open-Source Visual Vibecoding Editor • Visually build, style, and edit your React App with AI",
+        "url": "https://github.com/onlook-dev/onlook",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      },
+      {
+        "title": "Anduin2017 /HowToCook",
+        "description": "程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only).",
+        "url": "https://github.com/Anduin2017/HowToCook",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      },
+      {
+        "title": "netbirdio /netbird",
+        "description": "Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular access controls.",
+        "url": "https://github.com/netbirdio/netbird",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      },
+      {
+        "title": "iamgio /quarkdown",
+        "description": "🪐 Markdown with superpowers — from ideas to presentations, articles and books.",
+        "url": "https://github.com/iamgio/quarkdown",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      },
+      {
+        "title": "TapXWorld /ChinaTextbook",
+        "description": "所有小初高、大学PDF教材。",
+        "url": "https://github.com/TapXWorld/ChinaTextbook",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      },
+      {
+        "title": "ArduPilot /ardupilot",
+        "description": "ArduPlane, ArduCopter, ArduRover, ArduSub source",
+        "url": "https://github.com/ArduPilot/ardupilot",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      },
+      {
+        "title": "topoteretes /cognee",
+        "description": "Memory for AI Agents in 5 lines of code",
+        "url": "https://github.com/topoteretes/cognee",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:46:37.608783"
+      }
+    ],
+    "dev_to": [
+      {
+        "title": "Challenges 🤗",
+        "url": "https://dev.to/devteam/join-the-runner-h-ai-agent-prompting-challenge-10000-in-prizes-for-20-winners-30ki",
+        "source": "dev_to",
+        "scraped_at": "2025-06-06T00:46:38.897731"
+      }
+    ],
+    "medium_startup": [
+      {
+        "title": "Rosie Hoggmascall",
+        "url": "/@rosiehoggmascall?source=topic_portal---recommended_stories---startup---0-107--------------------81618892_64a5_41e7_946e_b06933b9dc8e--------------",
+        "source": "medium_startup",
+        "scraped_at": "2025-06-06T00:46:40.099071"
+      },
+      {
+        "title": "Aaron Dinin, PhD",
+        "url": "/@aarondinin?source=topic_portal---recommended_stories---startup---2-107--------------------81618892_64a5_41e7_946e_b06933b9dc8e--------------",
+        "source": "medium_startup",
+        "scraped_at": "2025-06-06T00:46:40.099071"
+      },
+      {
+        "title": "Paolo Molignini, PhD",
+        "url": "/@moligninip?source=topic_portal---recommended_stories---startup---3-107--------------------81618892_64a5_41e7_946e_b06933b9dc8e--------------",
+        "source": "medium_startup",
+        "scraped_at": "2025-06-06T00:46:40.099071"
+      }
+    ],
+    "reddit_entrepreneur": [
+      {
+        "title": "Thank You Thursday! Free Offerings and More - June 05, 2025",
+        "score": 2,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3ufs2/thank_you_thursday_free_offerings_and_more_june/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "Sick of Spam? Use the Report Button!",
+        "score": 12,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1k1wam9/sick_of_spam_use_the_report_button/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "My business has fully matched my engineer salary",
+        "score": 446,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3yz5w/my_business_has_fully_matched_my_engineer_salary/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "Any CEO who doesn't give the founding developers in his startip equity is pure evil",
+        "score": 83,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l44too/any_ceo_who_doesnt_give_the_founding_developers/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "Best productivity apps I actually use",
+        "score": 17,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l4cprj/best_productivity_apps_i_actually_use/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "Sites that paid me this month (May 2025)",
+        "score": 57,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l42ica/sites_that_paid_me_this_month_may_2025/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "You have no excuse not to build something",
+        "score": 9,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l4bzep/you_have_no_excuse_not_to_build_something/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "What would you do if someone offered you 2x your startup’s earnings to quit and be an employee?",
+        "score": 18,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l41d5c/what_would_you_do_if_someone_offered_you_2x_your/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "Going through with this, I'm gonna make this work",
+        "score": 8,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l4527x/going_through_with_this_im_gonna_make_this_work/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      },
+      {
+        "title": "What is the best business decision you took in 2025 as an entrepreneur?",
+        "score": 21,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3w8sj/what_is_the_best_business_decision_you_took_in/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:46:41.650507"
+      }
+    ],
+    "launching_next": [
+      {
+        "title": "HealthStubs",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:46:42.757118"
+      },
+      {
+        "title": "UIsnapper",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:46:42.758147"
+      },
+      {
+        "title": "The Way of Code",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:46:42.758147"
+      },
+      {
+        "title": "Janus (YC X25)",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:46:42.758147"
+      },
+      {
+        "title": "Tiptap AI Agent",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:46:42.758147"
+      },
+      {
+        "title": "Pet a dog to use social media — by Roots",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:46:42.758147"
+      }
+    ],
+    "maker_log": [
+      {
+        "title": "Ambitious Founder",
+        "url": "https://ambitiousfounder.com",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:46:44.393838"
+      },
+      {
+        "title": "Just fucking do it",
+        "url": "https://ambitiousfounder.com/just-fucking-do-it",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:46:44.393838"
+      },
+      {
+        "title": "25 Years Coding",
+        "url": "https://ambitiousfounder.com/25-years-coding",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:46:44.393838"
+      },
+      {
+        "title": "I lost my love for the web",
+        "url": "https://ambitiousfounder.com/i-lost-my-love-for-the-web",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:46:44.393838"
+      },
+      {
+        "title": "Struggling with Imposter Syndrome",
+        "url": "https://ambitiousfounder.com/struggling-with-imposter-syndrome",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:46:44.393838"
+      }
+    ]
+  },
+  "summary": {
+    "successful_sources": 9,
+    "failed_sources": 0,
+    "average_items_per_source": 6.333333333333333
+  }
+}

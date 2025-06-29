@@ -1,0 +1,177 @@
+{
+  "coordination_chains": {
+    "timestamp": "2025-01-18T12:45:00Z",
+    "status": "OPERATIONAL",
+    "purpose": "Multi-agent workflows with working handoffs and memory persistence",
+    
+    "workflow_patterns": {
+      "data_analysis_chain": {
+        "trigger": "Multi-source data analysis request",
+        "agents": ["discovery-intelligence-specialist", "backend-specialist", "frontend-specialist"],
+        "coordination": "PARALLEL_WITH_HANDOFFS",
+        "cost_tier": "TIER_3_COMPLEX",
+        "workflow": {
+          "step_1": {
+            "agent": "discovery-intelligence-specialist",
+            "task": "Analyze data sources and extract insights",
+            "handoff_to": "backend-specialist",
+            "context_pass": "Data insights + processing requirements"
+          },
+          "step_2": {
+            "agent": "backend-specialist", 
+            "task": "Process data and create APIs",
+            "handoff_to": "frontend-specialist",
+            "context_pass": "API endpoints + data structure"
+          },
+          "step_3": {
+            "agent": "frontend-specialist",
+            "task": "Build visualization and user interface",
+            "handoff_to": "orchestrator",
+            "context_pass": "Complete feature implementation"
+          }
+        }
+      },
+      
+      "system_issue_resolution": {
+        "trigger": "Critical system failure detected",
+        "agents": ["reflexion-agent", "backend-specialist", "memory-architect"],
+        "coordination": "SEQUENTIAL_EMERGENCY",
+        "cost_tier": "TIER_4_CRISIS",
+        "workflow": {
+          "step_1": {
+            "agent": "reflexion-agent",
+            "task": "Diagnose issue and determine root cause",
+            "handoff_to": "backend-specialist",
+            "context_pass": "Diagnosis + repair requirements"
+          },
+          "step_2": {
+            "agent": "backend-specialist",
+            "task": "Implement technical fixes",
+            "handoff_to": "memory-architect", 
+            "context_pass": "Fix implementation + system status"
+          },
+          "step_3": {
+            "agent": "memory-architect",
+            "task": "Validate system integrity and update coordination",
+            "handoff_to": "reflexion-agent",
+            "context_pass": "System validation + operational status"
+          }
+        }
+      },
+      
+      "feature_development_chain": {
+        "trigger": "New feature request",
+        "agents": ["product-strategist", "backend-specialist", "frontend-specialist", "api-security-agent"],
+        "coordination": "STAGED_PARALLEL",
+        "cost_tier": "TIER_3_COMPLEX",
+        "workflow": {
+          "step_1": {
+            "agent": "product-strategist",
+            "task": "Define feature requirements and strategy",
+            "handoff_to": ["backend-specialist", "frontend-specialist"],
+            "context_pass": "Feature spec + requirements"
+          },
+          "step_2": {
+            "agents": ["backend-specialist", "frontend-specialist"],
+            "task": "Parallel development - API and UI",
+            "coordination": "PARALLEL_SYNC_POINTS",
+            "handoff_to": "api-security-agent",
+            "context_pass": "Implementation + security review needed"
+          },
+          "step_3": {
+            "agent": "api-security-agent",
+            "task": "Security audit and validation",
+            "handoff_to": "orchestrator",
+            "context_pass": "Security-validated feature ready"
+          }
+        }
+      },
+      
+      "performance_optimization_chain": {
+        "trigger": "Performance issues detected",
+        "agents": ["reflexion-agent", "memory-architect", "backend-specialist"],
+        "coordination": "DIAGNOSTIC_PARALLEL",
+        "cost_tier": "TIER_2_MODERATE",
+        "workflow": {
+          "step_1": {
+            "agent": "reflexion-agent",
+            "task": "Performance monitoring and bottleneck identification",
+            "handoff_to": ["memory-architect", "backend-specialist"],
+            "context_pass": "Performance metrics + bottleneck analysis"
+          },
+          "step_2": {
+            "agents": ["memory-architect", "backend-specialist"],
+            "task": "Parallel optimization - memory and backend",
+            "coordination": "COORDINATED_OPTIMIZATION",
+            "handoff_to": "reflexion-agent",
+            "context_pass": "Optimization results + metrics"
+          },
+          "step_3": {
+            "agent": "reflexion-agent",
+            "task": "Validate improvements and monitor results",
+            "handoff_to": "orchestrator",
+            "context_pass": "Performance validation complete"
+          }
+        }
+      },
+      
+      "business_intelligence_chain": {
+        "trigger": "Business analysis request",
+        "agents": ["discovery-intelligence-specialist", "growth-hacker", "monetization-agent", "product-strategist"],
+        "coordination": "BUSINESS_ANALYSIS_PARALLEL",
+        "cost_tier": "TIER_3_COMPLEX",
+        "workflow": {
+          "step_1": {
+            "agent": "discovery-intelligence-specialist",
+            "task": "Market data collection and analysis",
+            "handoff_to": ["growth-hacker", "monetization-agent"],
+            "context_pass": "Market insights + opportunity data"
+          },
+          "step_2": {
+            "agents": ["growth-hacker", "monetization-agent"],
+            "task": "Parallel analysis - growth and revenue opportunities",
+            "coordination": "BUSINESS_SYNC",
+            "handoff_to": "product-strategist",
+            "context_pass": "Growth strategy + monetization plan"
+          },
+          "step_3": {
+            "agent": "product-strategist",
+            "task": "Strategic synthesis and roadmap creation",
+            "handoff_to": "orchestrator",
+            "context_pass": "Complete business strategy + roadmap"
+          }
+        }
+      }
+    },
+    
+    "coordination_protocols": {
+      "context_preservation": {
+        "method": "Memory-based handoffs with full context transfer",
+        "storage": "working-memory/current/handoff-context.json",
+        "persistence": "Cross-session context maintained",
+        "validation": "Context integrity checked on each handoff"
+      },
+      
+      "parallel_coordination": {
+        "sync_points": "Agents coordinate at defined milestones",
+        "conflict_resolution": "Memory-architect mediates conflicts",
+        "progress_tracking": "Real-time workflow status updates",
+        "failure_recovery": "Automatic fallback and retry logic"
+      },
+      
+      "cost_optimization": {
+        "tier_1_simple": "Single agent, minimal coordination overhead",
+        "tier_2_moderate": "2-3 agents, structured handoffs",
+        "tier_3_complex": "3-4 agents, parallel workflows with sync",
+        "tier_4_crisis": "Full mobilization, immediate resolution priority"
+      }
+    },
+    
+    "memory_integration": {
+      "handoff_memory": "working-memory/current/handoff-context.json",
+      "workflow_state": "working-memory/current/workflow-state.json", 
+      "coordination_log": "working-memory/current/coordination-log.jsonl",
+      "agent_status": "working-memory/agents/agent-state.json"
+    }
+  }
+} 

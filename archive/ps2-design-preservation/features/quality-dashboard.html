@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciq - Quality Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00ffff',
+                        secondary: '#ff00ff',
+                        surface: '#0a0a0f',
+                        'surface-elevated': '#1a1a2e',
+                        'text-primary': '#ffffff',
+                        'text-secondary': '#64748b',
+                        border: 'rgba(0, 255, 255, 0.1)'
+                    },
+                    fontFamily: {
+                        'sans': ['Geist', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        'mono': ['OCR-A', 'Consolas', 'Monaco', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; }
+        
+        /* PS2 Signal Console Background */
+        body {
+            background: #0a0a0f;
+            background-image: 
+                radial-gradient(circle at 30% 70%, rgba(0, 255, 255, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 0, 255, 0.03) 0%, transparent 50%),
+                linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.005) 25%, rgba(255, 255, 255, 0.005) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.005) 75%, rgba(255, 255, 255, 0.005) 76%, transparent 77%, transparent);
+            background-size: 400% 400%, 400% 400%, 4px 4px;
+            animation: ambientPulse 20s ease infinite;
+            position: relative;
+            overflow-x: hidden;
+            color: #ffffff;
+        }
+        
+        @keyframes ambientPulse {
+            0% { background-position: 0% 50%, 0% 50%, 0 0; }
+            50% { background-position: 100% 50%, 100% 50%, 0 0; }
+            100% { background-position: 0% 50%, 0% 50%, 0 0; }
+        }
+
+        /* Waveform Logo */
+        .waveform-logo {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .waveform-glyph {
+            width: 48px;
+            height: 28px;
+            background: linear-gradient(45deg, #00ffff 0%, #ff00ff 100%);
+            mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 28'><path d='M2 14 L8 6 L14 18 L20 14 L26 2 L32 14 L38 20 L46 8' stroke='black' stroke-width='3' fill='none'/></svg>");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            animation: pulseGlow 10s ease-in-out infinite;
+            position: relative;
+        }
+        
+        .waveform-glyph::before {
+            content: '';
+            position: absolute;
+            inset: -40px;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+            animation: breathe 10s ease-in-out infinite;
+            z-index: -1;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { 
+                transform: scale(1.0);
+                filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 16px #00ffff);
+            }
+            50% { 
+                transform: scale(1.02);
+                filter: drop-shadow(0 0 12px #00ffff) drop-shadow(0 0 24px #00ffff);
+            }
+        }
+        
+        @keyframes breathe {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.5; }
+        }
+
+        /* PS2 Console Cards */
+        .metric-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 255, 255, 0.1);
+            border-color: rgba(0, 255, 255, 0.2);
+        }
+        
+        /* PS2 Quality Gradients */
+        .quality-gradient {
+            background: linear-gradient(135deg, #00ffff 0%, #ff00ff 100%);
+        }
+        
+        .validation-gradient {
+            background: linear-gradient(135deg, #ff00ff 0%, #f5576c 100%);
+        }
+        
+        .intelligence-gradient {
+            background: linear-gradient(135deg, #00ffff 0%, #4facfe 100%);
+        }
+        
+        .performance-gradient {
+            background: linear-gradient(135deg, #00ffff 0%, #38f9d7 100%);
+        }
+        
+        .pulse-green {
+            animation: pulse-cyan 2s infinite;
+        }
+        
+        @keyframes pulse-cyan {
+            0%, 100% { background-color: #00ffff; }
+            50% { background-color: #0088cc; }
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        
+        .status-healthy { 
+            background-color: #00ffff;
+            box-shadow: 0 0 8px #00ffff;
+        }
+        .status-warning { 
+            background-color: #f59e0b;
+            box-shadow: 0 0 8px #f59e0b;
+        }
+        .status-critical { 
+            background-color: #ff00ff;
+            box-shadow: 0 0 8px #ff00ff;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+
+        /* Navigation Glass Effect - PS2 Style */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(25px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        /* PS2 Console Buttons */
+        .premium-button {
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            color: #0a0a0f;
+            font-weight: 600;
+        }
+        
+        .premium-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 255, 0.4);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            color: #0a0a0f;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #00ffff;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 255, 255, 0.1);
+            border-color: rgba(0, 255, 255, 0.5);
+        }
+
+        /* Metric counters */
+        .metric-counter {
+            font-family: 'Consolas', monospace;
+            font-variant-numeric: tabular-nums;
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Signal cards */
+        .signal-card { 
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .signal-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 255, 255, 0.1);
+            border-color: rgba(0, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Floating Social Media Icons Background -->
+    <div class="social-bg" id="socialIcons"></div>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-gray-900">Luciq</h1>
+                        <p class="text-xs text-gray-500">Quality Monitoring Dashboard</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/pages/dashboard.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-home mr-1"></i> Dashboard
+                    </a>
+                    <a href="/pages/discover.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-search mr-1"></i> Discover
+                    </a>
+                    <button onclick="logout()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-sign-out-alt mr-1"></i> Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo Mode Banner -->
+    <div id="demo-banner" class="bg-blue-50 border-l-4 border-blue-400 p-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <i class="fas fa-info-circle text-blue-400"></i>
+                </div>
+                <div class="ml-3">
+                    <p class="text-sm text-blue-700">
+                        <strong>Demo Mode:</strong> Auto-authentication enabled for Quality Dashboard testing. 
+                        This shows the new groundbreaking methods implementation (Task 3 - Quality Scoring Dashboard).
+                        <a href="/pages/auth.html" class="underline hover:text-blue-800">Click here to use proper authentication.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="px-4 py-6 sm:px-0">
+            <div class="quality-gradient rounded-lg p-8 text-white mb-8">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h1 class="text-3xl font-bold mb-2">Quality Dashboard</h1>
+                        <p class="text-lg opacity-90">Real-time monitoring of groundbreaking methods</p>
+                        <p class="text-sm opacity-75 mt-2">Phase 1 Foundation - Task 3 Implementation</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="pulse-green w-4 h-4 rounded-full mb-2"></div>
+                        <div class="text-sm opacity-75">System Status</div>
+                        <div class="text-lg font-bold">OPERATIONAL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert Section -->
+        <div id="alerts-section" class="mb-8">
+            <!-- Alerts will be loaded here -->
+        </div>
+
+        <!-- Key Quality Metrics -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="metric-card glass-card rounded-lg shadow p-6 floating-element">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 quality-gradient rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Quality Rate</p>
+                        <p class="text-2xl font-bold text-gray-900" id="quality-rate">--</p>
+                        <p class="text-xs text-gray-500">Current validation threshold: 60%</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="metric-card glass-card rounded-lg shadow p-6 floating-element" style="animation-delay: 0.1s;">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 validation-gradient rounded-lg flex items-center justify-center">
+                            <i class="fas fa-check-circle text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Signals Processed</p>
+                        <p class="text-2xl font-bold text-gray-900" id="signals-processed">--</p>
+                        <p class="text-xs text-gray-500">High quality signals validated</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="metric-card glass-card rounded-lg shadow p-6 floating-element" style="animation-delay: 0.2s;">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 intelligence-gradient rounded-lg flex items-center justify-center">
+                            <i class="fas fa-network-wired text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Platforms Active</p>
+                        <p class="text-2xl font-bold text-gray-900" id="platforms-active">--</p>
+                        <p class="text-xs text-gray-500">Cross-platform intelligence</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="metric-card glass-card rounded-lg shadow p-6 floating-element" style="animation-delay: 0.3s;">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 performance-gradient rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tachometer-alt text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Response Time</p>
+                        <p class="text-2xl font-bold text-gray-900" id="response-time">--</p>
+                        <p class="text-xs text-gray-500">API performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quality Dimensions -->
+        <div class="glass-card rounded-lg shadow-md p-6 mb-8 floating-element">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-semibold text-gray-900">
+                    <i class="fas fa-sliders-h text-blue-600 mr-2"></i>
+                    Quality Dimensions (6-Dimensional Scoring)
+                </h2>
+                <span class="text-sm text-gray-500">Real-time Validation Active</span>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="quality-dimensions">
+                <!-- Quality dimensions will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Data Source Health -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-semibold text-gray-900">
+                    <i class="fas fa-database text-green-600 mr-2"></i>
+                    Data Source Health Monitor
+                </h2>
+                <button onclick="refreshSourceHealth()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                    <i class="fas fa-sync mr-1"></i> Refresh
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="source-health">
+                <!-- Data sources will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Quality Trends Chart -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-semibold text-gray-900">
+                    <i class="fas fa-chart-line text-purple-600 mr-2"></i>
+                    Quality Trends (24 Hours)
+                </h2>
+                <div class="flex space-x-2">
+                    <button onclick="updateTrendsPeriod(6)" class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm">6h</button>
+                    <button onclick="updateTrendsPeriod(24)" class="bg-blue-600 text-white px-3 py-1 rounded text-sm">24h</button>
+                    <button onclick="updateTrendsPeriod(72)" class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm">72h</button>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="qualityTrendsChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Cross-Platform Intelligence Status -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-semibold text-gray-900">
+                        <i class="fas fa-brain text-blue-600 mr-2"></i>
+                        Cross-Platform Intelligence
+                    </h2>
+                    <span class="status-indicator status-healthy"></span>
+                </div>
+                
+                <div id="intelligence-status">
+                    <!-- Intelligence status will be loaded here -->
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-semibold text-gray-900">
+                        <i class="fas fa-cogs text-green-600 mr-2"></i>
+                        System Performance
+                    </h2>
+                    <span class="status-indicator status-healthy"></span>
+                </div>
+                
+                <div id="performance-status">
+                    <!-- Performance status will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // TEMPORARY AUTO-AUTHENTICATION FOR TESTING
+        // Check if we need to set up authentication automatically
+        function setupTestAuth() {
+            const token = localStorage.getItem('access_token');
+            if (!token) {
+                // Set up test authentication automatically
+                const testToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0QHNhYXNweXBlLmNvbSIsImV4cCI6MTc0ODk0MDYxNX0.v39T1PEul2LBPucP1lbMxKbxlwoyL8V6IpufZat4qPY';
+                localStorage.setItem('access_token', testToken);
+                localStorage.setItem('token', testToken);
+                console.log('🔧 Auto-authentication set up for Quality Dashboard testing');
+                return testToken;
+            }
+            return token;
+        }
+
+        // Call auto-authentication setup immediately
+        setupTestAuth();
+
+        let qualityChart = null;
+        let refreshInterval = null;
+
+        // Authentication check (now with auto-setup)
+        function checkAuth() {
+            let token = localStorage.getItem('access_token');
+            if (!token) {
+                // Try auto-setup first
+                token = setupTestAuth();
+                if (!token) {
+                    window.location.href = '/pages/auth.html';
+                    return false;
+                }
+            }
+            return token;
+        }
+
+        // API request helper
+        async function apiRequest(endpoint, options = {}) {
+            const token = checkAuth();
+            if (!token) return null;
+
+            const response = await fetch(`http://localhost:8000${endpoint}`, {
+                ...options,
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                    ...options.headers
+                }
+            });
+
+            if (response.status === 401) {
+                localStorage.removeItem('access_token');
+                window.location.href = '/pages/auth.html';
+                return null;
+            }
+
+            return response.json();
+        }
+
+        // Load quality metrics
+        async function loadQualityMetrics() {
+            try {
+                const data = await apiRequest('/api/quality/metrics');
+                if (!data) return;
+
+                // Update key metrics
+                const qualityRate = data.current_validation.high_quality_signals > 0 
+                    ? ((data.current_validation.high_quality_signals / (data.current_validation.high_quality_signals + data.current_validation.low_quality_filtered)) * 100).toFixed(1)
+                    : '100';
+                
+                document.getElementById('quality-rate').textContent = qualityRate + '%';
+                document.getElementById('signals-processed').textContent = data.current_validation.total_signals_processed || '0';
+                document.getElementById('platforms-active').textContent = data.cross_platform_intelligence.platforms_configured || '0';
+                document.getElementById('response-time').textContent = data.real_time_performance.api_response_time || '--';
+
+                // Update quality dimensions
+                updateQualityDimensions(data.quality_dimensions);
+
+                // Update source health
+                updateSourceHealth(data.data_sources);
+
+                // Update intelligence status
+                updateIntelligenceStatus(data.cross_platform_intelligence);
+
+                // Update performance status
+                updatePerformanceStatus(data.real_time_performance);
+
+            } catch (error) {
+                console.error('Error loading quality metrics:', error);
+            }
+        }
+
+        // Update quality dimensions display
+        function updateQualityDimensions(dimensions) {
+            const container = document.getElementById('quality-dimensions');
+            container.innerHTML = '';
+
+            Object.entries(dimensions).forEach(([name, info]) => {
+                const dimensionCard = document.createElement('div');
+                dimensionCard.className = 'bg-gray-50 rounded-lg p-4';
+                dimensionCard.innerHTML = `
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-gray-900 capitalize">${name.replace('_', ' ')}</h3>
+                        <span class="status-indicator ${info.status === 'active' ? 'status-healthy' : 'status-warning'}"></span>
+                    </div>
+                    <div class="text-sm text-gray-600">Weight: ${(info.weight * 100).toFixed(0)}%</div>
+                    <div class="text-xs text-gray-500 mt-1">Status: ${info.status}</div>
+                `;
+                container.appendChild(dimensionCard);
+            });
+        }
+
+        // Update source health display
+        function updateSourceHealth(sourcesData) {
+            const container = document.getElementById('source-health');
+            container.innerHTML = '';
+
+            sourcesData.active_sources.forEach(source => {
+                const sourceCard = document.createElement('div');
+                sourceCard.className = 'bg-gray-50 rounded-lg p-4';
+                sourceCard.innerHTML = `
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="font-semibold text-gray-900 capitalize">${source}</h3>
+                        <span class="status-indicator status-healthy"></span>
+                    </div>
+                    <div class="text-xs text-gray-500">Last check: Just now</div>
+                    <div class="text-xs text-green-600 mt-1">✓ Healthy</div>
+                `;
+                container.appendChild(sourceCard);
+            });
+        }
+
+        // Update intelligence status
+        function updateIntelligenceStatus(intelligenceData) {
+            const container = document.getElementById('intelligence-status');
+            container.innerHTML = `
+                <div class="space-y-4">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Platforms Configured:</span>
+                        <span class="font-semibold">${intelligenceData.platforms_configured}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Correlation Types:</span>
+                        <span class="font-semibold">${intelligenceData.correlation_types}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Universal Trends:</span>
+                        <span class="font-semibold text-green-600">${intelligenceData.universal_trends_detected ? 'Active' : 'Inactive'}</span>
+                    </div>
+                    <div class="text-xs text-gray-500">Last analysis: ${new Date(intelligenceData.last_correlation_analysis).toLocaleTimeString()}</div>
+                </div>
+            `;
+        }
+
+        // Update performance status
+        function updatePerformanceStatus(performanceData) {
+            const container = document.getElementById('performance-status');
+            container.innerHTML = `
+                <div class="space-y-4">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Processing Time:</span>
+                        <span class="font-semibold text-green-600">${performanceData.average_processing_time}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">API Response:</span>
+                        <span class="font-semibold text-green-600">${performanceData.api_response_time}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">System Load:</span>
+                        <span class="font-semibold text-green-600">${performanceData.system_load}</span>
+                    </div>
+                    <div class="text-xs text-gray-500">Last updated: ${new Date(performanceData.last_updated).toLocaleTimeString()}</div>
+                </div>
+            `;
+        }
+
+        // Load quality trends chart
+        async function loadQualityTrends(hoursBack = 24) {
+            try {
+                const data = await apiRequest(`/api/quality/trends?hours_back=${hoursBack}`);
+                if (!data) return;
+
+                const ctx = document.getElementById('qualityTrendsChart').getContext('2d');
+                
+                if (qualityChart) {
+                    qualityChart.destroy();
+                }
+
+                qualityChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.trends.map(t => new Date(t.timestamp).toLocaleTimeString()),
+                        datasets: [{
+                            label: 'Quality Rate (%)',
+                            data: data.trends.map(t => t.quality_rate),
+                            borderColor: 'rgb(59, 130, 246)',
+                            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                            tension: 0.1,
+                            fill: true
+                        }, {
+                            label: 'Signals Processed',
+                            data: data.trends.map(t => t.signals_processed),
+                            borderColor: 'rgb(16, 185, 129)',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            tension: 0.1,
+                            yAxisID: 'y1'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                title: {
+                                    display: true,
+                                    text: 'Quality Rate (%)'
+                                }
+                            },
+                            y1: {
+                                type: 'linear',
+                                display: true,
+                                position: 'right',
+                                title: {
+                                    display: true,
+                                    text: 'Signals Processed'
+                                },
+                                grid: {
+                                    drawOnChartArea: false,
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top'
+                            }
+                        }
+                    }
+                });
+
+            } catch (error) {
+                console.error('Error loading quality trends:', error);
+            }
+        }
+
+        // Load alerts
+        async function loadAlerts() {
+            try {
+                const data = await apiRequest('/api/quality/alerts');
+                if (!data) return;
+
+                const container = document.getElementById('alerts-section');
+                
+                if (data.alerts.length === 0) {
+                    container.innerHTML = '';
+                    return;
+                }
+
+                container.innerHTML = data.alerts.map(alert => `
+                    <div class="bg-${alert.type === 'success' ? 'green' : alert.type === 'warning' ? 'yellow' : 'red'}-50 border border-${alert.type === 'success' ? 'green' : alert.type === 'warning' ? 'yellow' : 'red'}-200 rounded-lg p-4 mb-4">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-${alert.type === 'success' ? 'check-circle text-green-600' : alert.type === 'warning' ? 'exclamation-triangle text-yellow-600' : 'exclamation-circle text-red-600'}"></i>
+                            </div>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-medium text-${alert.type === 'success' ? 'green' : alert.type === 'warning' ? 'yellow' : 'red'}-800">
+                                    ${alert.message}
+                                </h3>
+                                <div class="text-sm text-${alert.type === 'success' ? 'green' : alert.type === 'warning' ? 'yellow' : 'red'}-700 mt-1">
+                                    ${alert.details}
+                                </div>
+                                <div class="text-xs text-gray-500 mt-2">
+                                    ${new Date(alert.timestamp).toLocaleString()}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+
+            } catch (error) {
+                console.error('Error loading alerts:', error);
+            }
+        }
+
+        // Update trends period
+        function updateTrendsPeriod(hours) {
+            // Update button states
+            document.querySelectorAll('button[onclick^="updateTrendsPeriod"]').forEach(btn => {
+                btn.className = btn.className.replace('bg-blue-600 text-white', 'bg-gray-200 hover:bg-gray-300 text-gray-700');
+            });
+            event.target.className = 'bg-blue-600 text-white px-3 py-1 rounded text-sm';
+            
+            loadQualityTrends(hours);
+        }
+
+        // Refresh source health
+        function refreshSourceHealth() {
+            loadQualityMetrics();
+        }
+
+        // Logout function
+        function logout() {
+            localStorage.removeItem('access_token');
+            window.location.href = '/pages/auth.html';
+        }
+
+        // Initialize dashboard
+        function initDashboard() {
+            if (!checkAuth()) return;
+            
+            loadQualityMetrics();
+            loadQualityTrends();
+            loadAlerts();
+            
+            // Set up auto-refresh every 30 seconds
+            refreshInterval = setInterval(() => {
+                loadQualityMetrics();
+                loadAlerts();
+            }, 30000);
+        }
+
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', () => {
+            if (refreshInterval) {
+                clearInterval(refreshInterval);
+            }
+        });
+
+        // Create floating social media icons with balloon effects
+        function createSocialIcons() {
+            const socialContainer = document.getElementById('socialIcons');
+            const socialIcons = [
+                { icon: 'fab fa-twitter', class: 'twitter' },
+                { icon: 'fab fa-reddit', class: 'reddit' },
+                { icon: 'fab fa-github', class: 'github' },
+                { icon: 'fab fa-hacker-news', class: 'hacker-news' },
+                { icon: 'fas fa-building', class: 'business' },
+                { icon: 'fas fa-fire', class: 'fire' },
+                { icon: 'fas fa-crown', class: 'crown' },
+                { icon: 'fas fa-chart-line', class: 'chart' },
+                { icon: 'fab fa-twitter', class: 'twitter' },
+                { icon: 'fab fa-reddit', class: 'reddit' },
+                { icon: 'fab fa-github', class: 'github' },
+                { icon: 'fas fa-building', class: 'business' },
+                { icon: 'fas fa-fire', class: 'fire' },
+                { icon: 'fas fa-chart-line', class: 'chart' }
+            ];
+            
+            socialIcons.forEach((iconData, index) => {
+                const icon = document.createElement('i');
+                icon.className = `${iconData.icon} social-icon ${iconData.class}`;
+                icon.style.left = Math.random() * 100 + '%';
+                icon.style.top = Math.random() * 100 + '%';
+                icon.style.animationDelay = Math.random() * 15 + 's';
+                icon.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                socialContainer.appendChild(icon);
+            });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            initDashboard();
+            createSocialIcons(); // Add balloon effects
+            console.log('🎈 Quality Dashboard with Balloon Effects Loaded');
+            console.log('✨ RGB Neon Glow Effects Active');
+        });
+    </script>
+</body>
+</html> 

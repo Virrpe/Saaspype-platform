@@ -1,0 +1,89 @@
+version: '3.8'
+
+# Luciq Enhanced Docker Compose - Phase 23: AI Enhancement Integration
+# Incremental AI integration with container stability monitoring
+
+services:
+  # Enhanced Backend with AI Integration
+  luciq-backend-enhanced:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend.enhanced
+    container_name: luciq-backend-enhanced
+    ports:
+      - "8003:8003"
+    environment:
+      - LUCIQ_ENHANCED_MODE=true
+      - LUCIQ_ENABLE_SEMANTIC_AI=true
+      - LUCIQ_DISABLE_HEAVY_AI=true
+      - LUCIQ_FAST_MODE=true
+      - API_HOST=0.0.0.0
+      - API_PORT=8003
+      - DATABASE_PATH=/app/luciq_discovery.db
+      - CORS_ORIGINS=*
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./working-memory:/app/working-memory
+      - ./data:/app/data
+      - ./logs:/app/logs
+    networks:
+      - luciq-enhanced-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 15s
+      retries: 3
+      start_period: 90s
+    depends_on:
+      - luciq-redis
+
+  # Frontend (existing)
+  luciq-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: luciq-frontend-enhanced
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - BACKEND_URL=http://luciq-backend-enhanced:8003
+    networks:
+      - luciq-enhanced-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    depends_on:
+      - luciq-backend-enhanced
+
+  # Redis Cache (existing)
+  luciq-redis:
+    image: redis:7-alpine
+    container_name: luciq-redis-enhanced
+    ports:
+      - "6379:6379"
+    networks:
+      - luciq-enhanced-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    volumes:
+      - redis-data:/data
+
+# Networks
+networks:
+  luciq-enhanced-network:
+    driver: bridge
+    name: luciq-enhanced-network
+
+# Volumes
+volumes:
+  redis-data:
+    driver: local 

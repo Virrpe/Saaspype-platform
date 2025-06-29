@@ -1,0 +1,99 @@
+{
+  "cycle_number": 22,
+  "timestamp": "20250606_055327",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Upcoming AmA: \"Bootstrapped, building 20 products simultaneously, competing on p...",
+      "problem": "Hey folks, Daniel here from\u00a0[r/SaaS](https://www.reddit.com/r/SaaS/)\u00a0with a new upcoming AmA.\n\nThis time, we'll have Neeraj Singh from [BigBinary](https://www.bigbinary.com/) and the [Neeto suite](htt...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 22,
+      "timestamp": "2025-06-06T05:53:21.889175",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1kwi1is/upcoming_ama_bootstrapped_building_20_products/",
+      "reddit_score": 8,
+      "reddit_comments": 5
+    },
+    {
+      "title": "Reddit Discovery: Weekly Feedback Post - SaaS Products, Ideas, Companies",
+      "problem": "This is a weekly post where you're free to post your SaaS ideas, products, companies etc. that need feedback. Here, people who are willing to share feedback are going to join conversations. Posts aski...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 22,
+      "timestamp": "2025-06-06T05:53:21.889175",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l32n01/weekly_feedback_post_saas_products_ideas_companies/",
+      "reddit_score": 3,
+      "reddit_comments": 2
+    },
+    {
+      "title": "Reddit Discovery: Your SaaS isn't dying because of churn. It's dying because you're selling to bro...",
+      "problem": "Everyone obsesses over churn rates. Our churn is 8%! We need to get it down to 3%!\n\nBut here's what I see at every struggling SaaS I work with: they're not losing customers because their product sucks...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 22,
+      "timestamp": "2025-06-06T05:53:21.889175",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l46pff/your_saas_isnt_dying_because_of_churn_its_dying/",
+      "reddit_score": 80,
+      "reddit_comments": 20
+    },
+    {
+      "title": "Reddit Discovery: The Evil That is American Business",
+      "problem": "I'm an old timer. I began work in the US around 1980. I was there during the monopolies of AT&amp;T, IBM, etc. I had gone to technical school after getting my degree in English and became a programmer...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 22,
+      "timestamp": "2025-06-06T05:53:27.177011",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l3z0j1/the_evil_that_is_american_business/",
+      "reddit_score": 80,
+      "reddit_comments": 62
+    },
+    {
+      "title": "Reddit Discovery: Should I go for double majoring in business?",
+      "problem": "I\u2019m a computer science major and I plan on transferring schools in 2 years. I want to double major in business and computer science. I know it sounds dumb but is it worth it double majoring in busines...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 22,
+      "timestamp": "2025-06-06T05:53:27.177011",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l4guxa/should_i_go_for_double_majoring_in_business/",
+      "reddit_score": 3,
+      "reddit_comments": 2
+    },
+    {
+      "title": "Reddit Discovery: They ask us to dream big\u2014 but",
+      "problem": "They ask us to dream big\n\u2014 but only if we look like them, talk like them, and drink coffee like them.\nBharat's hunger doesn't fit in their brunch tables.",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 22,
+      "timestamp": "2025-06-06T05:53:27.177011",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l4iugk/they_ask_us_to_dream_big_but/",
+      "reddit_score": 1,
+      "reddit_comments": 0
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 2.9,
+    "memory_percent": 78.0,
+    "disk_percent": 78.9,
+    "available_gb": 1.7235374450683594,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 22,
+    "total_ideas": 132,
+    "uptime_minutes": 259.6104233821233,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

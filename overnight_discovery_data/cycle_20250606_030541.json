@@ -1,0 +1,99 @@
+{
+  "cycle_number": 6,
+  "timestamp": "20250606_030541",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Weekly Who's Hiring Post for June 02, 2025",
+      "problem": "***For the job seekers, simply comment on a job posting listed or DM that user if you are interested. Any comment on the main post that is not a job posting will be removed.***\n\nWelcome to the weekly ...",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 6,
+      "timestamp": "2025-06-06T03:05:36.653966",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l1hfqo/weekly_whos_hiring_post_for_june_02_2025/",
+      "reddit_score": 2,
+      "reddit_comments": 2
+    },
+    {
+      "title": "Reddit Discovery: Weekly R/Sales Wednesday Night Live Chat Starts at 7PM CST",
+      "problem": "&amp;#x200B;\n\n[Use this link to join our official server.](https://discord.gg/9NpC5zzAng)",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 6,
+      "timestamp": "2025-06-06T03:05:36.653966",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l34znm/weekly_rsales_wednesday_night_live_chat_starts_at/",
+      "reddit_score": 1,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: I'm in my 30s, I'm lost, fell on my ass again, and can't take another scummy sal...",
+      "problem": "So...yeah my only successful job experience is sales, but it was all terrible experience. I recently got scammed out of around $140k and have to start my life over, and the only chance in Hell I have ...",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 6,
+      "timestamp": "2025-06-06T03:05:36.653966",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l4db46/im_in_my_30s_im_lost_fell_on_my_ass_again_and/",
+      "reddit_score": 32,
+      "reddit_comments": 27
+    },
+    {
+      "title": "Reddit Discovery: Welcome to r/ecommerce! Please Read Before Posting",
+      "problem": "**Table of Contents:**\n\nI. Account Requirements\n\nII. Content Rules\n\nIII. Linking Policies\n\nIV. Dropshipping Guidelines\n\nV. Reporting Violations\n\nVI. Frequently Asked Questions (FAQ)\n\nVII. Encouraged C...",
+      "solution": "Business opportunity addressing r/ecommerce community need",
+      "source": "ecommerce",
+      "cycle": 6,
+      "timestamp": "2025-06-06T03:05:41.988471",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/ecommerce/comments/1j3crv8/welcome_to_recommerce_please_read_before_posting/",
+      "reddit_score": 25,
+      "reddit_comments": 68
+    },
+    {
+      "title": "Reddit Discovery: How did you get your first online shop off the ground?",
+      "problem": "I\u2019m finally ready to launch an online shop (apparel) but overwhelmed with all the options out there. Did you start by choosing a platform like shopify, woo commerce, webflow or framer? What early issu...",
+      "solution": "Business opportunity addressing r/ecommerce community need",
+      "source": "ecommerce",
+      "cycle": 6,
+      "timestamp": "2025-06-06T03:05:41.988471",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/ecommerce/comments/1l422zf/how_did_you_get_your_first_online_shop_off_the/",
+      "reddit_score": 15,
+      "reddit_comments": 11
+    },
+    {
+      "title": "Reddit Discovery: Why is Microsoft Advertising absolute garbage?",
+      "problem": "We have a Shopify site we wanted to get setup with Microsoft Advertising and when we connected our Google merchant account they blocked our account immediately. We fought it and provided all required ...",
+      "solution": "Business opportunity addressing r/ecommerce community need",
+      "source": "ecommerce",
+      "cycle": 6,
+      "timestamp": "2025-06-06T03:05:41.988471",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/ecommerce/comments/1l3zxf3/why_is_microsoft_advertising_absolute_garbage/",
+      "reddit_score": 9,
+      "reddit_comments": 3
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 5.1,
+    "memory_percent": 76.5,
+    "disk_percent": 78.8,
+    "available_gb": 1.8441619873046875,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 6,
+    "total_ideas": 36,
+    "uptime_minutes": 91.85724742412567,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

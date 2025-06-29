@@ -1,0 +1,262 @@
+{
+  "timestamp": "20250606_232703",
+  "duration_seconds": 14.514288,
+  "total_opportunities": 11,
+  "core_opportunities": 7,
+  "additional_opportunities": 4,
+  "sources_scraped": {
+    "core_sources": 8,
+    "additional_sources": 3,
+    "total_sources": 11
+  },
+  "opportunities": [
+    {
+      "title": "Emerging Opportunity: Ai Solutions",
+      "description": "Market opportunity detected across 44 signals from 4 platforms. Growing demand and engagement patterns suggest emerging business potential.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "firecrawl_intelligence",
+        "hacker_news",
+        "reddit",
+        "github"
+      ],
+      "keywords": [
+        "ai"
+      ],
+      "discovered_at": "2025-06-06T23:27:03.446673"
+    },
+    {
+      "title": "Emerging Opportunity: App Solutions",
+      "description": "Market opportunity detected across 37 signals from 1 platforms. Growing demand and engagement patterns suggest emerging business potential.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "app"
+      ],
+      "discovered_at": "2025-06-06T23:27:03.452476"
+    },
+    {
+      "title": "Emerging Opportunity: Sales Solutions",
+      "description": "Market opportunity detected across 37 signals from 1 platforms. Growing demand and engagement patterns suggest emerging business potential.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "sales"
+      ],
+      "discovered_at": "2025-06-06T23:27:03.457735"
+    },
+    {
+      "title": "Emerging Opportunity: Need Solutions",
+      "description": "Market opportunity detected across 39 signals from 3 platforms. Growing demand and engagement patterns suggest emerging business potential.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "firecrawl_intelligence",
+        "reddit",
+        "enhanced_twitter"
+      ],
+      "keywords": [
+        "need"
+      ],
+      "discovered_at": "2025-06-06T23:27:03.460787"
+    },
+    {
+      "title": "Emerging Opportunity: Time Consuming Solutions",
+      "description": "Market opportunity detected across 37 signals from 1 platforms. Growing demand and engagement patterns suggest emerging business potential.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "time consuming"
+      ],
+      "discovered_at": "2025-06-06T23:27:03.464467"
+    },
+    {
+      "title": "Emerging Opportunity: Productivity Solutions",
+      "description": "Market opportunity detected across 10 signals from 3 platforms. Growing demand and engagement patterns suggest emerging business potential.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "firecrawl_intelligence",
+        "twitter",
+        "enhanced_twitter"
+      ],
+      "keywords": [
+        "productivity"
+      ],
+      "discovered_at": "2025-06-06T23:27:03.464467"
+    },
+    {
+      "title": "Emerging Opportunity: Creator Solutions",
+      "description": "Market opportunity detected across 5 signals from 1 platforms. Growing demand and engagement patterns suggest emerging business potential.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.5,
+      "sources": [
+        "github"
+      ],
+      "keywords": [
+        "creator"
+      ],
+      "discovered_at": "2025-06-06T23:27:03.464467"
+    },
+    {
+      "title": "Business Opportunity: Customer Solutions",
+      "description": "Emerging opportunity detected across 3 additional sources",
+      "momentum_score": 6.0,
+      "confidence_level": 0.8999999999999999,
+      "sources": [
+        "quora",
+        "ycombinator",
+        "medium"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Show HN: Built a tool to automate customer onboarding - Spent 6 months building this after struggling with manual onboarding processes', timestamp=datetime.datetime(2025, 6, 6, 21, 27, 3, 465668), engagement_score=156, sentiment_score=0.7, keywords=['customer'], url='https://news.ycombinator.com/', metadata={'comments': 45, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 20, 27, 3, 465668), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 19, 27, 3, 465668), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "customer"
+      ],
+      "discovered_at": "2025-06-06 23:27:03.465668"
+    },
+    {
+      "title": "Business Opportunity: Saas Solutions",
+      "description": "Emerging opportunity detected across 3 additional sources",
+      "momentum_score": 6.0,
+      "confidence_level": 0.8999999999999999,
+      "sources": [
+        "quora",
+        "ycombinator",
+        "medium"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Ask HN: Best way to validate SaaS ideas before building? - Looking for advice on validating business ideas without spending months building', timestamp=datetime.datetime(2025, 6, 6, 21, 27, 3, 465668), engagement_score=89, sentiment_score=0.7, keywords=['saas', 'business', 'idea'], url='https://news.ycombinator.com/', metadata={'comments': 67, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 20, 27, 3, 465668), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 19, 27, 3, 465668), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "saas"
+      ],
+      "discovered_at": "2025-06-06 23:27:03.465668"
+    },
+    {
+      "title": "Business Opportunity: Business Solutions",
+      "description": "Emerging opportunity detected across 4 additional sources",
+      "momentum_score": 8.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "quora",
+        "ycombinator",
+        "medium"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Ask HN: Best way to validate SaaS ideas before building? - Looking for advice on validating business ideas without spending months building', timestamp=datetime.datetime(2025, 6, 6, 21, 27, 3, 465668), engagement_score=89, sentiment_score=0.7, keywords=['saas', 'business', 'idea'], url='https://news.ycombinator.com/', metadata={'comments': 67, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='The Hidden Costs of Manual Business Processes - Small businesses lose thousands of hours annually on manual processes that could be automated', timestamp=datetime.datetime(2025, 6, 6, 20, 27, 3, 465668), engagement_score=156, sentiment_score=0.6, keywords=['business'], url='https://medium.com/', metadata={'responses': 8, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: What are the biggest challenges facing small business owners in 2024? A: Cash flow management, finding reliable employees, and digital transformation are the top issues', timestamp=datetime.datetime(2025, 6, 6, 19, 27, 3, 465668), engagement_score=89, sentiment_score=0.5, keywords=['business'], url='https://quora.com/', metadata={'answers': 23, 'platform': 'quora'}, credibility_weight=0.65)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 19, 27, 3, 465668), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "business"
+      ],
+      "discovered_at": "2025-06-06 23:27:03.465668"
+    },
+    {
+      "title": "Business Opportunity: Startup Solutions",
+      "description": "Emerging opportunity detected across 3 additional sources",
+      "momentum_score": 6.0,
+      "confidence_level": 0.8999999999999999,
+      "sources": [
+        "quora",
+        "ycombinator",
+        "medium"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Show HN: Open source alternative to expensive analytics tools - Built this because existing analytics tools are too expensive for startups', timestamp=datetime.datetime(2025, 6, 6, 21, 27, 3, 465668), engagement_score=234, sentiment_score=0.7, keywords=['startup'], url='https://news.ycombinator.com/', metadata={'comments': 78, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 20, 27, 3, 465668), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 19, 27, 3, 465668), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "startup"
+      ],
+      "discovered_at": "2025-06-06 23:27:03.465668"
+    }
+  ],
+  "analysis": {
+    "total_signals": 7,
+    "total_opportunities": 11,
+    "source_distribution": {
+      "ycombinator": 3,
+      "medium": 2,
+      "quora": 2
+    },
+    "top_keywords": {
+      "business": 4,
+      "customer": 3,
+      "saas": 3,
+      "startup": 3,
+      "idea": 1,
+      "problem": 1
+    },
+    "engagement_metrics": {
+      "total_engagement": 1025,
+      "average_engagement": 146.42857142857142,
+      "high_engagement_signals": 4
+    }
+  },
+  "source_performance": {
+    "firecrawl_intelligence": {
+      "opportunities": 3,
+      "total_score": 30.0,
+      "average_score": 10.0
+    },
+    "hacker_news": {
+      "opportunities": 1,
+      "total_score": 10.0,
+      "average_score": 10.0
+    },
+    "reddit": {
+      "opportunities": 5,
+      "total_score": 50.0,
+      "average_score": 10.0
+    },
+    "github": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "enhanced_twitter": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "twitter": {
+      "opportunities": 1,
+      "total_score": 10.0,
+      "average_score": 10.0
+    },
+    "quora": {
+      "opportunities": 4,
+      "total_score": 26.0,
+      "average_score": 6.5
+    },
+    "ycombinator": {
+      "opportunities": 4,
+      "total_score": 26.0,
+      "average_score": 6.5
+    },
+    "medium": {
+      "opportunities": 4,
+      "total_score": 26.0,
+      "average_score": 6.5
+    }
+  }
+}

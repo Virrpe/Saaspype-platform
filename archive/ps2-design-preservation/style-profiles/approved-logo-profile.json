@@ -1,0 +1,193 @@
+{
+  "luciq_approved_logo_profile": {
+    "metadata": {
+      "version": "1.0_approved",
+      "created": "2025-01-15",
+      "status": "LOCKED_CANONICAL_VERSION",
+      "purpose": "Exact specifications for approved Luciq waveform logo"
+    },
+    
+    "visual_specifications": {
+      "concept": "Waveform-inspired signal processing glyph with cyan-magenta gradient",
+      "style_keywords": [
+        "retro-futurist",
+        "PS2_UI_aesthetic", 
+        "signal_analysis_console",
+        "intentional_minimalism",
+        "quiet_confidence",
+        "ambient_intelligence"
+      ]
+    },
+    
+    "glyph_design": {
+      "core_shape": "Angular waveform with symmetry-breaking elements",
+      "geometry": {
+        "style": "Clean line-based construction",
+        "stroke_width": "3px",
+        "corners": "Sharp angular transitions",
+        "symmetry": "Intentionally asymmetrical for dynamic feel"
+      },
+      "color_treatment": {
+        "type": "linear_gradient", 
+        "direction": "45deg",
+        "start_color": "#00ffff",
+        "end_color": "#ff00ff",
+        "css": "background: linear-gradient(45deg, #00ffff 0%, #ff00ff 100%)"
+      }
+    },
+    
+    "typography": {
+      "wordmark": "Luciq",
+      "tagline": "Clear Intelligence",
+      "font_specifications": {
+        "primary": {
+          "family": "Geist or similar modern tech sans",
+          "weight": "500",
+          "color": "#ffffff",
+          "letter_spacing": "0.01em"
+        },
+        "tagline": {
+          "family": "Geist or Untitled Sans",
+          "weight": "400", 
+          "color": "#a0a0a0",
+          "size": "smaller than wordmark"
+        }
+      }
+    },
+    
+    "layout_specifications": {
+      "arrangement": "Glyph above wordmark, centered alignment",
+      "spacing": {
+        "glyph_to_wordmark": "24px",
+        "wordmark_to_tagline": "8px",
+        "overall_padding": "32px minimum"
+      },
+      "background": {
+        "color": "#0a0a0f",
+        "description": "Deep black/navy for maximum contrast"
+      }
+    },
+    
+    "enhancement_effects": {
+      "radial_glow": {
+        "type": "Subtle cyan radial blur behind glyph",
+        "opacity": "30-40%",
+        "blur_radius": "80px",
+        "color": "rgba(0, 255, 255, 0.4)"
+      },
+      "background_texture": {
+        "type": "Micrograin noise texture",
+        "opacity": "2%",
+        "color": "#ffffff",
+        "blend_mode": "overlay"
+      },
+      "inner_highlight": {
+        "type": "Inner stroke on glyph",
+        "color": "#66ffff",
+        "width": "1px",
+        "opacity": "60%"
+      }
+    },
+    
+    "animation_specifications": {
+      "pulse_loop": {
+        "duration": "10s",
+        "type": "Gentle breathing pulse",
+        "scale_range": "1.0 to 1.02",
+        "opacity_range": "1.0 to 0.95",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "frequency": "Every 10 seconds"
+      }
+    },
+    
+    "brand_context": {
+      "brand_personality": [
+        "Intelligent signal processing radar",
+        "Quiet confidence with mysterious intelligence", 
+        "Premium business intelligence ($299-$499/month)",
+        "Forward-thinking but not flashy",
+        "Ambient synth energy meets lab terminal"
+      ],
+      "target_audience": "Indie founders and operators seeking business intelligence",
+      "competitive_positioning": "Enterprise-quality design without corporate stuffiness"
+    },
+    
+    "usage_guidelines": {
+      "applications": {
+        "website_header": "Full logo with glyph + wordmark + tagline",
+        "social_media": "Square version with glyph + wordmark only",
+        "favicon": "Simplified glyph only",
+        "business_cards": "Horizontal layout with full branding",
+        "app_icon": "Glyph only with subtle background"
+      },
+      
+      "scaling_requirements": {
+        "minimum_size": "32px height for glyph",
+        "maximum_size": "No limit - vector scalable", 
+        "responsive_behavior": "Maintain proportions, scale uniformly"
+      },
+      
+      "color_variations": {
+        "standard": "Cyan-magenta gradient on dark background",
+        "monochrome": "White version for single-color applications",
+        "reversed": "Dark version for light backgrounds (use sparingly)"
+      }
+    },
+    
+    "technical_specifications": {
+      "file_formats": ["SVG (primary)", "PNG (transparent)", "PNG (dark bg)", "ICO (favicon)"],
+      "color_space": "sRGB for digital, CMYK conversion needed for print",
+      "vector_format": "SVG with embedded CSS gradients",
+      "raster_sizes": ["16x16", "32x32", "64x64", "128x128", "256x256", "512x512"]
+    },
+    
+    "design_system_integration": {
+      "color_palette_alignment": "Matches established Luciq color system",
+      "typography_consistency": "Aligns with Geist/Untitled Sans stack",
+      "visual_effects_harmony": "Complements existing glass/ambient effects",
+      "animation_philosophy": "Supports ambient, purposeful motion"
+    },
+    
+    "inspiration_references": {
+      "aesthetic_influences": [
+        "PlayStation 2 UI systems",
+        "Teenage Engineering OP-1 interface",
+        "Nothing.tech design language",
+        "High-end DJ console displays",
+        "Modular synthesizer UIs",
+        "Signal analysis radar systems"
+      ],
+      "avoid_aesthetics": [
+        "Generic startup blobs",
+        "Canva-style gradients",
+        "Notion/Framer templates",
+        "Rounded pill buttons",
+        "Stock illustration styles"
+      ]
+    },
+    
+    "consistency_validation": {
+      "brand_alignment_checklist": [
+        "Feels like signal analysis console ✓",
+        "Conveys quiet confidence ✓", 
+        "Mysterious intelligence without being cryptic ✓",
+        "Premium positioning justified ✓",
+        "PS2/retro-futurist aesthetic achieved ✓"
+      ],
+      "technical_quality_checklist": [
+        "Scales from favicon to billboard ✓",
+        "Works on light and dark backgrounds ✓",
+        "Maintains readability at all sizes ✓",
+        "Vector-based for infinite scaling ✓",
+        "Optimized for web performance ✓"
+      ]
+    },
+    
+    "future_expansion_notes": {
+      "glyph_as_pattern": "Waveform can be used as loading indicator or background pattern",
+      "gradient_system": "Cyan-magenta can extend to other brand elements",
+      "animation_evolution": "Pulse timing can sync with real-time data updates",
+      "modular_usage": "Glyph works independently for compact applications"
+    }
+  }
+} 

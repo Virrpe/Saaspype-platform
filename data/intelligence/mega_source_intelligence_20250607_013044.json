@@ -1,0 +1,392 @@
+{
+  "timestamp": "20250607_013044",
+  "duration_seconds": 14.728367,
+  "total_opportunities": 14,
+  "core_opportunities": 9,
+  "additional_opportunities": 5,
+  "sources_scraped": {
+    "core_sources": 8,
+    "additional_sources": 12,
+    "total_sources": 20
+  },
+  "opportunities": [
+    {
+      "title": "I help \\[AUDIENCE\\] solve \\[CORE PROBLEM\\] by offering \\[PRODUCT/SERVICE\\]...",
+      "description": "Real market need identified: Learn from my $38k mistake, i will not promote. In March, I started poking aroun... Validated across 92 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "github",
+        "reddit",
+        "twitter",
+        "firecrawl_intelligence"
+      ],
+      "keywords": [
+        "ai"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.384514"
+    },
+    {
+      "title": "I help \\[AUDIENCE\\] solve \\[CORE PROBLEM\\] by offering \\[PRODUCT/SERVICE\\]...",
+      "description": "Real market need identified: Learn from my $38k mistake, i will not promote. In March, I started poking aroun... Validated across 81 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "app"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.393292"
+    },
+    {
+      "title": "I help \\[AUDIENCE\\] solve \\[CORE PROBLEM\\] by offering \\[PRODUCT/SERVICE\\]...",
+      "description": "Real market need identified: Guide: I use this prompt stack to kill weak startup ideas in under 30 minutes. -... Validated across 83 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit",
+        "firecrawl_intelligence"
+      ],
+      "keywords": [
+        "startup"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.397808"
+    },
+    {
+      "title": "I help \\[AUDIENCE\\] solve \\[CORE PROBLEM\\] by offering \\[PRODUCT/SERVICE\\]...",
+      "description": "Real market need identified: Learn from my $38k mistake, i will not promote. In March, I started poking aroun... Validated across 6 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.6,
+      "sources": [
+        "reddit",
+        "firecrawl_intelligence",
+        "enhanced_twitter"
+      ],
+      "keywords": [
+        "need"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.398883"
+    },
+    {
+      "title": "I help \\[AUDIENCE\\] solve \\[CORE PROBLEM\\] by offering \\[PRODUCT/SERVICE\\]...",
+      "description": "Real market need identified: Guide: I use this prompt stack to kill weak startup ideas in under 30 minutes. -... Validated across 5 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.5,
+      "sources": [
+        "reddit",
+        "twitter",
+        "enhanced_twitter"
+      ],
+      "keywords": [
+        "api"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.398883"
+    },
+    {
+      "title": "I help \\[AUDIENCE\\] solve \\[CORE PROBLEM\\] by offering \\[PRODUCT/SERVICE\\]...",
+      "description": "Real market need identified: Guide: I use this prompt stack to kill weak startup ideas in under 30 minutes. -... Validated across 3 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.3,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "saas"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.400165"
+    },
+    {
+      "title": "I help \\[AUDIENCE\\] solve \\[CORE PROBLEM\\] by offering \\[PRODUCT/SERVICE\\]...",
+      "description": "Real market need identified: Guide: I use this prompt stack to kill weak startup ideas in under 30 minutes. -... Validated across 3 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.3,
+      "sources": [
+        "github",
+        "reddit",
+        "enhanced_twitter"
+      ],
+      "keywords": [
+        "tool"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.400165"
+    },
+    {
+      "title": "I help \\[AUDIENCE\\] solve \\[CORE PROBLEM\\] by offering \\[PRODUCT/SERVICE\\]...",
+      "description": "Real market need identified: Guide: I use this prompt stack to kill weak startup ideas in under 30 minutes. -... Validated across 3 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.3,
+      "sources": [
+        "reddit",
+        "twitter"
+      ],
+      "keywords": [
+        "marketing"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.401219"
+    },
+    {
+      "title": "Market Gap: Productivity Infrastructure",
+      "description": "Real market need identified: Remote Team Productivity Analytics: Startups need better insights into remote te... Validated across 3 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.3,
+      "sources": [
+        "enhanced_twitter",
+        "twitter",
+        "firecrawl_intelligence"
+      ],
+      "keywords": [
+        "productivity"
+      ],
+      "discovered_at": "2025-06-07T01:30:44.401219"
+    },
+    {
+      "title": "Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see wi",
+      "description": "Real market need: Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies",
+      "momentum_score": 6.0,
+      "confidence_level": 0.8999999999999999,
+      "sources": [
+        "quora",
+        "ycombinator",
+        "medium"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Show HN: Built a tool to automate customer onboarding - Spent 6 months building this after struggling with manual onboarding processes', timestamp=datetime.datetime(2025, 6, 6, 23, 30, 44, 402184), engagement_score=156, sentiment_score=0.7, keywords=['customer'], url='https://news.ycombinator.com/', metadata={'comments': 45, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 22, 30, 44, 404692), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 21, 30, 44, 410197), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "customer"
+      ],
+      "discovered_at": "2025-06-07 01:30:44.412246"
+    },
+    {
+      "title": "Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see wi",
+      "description": "Real market need: Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "discord_servers",
+        "youtube_channels",
+        "quora",
+        "medium",
+        "ycombinator"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Ask HN: Best way to validate SaaS ideas before building? - Looking for advice on validating business ideas without spending months building', timestamp=datetime.datetime(2025, 6, 6, 23, 30, 44, 402184), engagement_score=89, sentiment_score=0.7, keywords=['saas', 'business', 'idea'], url='https://news.ycombinator.com/', metadata={'comments': 67, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 22, 30, 44, 404692), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='discord_servers', content='[Indie Hackers] Anyone else struggling with email deliverability for their SaaS?', timestamp=datetime.datetime(2025, 6, 7, 1, 0, 44, 409061), engagement_score=20, sentiment_score=0.4, keywords=['saas'], url='https://discord.com/', metadata={'server': 'Indie Hackers', 'replies': 8}, credibility_weight=0.8)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 21, 30, 44, 410197), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)",
+        "TrendSignal(source='youtube_channels', content='[Y Combinator] Common Mistakes That Kill SaaS Startups - The top 5 mistakes we see that cause SaaS startups to fail in their first year', timestamp=datetime.datetime(2025, 6, 6, 19, 30, 44, 411228), engagement_score=1200, sentiment_score=0.7, keywords=['startup', 'saas'], url='https://youtube.com/', metadata={'channel': 'Y Combinator', 'views': 45000}, credibility_weight=0.75)"
+      ],
+      "keywords": [
+        "saas"
+      ],
+      "discovered_at": "2025-06-07 01:30:44.412246"
+    },
+    {
+      "title": "Q: What are the biggest challenges facing small business owners in 2024? A: Cash",
+      "description": "Real market need: Q: What are the biggest challenges facing small business owners in 2024? A: Cash flow management, finding reliable employees, and digital transformation are the top issues",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "substack",
+        "linkedin",
+        "betalist",
+        "crunchbase",
+        "quora",
+        "medium",
+        "facebook_groups",
+        "angellist",
+        "ycombinator",
+        "telegram_channels"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Ask HN: Best way to validate SaaS ideas before building? - Looking for advice on validating business ideas without spending months building', timestamp=datetime.datetime(2025, 6, 6, 23, 30, 44, 402184), engagement_score=89, sentiment_score=0.7, keywords=['saas', 'business', 'idea'], url='https://news.ycombinator.com/', metadata={'comments': 67, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='betalist', content='FlowBuilder: No-code workflow automation for small businesses', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 402654), engagement_score=50, sentiment_score=0.8, keywords=['business'], url='https://betalist.com/', metadata={'category': 'Productivity', 'stage': 'Beta'}, credibility_weight=0.75)",
+        "TrendSignal(source='angellist', content='Business trend from angellist - Emerging business opportunity discovered on angellist', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 402654), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='https://angel.co/jobs', metadata={'platform': 'angellist'}, credibility_weight=0.07)",
+        "TrendSignal(source='crunchbase', content='Business trend from crunchbase - Emerging business opportunity discovered on crunchbase', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 402654), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='https://www.crunchbase.com/discover/organization.companies', metadata={'platform': 'crunchbase'}, credibility_weight=0.09)",
+        "TrendSignal(source='medium', content='The Hidden Costs of Manual Business Processes - Small businesses lose thousands of hours annually on manual processes that could be automated', timestamp=datetime.datetime(2025, 6, 6, 22, 30, 44, 404692), engagement_score=156, sentiment_score=0.6, keywords=['business'], url='https://medium.com/', metadata={'responses': 8, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='linkedin', content='Business trend from linkedin - Emerging business opportunity discovered on linkedin', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 407005), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='https://www.linkedin.com/pulse/topics/business-s1/', metadata={'platform': 'linkedin'}, credibility_weight=0.06)",
+        "TrendSignal(source='telegram_channels', content='Business trend from telegram_channels - Emerging business opportunity discovered on telegram_channels', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 410197), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='', metadata={'platform': 'telegram_channels'}, credibility_weight=0.03)",
+        "TrendSignal(source='quora', content='Q: What are the biggest challenges facing small business owners in 2024? A: Cash flow management, finding reliable employees, and digital transformation are the top issues', timestamp=datetime.datetime(2025, 6, 6, 21, 30, 44, 410197), engagement_score=89, sentiment_score=0.5, keywords=['business'], url='https://quora.com/', metadata={'answers': 23, 'platform': 'quora'}, credibility_weight=0.65)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 21, 30, 44, 410197), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)",
+        "TrendSignal(source='facebook_groups', content='Business trend from facebook_groups - Emerging business opportunity discovered on facebook_groups', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 411228), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='', metadata={'platform': 'facebook_groups'}, credibility_weight=0.03)",
+        "TrendSignal(source='substack', content='Business trend from substack - Emerging business opportunity discovered on substack', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 411228), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='', metadata={'platform': 'substack'}, credibility_weight=0.04)"
+      ],
+      "keywords": [
+        "business"
+      ],
+      "discovered_at": "2025-06-07 01:30:44.412246"
+    },
+    {
+      "title": "Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see wi",
+      "description": "Real market need: Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies",
+      "momentum_score": 8.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "quora",
+        "youtube_channels",
+        "ycombinator",
+        "medium"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Show HN: Open source alternative to expensive analytics tools - Built this because existing analytics tools are too expensive for startups', timestamp=datetime.datetime(2025, 6, 6, 23, 30, 44, 402184), engagement_score=234, sentiment_score=0.7, keywords=['startup'], url='https://news.ycombinator.com/', metadata={'comments': 78, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 22, 30, 44, 404692), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 21, 30, 44, 410197), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)",
+        "TrendSignal(source='youtube_channels', content='[Y Combinator] Common Mistakes That Kill SaaS Startups - The top 5 mistakes we see that cause SaaS startups to fail in their first year', timestamp=datetime.datetime(2025, 6, 6, 19, 30, 44, 411228), engagement_score=1200, sentiment_score=0.7, keywords=['startup', 'saas'], url='https://youtube.com/', metadata={'channel': 'Y Combinator', 'views': 45000}, credibility_weight=0.75)"
+      ],
+      "keywords": [
+        "startup"
+      ],
+      "discovered_at": "2025-06-07 01:30:44.412246"
+    },
+    {
+      "title": "Market Need: Opportunity Tools",
+      "description": "Real market demand detected across 6 sources",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "substack",
+        "linkedin",
+        "crunchbase",
+        "facebook_groups",
+        "angellist",
+        "telegram_channels"
+      ],
+      "signals": [
+        "TrendSignal(source='angellist', content='Business trend from angellist - Emerging business opportunity discovered on angellist', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 402654), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='https://angel.co/jobs', metadata={'platform': 'angellist'}, credibility_weight=0.07)",
+        "TrendSignal(source='crunchbase', content='Business trend from crunchbase - Emerging business opportunity discovered on crunchbase', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 402654), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='https://www.crunchbase.com/discover/organization.companies', metadata={'platform': 'crunchbase'}, credibility_weight=0.09)",
+        "TrendSignal(source='linkedin', content='Business trend from linkedin - Emerging business opportunity discovered on linkedin', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 407005), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='https://www.linkedin.com/pulse/topics/business-s1/', metadata={'platform': 'linkedin'}, credibility_weight=0.06)",
+        "TrendSignal(source='telegram_channels', content='Business trend from telegram_channels - Emerging business opportunity discovered on telegram_channels', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 410197), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='', metadata={'platform': 'telegram_channels'}, credibility_weight=0.03)",
+        "TrendSignal(source='facebook_groups', content='Business trend from facebook_groups - Emerging business opportunity discovered on facebook_groups', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 411228), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='', metadata={'platform': 'facebook_groups'}, credibility_weight=0.03)",
+        "TrendSignal(source='substack', content='Business trend from substack - Emerging business opportunity discovered on substack', timestamp=datetime.datetime(2025, 6, 7, 0, 30, 44, 411228), engagement_score=50, sentiment_score=0.6, keywords=['business', 'opportunity'], url='', metadata={'platform': 'substack'}, credibility_weight=0.04)"
+      ],
+      "keywords": [
+        "opportunity"
+      ],
+      "discovered_at": "2025-06-07 01:30:44.412246"
+    }
+  ],
+  "analysis": {
+    "total_signals": 18,
+    "total_opportunities": 14,
+    "source_distribution": {
+      "ycombinator": 3,
+      "betalist": 1,
+      "angellist": 1,
+      "crunchbase": 1,
+      "medium": 2,
+      "linkedin": 1,
+      "discord_servers": 2,
+      "telegram_channels": 1,
+      "quora": 2,
+      "facebook_groups": 1,
+      "youtube_channels": 2,
+      "substack": 1
+    },
+    "top_keywords": {
+      "business": 11,
+      "opportunity": 6,
+      "saas": 5,
+      "startup": 4,
+      "customer": 3,
+      "idea": 1,
+      "problem": 1,
+      "launch": 1,
+      "revenue": 1
+    },
+    "engagement_metrics": {
+      "total_engagement": 3523,
+      "average_engagement": 195.72222222222223,
+      "high_engagement_signals": 4
+    }
+  },
+  "source_performance": {
+    "github": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "reddit": {
+      "opportunities": 8,
+      "total_score": 80.0,
+      "average_score": 10.0
+    },
+    "twitter": {
+      "opportunities": 4,
+      "total_score": 40.0,
+      "average_score": 10.0
+    },
+    "firecrawl_intelligence": {
+      "opportunities": 4,
+      "total_score": 40.0,
+      "average_score": 10.0
+    },
+    "enhanced_twitter": {
+      "opportunities": 4,
+      "total_score": 40.0,
+      "average_score": 10.0
+    },
+    "quora": {
+      "opportunities": 4,
+      "total_score": 34.0,
+      "average_score": 8.5
+    },
+    "ycombinator": {
+      "opportunities": 4,
+      "total_score": 34.0,
+      "average_score": 8.5
+    },
+    "medium": {
+      "opportunities": 4,
+      "total_score": 34.0,
+      "average_score": 8.5
+    },
+    "discord_servers": {
+      "opportunities": 1,
+      "total_score": 10.0,
+      "average_score": 10.0
+    },
+    "youtube_channels": {
+      "opportunities": 2,
+      "total_score": 18.0,
+      "average_score": 9.0
+    },
+    "substack": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "linkedin": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "betalist": {
+      "opportunities": 1,
+      "total_score": 10.0,
+      "average_score": 10.0
+    },
+    "crunchbase": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "facebook_groups": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "angellist": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "telegram_channels": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    }
+  }
+}

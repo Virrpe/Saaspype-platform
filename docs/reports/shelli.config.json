@@ -1,0 +1,7 @@
+{
+  "boomerang": true,
+  "auto_spawn": true,
+  "default_memory_path": "./memory",
+  "working_mode": "recursive-reflexion",
+  "claude_context_window": "full"
+} 

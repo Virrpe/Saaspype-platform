@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "min_instances": 1,
+  "max_instances": 5,
+  "target_cpu_utilization": 70,
+  "target_memory_utilization": 80,
+  "scale_up_threshold": 80,
+  "scale_down_threshold": 30,
+  "cooldown_period": 300,
+  "health_check_interval": 30,
+  "load_balancer": {
+    "algorithm": "round_robin",
+    "health_check_path": "/health",
+    "timeout": 5
+  }
+}

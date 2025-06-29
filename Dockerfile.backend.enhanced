@@ -1,0 +1,70 @@
+# SaaSpype Backend API - Enhanced with AI Integration
+# Phase 23: First AI Engine Integration (Semantic Analysis)
+FROM python:3.11-slim as base
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONPATH=/app/src:/app
+
+# Install system dependencies for AI processing
+RUN apt-get update && apt-get install -y \
+    curl \
+    wget \
+    gcc \
+    g++ \
+    git \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy enhanced requirements for AI integration
+COPY requirements-enhanced.txt ./requirements.txt
+
+# Install Python dependencies with AI packages
+RUN pip install --no-cache-dir --timeout=600 --retries=3 -r requirements.txt
+
+# Download NLTK data for semantic analysis
+RUN python -c "import nltk; nltk.download('vader_lexicon', quiet=True); nltk.download('punkt', quiet=True); nltk.download('stopwords', quiet=True)"
+
+# Copy application code
+COPY src/ ./src/
+COPY tools/ ./tools/
+COPY start_enhanced_api.py .
+COPY start_minimal_api.py .
+
+# Create necessary directories with proper permissions
+RUN mkdir -p logs working-memory/current data/logs data/backups src/shared/config && \
+    chmod -R 755 logs working-memory data && \
+    chmod +x start_enhanced_api.py
+
+# Initialize working memory if not exists
+RUN if [ ! -f working-memory/current/current-context.json ]; then \
+        mkdir -p working-memory/current && \
+        echo '{"session_metadata":{"system_status":"docker_container_enhanced","autonomous_mode":true},"project_state":{"current_phase":"PHASE_23_AI_ENHANCEMENT_INTEGRATION","completion_percentage":"1700"}}' > working-memory/current/current-context.json; \
+    fi
+
+# Set environment variables for Enhanced Docker
+ENV API_HOST=0.0.0.0
+ENV API_PORT=8003
+ENV DATABASE_PATH=/app/saaspype_discovery.db
+ENV SECRET_KEY=saaspype-docker-enhanced-ai-secret-2025
+ENV LOG_LEVEL=INFO
+ENV CORS_ORIGINS=*
+ENV DOCKER_DEPLOYMENT=true
+ENV SAASPYPE_ENHANCED_MODE=true
+ENV SAASPYPE_ENABLE_SEMANTIC_AI=true
+ENV SAASPYPE_DISABLE_HEAVY_AI=true
+ENV SAASPYPE_FAST_MODE=true
+
+# Expose port
+EXPOSE 8003
+
+# Health check for the enhanced API
+HEALTHCHECK --interval=30s --timeout=15s --start-period=90s --retries=3 \
+    CMD curl -f http://localhost:8003/health || exit 1
+
+# Start the enhanced API server (fallback to minimal if issues)
+CMD ["python", "start_enhanced_api.py"] 

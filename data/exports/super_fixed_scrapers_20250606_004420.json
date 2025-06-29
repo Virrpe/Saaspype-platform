@@ -1,0 +1,184 @@
+{
+  "timestamp": "20250606_004420",
+  "total_items": 27,
+  "sources_scraped": 6,
+  "results": {
+    "product_hunt_daily": [],
+    "startup_stash": [
+      {
+        "title": "Startup Stash",
+        "url": "https://startupstash.com/",
+        "source": "startup_stash",
+        "scraped_at": "2025-06-06T00:44:13.843267"
+      },
+      {
+        "title": "Explore Tools",
+        "url": "https://startupstash.com/explore/",
+        "source": "startup_stash",
+        "scraped_at": "2025-06-06T00:44:13.843267"
+      },
+      {
+        "title": "Categories",
+        "url": "https://startupstash.com/categories/",
+        "source": "startup_stash",
+        "scraped_at": "2025-06-06T00:44:13.843267"
+      },
+      {
+        "title": "Alternatives",
+        "url": "https://startupstash.com/alternatives/",
+        "source": "startup_stash",
+        "scraped_at": "2025-06-06T00:44:13.843267"
+      },
+      {
+        "title": "Resources",
+        "url": "https://startupstash.com/resources/",
+        "source": "startup_stash",
+        "scraped_at": "2025-06-06T00:44:13.843267"
+      },
+      {
+        "title": "Blog",
+        "url": "https://startupstash.com/blog/",
+        "source": "startup_stash",
+        "scraped_at": "2025-06-06T00:44:13.843267"
+      },
+      {
+        "title": "Top Lists",
+        "url": "#",
+        "source": "startup_stash",
+        "scraped_at": "2025-06-06T00:44:13.843267"
+      },
+      {
+        "title": "Top General",
+        "url": "https://startupstash.com/top-general/",
+        "source": "startup_stash",
+        "scraped_at": "2025-06-06T00:44:13.843267"
+      }
+    ],
+    "launching_next": [
+      {
+        "title": "New startups & side projects",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:44:14.995394"
+      },
+      {
+        "title": "Newest Startups",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:44:14.995394"
+      },
+      {
+        "title": "HealthStubs",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:44:14.995394"
+      },
+      {
+        "title": "UIsnapper",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:44:14.996809"
+      },
+      {
+        "title": "The Way of Code",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:44:14.996809"
+      },
+      {
+        "title": "Janus (YC X25)",
+        "url": "https://www.launchingnext.com/",
+        "source": "launching_next",
+        "scraped_at": "2025-06-06T00:44:14.996809"
+      }
+    ],
+    "side_projects": [],
+    "maker_log": [
+      {
+        "title": "Ambitious Founder",
+        "url": "https://ambitiousfounder.com",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:44:18.144524"
+      },
+      {
+        "title": "Just fucking do it",
+        "url": "https://ambitiousfounder.com/just-fucking-do-it",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:44:18.144524"
+      },
+      {
+        "title": "25 Years Coding",
+        "url": "https://ambitiousfounder.com/25-years-coding",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:44:18.144524"
+      },
+      {
+        "title": "I lost my love for the web",
+        "url": "https://ambitiousfounder.com/i-lost-my-love-for-the-web",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:44:18.144524"
+      },
+      {
+        "title": "Struggling with Imposter Syndrome",
+        "url": "https://ambitiousfounder.com/struggling-with-imposter-syndrome",
+        "source": "maker_log",
+        "scraped_at": "2025-06-06T00:44:18.144524"
+      }
+    ],
+    "ycombinator_news": [
+      {
+        "title": "String Flux – Simplify everyday string transformations for developers",
+        "url": "https://stringflux.io",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:44:19.934477"
+      },
+      {
+        "title": "ClickStack – Open-source Datadog alternative by ClickHouse and HyperDX",
+        "url": "https://github.com/hyperdxio/hyperdx",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:44:19.934477"
+      },
+      {
+        "title": "iOS Screen Time from a REST API",
+        "url": "https://www.thescreentimenetwork.com/api/",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:44:19.934477"
+      },
+      {
+        "title": "Container Use for Agents",
+        "url": "https://github.com/dagger/container-use",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:44:19.934477"
+      },
+      {
+        "title": "Grab a Random ArXiv Paper",
+        "url": "https://jepedersen.dk/arxiv.html",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:44:19.934477"
+      },
+      {
+        "title": "I made a 3D SVG Renderer that projects textures without rasterization",
+        "url": "https://seve.blog/p/i-made-a-3d-svg-renderer-that-projects",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:44:19.934477"
+      },
+      {
+        "title": "MCP-Cloud – One-click hosting for MCP servers (50 templates)",
+        "url": "https://mcp-cloud.ai/",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:44:19.934477"
+      },
+      {
+        "title": "GPT image editing, but for 3D models",
+        "url": "https://www.adamcad.com/",
+        "source": "ycombinator_show",
+        "scraped_at": "2025-06-06T00:44:19.934477"
+      }
+    ]
+  },
+  "summary": {
+    "successful_sources": 4,
+    "failed_sources": 2,
+    "average_items_per_source": 4.5
+  }
+}

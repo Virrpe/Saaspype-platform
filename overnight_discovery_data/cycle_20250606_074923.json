@@ -1,0 +1,99 @@
+{
+  "cycle_number": 33,
+  "timestamp": "20250606_074923",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Monthly Getting Started / Web Dev Career Thread",
+      "problem": "Due to a growing influx of questions on this topic, it has been decided to commit a monthly thread dedicated to this topic to reduce the number of repeat posts on this topic. These types of posts will...",
+      "solution": "Business opportunity addressing r/webdev community need",
+      "source": "webdev",
+      "cycle": 33,
+      "timestamp": "2025-06-06T07:49:17.983236",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/webdev/comments/1l0n8u1/monthly_getting_started_web_dev_career_thread/",
+      "reddit_score": 6,
+      "reddit_comments": 10
+    },
+    {
+      "title": "Reddit Discovery: My designer sets their monitor to a high DPI with massive screen dimensions and ...",
+      "problem": "It looks normal on my Mac laptop using the out of the box DPI settings.\n\nThe designer kept bugging me to make the elements and text bigger and bigger until I went and saw their computer and saw how ti...",
+      "solution": "Business opportunity addressing r/webdev community need",
+      "source": "webdev",
+      "cycle": 33,
+      "timestamp": "2025-06-06T07:49:17.983236",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/webdev/comments/1l40097/my_designer_sets_their_monitor_to_a_high_dpi_with/",
+      "reddit_score": 199,
+      "reddit_comments": 89
+    },
+    {
+      "title": "Reddit Discovery: Dev Tools can do more than you think - video I saw yesterday",
+      "problem": "watched this devtools video and picked up a few tricks I didn\u2019t know about. things like logpoints, emulating focus (that one especially I did not know about), css overview, animations inspector\u2026 might...",
+      "solution": "Business opportunity addressing r/webdev community need",
+      "source": "webdev",
+      "cycle": 33,
+      "timestamp": "2025-06-06T07:49:17.983236",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/webdev/comments/1l3uhav/dev_tools_can_do_more_than_you_think_video_i_saw/",
+      "reddit_score": 231,
+      "reddit_comments": 21
+    },
+    {
+      "title": "Reddit Discovery: Join the /r/productivity Discord!",
+      "problem": "Join in on the discussion by clicking [here](https://discord.gg/wrFrTx3Zex)!",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 33,
+      "timestamp": "2025-06-06T07:49:23.338976",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1jas5x9/join_the_rproductivity_discord/",
+      "reddit_score": 8,
+      "reddit_comments": 7
+    },
+    {
+      "title": "Reddit Discovery: The Fundamental Good Habits have Huge Effects.",
+      "problem": "In military circles, there's the saying:\n\n&gt; Amateurs talk about tactics, but professionals study logistics.\n\nAnd that's cause even the best tactics are shit without enough resources at the right pl...",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 33,
+      "timestamp": "2025-06-06T07:49:23.338976",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1l4hrzf/the_fundamental_good_habits_have_huge_effects/",
+      "reddit_score": 53,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: Reading a lot of books will never make you smarter.",
+      "problem": "Everyone thinks that by reading 50 books a year, they become wiser. \n\nBut that\u2019s false...\n\nIt\u2019s not the quantity of reading that changes a life.\n\nIt\u2019s what you do with what you read.\n\nRyan Holiday, in...",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 33,
+      "timestamp": "2025-06-06T07:49:23.338976",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1l43mzn/reading_a_lot_of_books_will_never_make_you_smarter/",
+      "reddit_score": 274,
+      "reddit_comments": 95
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 3.5,
+    "memory_percent": 78.4,
+    "disk_percent": 78.9,
+    "available_gb": 1.6980705261230469,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 33,
+    "total_ideas": 198,
+    "uptime_minutes": 375.5464224974314,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

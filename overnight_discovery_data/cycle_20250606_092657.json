@@ -1,0 +1,99 @@
+{
+  "cycle_number": 42,
+  "timestamp": "20250606_092657",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: New Job Listings",
+      "problem": "Are you looking to hire? \n\nShare your opening to the marketing professionals here on r/marketing. Please include title, description, full-time or part-time, location (on-site location or remote), and ...",
+      "solution": "Business opportunity addressing r/marketing community need",
+      "source": "marketing",
+      "cycle": 42,
+      "timestamp": "2025-06-06T09:26:51.832454",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/marketing/comments/1kiqmpn/new_job_listings/",
+      "reddit_score": 7,
+      "reddit_comments": 6
+    },
+    {
+      "title": "Reddit Discovery: Job posting: Looking for a marketer",
+      "problem": "\nRequirements (non-negotiable):\n\n- predict the future\n- never fail\n- deliver overnight results\n- run 12 campaigns at once\n- work miracles on a $0 budget\n- explain marketing to non-marketers daily\n- ac...",
+      "solution": "Business opportunity addressing r/marketing community need",
+      "source": "marketing",
+      "cycle": 42,
+      "timestamp": "2025-06-06T09:26:51.832454",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/marketing/comments/1l4ay3o/job_posting_looking_for_a_marketer/",
+      "reddit_score": 106,
+      "reddit_comments": 25
+    },
+    {
+      "title": "Reddit Discovery: India has a growing street art culture but barely any space to talk about it.",
+      "problem": "I\u2019ve always admired the random bursts of colour and creativity on India\u2019s walls from bold political stencils in Kerala to giant murals in Mumbai, or even that one cool graffiti tag under a flyover tha...",
+      "solution": "Business opportunity addressing r/marketing community need",
+      "source": "marketing",
+      "cycle": 42,
+      "timestamp": "2025-06-06T09:26:51.832454",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/marketing/comments/1l4kvri/india_has_a_growing_street_art_culture_but_barely/",
+      "reddit_score": 0,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: Monthly Getting Started / Web Dev Career Thread",
+      "problem": "Due to a growing influx of questions on this topic, it has been decided to commit a monthly thread dedicated to this topic to reduce the number of repeat posts on this topic. These types of posts will...",
+      "solution": "Business opportunity addressing r/webdev community need",
+      "source": "webdev",
+      "cycle": 42,
+      "timestamp": "2025-06-06T09:26:57.181822",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/webdev/comments/1l0n8u1/monthly_getting_started_web_dev_career_thread/",
+      "reddit_score": 5,
+      "reddit_comments": 11
+    },
+    {
+      "title": "Reddit Discovery: My designer sets their monitor to a high DPI with massive screen dimensions and ...",
+      "problem": "It looks normal on my Mac laptop using the out of the box DPI settings.\n\nThe designer kept bugging me to make the elements and text bigger and bigger until I went and saw their computer and saw how ti...",
+      "solution": "Business opportunity addressing r/webdev community need",
+      "source": "webdev",
+      "cycle": 42,
+      "timestamp": "2025-06-06T09:26:57.181822",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/webdev/comments/1l40097/my_designer_sets_their_monitor_to_a_high_dpi_with/",
+      "reddit_score": 225,
+      "reddit_comments": 96
+    },
+    {
+      "title": "Reddit Discovery: Dev Tools can do more than you think - video I saw yesterday",
+      "problem": "watched this devtools video and picked up a few tricks I didn\u2019t know about. things like logpoints, emulating focus (that one especially I did not know about), css overview, animations inspector\u2026 might...",
+      "solution": "Business opportunity addressing r/webdev community need",
+      "source": "webdev",
+      "cycle": 42,
+      "timestamp": "2025-06-06T09:26:57.181822",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/webdev/comments/1l3uhav/dev_tools_can_do_more_than_you_think_video_i_saw/",
+      "reddit_score": 238,
+      "reddit_comments": 21
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 38.2,
+    "memory_percent": 71.6,
+    "disk_percent": 78.9,
+    "available_gb": 2.2263107299804688,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 42,
+    "total_ideas": 251,
+    "uptime_minutes": 473.1104699373245,
+    "avg_ideas_per_cycle": 5.976190476190476
+  }
+}

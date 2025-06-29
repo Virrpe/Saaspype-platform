@@ -1,0 +1,223 @@
+{
+  "validation_timestamp": "2025-06-11T21:11:23.812550",
+  "system_version": "Phase 3 Semantic Intelligence Enhanced",
+  "summary": {
+    "total_tests": 35,
+    "passed_tests": 35,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "duration_seconds": 25.138097286224365
+  },
+  "detailed_results": [
+    {
+      "test": "Root endpoint",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'message': 'Luciq Master API v3.0 - Complete Business Intelligence Platform', 'status': 'operational', 'architecture': 'unified-master-consolidation', 'total_files_consolidated': 219, 'lines_of_co..."
+    },
+    {
+      "test": "Health check",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'status': 'healthy', 'timestamp': '2025-06-11T21:10:59.249979', 'version': '3.0.0-master-consolidation', 'components': {'database': 'healthy', 'reddit_api': 'degraded', 'transformer_model': 'healthy'..."
+    },
+    {
+      "test": "System statistics",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'consolidation_info': {'total_files_consolidated': 219, 'estimated_lines_of_code': 18000, 'consolidation_date': '2025-01-XX', 'architecture': 'unified-master-api'}, 'active_services': {'discovery_ser..."
+    },
+    {
+      "test": "Intelligence capabilities",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'sentiment_analysis': True, 'nlp_analysis': True, 'transformer_analysis': True, 'business_context_analysis': True, 'fusion_scoring': True, 'dialectical_synthesis': True, 'authority_weighted_analysis'..."
+    },
+    {
+      "test": "Semantic capabilities",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'semantic_intelligence_capabilities': {'analysis_types': ['basic', 'comprehensive', 'intent_only', 'entities_only'], 'semantic_dimensions': ['business_relevance_scoring', 'intent_classification', 'co..."
+    },
+    {
+      "test": "User registration",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'message': 'User registered successfully', 'user_id': 5}"
+    },
+    {
+      "test": "User login",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjE3NDk2NjkwNjAiLCJleHAiOjE3NDk2NzA4NjF9.MF56cTqpdIT5T6OhmUjcsvNcb_wDwVyhO0DiZ_VLRcI', 'token_type': 'bearer', 'user_id': 5, ..."
+    },
+    {
+      "test": "Get current user",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'user_id': 5, 'username': 'testuser1749669060', 'email': 'test1749669060@example.com', 'email_verified': 0}"
+    },
+    {
+      "test": "Pain point discovery",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'subreddit': 'startups', 'posts_analyzed': 7, 'pain_points_found': 3, 'pain_points': [{'has_pain_point': True, 'post_id': '1l8zxoe', 'title': 'Struggling with Pricing \u2013 How to Transi..."
+    },
+    {
+      "test": "Supported subreddits",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'subreddits': ['startups', 'Entrepreneur', 'SaaS', 'freelance', 'smallbusiness', 'indiehackers', 'entrepreneur', 'business', 'marketing', 'webdev', 'productivity', 'consulting', 'remotework', 'devtoo..."
+    },
+    {
+      "test": "Discovery sessions",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'message': 'Discovery sessions endpoint', 'note': 'Implementation would query database for user sessions'}"
+    },
+    {
+      "test": "Mega source scan",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'duration_seconds': 8.832053, 'total_signals': 12, 'sources_scraped': 15, 'source_results': {'reddit': {'signals_count': 12, 'status': 'success'}, 'hackernews': {'signals_count': 0, ..."
+    },
+    {
+      "test": "Scraper sources",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'sources': {'reddit': {'weight': 0.25, 'enabled': True}, 'hackernews': {'weight': 0.2, 'enabled': True}, 'github': {'weight': 0.15, 'enabled': True}, 'twitter': {'weight': 0.15, 'enabled': True}, 'pr..."
+    },
+    {
+      "test": "Dialectical analysis",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'content': 'Looking for a better startup idea validation tool. Current solutions are too expensive.', 'platform': 'reddit', 'analysis': {'content_length': 87, 'platform': 'reddit', '..."
+    },
+    {
+      "test": "Authority rankings",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'authority_rankings': {'reddit': {'authority_score': 0.879, 'dialectical_quality': 0.7929475399999999, 'dialectical_improvement': 0.09294753999999994, 'synthesis_type': 'balanced', '..."
+    },
+    {
+      "test": "Real-time synthesis",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'content': 'test content', 'platform': 'reddit', 'synthesis_result': {'session_id': 'session_1749669076', 'query': 'test content', 'enhanced_sources': {'reddit': {'quality_score': 0...."
+    },
+    {
+      "test": "Streaming statistics",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'active_connections': 0, 'active_monitoring_tasks': 0, 'trend_buffer_size': 0, 'active_trends_count': 0, 'temporal_analyzer_status': 'active', 'trend_pipeline_status': 'active', 'dialectical_integrat..."
+    },
+    {
+      "test": "Advanced streaming start",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'task_id': 'advanced_monitor_1749669077', 'platforms': ['reddit'], 'keywords': ['startup', 'business'], 'analysis_level': 'comprehensive', 'duration_minutes': 1, 'capabilities': ['te..."
+    },
+    {
+      "test": "Temporal analysis",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'platform': 'reddit', 'window_type': 'medium', 'temporal_analysis': {'patterns': [], 'trend_direction': 'stable', 'temporal_velocity': {'velocity': 0.0, 'acceleration': 0.0}, 'window_type': 'medium',..."
+    },
+    {
+      "test": "Active trends",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'active_trends': [], 'total_active_trends': 0, 'platform_filter': None, 'retrieved_at': '2025-06-11T21:11:19.649215'}"
+    },
+    {
+      "test": "Stop streaming task",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'task_id': 'advanced_monitor_1749669077', 'message': 'Streaming task stopped successfully'}"
+    },
+    {
+      "test": "Semantic content analysis",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'content_analyzed': 92, 'results': {'semantic_score': {'relevance_score': 0.14636844636844637, 'intent_confidence': 0.21, 'context_understanding': 0.6, 'business_potential': 0.100166..."
+    },
+    {
+      "test": "Intent classification",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'content': 'Need urgent solution for team collaboration', 'intent_classification': {'primary_intent': 'solution_seeking', 'confidence': 0.41666666666666663, 'intent_scores': {'proble..."
+    },
+    {
+      "test": "Semantic capabilities",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'semantic_intelligence_capabilities': {'analysis_types': ['basic', 'comprehensive', 'intent_only', 'entities_only'], 'semantic_dimensions': ['business_relevance_scoring', 'intent_classification', 'co..."
+    },
+    {
+      "test": "Semantic-temporal fusion",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'platforms_analyzed': ['reddit'], 'semantic_threshold': 0.6, 'temporal_window': 'medium', 'fusion_results': {'error': \"unsupported operand type(s) for -: 'float' and 'datetime.dateti..."
+    },
+    {
+      "test": "Semantic business insights",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'success': True, 'semantic_business_insights': {'trending_business_intents': {'problem_identification': {'count': 15, 'confidence': 0.82}, 'solution_seeking': {'count': 12, 'confidence': 0.75}, 'mark..."
+    },
+    {
+      "test": "Content analysis",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'content_length': 84, 'platform': 'reddit', 'basic_analysis': {'word_count': 11, 'character_count': 84, 'sentence_count': 2, 'has_question': False, 'has_exclamation': False, 'capitalization_ratio': 0..."
+    },
+    {
+      "test": "Chat message",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'user_message': 'What are the latest business opportunities in fintech?', 'ai_response': \"I see you're discussing finance-related topics. I can provide insights, find related business opportunities, ..."
+    },
+    {
+      "test": "Overnight discovery status",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'is_running': False, 'session_stats': {'start_time': None, 'cycles_completed': 0, 'total_opportunities': 0, 'cpu_usage': [], 'memory_usage': []}, 'uptime_seconds': 0}"
+    },
+    {
+      "test": "Performance test 1",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'status': 'healthy', 'timestamp': '2025-06-11T21:11:22.671113', 'version': '3.0.0-master-consolidation', 'components': {'database': 'healthy', 'reddit_api': 'degraded', 'transformer_model': 'healthy'..."
+    },
+    {
+      "test": "Performance test 2",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'status': 'healthy', 'timestamp': '2025-06-11T21:11:22.954032', 'version': '3.0.0-master-consolidation', 'components': {'database': 'healthy', 'reddit_api': 'degraded', 'transformer_model': 'healthy'..."
+    },
+    {
+      "test": "Performance test 3",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'status': 'healthy', 'timestamp': '2025-06-11T21:11:23.239346', 'version': '3.0.0-master-consolidation', 'components': {'database': 'healthy', 'reddit_api': 'degraded', 'transformer_model': 'healthy'..."
+    },
+    {
+      "test": "Performance test 4",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'status': 'healthy', 'timestamp': '2025-06-11T21:11:23.509207', 'version': '3.0.0-master-consolidation', 'components': {'database': 'healthy', 'reddit_api': 'degraded', 'transformer_model': 'healthy'..."
+    },
+    {
+      "test": "Performance test 5",
+      "result": "PASS",
+      "status_code": 200,
+      "response_preview": "{'status': 'healthy', 'timestamp': '2025-06-11T21:11:23.803812', 'version': '3.0.0-master-consolidation', 'components': {'database': 'healthy', 'reddit_api': 'degraded', 'transformer_model': 'healthy'..."
+    },
+    {
+      "test": "Performance - Average Response Time",
+      "result": "PASS",
+      "details": "Average response time: 0.287s (target: <1.0s)",
+      "performance_metric": 0.28697657585144043
+    }
+  ]
+}

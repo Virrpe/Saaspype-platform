@@ -1,0 +1,57 @@
+{
+  "cycle_number": 1,
+  "timestamp": "20250606_232559",
+  "ideas_found": 1,
+  "ideas": [
+    {
+      "title": "Enhanced Discovery: Real market need: Q: What are the biggest challenges facing ...",
+      "problem": "Real market need: Q: What are the biggest challenges facing small business owners in 2024? A: Cash f",
+      "solution": "AI-powered workflow automation platform addressing real market need: q: what are the biggest challenges facing small business owners in 2024? a: cash f",
+      "source": "unknown",
+      "cycle": 1,
+      "timestamp": "2025-06-06T23:25:59.792974",
+      "confidence_score": 6,
+      "discovery_type": "enhanced_multi_platform",
+      "market_size_score": 3,
+      "urgency_score": 1,
+      "solution_gap_score": 1,
+      "monetization_score": 1,
+      "total_opportunity_score": 6.0,
+      "business_domain": "productivity",
+      "platform_context": "general",
+      "validation_signals": [
+        "Business/professional context"
+      ],
+      "source_url": ""
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 16.1,
+    "memory_percent": 81.7,
+    "disk_percent": 78.7,
+    "available_gb": 1.4332809448242188,
+    "healthy": true,
+    "warnings": []
+  },
+  "enhanced_metrics": {
+    "avg_quality_score": 6.0,
+    "domain_distribution": {
+      "productivity": 1
+    },
+    "platform_distribution": {
+      "unknown": 1
+    },
+    "discovery_types": {
+      "enhanced_multi_platform": 1,
+      "enhanced_llm_analysis": 0,
+      "platform_enhanced": 1,
+      "basic_discovery": 0
+    }
+  },
+  "runtime_stats": {
+    "total_cycles": 1,
+    "total_ideas": 1,
+    "uptime_minutes": 0.2963310400644938,
+    "avg_ideas_per_cycle": 1.0
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "cycle_number": 13,
+  "timestamp": "20250606_041910",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: The Evil That is American Business",
+      "problem": "I'm an old timer. I began work in the US around 1980. I was there during the monopolies of AT&amp;T, IBM, etc. I had gone to technical school after getting my degree in English and became a programmer...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 13,
+      "timestamp": "2025-06-06T04:19:05.055305",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l3z0j1/the_evil_that_is_american_business/",
+      "reddit_score": 78,
+      "reddit_comments": 62
+    },
+    {
+      "title": "Reddit Discovery: Should I go for double majoring in business?",
+      "problem": "I\u2019m a computer science major and I plan on transferring schools in 2 years. I want to double major in business and computer science. I know it sounds dumb but is it worth it double majoring in busines...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 13,
+      "timestamp": "2025-06-06T04:19:05.055305",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l4guxa/should_i_go_for_double_majoring_in_business/",
+      "reddit_score": 2,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: Prospect outreach- Staffing",
+      "problem": "I have over 1,000 prospects to reach out to, and I want to avoid using automated messaging to prevent being flagged as spam. I just launched a full-time staffing firm, and the last thing I want is to ...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 13,
+      "timestamp": "2025-06-06T04:19:05.055305",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l4h40z/prospect_outreach_staffing/",
+      "reddit_score": 1,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: New Job Listings",
+      "problem": "Are you looking to hire? \n\nShare your opening to the marketing professionals here on r/marketing. Please include title, description, full-time or part-time, location (on-site location or remote), and ...",
+      "solution": "Business opportunity addressing r/marketing community need",
+      "source": "marketing",
+      "cycle": 13,
+      "timestamp": "2025-06-06T04:19:10.452589",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/marketing/comments/1kiqmpn/new_job_listings/",
+      "reddit_score": 5,
+      "reddit_comments": 6
+    },
+    {
+      "title": "Reddit Discovery: Job posting: Looking for a marketer",
+      "problem": "\nRequirements (non-negotiable):\n\n- predict the future\n- never fail\n- deliver overnight results\n- run 12 campaigns at once\n- work miracles on a $0 budget\n- explain marketing to non-marketers daily\n- ac...",
+      "solution": "Business opportunity addressing r/marketing community need",
+      "source": "marketing",
+      "cycle": 13,
+      "timestamp": "2025-06-06T04:19:10.452589",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/marketing/comments/1l4ay3o/job_posting_looking_for_a_marketer/",
+      "reddit_score": 56,
+      "reddit_comments": 16
+    },
+    {
+      "title": "Reddit Discovery: I would love to hear of your vibe-marketing, its like vibe-coding",
+      "problem": "Tell me what insane vibe-marketing stuff you're doing",
+      "solution": "Business opportunity addressing r/marketing community need",
+      "source": "marketing",
+      "cycle": 13,
+      "timestamp": "2025-06-06T04:19:10.452589",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/marketing/comments/1l470oq/i_would_love_to_hear_of_your_vibemarketing_its/",
+      "reddit_score": 6,
+      "reddit_comments": 7
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 5.6,
+    "memory_percent": 77.0,
+    "disk_percent": 78.8,
+    "available_gb": 1.8034591674804688,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 13,
+    "total_ideas": 78,
+    "uptime_minutes": 165.33164938290915,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

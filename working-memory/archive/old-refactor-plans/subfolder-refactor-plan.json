@@ -1,0 +1,475 @@
+{
+  "subfolder_refactor_metadata": {
+    "created": "2025-01-14T20:45:00Z",
+    "type": "COMPREHENSIVE_SUBFOLDER_REFACTOR_PLAN",
+    "status": "READY_FOR_EXECUTION",
+    "priority": "HIGH",
+    "scope": "Complete reorganization of all subdirectories",
+    "goal": "Clean, scalable subfolder structure optimized for Phase 6 development"
+  },
+  
+  "current_subfolder_problems": {
+    "src_api_services": {
+      "issues": [
+        "23 service files in single directory - too cluttered",
+        "84KB main.py file (1964 lines) - monolithic",
+        "Mixed concerns: auth, streaming, analytics, trends all together",
+        "Large files (60KB+ trend_detection_service.py)",
+        "No clear service categorization",
+        "Difficult to find specific functionality"
+      ],
+      "impact": "Hard to maintain, scale, and add Phase 6 features"
+    },
+    
+    "working_memory": {
+      "issues": [
+        "30+ memory files in single directory",
+        "Mixed file types: JSON, MD, JSONL",
+        "No categorization by purpose",
+        "Agent files mixed with roadmaps",
+        "Memory files mixed with reports"
+      ],
+      "impact": "Difficult to manage agent state and project memory"
+    },
+    
+    "docs": {
+      "issues": [
+        "Documentation scattered across multiple levels",
+        "No clear categorization",
+        "Reports mixed with guides",
+        "Architecture docs mixed with deployment"
+      ],
+      "impact": "Hard to find relevant documentation"
+    },
+    
+    "src_frontend": {
+      "issues": [
+        "Basic structure but needs Phase 6 preparation",
+        "No analytics dashboard structure",
+        "No real-time component organization"
+      ],
+      "impact": "Not ready for Phase 6 advanced features"
+    }
+  },
+  
+  "proposed_subfolder_structure": {
+    "src_api_refactor": {
+      "new_structure": {
+        "core/": {
+          "description": "Core FastAPI application",
+          "files": [
+            "main.py (refactored - <500 lines)",
+            "dependencies.py",
+            "middleware.py",
+            "exceptions.py"
+          ]
+        },
+        
+        "endpoints/": {
+          "description": "API route handlers organized by domain",
+          "subdirectories": {
+            "auth/": ["login.py", "register.py", "profile.py"],
+            "discovery/": ["search.py", "credibility.py", "intelligence.py"],
+            "analytics/": ["dashboard.py", "reports.py", "predictions.py"],
+            "streaming/": ["trends.py", "signals.py", "websocket.py"],
+            "admin/": ["health.py", "metrics.py", "management.py"]
+          }
+        },
+        
+        "services/": {
+          "description": "Business logic services by domain",
+          "subdirectories": {
+            "auth/": [
+              "auth_service.py",
+              "user_management.py",
+              "session_service.py"
+            ],
+            "discovery/": [
+              "discovery_service.py",
+              "reddit_api_client.py",
+              "source_credibility_engine.py"
+            ],
+            "analytics/": [
+              "analytics_service.py",
+              "prediction_engine.py",
+              "report_generator.py"
+            ],
+            "streaming/": [
+              "streaming_trend_pipeline.py",
+              "signal_fusion_engine.py",
+              "websocket_broadcaster.py"
+            ],
+            "intelligence/": [
+              "trend_detection_service.py",
+              "semantic_analysis_engine.py",
+              "temporal_pattern_engine.py",
+              "graph_trend_detector.py",
+              "market_intelligence_service.py"
+            ],
+            "infrastructure/": [
+              "database_service.py",
+              "metrics_service.py",
+              "error_handler.py",
+              "performance_monitor.py"
+            ]
+          }
+        },
+        
+        "models/": {
+          "description": "Data models organized by domain",
+          "subdirectories": {
+            "auth/": ["user.py", "session.py", "permissions.py"],
+            "discovery/": ["idea.py", "source.py", "credibility.py"],
+            "analytics/": ["dashboard.py", "report.py", "prediction.py"],
+            "streaming/": ["signal.py", "trend.py", "pattern.py"],
+            "shared/": ["base.py", "response.py", "pagination.py"]
+          }
+        },
+        
+        "schemas/": {
+          "description": "Pydantic schemas for validation",
+          "subdirectories": {
+            "requests/": ["auth_requests.py", "discovery_requests.py", "analytics_requests.py"],
+            "responses/": ["auth_responses.py", "discovery_responses.py", "analytics_responses.py"],
+            "internal/": ["signal_schemas.py", "trend_schemas.py"]
+          }
+        }
+      }
+    },
+    
+    "src_frontend_refactor": {
+      "new_structure": {
+        "components/": {
+          "description": "Reusable UI components",
+          "subdirectories": {
+            "foundation/": [
+              "buttons/",
+              "forms/",
+              "navigation/",
+              "layout/"
+            ],
+            "data-display/": [
+              "charts/",
+              "tables/",
+              "metrics/",
+              "cards/"
+            ],
+            "advanced/": [
+              "dashboard/",
+              "real-time/",
+              "analytics/",
+              "collaboration/"
+            ]
+          }
+        },
+        
+        "pages/": {
+          "description": "Page-level components",
+          "subdirectories": {
+            "auth/": ["login.html", "register.html", "profile.html"],
+            "dashboard/": ["overview.html", "analytics.html", "real-time.html"],
+            "discovery/": ["search.html", "results.html", "details.html"],
+            "admin/": ["users.html", "system.html", "monitoring.html"]
+          }
+        },
+        
+        "js/": {
+          "description": "JavaScript modules",
+          "subdirectories": {
+            "core/": ["app.js", "api.js", "websocket.js", "utils.js"],
+            "features/": ["auth.js", "dashboard.js", "analytics.js", "real-time.js"],
+            "components/": ["charts.js", "forms.js", "navigation.js"],
+            "vendors/": ["chart.js", "tailwind.js"]
+          }
+        },
+        
+        "styles/": {
+          "description": "CSS and styling",
+          "subdirectories": {
+            "base/": ["reset.css", "typography.css", "layout.css"],
+            "components/": ["buttons.css", "forms.css", "charts.css"],
+            "pages/": ["dashboard.css", "auth.css", "analytics.css"],
+            "themes/": ["light.css", "dark.css"]
+          }
+        }
+      }
+    },
+    
+    "working_memory_refactor": {
+      "new_structure": {
+        "agent-state/": {
+          "description": "Agent state and coordination",
+          "files": [
+            "current-context.json",
+            "agent-coordination.json",
+            "agent-health.jsonl",
+            "agent-state.json"
+          ]
+        },
+        
+        "roadmaps/": {
+          "description": "Project roadmaps and planning",
+          "files": [
+            "groundbreaking-methods-roadmap.json",
+            "phase-6-advanced-features-roadmap.json",
+            "production-validation-roadmap.json"
+          ]
+        },
+        
+        "sessions/": {
+          "description": "Session and memory management",
+          "files": [
+            "autosave.json",
+            "session-continuity.json",
+            "memory-optimization-analysis.json"
+          ]
+        },
+        
+        "specialists/": {
+          "description": "Specialist personas and configurations",
+          "files": [
+            "semantic-intelligence-specialist-persona.json",
+            "refactoring-specialist-persona.json",
+            "agent-refactor-plan.json"
+          ]
+        },
+        
+        "reports/": {
+          "description": "Analysis and verification reports",
+          "files": [
+            "reflexion-report.md",
+            "self-verification-report.json",
+            "last-10-events-summary.md"
+          ]
+        },
+        
+        "systems/": {
+          "description": "System documentation and guides",
+          "files": [
+            "memory-limiter-system.md",
+            "rehydration-bootstrap.md",
+            "reflexion-update-system.md",
+            "auto-welcome-system.md"
+          ]
+        },
+        
+        "archive/": {
+          "description": "Historical data and backups",
+          "subdirectories": {
+            "sessions/": "Old session data",
+            "states/": "Previous agent states",
+            "reports/": "Historical reports"
+          }
+        }
+      }
+    },
+    
+    "docs_refactor": {
+      "new_structure": {
+        "development/": {
+          "description": "Development guides and status",
+          "subdirectories": {
+            "guides/": ["setup.md", "testing.md", "debugging.md"],
+            "status/": ["current-state.md", "progress.md", "issues.md"],
+            "cleanup/": ["refactoring-reports", "cleanup-logs"]
+          }
+        },
+        
+        "deployment/": {
+          "description": "Deployment and infrastructure",
+          "subdirectories": {
+            "docker/": ["setup-guide.md", "verification-reports"],
+            "production/": ["deployment-guide.md", "monitoring.md"],
+            "ci-cd/": ["pipeline.md", "automation.md"]
+          }
+        },
+        
+        "architecture/": {
+          "description": "System architecture documentation",
+          "subdirectories": {
+            "system/": ["overview.md", "components.md", "data-flow.md"],
+            "api/": ["endpoints.md", "schemas.md", "authentication.md"],
+            "database/": ["schema.md", "migrations.md", "optimization.md"]
+          }
+        },
+        
+        "reports/": {
+          "description": "Phase and milestone reports",
+          "subdirectories": {
+            "phases/": ["phase-1.md", "phase-2.md", "phase-6.md"],
+            "milestones/": ["v1-completion.md", "v2-features.md"],
+            "verification/": ["testing-reports", "validation-logs"]
+          }
+        }
+      }
+    }
+  },
+  
+  "refactoring_strategy": {
+    "main_py_breakdown": {
+      "current_size": "84KB, 1964 lines",
+      "target": "Multiple focused files <500 lines each",
+      "approach": [
+        "Extract route definitions to endpoints/ subdirectories",
+        "Move middleware to core/middleware.py",
+        "Move exception handlers to core/exceptions.py",
+        "Keep only app initialization and configuration"
+      ]
+    },
+    
+    "large_service_files": {
+      "trend_detection_service.py": {
+        "current": "61KB, 1259 lines",
+        "split_into": [
+          "trend_detector.py (core detection logic)",
+          "trend_analyzer.py (analysis algorithms)",
+          "trend_aggregator.py (data aggregation)"
+        ]
+      },
+      "temporal_pattern_engine.py": {
+        "current": "35KB, 849 lines",
+        "split_into": [
+          "pattern_detector.py (pattern recognition)",
+          "temporal_analyzer.py (time series analysis)",
+          "pattern_validator.py (validation logic)"
+        ]
+      }
+    },
+    
+    "import_path_strategy": {
+      "use_absolute_imports": "from src.api.services.auth import auth_service",
+      "create_init_files": "Proper __init__.py with exports",
+      "namespace_packages": "Clear module namespacing",
+      "api_shortcuts": "from src.api import endpoints, services, models"
+    }
+  },
+  
+  "phase_6_preparation": {
+    "analytics_structure": {
+      "new_directories": [
+        "src/api/services/analytics/",
+        "src/api/endpoints/analytics/",
+        "src/frontend/components/advanced/analytics/",
+        "src/frontend/pages/analytics/"
+      ],
+      "purpose": "Ready for Phase 6 Sprint 1 analytics dashboard"
+    },
+    
+    "monitoring_structure": {
+      "new_directories": [
+        "src/api/services/monitoring/",
+        "src/api/endpoints/monitoring/",
+        "config/monitoring/",
+        "tools/monitoring/"
+      ],
+      "purpose": "Ready for Phase 6 Sprint 2 production monitoring"
+    },
+    
+    "user_management_structure": {
+      "new_directories": [
+        "src/api/services/auth/rbac/",
+        "src/api/services/auth/teams/",
+        "src/frontend/components/advanced/collaboration/"
+      ],
+      "purpose": "Ready for Phase 6 Sprint 3 enhanced user management"
+    }
+  },
+  
+  "refactoring_execution_plan": {
+    "phase_1_api_core": {
+      "duration": "60 minutes",
+      "tasks": [
+        "Create new src/api directory structure",
+        "Break down main.py into focused modules",
+        "Organize endpoints by domain",
+        "Separate services by domain"
+      ]
+    },
+    
+    "phase_2_services_split": {
+      "duration": "45 minutes",
+      "tasks": [
+        "Split large service files",
+        "Organize by business domain",
+        "Update import statements",
+        "Create proper __init__.py files"
+      ]
+    },
+    
+    "phase_3_frontend_structure": {
+      "duration": "30 minutes",
+      "tasks": [
+        "Organize components by complexity",
+        "Create Phase 6 ready structure",
+        "Separate JS by functionality",
+        "Organize styles by scope"
+      ]
+    },
+    
+    "phase_4_memory_organization": {
+      "duration": "20 minutes",
+      "tasks": [
+        "Categorize memory files by purpose",
+        "Separate agent state from roadmaps",
+        "Organize reports and documentation",
+        "Clean up archive structure"
+      ]
+    },
+    
+    "phase_5_validation": {
+      "duration": "15 minutes",
+      "tasks": [
+        "Test API server startup",
+        "Verify import paths",
+        "Check file accessibility",
+        "Validate structure integrity"
+      ]
+    }
+  },
+  
+  "expected_benefits": {
+    "development_velocity": [
+      "Faster feature development",
+      "Easy file discovery",
+      "Clear separation of concerns",
+      "Reduced cognitive load"
+    ],
+    
+    "phase_6_readiness": [
+      "Analytics structure ready",
+      "Monitoring structure prepared",
+      "User management scalable",
+      "Clean component architecture"
+    ],
+    
+    "maintainability": [
+      "Smaller, focused files",
+      "Domain-driven organization",
+      "Clear import hierarchy",
+      "Professional structure"
+    ],
+    
+    "team_productivity": [
+      "Multiple developers can work simultaneously",
+      "Clear ownership boundaries",
+      "Easy onboarding for new developers",
+      "Reduced merge conflicts"
+    ]
+  },
+  
+  "risk_mitigation": {
+    "import_testing": "Test all imports after reorganization",
+    "incremental_approach": "Refactor one domain at a time",
+    "backup_strategy": "Full backup before major moves",
+    "rollback_plan": "Keep original structure accessible"
+  },
+  
+  "post_refactor_structure_example": {
+    "src_api_final": {
+      "size_estimate": "Well-organized, 50+ focused files <500 lines each",
+      "maintainability": "High - clear separation, easy navigation",
+      "scalability": "Excellent - ready for Phase 6 features",
+      "developer_experience": "Professional - industry standard structure"
+    }
+  }
+} 

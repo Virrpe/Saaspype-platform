@@ -1,0 +1,473 @@
+{
+  "timestamp": "20250607_013731",
+  "duration_seconds": 15.857822,
+  "subreddits_analyzed": [
+    "entrepreneur",
+    "startups",
+    "smallbusiness",
+    "freelance",
+    "SaaS",
+    "business",
+    "marketing",
+    "webdev",
+    "productivity",
+    "indiehackers",
+    "Entrepreneur",
+    "sales",
+    "ecommerce",
+    "consulting",
+    "remotework"
+  ],
+  "total_stats": {
+    "posts_analyzed": 150,
+    "pain_points_found": 5,
+    "opportunities_generated": 5,
+    "business_ideas_generated": 5,
+    "ideas_per_second": 0.3153018113080094,
+    "success_rate": 0.03333333333333333
+  },
+  "subreddit_stats": {
+    "entrepreneur": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "startups": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "smallbusiness": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "freelance": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "SaaS": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "business": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "marketing": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "webdev": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "productivity": {
+      "posts_analyzed": 10,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "indiehackers": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "Entrepreneur": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "sales": {
+      "posts_analyzed": 10,
+      "pain_points_found": 2,
+      "opportunities_generated": 2,
+      "concepts_generated": 0
+    },
+    "ecommerce": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "consulting": {
+      "posts_analyzed": 10,
+      "pain_points_found": 0,
+      "opportunities_generated": 0,
+      "concepts_generated": 0
+    },
+    "remotework": {
+      "posts_analyzed": 10,
+      "pain_points_found": 1,
+      "opportunities_generated": 1,
+      "concepts_generated": 0
+    }
+  },
+  "business_ideas": [
+    {
+      "idea_title": "Solution: I summarized top Reddit Self-Help Posts....",
+      "problem_statement": "I summarized top Reddit Self-Help Posts... this is the cheatsheet",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "productivity",
+      "confidence_score": 7,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Multitasking is the least productive hab...",
+      "problem_statement": "Multitasking is the least productive habit ever",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "productivity",
+      "confidence_score": 7,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Does anyone else seem to be on a never e...",
+      "problem_statement": "Does anyone else seem to be on a never ending roller coaster ride in their med device job?",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "sales",
+      "confidence_score": 8,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: Help! Job offer but unsure\u2026...",
+      "problem_statement": "Help! Job offer but unsure\u2026",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "sales",
+      "confidence_score": 6,
+      "discovery_method": "pain_point_analysis"
+    },
+    {
+      "idea_title": "Solution: A discussion about job boards/jobs...",
+      "problem_statement": "A discussion about job boards/jobs",
+      "business_model": "SaaS",
+      "target_market": "General",
+      "revenue_potential": "Medium",
+      "source_subreddit": "remotework",
+      "confidence_score": 7,
+      "discovery_method": "pain_point_analysis"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "I summarized top Reddit Self-Help Posts... this is the cheatsheet",
+      "description": "Business process inefficiency identified",
+      "source": "r/productivity",
+      "url": "https://reddit.com/r/productivity/comments/1l53wli/i_summarized_top_reddit_selfhelp_posts_this_is/",
+      "industry": "general",
+      "pain_indicators": [
+        "High community engagement (78 upvotes)",
+        "Explicit willingness to pay mentioned",
+        "High urgency indicated"
+      ],
+      "engagement_score": 85,
+      "discovered_at": "2025-06-07T01:37:24.902647",
+      "market_size_score": 2,
+      "urgency_score": 3,
+      "solution_gap_score": 1,
+      "monetization_score": 1,
+      "total_score": 7,
+      "confidence": 0.95,
+      "reddit_metrics": {
+        "score": 78,
+        "upvote_ratio": 0.99,
+        "num_comments": 7,
+        "author": "sophsinc",
+        "created_utc": 1749245039.0
+      },
+      "selftext": "I went through a ton of top self-help, productivity, and \"get your life together\" type subreddits, looking at their all-time best posts and what's been popping off these past years and mashed it all into the cheatsheet below. \n\n*(Disclaimer: This is a mashup of what Reddit collectively thinks is good advice + my own two cents. Not a doctor, financial advisor, or guru. Do your own homework and talk to actual experts, especially about health or money stuff.)*\n\n\n________________________________________\n**I. MINDSET & SUCCESS**\n1. Optimism + hard work: Believing that most challenges can be overcome with enough hard work can greatly improve performance. Obstacles are simply challenges waiting to be overcome.\n\n2. Habits: Small, consistent, daily positive actions can build an amazing life over time. The same applies to small, repeated neglects, which lead to failure. Focus on building strong, positive rituals.\n\n3. Action: Stop over-planning and start doing. Learn from every attempt, especially failures, adjust your approach and try again. Real-world experience is always useful.\n\n4. Authenticity: Be genuine. People are drawn to, respect and trust those who are true to themselves.\n\n5. The power of showing up: A significant part of achieving anything is simply being there and doing the work consistently. Persistence eventually pays off.\n\n6. The Daily Thankfulness Ritual: Acknowledge two or three things you're grateful for each day. This will shift your focus to the positive and boost your mood with minimal effort.\n\n7. Trust your gut: Often, your common sense will tell you the right path to take. When the time comes to take action, trust your intuition.\n\n8. Regular, honest self-reflection: Be objective when looking at your actions, progress and areas that need improvement. \n\n9. Use your strengths and manage your weaknesses: Focus your energy on your strengths. Make your weaknesses just 'good enough' so that they don't lead to critical failures.\n\n10. Adaptability: Life is dynamic. Be flexible. Making small, frequent adjustments is crucial for successfully navigating challenges.\n\n11. Discipline is consistent execution. Create a plan and stick to it, both when you're struggling and when you're succeeding. Don't let your emotions get in the way of your process.\n\n12. Strategic Silence: Discussing your goals too early can give you a false sense of accomplishment and reduce your motivation to take action. Let your results speak for themselves.\n\n\n\n________________________________________\n**II. Health insights**\n1. Prioritise sleep (6\u20138 hours): Getting less than this on a consistent basis can have a huge negative impact on your well-being.\n\n2. Maintain a consistent sleep schedule: Go to sleep and wake up at the same time every day. This regulates your body's internal clock.\n\n3. Optimise your sleep environment:\nTemperature: The optimum temperature is 16-18\u00b0C (61-64\u00b0F).\n- 1 hour before bed: avoid screens and intense exercise, and minimise stress to prepare your body for rest.\n\n4. Meditation: It improves focus and reduces stress.\n\n5. Get outside and enjoy nature. It has long been associated with better health and fewer illnesses.\n\n6. Limit or avoid alcohol: It is linked to many diseases, including Alzheimer's, dementia and cancers. It improves long-term health.\n\n7. The danger of inactivity: Not exercising is often said to be worse for your health than smoking, diabetes and heart disease combined.\n\n8. Evening smartphone use: Reducing evening smartphone use increases happiness, focus, and well-being.\n\n9. Dark chocolate (in moderation): Considered a superfood, it is good for physical health and cognitive function.\n\n10. Additional health tips often include:\nHydration is key: Drink water throughout the day. This optimises brain and body function.\n\n*Minimise processed foods and added sugar. This reduces inflammation and energy crashes.*\n\n- Morning sunlight: 10\u201320 minutes of exposure. This regulates your circadian rhythm.\n- Strategic Breathwork (Wim Hof, Box Breathing). This impacts energy and stress levels.\n- Nasal breathing: prioritise it, especially during sleep. It improves oxygenation.\n\n\n________________________________________\n**III. Productivity & Habits**\n1. Small goals for big progress: Break large tasks down into small, manageable daily or weekly steps. This builds momentum.\n\n2. Deep Work Blocks: Dedicate focused, uninterrupted time (60\u201390 minutes, or 'ultradian rhythms') to important tasks. Multitasking reduces efficiency.\n\n3. Design your environment for success:\nUse the \"20-Second Rule\": Make good habits easy (e.g. put your gym clothes out). Make bad habits harder (hide the junk food).\nMinimise distractions: Keep your workspace clean. Use noise-cancelling headphones if needed.\n\n4. Set digital boundaries.\n- Grayscale your phone: This reduces the allure of addictive apps.\n- Curate your information diet: Unfollow ruthlessly.\nStrategic notification management: Turn most off. Batch-check.\nUtilise app blockers. For specific work periods.\n\n5. The 'Mind Dump': Before bed, write down all your thoughts and to-dos. This improves sleep.\n\n6. The art of saying 'no': Your time and energy are valuable. Saying 'no' is a critical skill.\n\n7. Automate repetitive, low-value tasks. Free up your mental space.\n\n8. Prepare for tomorrow: Review and plan to set yourself up for a productive morning.\n\n**IV. Social and financial well-being:**\n*Become an exceptional listener: Ask open-ended questions. Focus on understanding. This builds strong connections.*\n\n1. Be proactive in your relationships. Don't wait. Reach out. Meaningful social connection is important.\n\n2. Practise financial discipline:\n- *Save consistently (aim for 10\u201320%+). Pay yourself first.*\n*Invest wisely (in yourself and diversified assets). Make your money work for you.*\n- *Track your spending carefully. Know where your money goes. Budget.*\n- *Protect your assets. Ensure you have adequate insurance.*\n\n________________________________________\n**V. CONTINUOUS GROWTH:**\n1. Lifelong learning: Seek new knowledge and skills. Read, listen and take courses.\n2. Seek mentors: Learn from people who have achieved what you aspire to.\n3. Embrace constructive discomfort. Step out of your comfort zone. Learn to handle setbacks.\n4. Develop emotional skills: Understand your triggers. Learn healthy coping mechanisms.\n5. Focus on the process, not just the outcome. Find satisfaction in growth.\n\n________________________________________\n**Information doesn't change your life, action does.**\nYou can read every self-help book and every Reddit post, but until you start applying these principles, even in small ways, nothing fundamentally shifts. \n\nSo, use this as the starting point, not just a scroll. The real value isn't in knowing what to do, but in the doing itself.\n\nHope I was able to help someone with this sheet!",
+      "business_potential": "medium",
+      "score": 7,
+      "num_comments": 7,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "High community engagement (78 upvotes)",
+        "Explicit willingness to pay mentioned",
+        "High urgency indicated"
+      ],
+      "retrieved_via": "reddit_api_oauth2",
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "Multitasking is the least productive habit ever",
+      "description": "Business process inefficiency identified",
+      "source": "r/productivity",
+      "url": "https://reddit.com/r/productivity/comments/1l53gs6/multitasking_is_the_least_productive_habit_ever/",
+      "industry": "general",
+      "pain_indicators": [],
+      "engagement_score": 5,
+      "discovered_at": "2025-06-07T01:37:24.904104",
+      "market_size_score": 2,
+      "urgency_score": 3,
+      "solution_gap_score": 1,
+      "monetization_score": 1,
+      "total_score": 7,
+      "confidence": 0.8499999999999999,
+      "reddit_metrics": {
+        "score": 2,
+        "upvote_ratio": 0.75,
+        "num_comments": 3,
+        "author": "gits97",
+        "created_utc": 1749243921.0
+      },
+      "selftext": "Soo... Few years back, when I was finishing university I went big into being \"very productive\". I would do some extreme stuff like write homework in metro (sometimes standing), sleep ridiculously few hours but made sure it was a multiple of 1.5h to match the sleep cycle and feel good anyway when I woke up. And multitasking was one of the toxic habits that I got into: I would write emails during lectures, see some of the videos about a subject while eating, then (when I started working) scheduling meetings that was almost intentionally back to back despite knowing one would last longer... stuff like that.\n\nFew years after all of this, a lot of mental problems started to come to the surface (not necessarily related to or coming from these habits) which got me into therapy and meditation. And here's the catch - during these meditations, I realized, that multitasking is just another name of being non-mindful. It's like: you're not writing an email AND listening to the lecture at the same time, you're just doing none of those things really.\n\nIn long term, purely from productivity perspective it's way better to have some time to do one thing fully committed and focused, then gracefully do a context switch and do something different. You just make both of those things better, higher quality and generally strain your psyche way less and enjoy doing stuff much more.\n\n**You know like when you always wait for some thing to finish at work/life/wherever to start something else and then if you actually look at it, none of it ever finishes and you are stuck in this loop of always rushing and being out of time and not meeting a deadline. As counter intuitive as it may sound, just ignoring some of the stuff that you feel like are super important and doing one thing like there's nothing else in this word: slowly, in your time, with full focus will help you get x100 more done. And you'll look back and realize that you met all the deadlines, had all the time for vacation, stressed much less and are still happy.**\n\nToday I try to only do one thing at a time. Even when I'm eating, I try to put down my phone, and try to not even think about anything else, rather focus on eating, savoring each and every bite, enjoying it, making a pause and being grateful for THIS sensation, and let me tell you something: boy does it work...\n\nWith the power of synchronicity (or pure chance) I came across a book called \"Deep Work\" by Cal Newport and it talks about this very topic, which I highly suggest.\n\n**TL;DR**  \n**You have no idea how big of a world is happening in front of your eyes without you noticing it. Just try to sit down and eat one meal, fully focused on eating sensation and nothing more: no phone, no videos, no thinking, I guarantee you, you'll start to feel how different that sourdough and poached egg taste like from what you thought they tasted like.**",
+      "business_potential": "medium",
+      "score": 7,
+      "num_comments": 3,
+      "post_age_days": 1,
+      "pain_point_indicators": [],
+      "retrieved_via": "reddit_api_oauth2",
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "Does anyone else seem to be on a never ending roller coaster ride in their med device job?",
+      "description": "new roles to get away from this shit show",
+      "source": "r/sales",
+      "url": "https://reddit.com/r/sales/comments/1l4ytm5/does_anyone_else_seem_to_be_on_a_never_ending/",
+      "industry": "general",
+      "pain_indicators": [
+        "Active discussion (12 comments)",
+        "Business/professional context"
+      ],
+      "engagement_score": 18,
+      "discovered_at": "2025-06-07T01:37:27.954184",
+      "market_size_score": 3,
+      "urgency_score": 3,
+      "solution_gap_score": 1,
+      "monetization_score": 1,
+      "total_score": 8,
+      "confidence": 0.5,
+      "reddit_metrics": {
+        "score": 6,
+        "upvote_ratio": 1.0,
+        "num_comments": 12,
+        "author": "comara456",
+        "created_utc": 1749232277.0
+      },
+      "selftext": "The major player in the pharma and device industry company I work for has thrown so many curve balls at our reps in the past year that I can\u2019t even get mad anymore, it\u2019s just become comical. I\u2019m out here just going with the flow, no clue how I\u2019m getting paid, getting new account lists every year if not every quarter, no quotas until halfway through the quarter or sometimes even the last month, comp structures changing left and right with little to no explanation, a deadline for a new program go live date getting pushed back after forcing customers to opt into it early and being adamant that no extension deadline would be happening. We just had massive layoffs a couple weeks ago and a full restructuring so I\u2019m just grateful to even have a job but I\u2019m also laughing at how embarrassing my company looks to all of our customers and all of its employees. Obviously I need to get out but holy shit this job market is so rough right now. I\u2019m just here along for the ride and completely detached from work at this point and honestly I feel great. Choosing to focus on work life balance during these trying times while my company figures out any sense of direction while simultaneously enjoying my summer and looking for new roles to get away from this shit show. Thanks for coming to my TED talk about how I no longer give a shit!! ",
+      "business_potential": "high",
+      "score": 8,
+      "num_comments": 12,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "Active discussion (12 comments)",
+        "Business/professional context"
+      ],
+      "retrieved_via": "reddit_api_oauth2",
+      "source_subreddit": "sales"
+    },
+    {
+      "title": "Help! Job offer but unsure\u2026",
+      "description": "Business process inefficiency identified",
+      "source": "r/sales",
+      "url": "https://reddit.com/r/sales/comments/1l50ru1/help_job_offer_but_unsure/",
+      "industry": "general",
+      "pain_indicators": [
+        "Business/professional context"
+      ],
+      "engagement_score": 8,
+      "discovered_at": "2025-06-07T01:37:27.953337",
+      "market_size_score": 3,
+      "urgency_score": 1,
+      "solution_gap_score": 1,
+      "monetization_score": 1,
+      "total_score": 6,
+      "confidence": 0.8499999999999999,
+      "reddit_metrics": {
+        "score": 3,
+        "upvote_ratio": 1.0,
+        "num_comments": 5,
+        "author": "5onblack13",
+        "created_utc": 1749237071.0
+      },
+      "selftext": "Guys, I need some help. I\u2019ve been offered a new position at a competitor and I\u2019m extremely conflicted as, whilst it\u2019s not without its many problems, I\u2019ve just got comfortable at the company I\u2019m currently at\u2026\n\nI need a fresh, unbiased, unemotional perspective as I\u2019m getting in my own head too much about it. \n\nPros of new company; \n\n- 25% base salary increase from my current\n- sales driven, less politics\n- extreme room for personal growth/promotions \n- crushing it in the market right now, making my life hard\n- some unique offerings in the market \n- partially will be covering same territory so can hopefully hit the ground running \n- at least 5 people in our sales department have moved there in last 3m (says something I suppose)\n- NO SALESFORCE\n- easier to deal with as a company from clients side\n\nPros of current company;\n\n- very stable, been around many years and is a ftse 250 company\n- some positive changes are coming (new market offering/products which no one else has)\n- best manager I\u2019ve every had. Great team\n- well known brand with history \n\nCons of new company;\n\n- grass isn\u2019t always greener; could hate culture etc\n- private equity owned\u2026 hiring manager was very open in saying it\u2019s risky/volatile at the moment and they HAVE to make it work\u2026 was haemorrhaging \u00a3, only just started to break even\n- known for pulling in and out of the market in terms of their strength/offering over last decade\n- not as much product configuration/not as much freedom to bespoke packages \n- seem more cutthroat in terms of staff and culture but so many staff have 5+ years tenure \n- nowhere near as big of a company/recognisable brand\n\nCons of current company;\n\n- I\u2019m a bit down in the dumps over its current offering \n- can be hard work to deal with as a client\n- stuck in the past. Change takes forever \n- identity crisis? Fighting for business against other internal sales departments who sell through slightly different channels. I usually have the worse offering too!\n- not competitive in the market but expects the same return as companies who offer more \n- politics/sales prevention from inside org\n- no room for promotion/growth\n- (my opinion) terrible bonus scheme. Winning a few \u00a31m accounts and not seeing a penny due to certain metrics not being met lol. That got old very quickly.\n\nInterested to hear people\u2019s thoughts.\n\nThanks! ",
+      "business_potential": "medium",
+      "score": 6,
+      "num_comments": 5,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "Business/professional context"
+      ],
+      "retrieved_via": "reddit_api_oauth2",
+      "source_subreddit": "sales"
+    },
+    {
+      "title": "A discussion about job boards/jobs",
+      "description": "a remote customer service person, they are not posting it on joebobsremoteworksuperwonderful",
+      "source": "r/remotework",
+      "url": "https://reddit.com/r/remotework/comments/1l54iwi/a_discussion_about_job_boardsjobs/",
+      "industry": "general",
+      "pain_indicators": [
+        "Business/professional context"
+      ],
+      "engagement_score": 11,
+      "discovered_at": "2025-06-07T01:37:30.885477",
+      "market_size_score": 3,
+      "urgency_score": 1,
+      "solution_gap_score": 2,
+      "monetization_score": 1,
+      "total_score": 7,
+      "confidence": 0.5499999999999999,
+      "reddit_metrics": {
+        "score": 8,
+        "upvote_ratio": 0.9,
+        "num_comments": 3,
+        "author": "Embarrassed_Flan_869",
+        "created_utc": 1749246656.0
+      },
+      "selftext": "First, I want you to find a remote job. I want everyone who wants to work remote, can.\n\nI have sad news. There are no magical super secret job boards that people are hiding. It doesn't exist.\n\nWhen a company is hiring, they will, usually, post it on their website and one of the big job boards. The job boards make money by companies paying them to post the job. That's how it works. There are a few minor niche ones for very specific (and usually highly skilled) industries. \n\nAll the other job boards scrape open positions from those sources and post them. If State Farm is looking for a remote customer service person, they are not posting it on joebobsremoteworksuperwonderful.com. They are using LinkedIn/Indeed/Ziprecruiter/glassdoor. You get the idea. \n\nTake 5 seconds to note who you apply to. That way when you get the random text for $37 an hour as a part flex time data entry role, you can see easily it's fake. \n\nNo one here is being a jerk because we are mean or trying to hold you back. It's that people post the same question 400 times a day. If you cant take a minute to search the sub, what chance do you have to find a job? \"I need a remote job\" is always a favorite. We get it, you need remote because you live in a rural area, or have a cat that has separation anxiety, or whatever. \n\nOdds are you will need to apply to tons of jobs. Why? Thousands of people are also applying. \n\nAs a side note, it's nearly impossible to find a remote job as a full time person living in the US. Anything outside that, it ups the difficulty by 100x. Im sorry you can only work 3 hours every other Tuesday or you want to move to Liechtenstein next month. \n",
+      "business_potential": "medium",
+      "score": 7,
+      "num_comments": 3,
+      "post_age_days": 1,
+      "pain_point_indicators": [
+        "Business/professional context"
+      ],
+      "retrieved_via": "reddit_api_oauth2",
+      "source_subreddit": "remotework"
+    }
+  ],
+  "opportunities": [
+    {
+      "title": "Business automation platform addressing business process inefficiency identified",
+      "score": 7,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "productivity",
+      "pain_point_indicators": [
+        "High community engagement (78 upvotes)",
+        "Explicit willingness to pay mentioned",
+        "High urgency indicated"
+      ],
+      "source_post": "I summarized top Reddit Self-Help Posts... this is the cheatsheet",
+      "target_market": "General professionals and teams",
+      "confidence": 0.95,
+      "market_size": 2,
+      "urgency": 3,
+      "solution_gap": 1,
+      "monetization": 1,
+      "reddit_metrics": {
+        "score": 78,
+        "num_comments": 7,
+        "upvote_ratio": 0.99
+      },
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "Business automation platform addressing business process inefficiency identified",
+      "score": 7,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "productivity",
+      "pain_point_indicators": [],
+      "source_post": "Multitasking is the least productive habit ever",
+      "target_market": "General professionals and teams",
+      "confidence": 0.8499999999999999,
+      "market_size": 2,
+      "urgency": 3,
+      "solution_gap": 1,
+      "monetization": 1,
+      "reddit_metrics": {
+        "score": 2,
+        "num_comments": 3,
+        "upvote_ratio": 0.75
+      },
+      "source_subreddit": "productivity"
+    },
+    {
+      "title": "Business automation platform addressing new roles to get away from this shit show",
+      "score": 8,
+      "domain": "general",
+      "business_potential": "high",
+      "subreddit": "sales",
+      "pain_point_indicators": [
+        "Active discussion (12 comments)",
+        "Business/professional context"
+      ],
+      "source_post": "Does anyone else seem to be on a never ending roller coaster ride in their med device job?",
+      "target_market": "General professionals and teams",
+      "confidence": 0.5,
+      "market_size": 3,
+      "urgency": 3,
+      "solution_gap": 1,
+      "monetization": 1,
+      "reddit_metrics": {
+        "score": 6,
+        "num_comments": 12,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "sales"
+    },
+    {
+      "title": "Business automation platform addressing business process inefficiency identified",
+      "score": 6,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "sales",
+      "pain_point_indicators": [
+        "Business/professional context"
+      ],
+      "source_post": "Help! Job offer but unsure\u2026",
+      "target_market": "General professionals and teams",
+      "confidence": 0.8499999999999999,
+      "market_size": 3,
+      "urgency": 1,
+      "solution_gap": 1,
+      "monetization": 1,
+      "reddit_metrics": {
+        "score": 3,
+        "num_comments": 5,
+        "upvote_ratio": 1.0
+      },
+      "source_subreddit": "sales"
+    },
+    {
+      "title": "Business automation platform addressing a remote customer service person, they are not posting it on joebobsremoteworksuperwonderful",
+      "score": 7,
+      "domain": "general",
+      "business_potential": "medium",
+      "subreddit": "remotework",
+      "pain_point_indicators": [
+        "Business/professional context"
+      ],
+      "source_post": "A discussion about job boards/jobs",
+      "target_market": "General professionals and teams",
+      "confidence": 0.5499999999999999,
+      "market_size": 3,
+      "urgency": 1,
+      "solution_gap": 2,
+      "monetization": 1,
+      "reddit_metrics": {
+        "score": 8,
+        "num_comments": 3,
+        "upvote_ratio": 0.9
+      },
+      "source_subreddit": "remotework"
+    }
+  ],
+  "idea_categories": {
+    "General": 5
+  }
+}

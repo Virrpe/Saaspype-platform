@@ -1,0 +1,99 @@
+{
+  "cycle_number": 36,
+  "timestamp": "20250606_082223",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Remote Job Posts - Megathread",
+      "problem": "Hiring remote workers? Post your job in the comments.\n\nAll posts must have salary range &amp; geographic range.\n\nIf it doesn\u2019t have a salary, it\u2019s not a job.",
+      "solution": "Business opportunity addressing r/remotework community need",
+      "source": "remotework",
+      "cycle": 36,
+      "timestamp": "2025-06-06T08:22:18.204297",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/remotework/comments/1kyqg7q/remote_job_posts_megathread/",
+      "reddit_score": 13,
+      "reddit_comments": 7
+    },
+    {
+      "title": "Reddit Discovery: r/remotework needs a new mod or two",
+      "problem": "The sub is growing, and attracting spam, at a level that\u2019s starting to outstrip the current mod team\u2019s ability to clean up. \n\nA few requirements:\n- Your account ought to be quite aged. &gt;5 years.\n- ...",
+      "solution": "Business opportunity addressing r/remotework community need",
+      "source": "remotework",
+      "cycle": 36,
+      "timestamp": "2025-06-06T08:22:18.204297",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/remotework/comments/1kwuop7/rremotework_needs_a_new_mod_or_two/",
+      "reddit_score": 18,
+      "reddit_comments": 12
+    },
+    {
+      "title": "Reddit Discovery: You have my optimized resume.  Why, in 2025, must I enter it all again?",
+      "problem": "Mostly I just keep moving on because I\u2019m looking for a post-retirement job and my history goes back to the 1980s.    However, I have a kind-of-niche skill and want to get onto the radar of those jobs....",
+      "solution": "Business opportunity addressing r/remotework community need",
+      "source": "remotework",
+      "cycle": 36,
+      "timestamp": "2025-06-06T08:22:18.204297",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/remotework/comments/1l40rds/you_have_my_optimized_resume_why_in_2025_must_i/",
+      "reddit_score": 29,
+      "reddit_comments": 11
+    },
+    {
+      "title": "Reddit Discovery: Product Launch Post",
+      "problem": "Post about all your upcoming product launches here!",
+      "solution": "Business opportunity addressing r/nocode community need",
+      "source": "nocode",
+      "cycle": 36,
+      "timestamp": "2025-06-06T08:22:23.588196",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/nocode/comments/176fe1v/product_launch_post/",
+      "reddit_score": 110,
+      "reddit_comments": 317
+    },
+    {
+      "title": "Reddit Discovery: No-coders: what three features in a PM tool help you ship faster?",
+      "problem": "I'm always on the hunt for no-code-friendly project management features that actually move the needle.  \nWhat are the top three must-haves in a PM tool that help you build and launch faster\u2014automation...",
+      "solution": "Business opportunity addressing r/nocode community need",
+      "source": "nocode",
+      "cycle": 36,
+      "timestamp": "2025-06-06T08:22:23.588196",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/nocode/comments/1l4kuvl/nocoders_what_three_features_in_a_pm_tool_help/",
+      "reddit_score": 1,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: Is it possible to automate this??",
+      "problem": "Is it possible to automate the following tasks (even partially if not fully):\n\n1) Putting searches into web search engines,\n2) Collecting and coping website or webpage content in word document,\n3) Cro...",
+      "solution": "Business opportunity addressing r/nocode community need",
+      "source": "nocode",
+      "cycle": 36,
+      "timestamp": "2025-06-06T08:22:23.588196",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/nocode/comments/1l499iw/is_it_possible_to_automate_this/",
+      "reddit_score": 3,
+      "reddit_comments": 7
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 5.5,
+    "memory_percent": 70.9,
+    "disk_percent": 78.9,
+    "available_gb": 2.285633087158203,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 36,
+    "total_ideas": 216,
+    "uptime_minutes": 408.5505761663119,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

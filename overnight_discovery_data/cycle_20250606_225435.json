@@ -1,0 +1,99 @@
+{
+  "cycle_number": 1,
+  "timestamp": "20250606_225435",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Feedback Friday! - June 06, 2025",
+      "problem": "Need help with your website or portfolio? Want advice from other entrepreneurs on what you could improve?\n\nShare your stuff here and get feedback from our community. \n\nSince this thread can fill up qu...",
+      "solution": "Business opportunity addressing r/entrepreneur community need",
+      "source": "entrepreneur",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:27.488826",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/Entrepreneur/comments/1l4nro9/feedback_friday_june_06_2025/",
+      "reddit_score": 1,
+      "reddit_comments": 5
+    },
+    {
+      "title": "Reddit Discovery: Sick of Spam? Use the Report Button!",
+      "problem": "Annoyed by AI-written posts full of stealth promotion? We are, too. Whenever you see it, hit that report button! The majority of spam that makes it through our ever-evolving filters is never reported ...",
+      "solution": "Business opportunity addressing r/entrepreneur community need",
+      "source": "entrepreneur",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:27.488826",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/Entrepreneur/comments/1k1wam9/sick_of_spam_use_the_report_button/",
+      "reddit_score": 12,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: Is this a good Idea? We have so much stuff in the world",
+      "problem": "I've created an app called Lend It. Not launched, you can't even register. \n\n Where you simply lend your stuff to others and get paid in cash  the app will  take a 15% fee, or only 5% if you decided t...",
+      "solution": "Business opportunity addressing r/entrepreneur community need",
+      "source": "entrepreneur",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:27.488826",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/Entrepreneur/comments/1l4v87z/is_this_a_good_idea_we_have_so_much_stuff_in_the/",
+      "reddit_score": 59,
+      "reddit_comments": 73
+    },
+    {
+      "title": "Reddit Discovery: Share your startup - quarterly post",
+      "problem": "Share Your Startup - Q4 2023\n\n[**r/startups**](https://www.reddit.com/r/startups/) **wants to hear what you're working on!**\n\nTell us about your startup in a comment within this submission. Follow thi...",
+      "solution": "Business opportunity addressing r/startups community need",
+      "source": "startups",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:35.022791",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/startups/comments/1jwuuer/share_your_startup_quarterly_post/",
+      "reddit_score": 38,
+      "reddit_comments": 440
+    },
+    {
+      "title": "Reddit Discovery: Feedback Friday",
+      "problem": "Welcome to this week\u2019s Feedback Thread!\n\n# Please use this thread appropriately to gather feedback:\n\n* Feel free to request general feedback or specific feedback in a certain area like user experience...",
+      "solution": "Business opportunity addressing r/startups community need",
+      "source": "startups",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:35.022791",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/startups/comments/1l4k7b7/feedback_friday/",
+      "reddit_score": 3,
+      "reddit_comments": 9
+    },
+    {
+      "title": "Reddit Discovery: Learn from my $38k mistake, i will not promote.",
+      "problem": "In March, I started poking around different app developing websites to build an iphone app. I\u2019m an engineer by trade, but it was too time consuming with my professional/personal life, I needed to hire...",
+      "solution": "Business opportunity addressing r/startups community need",
+      "source": "startups",
+      "cycle": 1,
+      "timestamp": "2025-06-06T22:54:35.022791",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/startups/comments/1l4xsrz/learn_from_my_38k_mistake_i_will_not_promote/",
+      "reddit_score": 28,
+      "reddit_comments": 18
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 11.0,
+    "memory_percent": 79.5,
+    "disk_percent": 78.7,
+    "available_gb": 1.6127777099609375,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 1,
+    "total_ideas": 6,
+    "uptime_minutes": 0.26734582980473837,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "refactor_metadata": {
+    "created": "2025-01-14T20:30:00Z",
+    "type": "PROJECT_STRUCTURE_REFACTOR_PLAN",
+    "status": "READY_FOR_EXECUTION",
+    "priority": "IMMEDIATE",
+    "scope": "Complete project structure reorganization",
+    "goal": "Clean, professional project structure ready for Phase 6 development"
+  },
+  
+  "current_problems": {
+    "root_directory_issues": [
+      "70+ files cluttering root directory",
+      "Test files scattered everywhere (20+ test_*.py files)",
+      "Database files in root (.db files)",
+      "Documentation mixed with code",
+      "Docker files mixed with Python scripts",
+      "Multiple similar files (start_*, test_*, etc.)",
+      "No clear separation of concerns",
+      "Difficult to navigate and maintain"
+    ],
+    
+    "development_impact": [
+      "Hard to find files quickly",
+      "Confusing for new developers",
+      "Difficult to maintain",
+      "Not production-ready structure",
+      "Makes CI/CD setup complex",
+      "Poor developer experience"
+    ]
+  },
+  
+  "proposed_structure": {
+    "root_level": [
+      "README.md",
+      "requirements.txt", 
+      "docker-compose.yml",
+      "Dockerfile",
+      ".dockerignore",
+      ".gitignore",
+      "PRD.md",
+      ".cursorrules"
+    ],
+    
+    "organized_directories": {
+      "src/": {
+        "description": "All source code",
+        "subdirectories": {
+          "api/": "FastAPI backend code",
+          "frontend/": "Frontend assets and pages", 
+          "shared/": "Shared utilities and config",
+          "services/": "Business logic services"
+        }
+      },
+      
+      "tests/": {
+        "description": "All test files organized by category",
+        "subdirectories": {
+          "unit/": "Unit tests",
+          "integration/": "Integration tests",
+          "api/": "API tests",
+          "auth/": "Authentication tests",
+          "streaming/": "Streaming pipeline tests",
+          "fixtures/": "Test data and fixtures"
+        }
+      },
+      
+      "docs/": {
+        "description": "All documentation",
+        "subdirectories": {
+          "development/": "Development guides and status",
+          "deployment/": "Deployment guides and reports",
+          "architecture/": "System architecture docs",
+          "api/": "API documentation",
+          "reports/": "Phase completion reports"
+        }
+      },
+      
+      "scripts/": {
+        "description": "Utility and deployment scripts",
+        "subdirectories": {
+          "deployment/": "Docker and production scripts",
+          "development/": "Development helper scripts",
+          "testing/": "Test runner scripts",
+          "data/": "Data processing scripts"
+        }
+      },
+      
+      "data/": {
+        "description": "Data storage and databases",
+        "subdirectories": {
+          "databases/": "SQLite and other database files",
+          "logs/": "Application logs",
+          "exports/": "Generated reports and exports",
+          "backups/": "Data backups"
+        }
+      },
+      
+      "config/": {
+        "description": "Configuration files",
+        "subdirectories": {
+          "environment/": "Environment-specific configs",
+          "docker/": "Docker-specific configs",
+          "nginx/": "Nginx configurations"
+        }
+      },
+      
+      "tools/": {
+        "description": "Development and maintenance tools",
+        "subdirectories": {
+          "validators/": "Data validation tools",
+          "generators/": "Report and code generators",
+          "analyzers/": "Analysis and metrics tools"
+        }
+      }
+    }
+  },
+  
+  "file_reorganization_plan": {
+    "test_files": {
+      "target_directory": "tests/",
+      "files_to_move": [
+        "test_auth_quick.py → tests/auth/",
+        "test_authentication_system.py → tests/auth/",
+        "test_fallback_reddit_api.py → tests/api/",
+        "test_reddit_api_integration*.py → tests/integration/",
+        "test_api_*.py → tests/api/",
+        "test_streaming_*.py → tests/streaming/",
+        "test_multimodal_fusion_phase5.py → tests/streaming/",
+        "test_credibility_*.py → tests/api/",
+        "test_quality_dashboard.py → tests/integration/",
+        "test_pytorch_fix.py → tests/unit/",
+        "test_phase2_demo*.py → tests/integration/",
+        "test_intelligence_endpoint.py → tests/api/",
+        "test_real_data.py → tests/unit/"
+      ]
+    },
+    
+    "documentation_files": {
+      "target_directory": "docs/",
+      "files_to_move": [
+        "PHASE_*_COMPLETION_REPORT.md → docs/reports/",
+        "VERIFICATION_*.md → docs/development/",
+        "DOCKER_SETUP_GUIDE.md → docs/deployment/",
+        "README-Docker.md → docs/deployment/",
+        "QUALITY_DASHBOARD_IMPLEMENTATION.md → docs/development/",
+        "GROUNDBREAKING_METHODS_SUMMARY.md → docs/architecture/",
+        "PYTORCH_FIX_SUMMARY.md → docs/development/",
+        "SYSTEM_STATUS_REPORT.md → docs/development/",
+        "LOCAL_DEVELOPMENT_STATUS.md → docs/development/",
+        "CURRENT_STATE_SAVE.md → docs/development/",
+        "FINAL_SYSTEM_STATE.md → docs/development/",
+        "Luciq_*.md → docs/",
+        "docker-verification-report.md → docs/deployment/"
+      ]
+    },
+    
+    "script_files": {
+      "target_directory": "scripts/",
+      "files_to_move": [
+        "start_*.py → scripts/development/",
+        "start_*.bat → scripts/deployment/",
+        "start_*.sh → scripts/deployment/",
+        "docker-start.* → scripts/deployment/",
+        "migrate_database_for_auth.py → scripts/data/",
+        "verify_*.py → scripts/testing/",
+        "generate_report.py → tools/generators/"
+      ]
+    },
+    
+    "data_files": {
+      "target_directory": "data/",
+      "files_to_move": [
+        "*.db → data/databases/",
+        "*.html → data/exports/",
+        "save_confirmation.log → data/logs/"
+      ]
+    },
+    
+    "tool_files": {
+      "target_directory": "tools/",
+      "files_to_move": [
+        "real_data_validator.py → tools/validators/",
+        "groundbreaking_methods.py → tools/analyzers/",
+        "reach_industry_standards.py → tools/analyzers/",
+        "industry_standard_scoring.py → tools/analyzers/",
+        "boost_signals.py → tools/analyzers/"
+      ]
+    },
+    
+    "config_files": {
+      "target_directory": "config/",
+      "files_to_move": [
+        "nginx.conf → config/nginx/",
+        "production.env → config/environment/",
+        ".dockerignore → config/docker/"
+      ]
+    }
+  },
+  
+  "refactoring_phases": {
+    "phase_1_preparation": {
+      "duration": "30 minutes",
+      "tasks": [
+        "Create new directory structure",
+        "Backup current state",
+        "Plan import path updates"
+      ]
+    },
+    
+    "phase_2_file_moves": {
+      "duration": "45 minutes", 
+      "tasks": [
+        "Move test files to tests/",
+        "Move documentation to docs/",
+        "Move scripts to scripts/",
+        "Move data files to data/",
+        "Move tools to tools/",
+        "Move configs to config/"
+      ]
+    },
+    
+    "phase_3_import_fixes": {
+      "duration": "30 minutes",
+      "tasks": [
+        "Update import statements",
+        "Fix relative paths",
+        "Update Docker paths",
+        "Update script references"
+      ]
+    },
+    
+    "phase_4_validation": {
+      "duration": "15 minutes",
+      "tasks": [
+        "Test API server startup",
+        "Verify Docker build",
+        "Run key tests",
+        "Validate structure"
+      ]
+    }
+  },
+  
+  "expected_benefits": {
+    "developer_experience": [
+      "Easy to navigate project structure",
+      "Clear separation of concerns",
+      "Fast file discovery",
+      "Professional appearance"
+    ],
+    
+    "maintenance": [
+      "Easier to add new features",
+      "Simpler CI/CD setup",
+      "Better code organization",
+      "Reduced cognitive load"
+    ],
+    
+    "production_readiness": [
+      "Clean deployment structure",
+      "Proper config management",
+      "Organized testing framework",
+      "Professional project layout"
+    ]
+  },
+  
+  "import_path_updates": {
+    "src_imports": [
+      "Update relative imports in src/ files",
+      "Fix cross-module references", 
+      "Update API endpoint imports"
+    ],
+    
+    "test_imports": [
+      "Update test file imports to src/",
+      "Fix fixture and helper imports",
+      "Update test data paths"
+    ],
+    
+    "script_imports": [
+      "Update deployment script paths",
+      "Fix Docker volume mounts",
+      "Update config file references"
+    ]
+  },
+  
+  "risk_mitigation": {
+    "backup_strategy": "Create full backup before any moves",
+    "incremental_approach": "Move and test in small batches",
+    "rollback_plan": "Keep backup available for quick restore",
+    "validation_checkpoints": "Test after each major move"
+  },
+  
+  "post_refactor_validation": {
+    "api_server": "python scripts/development/start_api_v2.py",
+    "docker_build": "docker-compose build",
+    "key_tests": "python -m pytest tests/auth/test_auth_quick.py",
+    "structure_check": "Verify all files in correct locations"
+  }
+} 

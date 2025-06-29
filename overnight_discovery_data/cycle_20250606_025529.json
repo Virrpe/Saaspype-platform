@@ -1,0 +1,99 @@
+{
+  "cycle_number": 5,
+  "timestamp": "20250606_025529",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Join the /r/productivity Discord!",
+      "problem": "Join in on the discussion by clicking [here](https://discord.gg/wrFrTx3Zex)!",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 5,
+      "timestamp": "2025-06-06T02:55:23.719367",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1jas5x9/join_the_rproductivity_discord/",
+      "reddit_score": 9,
+      "reddit_comments": 7
+    },
+    {
+      "title": "Reddit Discovery: Reading a lot of books will never make you smarter.",
+      "problem": "Everyone thinks that by reading 50 books a year, they become wiser. \n\nBut that\u2019s false...\n\nIt\u2019s not the quantity of reading that changes a life.\n\nIt\u2019s what you do with what you read.\n\nRyan Holiday, in...",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 5,
+      "timestamp": "2025-06-06T02:55:23.719367",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1l43mzn/reading_a_lot_of_books_will_never_make_you_smarter/",
+      "reddit_score": 113,
+      "reddit_comments": 74
+    },
+    {
+      "title": "Reddit Discovery: Most people wont get it, and that is \ud83d\udc4d",
+      "problem": "Posted this on other reddit post so I thought i could share it with you guys\u2026 It still blows my mind how people just brush it off when I tell them discipline have been my main focus these past few yea...",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 5,
+      "timestamp": "2025-06-06T02:55:23.719367",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1l43zd7/most_people_wont_get_it_and_that_is/",
+      "reddit_score": 78,
+      "reddit_comments": 32
+    },
+    {
+      "title": "Reddit Discovery: What post flairs should we have?",
+      "problem": "Hey members, **I need your help to improve this sub**. I will start with post-flairs for better content filtering. Please share some suggestions for what post flairs we should have on this sub. \n\n  \nH...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 5,
+      "timestamp": "2025-06-06T02:55:29.208284",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1hb28jr/what_post_flairs_should_we_have/",
+      "reddit_score": 15,
+      "reddit_comments": 8
+    },
+    {
+      "title": "Reddit Discovery: Hey members, meet your new mod!",
+      "problem": "Hello to all the members of r/indiehackers \ud83d\udc4b\n\n# Who am I?\n\nI'm **Prakhar**, a creative web developer, and an aspiring indie hacker. I call myself aspiring because I haven't earned anything from my pro...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 5,
+      "timestamp": "2025-06-06T02:55:29.208284",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1g1qn9y/hey_members_meet_your_new_mod/",
+      "reddit_score": 20,
+      "reddit_comments": 18
+    },
+    {
+      "title": "Reddit Discovery: SaaS Founders: I built AnnotateWeb (featured in Morning Brew) in days using a ne...",
+      "problem": "Hey everyone,\n\nWanted to share a different way to think about building products or adding features, especially if you're a solo founder or small team looking to move fast.\n\nI recently launched Annotat...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 5,
+      "timestamp": "2025-06-06T02:55:29.208284",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1l42kna/saas_founders_i_built_annotateweb_featured_in/",
+      "reddit_score": 11,
+      "reddit_comments": 0
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 4.0,
+    "memory_percent": 76.5,
+    "disk_percent": 78.8,
+    "available_gb": 1.8473854064941406,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 5,
+    "total_ideas": 30,
+    "uptime_minutes": 81.64424431324005,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "cycle_number": 1,
+  "timestamp": "20250606_012655",
+  "ideas_found": 1,
+  "ideas": [
+    {
+      "title": "Test Idea",
+      "problem": "Test problem",
+      "solution": "Test solution",
+      "source": "test",
+      "cycle": 999,
+      "timestamp": "2025-01-01T00:00:00",
+      "confidence_score": 3,
+      "discovery_type": "test"
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 10.0,
+    "memory_percent": 50.0,
+    "disk_percent": 30.0,
+    "available_gb": 4.0,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 1,
+    "total_ideas": 1,
+    "uptime_minutes": 1.823107401529948e-05,
+    "avg_ideas_per_cycle": 1.0
+  }
+}

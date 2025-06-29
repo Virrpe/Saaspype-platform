@@ -1,0 +1,86 @@
+{
+  "cycle_number": 3,
+  "timestamp": "20250606_233050",
+  "ideas_found": 5,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Bootstrapped, building 20 products simultaneously, competing on price with no ma...",
+      "problem": "I've been running [BigBinary](https://bigbinary.com),a consulting company for 14 years now. It's been a 100% remote company since inception.\n\nStarted [Neeto](https://neeto.com) a few years ago. At Nee...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 3,
+      "timestamp": "2025-06-06T23:30:43.348925",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l4ttbe/bootstrapped_building_20_products_simultaneously/",
+      "reddit_score": 18,
+      "reddit_comments": 21
+    },
+    {
+      "title": "Reddit Discovery: Weekly Feedback Post - SaaS Products, Ideas, Companies",
+      "problem": "This is a weekly post where you're free to post your SaaS ideas, products, companies etc. that need feedback. Here, people who are willing to share feedback are going to join conversations. Posts aski...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 3,
+      "timestamp": "2025-06-06T23:30:43.353004",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l32n01/weekly_feedback_post_saas_products_ideas_companies/",
+      "reddit_score": 3,
+      "reddit_comments": 6
+    },
+    {
+      "title": "Reddit Discovery: I wish someone told me these 18 sales truths before",
+      "problem": "1. Your product doesn't sell itself.\u00a0Even the most amazing product needs someone to connect the dots for prospects. Stop waiting for word-of-mouth magic\n2. Discounting is a drug.\u00a0Once you start, custo...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 3,
+      "timestamp": "2025-06-06T23:30:43.353004",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l4t2lr/i_wish_someone_told_me_these_18_sales_truths/",
+      "reddit_score": 85,
+      "reddit_comments": 6
+    },
+    {
+      "title": "Reddit Discovery: Where do I find resources for starting a business?",
+      "problem": "I am a computer science engineer and have no background on business. \n\nWhere should I go online if I need to understand how a business should work and how I can scale it to a very large company?\n\nAny ...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 3,
+      "timestamp": "2025-06-06T23:30:50.721531",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l51m3u/where_do_i_find_resources_for_starting_a_business/",
+      "reddit_score": 4,
+      "reddit_comments": 4
+    },
+    {
+      "title": "Reddit Discovery: Asset Light Vs Asset Right",
+      "problem": "Amazing take on Asset Light business model with Dmart vs Big Bazaar case study \n\nhttps://youtu.be/EJtpIVhLwAM?si=jBBGaKDFTAmPwKW0",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 3,
+      "timestamp": "2025-06-06T23:30:50.721531",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l51joa/asset_light_vs_asset_right/",
+      "reddit_score": 1,
+      "reddit_comments": 0
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 25.5,
+    "memory_percent": 80.5,
+    "disk_percent": 78.7,
+    "available_gb": 1.5324974060058594,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 3,
+    "total_ideas": 17,
+    "uptime_minutes": 36.52899142503738,
+    "avg_ideas_per_cycle": 5.666666666666667
+  }
+}

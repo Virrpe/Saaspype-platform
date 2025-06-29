@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Snap Zones - ARIA Visual Command Center</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+        
+        .debug-info {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #00ffff;
+            padding: 10px;
+            border-radius: 4px;
+            z-index: 20000;
+            font-size: 12px;
+        }
+        
+        .test-button {
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            border: none;
+            color: #000;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .test-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
+        }
+        
+        .snap-zone-debug {
+            border: 2px solid red !important;
+            background: rgba(255, 0, 0, 0.2) !important;
+            opacity: 0.5 !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>🪟 ARIA Snap Zones Debug</h1>
+    
+    <div class="debug-info" id="debug-info">
+        <div>Snap Zones: <span id="snap-count">0</span></div>
+        <div>Active Windows: <span id="window-count">0</span></div>
+        <div>Mouse: <span id="mouse-pos">0, 0</span></div>
+        <div>Dragging: <span id="drag-status">No</span></div>
+        <div>Active Zone: <span id="active-zone">None</span></div>
+    </div>
+    
+    <button class="test-button" onclick="testSnapZones()">🔍 Show All Snap Zones</button>
+    <button class="test-button" onclick="createTestWindow()">🪟 Create Test Window</button>
+    <button class="test-button" onclick="toggleDebugMode()">🐛 Toggle Debug Mode</button>
+    <button class="test-button" onclick="clearAll()">🗑️ Clear All</button>
+    
+    <div id="console-log" style="margin-top: 20px; padding: 10px; background: rgba(0, 255, 255, 0.1); border-radius: 4px;">
+        <h3>Console Log:</h3>
+        <div id="log-content"></div>
+    </div>
+
+    <script>
+        console.log('🚀 Debug page starting...');
+        
+        // Simple test to see if we can create snap zones manually
+        function createSimpleSnapZones() {
+            console.log('Creating simple snap zones for testing...');
+            
+            const overlay = document.createElement('div');
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100vw';
+            overlay.style.height = '100vh';
+            overlay.style.pointerEvents = 'none';
+            overlay.style.zIndex = '10000';
+            overlay.id = 'test-overlay';
+            document.body.appendChild(overlay);
+            
+            // Create visible snap zones
+            const zones = [
+                { id: 'left', x: '0', y: '0', width: '50%', height: '100%' },
+                { id: 'right', x: '50%', y: '0', width: '50%', height: '100%' },
+                { id: 'top', x: '0', y: '0', width: '100%', height: '50%' },
+                { id: 'bottom', x: '0', y: '50%', width: '100%', height: '50%' }
+            ];
+            
+            zones.forEach(zone => {
+                const element = document.createElement('div');
+                element.style.position = 'absolute';
+                element.style.left = zone.x;
+                element.style.top = zone.y;
+                element.style.width = zone.width;
+                element.style.height = zone.height;
+                element.style.border = '2px dashed #00ffff';
+                element.style.background = 'rgba(0, 255, 255, 0.1)';
+                element.style.opacity = '0.7';
+                element.style.pointerEvents = 'none';
+                element.innerHTML = `<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00ffff; font-weight: bold;">${zone.id.toUpperCase()}</div>`;
+                
+                overlay.appendChild(element);
+                console.log(`Created zone: ${zone.id}`);
+            });
+        }
+        
+        function testSnapZones() {
+            createSimpleSnapZones();
+        }
+        
+        function createTestWindow() {
+            console.log('Creating test draggable window...');
+            
+            const window = document.createElement('div');
+            window.style.position = 'fixed';
+            window.style.width = '300px';
+            window.style.height = '200px';
+            window.style.background = 'linear-gradient(135deg, #1a1a2e, #16213e)';
+            window.style.border = '1px solid #00ffff';
+            window.style.borderRadius = '8px';
+            window.style.left = '100px';
+            window.style.top = '100px';
+            window.style.zIndex = '15000';
+            window.style.cursor = 'move';
+            window.innerHTML = `
+                <div style="padding: 10px; border-bottom: 1px solid #00ffff; color: #00ffff; font-weight: bold;">
+                    🪟 Test Window - Drag Me!
+                </div>
+                <div style="padding: 20px; color: #fff;">
+                    This is a test window. Try dragging it around to see if snap zones work!
+                </div>
+            `;
+            
+            // Make it draggable
+            let isDragging = false;
+            let startX, startY, startLeft, startTop;
+            
+            window.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                startLeft = parseInt(window.style.left);
+                startTop = parseInt(window.style.top);
+                document.getElementById('drag-status').textContent = 'Yes';
+                console.log('Started dragging test window');
+            });
+            
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                
+                const newLeft = startLeft + (e.clientX - startX);
+                const newTop = startTop + (e.clientY - startY);
+                
+                window.style.left = newLeft + 'px';
+                window.style.top = newTop + 'px';
+            });
+            
+            document.addEventListener('mouseup', () => {
+                if (isDragging) {
+                    isDragging = false;
+                    document.getElementById('drag-status').textContent = 'No';
+                    console.log('Stopped dragging test window');
+                }
+            });
+            
+            document.body.appendChild(window);
+            console.log('✅ Created test window');
+        }
+        
+        function toggleDebugMode() {
+            console.log('🐛 Debug mode toggled');
+        }
+        
+        function clearAll() {
+            const overlay = document.getElementById('test-overlay');
+            if (overlay) {
+                overlay.remove();
+                console.log('Cleared snap zones');
+            }
+            
+            // Remove test windows
+            document.querySelectorAll('[style*="z-index: 15000"]').forEach(el => el.remove());
+            console.log('Cleared test windows');
+        }
+        
+        // Track mouse position
+        document.addEventListener('mousemove', (e) => {
+            document.getElementById('mouse-pos').textContent = `${e.clientX}, ${e.clientY}`;
+        });
+        
+        // Override console.log to show in page
+        const originalLog = console.log;
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            const logContent = document.getElementById('log-content');
+            if (logContent) {
+                const logEntry = document.createElement('div');
+                logEntry.style.marginBottom = '5px';
+                logEntry.style.color = '#00ffff';
+                logEntry.textContent = args.join(' ');
+                logContent.appendChild(logEntry);
+                logContent.scrollTop = logContent.scrollHeight;
+            }
+        };
+        
+        console.log('✅ Debug page ready');
+    </script>
+</body>
+</html> 

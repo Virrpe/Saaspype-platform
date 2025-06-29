@@ -1,0 +1,59 @@
+{
+  "timestamp": "20250607_013057",
+  "duration_seconds": 28.036883,
+  "platforms_analyzed": 3,
+  "content_items_analyzed": 11,
+  "high_quality_pain_points": 1,
+  "success_rate": 9.090909090909092,
+  "platform_performance": {
+    "github": {
+      "analyzed": 2,
+      "pain_points": 0,
+      "avg_score": 0
+    },
+    "reddit": {
+      "analyzed": 8,
+      "pain_points": 0,
+      "avg_score": 0
+    },
+    "enhanced_twitter": {
+      "analyzed": 1,
+      "pain_points": 1,
+      "avg_score": 6.0
+    }
+  },
+  "top_opportunities": [
+    {
+      "pain_point": "Business process inefficiency identified",
+      "market_size": 3,
+      "urgency": 1,
+      "solution_gap": 1,
+      "monetization": 1,
+      "total_score": 6.0,
+      "confidence": 0.7,
+      "domain": "ecommerce",
+      "opportunity_description": "E-commerce optimization platform addressing business process inefficiency identified",
+      "validation_signals": [],
+      "source_platform": "enhanced_twitter",
+      "platform_weight": 0.05,
+      "platform_context": "general",
+      "source_item": {
+        "title": "Market Gap: Productivity Infrastructure",
+        "url": "",
+        "score": 10.0
+      }
+    }
+  ],
+  "domain_distribution": {
+    "ecommerce": 1
+  },
+  "quality_metrics": {
+    "average_score": 6.0,
+    "score_distribution": {
+      "6-7": 1,
+      "7-8": 0,
+      "8-9": 0,
+      "9-10": 0
+    }
+  }
+}

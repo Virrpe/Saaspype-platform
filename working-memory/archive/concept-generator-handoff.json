@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-06-01T16:49:31.327252",
+  "from_agent": "opportunity-ranker",
+  "to_agent": "concept-generator",
+  "handoff_type": "ranked_opportunities",
+  "data": {
+    "top_opportunities": [
+      {
+        "rank": 1,
+        "score": 5,
+        "title": "I hated memorizing Tailwind classes, so I built a visual editor",
+        "author": "Ashraful__001",
+        "subreddit": "SideProject",
+        "permalink": "/r/SideProject/comments/1l0ihu5/i_hated_memorizing_tailwind_classes_so_i_built_a/",
+        "pain_point_indicators": [
+          "hate"
+        ],
+        "business_potential": "medium",
+        "scoring_breakdown": {
+          "urgency": 3,
+          "frequency": 1,
+          "market_size": 0,
+          "solution_gap": 1,
+          "monetization": 0,
+          "total_score": 5,
+          "domain": "devtools"
+        },
+        "domain": "devtools",
+        "original_data": {
+          "id": "1l0ihu5",
+          "post_id": "SideProject_1l0ihu5",
+          "title": "I hated memorizing Tailwind classes, so I built a visual editor",
+          "selftext": "*After wasting hours tweaking padding/margin classes, I made*\u00a0**TweakTail**\u00a0*to*\n\n* \ud83c\udfa8\u00a0*Edit styles visually*\u00a0(colors, spacing, etc.)\n* \u2728\u00a0*Export clean HTML/React code*\n* \u26a1\u00a0*One-click copy/paste*\n\n  \n**Try the demo:**\u00a0[tweaktail.xyz](https://tweaktail.xyz/)  \n**Stack:**\u00a0Nextjs + Tailwind",
+          "score": 52,
+          "num_comments": 21,
+          "created_utc": 1748760445.0,
+          "post_age_days": 0.3,
+          "author": "Ashraful__001",
+          "subreddit": "SideProject",
+          "permalink": "/r/SideProject/comments/1l0ihu5/i_hated_memorizing_tailwind_classes_so_i_built_a/",
+          "url": "https://v.redd.it/u4ovf3rli94f1",
+          "sorting_method": "top",
+          "time_period": "day",
+          "historical_context": "current",
+          "pain_point_indicators": [
+            "hate"
+          ],
+          "business_potential": "medium"
+        }
+      }
+    ],
+    "total_ranked": 10,
+    "ranking_criteria": [
+      "urgency",
+      "frequency",
+      "market_size",
+      "solution_gap",
+      "monetization"
+    ]
+  },
+  "next_action": "Generate SaaS concepts from top-ranked opportunities"
+}

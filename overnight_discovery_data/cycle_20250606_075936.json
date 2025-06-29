@@ -1,0 +1,99 @@
+{
+  "cycle_number": 34,
+  "timestamp": "20250606_075936",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: What post flairs should we have?",
+      "problem": "Hey members, **I need your help to improve this sub**. I will start with post-flairs for better content filtering. Please share some suggestions for what post flairs we should have on this sub. \n\n  \nH...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 34,
+      "timestamp": "2025-06-06T07:59:30.823247",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1hb28jr/what_post_flairs_should_we_have/",
+      "reddit_score": 16,
+      "reddit_comments": 8
+    },
+    {
+      "title": "Reddit Discovery: Hey members, meet your new mod!",
+      "problem": "Hello to all the members of r/indiehackers \ud83d\udc4b\n\n# Who am I?\n\nI'm **Prakhar**, a creative web developer, and an aspiring indie hacker. I call myself aspiring because I haven't earned anything from my pro...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 34,
+      "timestamp": "2025-06-06T07:59:30.823247",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1g1qn9y/hey_members_meet_your_new_mod/",
+      "reddit_score": 20,
+      "reddit_comments": 18
+    },
+    {
+      "title": "Reddit Discovery: How One Person Built a $1M Business Through Email Automation (12-Year Case Study...",
+      "problem": "I just finished reverse-engineering a business that generates $768K-$1.2M annually with essentially one person running the entire operation.\n\nThe founder of\u00a0[Milled.com](https://www.directorygems.com/...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 34,
+      "timestamp": "2025-06-06T07:59:30.823247",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1l4ipwf/how_one_person_built_a_1m_business_through_email/",
+      "reddit_score": 3,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: Weekly Who's Hiring Post for June 02, 2025",
+      "problem": "***For the job seekers, simply comment on a job posting listed or DM that user if you are interested. Any comment on the main post that is not a job posting will be removed.***\n\nWelcome to the weekly ...",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 34,
+      "timestamp": "2025-06-06T07:59:36.240080",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l1hfqo/weekly_whos_hiring_post_for_june_02_2025/",
+      "reddit_score": 2,
+      "reddit_comments": 2
+    },
+    {
+      "title": "Reddit Discovery: Weekly R/Sales Wednesday Night Live Chat Starts at 7PM CST",
+      "problem": "&amp;#x200B;\n\n[Use this link to join our official server.](https://discord.gg/9NpC5zzAng)",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 34,
+      "timestamp": "2025-06-06T07:59:36.240080",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l34znm/weekly_rsales_wednesday_night_live_chat_starts_at/",
+      "reddit_score": 1,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: I'm in my 30s, I'm lost, fell on my ass again, and can't take another scummy sal...",
+      "problem": "So...yeah my only successful job experience is sales, but it was all terrible experience. I recently got scammed out of around $140k and have to start my life over, and the only chance in Hell I have ...",
+      "solution": "Business opportunity addressing r/sales community need",
+      "source": "sales",
+      "cycle": 34,
+      "timestamp": "2025-06-06T07:59:36.240080",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sales/comments/1l4db46/im_in_my_30s_im_lost_fell_on_my_ass_again_and/",
+      "reddit_score": 48,
+      "reddit_comments": 52
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 25.2,
+    "memory_percent": 81.1,
+    "disk_percent": 78.9,
+    "available_gb": 1.4829559326171875,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 34,
+    "total_ideas": 204,
+    "uptime_minutes": 385.7615591168404,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

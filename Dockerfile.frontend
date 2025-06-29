@@ -1,0 +1,41 @@
+# SaaSpype Frontend - Modern SvelteKit with Glassmorphism UI
+FROM node:18-alpine as builder
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY src/frontend/saaspype-frontend/package*.json ./
+
+# Install dependencies (fix for Rollup issue in Alpine)
+RUN rm -rf node_modules package-lock.json && npm install
+
+# Copy source code
+COPY src/frontend/saaspype-frontend/ ./
+
+# Fix Rollup native module issue and build
+RUN npm install @rollup/rollup-linux-x64-musl --save-dev || true && \
+    npm run build
+
+# Production stage
+FROM node:18-alpine as production
+
+# Install serve for production serving
+RUN npm install -g serve
+
+# Set working directory
+WORKDIR /app
+
+# Copy built application from builder stage
+COPY --from=builder /app/build ./build
+COPY --from=builder /app/package.json ./
+
+# Expose port
+EXPOSE 3001
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+    CMD wget --quiet --tries=1 --spider http://localhost:3001/ || exit 1
+
+# Start the application directly
+CMD ["serve", "-s", "build", "-l", "3001"] 

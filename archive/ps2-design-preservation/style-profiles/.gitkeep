@@ -1,0 +1,17 @@
+# Style Profiles Directory
+
+This directory will contain JSON profiles that capture the specific design characteristics of your chosen SaaSpype logo.
+
+## Purpose:
+- Document exact design specifications for consistency
+- Provide GPT-4o prompts for creating similar designs
+- Maintain brand consistency across all applications
+- Enable future designers to replicate the style accurately
+
+## File Types:
+- `logo-style-profile.json` - Main logo design specifications
+- `color-profiles.json` - Detailed color usage guidelines  
+- `typography-profiles.json` - Font and text treatment specifications
+- `effect-profiles.json` - Glass, glow, and animation specifications
+
+These will be generated after logo selection using the style profile generation prompt. 

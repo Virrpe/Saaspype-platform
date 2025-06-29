@@ -1,0 +1,285 @@
+{
+  "timestamp": "20250606_004041",
+  "duration_seconds": 12.695158,
+  "total_items": 38,
+  "sources_scraped": 8,
+  "results": {
+    "hacker_news": [
+      {
+        "title": "Tokasaurus: An LLM Inference Engine for High-Throughput Workloads",
+        "url": "https://scalingintelligence.stanford.edu/blogs/tokasaurus/",
+        "score": 34,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.581785"
+      },
+      {
+        "title": "The impossible predicament of the death newts",
+        "url": "https://crookedtimber.org/2025/06/05/occasional-paper-the-impossible-predicament-of-the-death-newts/",
+        "score": 363,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.581785"
+      },
+      {
+        "title": "APL Interpreter – An implementation of APL, written in Haskell (2024)",
+        "url": "https://scharenbroch.dev/projects/apl-interpreter/",
+        "score": 20,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.581785"
+      },
+      {
+        "title": "Seven Days at the Bin Store",
+        "url": "https://defector.com/seven-days-at-the-bin-store",
+        "score": 109,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.581785"
+      },
+      {
+        "title": "Show HN: String Flux – Simplify everyday string transformations for developers",
+        "url": "https://stringflux.io",
+        "score": 4,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.581785"
+      },
+      {
+        "title": "Show HN: ClickStack – Open-source Datadog alternative by ClickHouse and HyperDX",
+        "url": "https://github.com/hyperdxio/hyperdx",
+        "score": 124,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.581785"
+      },
+      {
+        "title": "SkyRoof: New Ham Satellite Tracking and SDR Receiver Software",
+        "url": "https://www.rtl-sdr.com/skyroof-new-ham-satellite-tracking-and-sdr-receiver-software/",
+        "score": 19,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.581785"
+      },
+      {
+        "title": "Show HN: iOS Screen Time from a REST API",
+        "url": "https://www.thescreentimenetwork.com/api/",
+        "score": 64,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.582793"
+      },
+      {
+        "title": "Converge (YC S23) Well-capitalized New York startup seeks product developers",
+        "url": "https://www.runconverge.com/careers",
+        "score": 0,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.582793"
+      },
+      {
+        "title": "Programming language Dino and its implementation",
+        "url": "https://github.com/dino-lang/dino",
+        "score": 22,
+        "source": "hacker_news",
+        "scraped_at": "2025-06-06T00:40:29.582793"
+      }
+    ],
+    "product_hunt": [],
+    "indie_hackers": [
+      {
+        "title": "Acquiring Baremetrics and setting his sights on $10M ARR",
+        "url": "https://www.indiehackers.com/post/tech/acquiring-baremetrics-and-setting-his-sights-on-10m-arr-j4pRR51ReC22qypJ1mQb",
+        "source": "indie_hackers",
+        "scraped_at": "2025-06-06T00:40:32.633804"
+      },
+      {
+        "title": "Where to deploy your AI agent for fast growth",
+        "url": "https://www.indiehackers.com/post/where-to-deploy-your-ai-agent-for-fast-growth-2b921247e0",
+        "source": "indie_hackers",
+        "scraped_at": "2025-06-06T00:40:32.633804"
+      },
+      {
+        "title": "Just launched SupaUI, a UI-first color palette generator for devs & designers",
+        "url": "https://www.indiehackers.com/post/just-launched-supaui-a-ui-first-color-palette-generator-for-devs-designers-3e046651c4",
+        "source": "indie_hackers",
+        "scraped_at": "2025-06-06T00:40:32.633804"
+      },
+      {
+        "title": "Hitting $1.2M ARR within a year with productized design servicesNick built a $1.2M ARR design service by focusing on one thing: roasts.",
+        "url": "https://www.indiehackers.com/post/services/hitting-1-2m-arr-within-a-year-with-productized-design-services-RQaHrYUKBzkPoqnfMbHq",
+        "source": "indie_hackers",
+        "scraped_at": "2025-06-06T00:40:32.633804"
+      }
+    ],
+    "betalist": [],
+    "github_trending": [
+      {
+        "title": "frdel /agent-zero",
+        "description": "Agent Zero AI framework",
+        "url": "https://github.com/frdel/agent-zero",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "nautechsystems /nautilus_trader",
+        "description": "A high-performance algorithmic trading platform and event-driven backtester",
+        "url": "https://github.com/nautechsystems/nautilus_trader",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "scrapy /scrapy",
+        "description": "Scrapy, a fast high-level web crawling & scraping framework for Python.",
+        "url": "https://github.com/scrapy/scrapy",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "onlook-dev /onlook",
+        "description": "The Cursor for Designers • An Open-Source Visual Vibecoding Editor • Visually build, style, and edit your React App with AI",
+        "url": "https://github.com/onlook-dev/onlook",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "Anduin2017 /HowToCook",
+        "description": "程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only).",
+        "url": "https://github.com/Anduin2017/HowToCook",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "netbirdio /netbird",
+        "description": "Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular access controls.",
+        "url": "https://github.com/netbirdio/netbird",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "iamgio /quarkdown",
+        "description": "🪐 Markdown with superpowers — from ideas to presentations, articles and books.",
+        "url": "https://github.com/iamgio/quarkdown",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "TapXWorld /ChinaTextbook",
+        "description": "所有小初高、大学PDF教材。",
+        "url": "https://github.com/TapXWorld/ChinaTextbook",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "ArduPilot /ardupilot",
+        "description": "ArduPlane, ArduCopter, ArduRover, ArduSub source",
+        "url": "https://github.com/ArduPilot/ardupilot",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      },
+      {
+        "title": "topoteretes /cognee",
+        "description": "Memory for AI Agents in 5 lines of code",
+        "url": "https://github.com/topoteretes/cognee",
+        "source": "github_trending",
+        "scraped_at": "2025-06-06T00:40:36.434808"
+      }
+    ],
+    "dev_to": [
+      {
+        "title": "Challenges 🤗",
+        "url": "https://dev.to/devteam/join-the-runner-h-ai-agent-prompting-challenge-10000-in-prizes-for-20-winners-30ki",
+        "source": "dev_to",
+        "scraped_at": "2025-06-06T00:40:37.684724"
+      }
+    ],
+    "medium_startup": [
+      {
+        "title": "Rosie Hoggmascall",
+        "url": "/@rosiehoggmascall?source=topic_portal---recommended_stories---startup---0-107--------------------81618892_64a5_41e7_946e_b06933b9dc8e--------------",
+        "source": "medium_startup",
+        "scraped_at": "2025-06-06T00:40:38.905106"
+      },
+      {
+        "title": "Aaron Dinin, PhD",
+        "url": "/@aarondinin?source=topic_portal---recommended_stories---startup---2-107--------------------81618892_64a5_41e7_946e_b06933b9dc8e--------------",
+        "source": "medium_startup",
+        "scraped_at": "2025-06-06T00:40:38.905106"
+      },
+      {
+        "title": "Paolo Molignini, PhD",
+        "url": "/@moligninip?source=topic_portal---recommended_stories---startup---3-107--------------------81618892_64a5_41e7_946e_b06933b9dc8e--------------",
+        "source": "medium_startup",
+        "scraped_at": "2025-06-06T00:40:38.905106"
+      }
+    ],
+    "reddit_entrepreneur": [
+      {
+        "title": "Thank You Thursday! Free Offerings and More - June 05, 2025",
+        "score": 2,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3ufs2/thank_you_thursday_free_offerings_and_more_june/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "Sick of Spam? Use the Report Button!",
+        "score": 12,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1k1wam9/sick_of_spam_use_the_report_button/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "My business has fully matched my engineer salary",
+        "score": 441,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3yz5w/my_business_has_fully_matched_my_engineer_salary/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "Any CEO who doesn't give the founding developers in his startip equity is pure evil",
+        "score": 86,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l44too/any_ceo_who_doesnt_give_the_founding_developers/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "Sites that paid me this month (May 2025)",
+        "score": 53,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l42ica/sites_that_paid_me_this_month_may_2025/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "Best productivity apps I actually use",
+        "score": 12,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l4cprj/best_productivity_apps_i_actually_use/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "You have no excuse not to build something",
+        "score": 9,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l4bzep/you_have_no_excuse_not_to_build_something/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "What would you do if someone offered you 2x your startup’s earnings to quit and be an employee?",
+        "score": 18,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l41d5c/what_would_you_do_if_someone_offered_you_2x_your/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "Going through with this, I'm gonna make this work",
+        "score": 8,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l4527x/going_through_with_this_im_gonna_make_this_work/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      },
+      {
+        "title": "What is the best business decision you took in 2025 as an entrepreneur?",
+        "score": 19,
+        "url": "https://www.reddit.com/r/Entrepreneur/comments/1l3w8sj/what_is_the_best_business_decision_you_took_in/",
+        "source": "reddit_entrepreneur",
+        "scraped_at": "2025-06-06T00:40:40.467180"
+      }
+    ]
+  },
+  "summary": {
+    "successful_sources": 6,
+    "failed_sources": 2,
+    "average_items_per_source": 4.75
+  }
+}

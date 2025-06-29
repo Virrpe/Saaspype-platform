@@ -1,0 +1,86 @@
+{
+  "project": {
+    "name": "Luciq",
+    "description": "SaaS Idea Discovery Engine - Enterprise-Grade Entropy-Resistant Architecture",
+    "version": "2.2.0",
+    "structure_type": "ENTROPY_RESISTANT_ENTERPRISE_ARCHITECTURE"
+  },
+  "current_structure": {
+    "src": "src/ - Main source code (api, frontend, shared)",
+    "tests": "tests/ - Organized tests (unit, integration, streaming, api, auth)",
+    "docs": "docs/ - Documentation (architecture, development, reports)",
+    "config": "config/ - Configuration files (docker, environment, nginx)",
+    "scripts": "scripts/ - Utility scripts (data, deployment, development, testing)",
+    "tools": "tools/ - Development tools (analyzers, deployment, discovery, generators)",
+    "data": "data/ - Data files (backups, databases, exports, logs)",
+    "working-memory": "working-memory/ - Project memory (current, roadmaps, agents, documentation)",
+    "monitoring": "monitoring/ - System monitoring (grafana, prometheus)",
+    "logs": "logs/ - Application logs",
+    "backups": "backups/ - Backup files"
+  },
+  "root_directory_rules": {
+    "goal": "MAINTAIN_CLEAN_ROOT_PREVENT_CLUTTER",
+    "allowed_root_files": [
+      ".gitignore",
+      "README.md", 
+      "project.config.json",
+      ".cursorrules",
+      "cursor-user-rules.md",
+      "requirements.txt",
+      ".dockerignore",
+      "luciq_discovery.db"
+    ],
+    "forbidden_operations": [
+      "Creating new .py files in root",
+      "Creating new .js/.html files in root", 
+      "Creating new config files in root",
+      "Creating test files in root",
+      "Creating documentation files in root"
+    ],
+    "enforcement_message": "Keep root clean! Use existing organized directories."
+  },
+  "agent_guidance": {
+    "new_python_files": "Place in appropriate src/ subdirectory",
+    "new_test_files": "Place in tests/ with proper category (unit/integration/api/etc)",
+    "new_config_files": "Place in config/ subdirectory",
+    "new_documentation": "Place in docs/ with proper category",
+    "new_scripts": "Place in scripts/ with proper category",
+    "new_tools": "Place in tools/ with proper category",
+    "working_files": "Use working-memory/ for temporary project files"
+  },
+  "flexibility_rules": {
+    "respect_existing_structure": true,
+    "adapt_to_domain_organization": true,
+    "preserve_refactored_architecture": true,
+    "prevent_root_pollution_only": true,
+    "allow_structure_evolution": true
+  },
+  "entropy_elimination_history": [
+    {
+      "phase": "Phase 2A: Critical Root Cleanup",
+      "date": "2025-01-08",
+      "actions": [
+        "Moved 5 startup scripts from root to scripts/",
+        "Migrated 8 test files to proper tests/ subdirectories",
+        "Organized 7 demo files into docs/demos/",
+        "Relocated 3 implementation docs to docs/implementation/"
+      ],
+      "result": "Root directory entropy eliminated - enterprise-grade organization restored"
+    },
+    {
+      "phase": "Phase 2B: Frontend Unification",
+      "date": "2025-01-08", 
+      "actions": [
+        "Created unified frontend startup script with platform auto-detection",
+        "Eliminated platform duplication entropy (2 scripts → 1 unified)",
+        "Enhanced security headers and error handling",
+        "Added enterprise-grade features and argument parsing"
+      ],
+      "result": "Platform duplication entropy eliminated - 50% maintenance reduction achieved"
+    }
+  ],
+  "enforcement_level": "ROOT_POLLUTION_PREVENTION",
+  "created_by": "Folder Structure Compliance Specialist",
+  "created_at": "2025-01-14T23:58:00Z",
+  "notes": "Adapted to preserve Luciq's clean post-refactor structure, focus on root cleanliness only"
+} 

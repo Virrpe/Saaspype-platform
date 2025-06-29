@@ -1,0 +1,72 @@
+{
+  "timestamp": "20250606_004255",
+  "product_hunt_fixed": [
+    {
+      "title": "Launches",
+      "url": "https://www.producthunt.com/leaderboard/daily/2025/6/5?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "Coming soonUpcoming launches to watch",
+      "url": "https://www.producthunt.com/coming-soon?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "Launch archiveMost-loved launches by the community",
+      "url": "https://www.producthunt.com/leaderboard/daily/2025/6/5?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "Launch GuideChecklists and pro tips for launching",
+      "url": "https://www.producthunt.com/launch?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "Products",
+      "url": "https://www.producthunt.com/categories?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "StoriesTech news, interviews, and tips from makers",
+      "url": "https://www.producthunt.com/stories?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "ChangelogNew Product Hunt features and releases",
+      "url": "https://www.producthunt.com/changes?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "Forums",
+      "url": "https://www.producthunt.com/forums?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "ForumsAsk questions, find support, and connect",
+      "url": "https://www.producthunt.com/forums?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    },
+    {
+      "title": "StreaksThe most active community members",
+      "url": "https://www.producthunt.com/visit-streaks?ref=header_nav",
+      "source": "product_hunt_fixed",
+      "scraped_at": "2025-06-06T00:42:55.123263"
+    }
+  ],
+  "betalist_fixed": [],
+  "total_items": 10,
+  "debug_info": {
+    "product_hunt_items": 10,
+    "betalist_items": 0,
+    "status": "fixed_scrapers_tested"
+  }
+}

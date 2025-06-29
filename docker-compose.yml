@@ -1,0 +1,184 @@
+version: '3.8'
+
+services:
+  # Luciq Backend API - Enterprise Intelligence Platform
+  luciq-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: luciq-backend
+    ports:
+      - "8003:8003"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8003
+      - DATABASE_PATH=/app/luciq_discovery.db
+      - LOG_LEVEL=INFO
+      - SECRET_KEY=luciq-enterprise-secret-key-2025-docker
+      - CORS_ORIGINS=http://localhost:3001,http://frontend:3001,http://127.0.0.1:3001
+      - PYTHONPATH=/app/src:/app
+      - DOCKER_DEPLOYMENT=true
+      - LUCIQ_FAST_MODE=true
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./working-memory:/app/working-memory
+      - luciq-db:/app/db
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # SvelteKit Frontend - Modern Glassmorphism UI
+  luciq-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: luciq-frontend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - VITE_API_URL=http://localhost:8003
+      - VITE_WS_URL=ws://localhost:8003
+    depends_on:
+      - luciq-backend
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # Redis for caching and real-time features
+  redis:
+    image: redis:7-alpine
+    container_name: luciq-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+
+  # Nginx Reverse Proxy for Production
+  nginx:
+    image: nginx:alpine
+    container_name: luciq-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./config/nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - luciq-backend
+      - luciq-frontend
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    profiles:
+      - production
+
+  # PostgreSQL for Production Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: luciq-postgres
+    environment:
+      - POSTGRES_DB=luciq
+      - POSTGRES_USER=luciq
+      - POSTGRES_PASSWORD=luciq_enterprise_2025
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./config/database/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    ports:
+      - "5432:5432"
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U luciq"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    profiles:
+      - production
+
+  # Monitoring with Prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: luciq-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus:/etc/prometheus
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+      - '--storage.tsdb.retention.time=7d'
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+  # Grafana Dashboard
+  grafana:
+    image: grafana/grafana:latest
+    container_name: luciq-grafana
+    ports:
+      - "3002:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=luciq2025enterprise
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    depends_on:
+      - prometheus
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+volumes:
+  redis-data:
+    driver: local
+  postgres-data:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+  luciq-db:
+    driver: local
+
+networks:
+  luciq-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16 

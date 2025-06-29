@@ -1,0 +1,190 @@
+{
+  "agent_refactor_plan": {
+    "timestamp": "2025-06-01T21:25:00Z",
+    "status": "INITIATED",
+    "priority": "CRITICAL",
+    "objective": "Restore and optimize Luciq multi-agent boomerang system",
+    
+    "current_issues": {
+      "boomerang_system": "Configured but not actively coordinating",
+      "agent_handoffs": "Manual activation required",
+      "memory_integration": "Working but not optimized for agent coordination",
+      "orchestrator_logic": "Present but needs activation triggers",
+      "reflexion_monitoring": "Passive, needs active monitoring"
+    },
+    
+    "refactoring_phases": {
+      "phase_1": {
+        "name": "Agent System Audit & Cleanup",
+        "duration": "15 minutes",
+        "tasks": [
+          "Audit all 11 agent configurations for boomerang compliance",
+          "Validate memory integration paths",
+          "Check handoff protocol definitions",
+          "Verify reflexion agent monitoring setup"
+        ],
+        "deliverables": [
+          "Agent compliance report",
+          "Memory integration validation",
+          "Handoff protocol verification"
+        ]
+      },
+      
+      "phase_2": {
+        "name": "Boomerang Logic Activation",
+        "duration": "20 minutes", 
+        "tasks": [
+          "Activate orchestrator coordination logic",
+          "Enable reflexion agent monitoring",
+          "Configure automatic handoff triggers",
+          "Test recursive re-entry conditions"
+        ],
+        "deliverables": [
+          "Active boomerang system",
+          "Automated agent coordination",
+          "Working handoff protocols"
+        ]
+      },
+      
+      "phase_3": {
+        "name": "Memory System Optimization",
+        "duration": "15 minutes",
+        "tasks": [
+          "Optimize working-memory structure for agent coordination",
+          "Implement agent state persistence",
+          "Configure session continuity",
+          "Enable autonomous task resumption"
+        ],
+        "deliverables": [
+          "Optimized memory architecture",
+          "Persistent agent states",
+          "Seamless session continuity"
+        ]
+      },
+      
+      "phase_4": {
+        "name": "Agent Coordination Testing",
+        "duration": "10 minutes",
+        "tasks": [
+          "Test file-triggered agent flows",
+          "Validate boomerang reactivation",
+          "Test orchestrator rerouting",
+          "Verify reflexion monitoring"
+        ],
+        "deliverables": [
+          "Validated agent flows",
+          "Working boomerang system",
+          "Operational coordination"
+        ]
+      }
+    },
+    
+    "agent_architecture": {
+      "orchestrator": {
+        "role": "Primary coordinator",
+        "status": "NEEDS_ACTIVATION",
+        "priority": "CRITICAL",
+        "responsibilities": [
+          "Project coordination",
+          "Specialist handoffs",
+          "Timeline management",
+          "Quality assurance"
+        ]
+      },
+      
+      "reflexion_agent": {
+        "role": "System monitor and self-repair",
+        "status": "NEEDS_ACTIVATION", 
+        "priority": "CRITICAL",
+        "responsibilities": [
+          "Agent health monitoring",
+          "Boomerang trigger detection",
+          "Self-repair coordination",
+          "Quality validation"
+        ]
+      },
+      
+      "specialists": {
+        "frontend_specialist": {
+          "trigger": "auto",
+          "status": "CONFIGURED",
+          "files": ["apps/frontend/**/*.html", "apps/frontend/**/*.js"]
+        },
+        "backend_specialist": {
+          "trigger": "auto", 
+          "status": "CONFIGURED",
+          "files": ["apps/src/api/**/*.py", "apps/src/**/*.py"]
+        },
+        "product_strategist": {
+          "trigger": "manual",
+          "status": "CONFIGURED",
+          "activation": "strategic decisions needed"
+        },
+        "memory_architect": {
+          "trigger": "manual",
+          "status": "CONFIGURED", 
+          "activation": "memory optimization needed"
+        }
+      }
+    },
+    
+    "boomerang_system_requirements": {
+      "recursive_logic": {
+        "status": "CONFIGURED",
+        "needs": "ACTIVATION",
+        "components": [
+          "Task interruption detection",
+          "Automatic resumption triggers",
+          "Context preservation",
+          "Progress tracking"
+        ]
+      },
+      
+      "handoff_protocols": {
+        "status": "CONFIGURED",
+        "needs": "TESTING",
+        "components": [
+          "Agent-to-agent communication",
+          "Context passing",
+          "Task delegation",
+          "Completion validation"
+        ]
+      },
+      
+      "memory_integration": {
+        "status": "WORKING",
+        "needs": "OPTIMIZATION",
+        "components": [
+          "Session persistence",
+          "Agent state tracking",
+          "Task history",
+          "Context preservation"
+        ]
+      }
+    },
+    
+    "immediate_actions": [
+      "Activate orchestrator agent coordination",
+      "Enable reflexion agent monitoring", 
+      "Test basic agent handoff flow",
+      "Validate memory persistence",
+      "Configure automatic triggers"
+    ],
+    
+    "success_criteria": {
+      "boomerang_system": "Agents automatically coordinate and resume tasks",
+      "handoff_protocols": "Seamless specialist-to-specialist transitions",
+      "memory_integration": "Persistent state across sessions",
+      "orchestrator_coordination": "Active project management and routing",
+      "reflexion_monitoring": "Automatic health checks and repairs"
+    },
+    
+    "next_steps": {
+      "step_1": "Begin Phase 1: Agent System Audit",
+      "step_2": "Activate orchestrator coordination logic",
+      "step_3": "Enable reflexion agent monitoring",
+      "step_4": "Test complete agent flow",
+      "step_5": "Validate boomerang system operation"
+    }
+  }
+} 

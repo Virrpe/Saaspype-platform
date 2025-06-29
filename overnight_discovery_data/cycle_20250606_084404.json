@@ -1,0 +1,99 @@
+{
+  "cycle_number": 38,
+  "timestamp": "20250606_084404",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: best and fastest way to make around $7k in under a year?",
+      "problem": "i want to buy myself a car by the end of my high school days but am unable to work a typical job like at mcdonalds or something as a result of the labour laws in my country. \ni need a way to somewhat ...",
+      "solution": "Business opportunity addressing r/sidehustle community need",
+      "source": "sidehustle",
+      "cycle": 38,
+      "timestamp": "2025-06-06T08:43:59.077894",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sidehustle/comments/1l45gdu/best_and_fastest_way_to_make_around_7k_in_under_a/",
+      "reddit_score": 19,
+      "reddit_comments": 75
+    },
+    {
+      "title": "Reddit Discovery: Lookinh to make 60k extra in 6 months",
+      "problem": "I have two kitchen jobs and make a little over 5k a month. I have about 40k in debt from college and i can pay that with what I make from my two jobs. However it leaves little left in order to fullfil...",
+      "solution": "Business opportunity addressing r/sidehustle community need",
+      "source": "sidehustle",
+      "cycle": 38,
+      "timestamp": "2025-06-06T08:43:59.077894",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sidehustle/comments/1l40l3e/lookinh_to_make_60k_extra_in_6_months/",
+      "reddit_score": 34,
+      "reddit_comments": 62
+    },
+    {
+      "title": "Reddit Discovery: Anybody have a walking (steps) reward app they really like?",
+      "problem": "I\u2019m looking to stack a couple of different ones.\nI don\u2019t really want to share my location, and use a full time vpn. Some walking apps don\u2019t like that.",
+      "solution": "Business opportunity addressing r/sidehustle community need",
+      "source": "sidehustle",
+      "cycle": 38,
+      "timestamp": "2025-06-06T08:43:59.077894",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/sidehustle/comments/1l4d62a/anybody_have_a_walking_steps_reward_app_they/",
+      "reddit_score": 7,
+      "reddit_comments": 1
+    },
+    {
+      "title": "Reddit Discovery: Daily FI discussion thread - Thursday, June 05, 2025",
+      "problem": "Please use this thread to have discussions which you don't feel warrant a new post to the sub. While the Rules for posting questions on the basics of personal finance/investing topics are relaxed a li...",
+      "solution": "Business opportunity addressing r/financialindependence community need",
+      "source": "financialindependence",
+      "cycle": 38,
+      "timestamp": "2025-06-06T08:44:04.438157",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/financialindependence/comments/1l3uhfp/daily_fi_discussion_thread_thursday_june_05_2025/",
+      "reddit_score": 44,
+      "reddit_comments": 231
+    },
+    {
+      "title": "Reddit Discovery: 31 years old currently. I didn't set out to FI/RE but I think I'm on the way the...",
+      "problem": "I started a career that has a great pension/retirement when I was 18. I am extremely grateful for the career I have and very thankful to have had this opportunity.\n\n31 years old right now. Base salary...",
+      "solution": "Business opportunity addressing r/financialindependence community need",
+      "source": "financialindependence",
+      "cycle": 38,
+      "timestamp": "2025-06-06T08:44:04.438157",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/financialindependence/comments/1l48rwo/31_years_old_currently_i_didnt_set_out_to_fire/",
+      "reddit_score": 18,
+      "reddit_comments": 23
+    },
+    {
+      "title": "Reddit Discovery: Goal Check In: 35M, NW 475k, Struggling with corporate upheaval",
+      "problem": "Hello all,\n\nLong time listener, first time caller - and thank you to everyone in this subreddit - it has been an incredible resource over the past few years.\u00a0\n\nWriting for the first time for two reaso...",
+      "solution": "Business opportunity addressing r/financialindependence community need",
+      "source": "financialindependence",
+      "cycle": 38,
+      "timestamp": "2025-06-06T08:44:04.440177",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/financialindependence/comments/1l3zn2i/goal_check_in_35m_nw_475k_struggling_with/",
+      "reddit_score": 36,
+      "reddit_comments": 4
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 5.1,
+    "memory_percent": 71.0,
+    "disk_percent": 78.9,
+    "available_gb": 2.2742996215820312,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 38,
+    "total_ideas": 228,
+    "uptime_minutes": 430.2314783612887,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

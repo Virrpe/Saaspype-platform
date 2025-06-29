@@ -1,0 +1,284 @@
+{
+  "timestamp": "20250606_232559",
+  "duration_seconds": 15.253347,
+  "total_opportunities": 13,
+  "core_opportunities": 9,
+  "additional_opportunities": 4,
+  "sources_scraped": {
+    "core_sources": 8,
+    "additional_sources": 3,
+    "total_sources": 11
+  },
+  "opportunities": [
+    {
+      "title": "Market Gap: Ai Infrastructure",
+      "description": "Real market need identified: Learn from my $38k mistake, i will not promote. In March, I started poking aroun... Validated across 57 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "firecrawl_intelligence",
+        "reddit",
+        "github",
+        "hacker_news"
+      ],
+      "keywords": [
+        "ai"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.644169"
+    },
+    {
+      "title": "Market Gap: App Infrastructure",
+      "description": "Real market need identified: Learn from my $38k mistake, i will not promote. In March, I started poking aroun... Validated across 45 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "app"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.648106"
+    },
+    {
+      "title": "Market Gap: Sales Infrastructure",
+      "description": "Real market need identified: Learn from my $38k mistake, i will not promote. In March, I started poking aroun... Validated across 41 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "sales"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.650745"
+    },
+    {
+      "title": "Market Gap: Need Infrastructure",
+      "description": "Real market need identified: Learn from my $38k mistake, i will not promote. In March, I started poking aroun... Validated across 44 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit",
+        "enhanced_twitter",
+        "hacker_news"
+      ],
+      "keywords": [
+        "need"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.655707"
+    },
+    {
+      "title": "Market Gap: Time Consuming Infrastructure",
+      "description": "Real market need identified: Learn from my $38k mistake, i will not promote. In March, I started poking aroun... Validated across 40 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "time consuming"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.661954"
+    },
+    {
+      "title": "Market Gap: Automation Infrastructure",
+      "description": "Market opportunity detected across 4 signals from 2 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.4,
+      "sources": [
+        "firecrawl_intelligence",
+        "reddit"
+      ],
+      "keywords": [
+        "automation"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.661954"
+    },
+    {
+      "title": "Market Gap: Api Infrastructure",
+      "description": "Market opportunity detected across 3 signals from 2 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.3,
+      "sources": [
+        "reddit",
+        "enhanced_twitter"
+      ],
+      "keywords": [
+        "api"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.661954"
+    },
+    {
+      "title": "Market Gap: Tool Infrastructure",
+      "description": "Market opportunity detected across 3 signals from 2 platforms.",
+      "momentum_score": 10.0,
+      "confidence_level": 0.3,
+      "sources": [
+        "reddit",
+        "enhanced_twitter"
+      ],
+      "keywords": [
+        "tool"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.663205"
+    },
+    {
+      "title": "Market Gap: Startup Infrastructure",
+      "description": "Real market need identified: 4 months into my Internet Cafe startup plan.....advice needed on people who have... Validated across 3 platforms.",
+      "momentum_score": 7.47188372999837,
+      "confidence_level": 0.3,
+      "sources": [
+        "reddit"
+      ],
+      "keywords": [
+        "startup"
+      ],
+      "discovered_at": "2025-06-06T23:25:59.661954"
+    },
+    {
+      "title": "Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see wi",
+      "description": "Real market need: Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies",
+      "momentum_score": 6.0,
+      "confidence_level": 0.8999999999999999,
+      "sources": [
+        "medium",
+        "ycombinator",
+        "quora"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Show HN: Built a tool to automate customer onboarding - Spent 6 months building this after struggling with manual onboarding processes', timestamp=datetime.datetime(2025, 6, 6, 21, 25, 59, 664563), engagement_score=156, sentiment_score=0.7, keywords=['customer'], url='https://news.ycombinator.com/', metadata={'comments': 45, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 20, 25, 59, 664563), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 19, 25, 59, 666160), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "customer"
+      ],
+      "discovered_at": "2025-06-06 23:25:59.666160"
+    },
+    {
+      "title": "Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see wi",
+      "description": "Real market need: Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies",
+      "momentum_score": 6.0,
+      "confidence_level": 0.8999999999999999,
+      "sources": [
+        "medium",
+        "ycombinator",
+        "quora"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Ask HN: Best way to validate SaaS ideas before building? - Looking for advice on validating business ideas without spending months building', timestamp=datetime.datetime(2025, 6, 6, 21, 25, 59, 664563), engagement_score=89, sentiment_score=0.7, keywords=['saas', 'business', 'idea'], url='https://news.ycombinator.com/', metadata={'comments': 67, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 20, 25, 59, 664563), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 19, 25, 59, 666160), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "saas"
+      ],
+      "discovered_at": "2025-06-06 23:25:59.666160"
+    },
+    {
+      "title": "Q: What are the biggest challenges facing small business owners in 2024? A: Cash",
+      "description": "Real market need: Q: What are the biggest challenges facing small business owners in 2024? A: Cash flow management, finding reliable employees, and digital transformation are the top issues",
+      "momentum_score": 8.0,
+      "confidence_level": 1.0,
+      "sources": [
+        "medium",
+        "ycombinator",
+        "quora"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Ask HN: Best way to validate SaaS ideas before building? - Looking for advice on validating business ideas without spending months building', timestamp=datetime.datetime(2025, 6, 6, 21, 25, 59, 664563), engagement_score=89, sentiment_score=0.7, keywords=['saas', 'business', 'idea'], url='https://news.ycombinator.com/', metadata={'comments': 67, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='The Hidden Costs of Manual Business Processes - Small businesses lose thousands of hours annually on manual processes that could be automated', timestamp=datetime.datetime(2025, 6, 6, 20, 25, 59, 664563), engagement_score=156, sentiment_score=0.6, keywords=['business'], url='https://medium.com/', metadata={'responses': 8, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: What are the biggest challenges facing small business owners in 2024? A: Cash flow management, finding reliable employees, and digital transformation are the top issues', timestamp=datetime.datetime(2025, 6, 6, 19, 25, 59, 666160), engagement_score=89, sentiment_score=0.5, keywords=['business'], url='https://quora.com/', metadata={'answers': 23, 'platform': 'quora'}, credibility_weight=0.65)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 19, 25, 59, 666160), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "business"
+      ],
+      "discovered_at": "2025-06-06 23:25:59.666160"
+    },
+    {
+      "title": "Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see wi",
+      "description": "Real market need: Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies",
+      "momentum_score": 6.0,
+      "confidence_level": 0.8999999999999999,
+      "sources": [
+        "medium",
+        "ycombinator",
+        "quora"
+      ],
+      "signals": [
+        "TrendSignal(source='ycombinator', content='Show HN: Open source alternative to expensive analytics tools - Built this because existing analytics tools are too expensive for startups', timestamp=datetime.datetime(2025, 6, 6, 21, 25, 59, 664563), engagement_score=234, sentiment_score=0.7, keywords=['startup'], url='https://news.ycombinator.com/', metadata={'comments': 78, 'platform': 'ycombinator'}, credibility_weight=0.85)",
+        "TrendSignal(source='medium', content='Why Most SaaS Startups Fail at Customer Retention - The biggest problem I see with SaaS startups is poor onboarding and retention strategies', timestamp=datetime.datetime(2025, 6, 6, 20, 25, 59, 664563), engagement_score=234, sentiment_score=0.6, keywords=['startup', 'saas', 'problem', 'customer'], url='https://medium.com/', metadata={'responses': 12, 'platform': 'medium'}, credibility_weight=0.7)",
+        "TrendSignal(source='quora', content='Q: How do you handle customer support for a growing SaaS business? A: Most startups struggle with scaling customer support without hiring expensive agents', timestamp=datetime.datetime(2025, 6, 6, 19, 25, 59, 666160), engagement_score=67, sentiment_score=0.5, keywords=['startup', 'saas', 'business', 'customer'], url='https://quora.com/', metadata={'answers': 15, 'platform': 'quora'}, credibility_weight=0.65)"
+      ],
+      "keywords": [
+        "startup"
+      ],
+      "discovered_at": "2025-06-06 23:25:59.666160"
+    }
+  ],
+  "analysis": {
+    "total_signals": 7,
+    "total_opportunities": 13,
+    "source_distribution": {
+      "ycombinator": 3,
+      "medium": 2,
+      "quora": 2
+    },
+    "top_keywords": {
+      "business": 4,
+      "customer": 3,
+      "saas": 3,
+      "startup": 3,
+      "idea": 1,
+      "problem": 1
+    },
+    "engagement_metrics": {
+      "total_engagement": 1025,
+      "average_engagement": 146.42857142857142,
+      "high_engagement_signals": 4
+    }
+  },
+  "source_performance": {
+    "firecrawl_intelligence": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "reddit": {
+      "opportunities": 9,
+      "total_score": 87.47188372999837,
+      "average_score": 9.719098192222042
+    },
+    "github": {
+      "opportunities": 1,
+      "total_score": 10.0,
+      "average_score": 10.0
+    },
+    "hacker_news": {
+      "opportunities": 2,
+      "total_score": 20.0,
+      "average_score": 10.0
+    },
+    "enhanced_twitter": {
+      "opportunities": 3,
+      "total_score": 30.0,
+      "average_score": 10.0
+    },
+    "medium": {
+      "opportunities": 4,
+      "total_score": 26.0,
+      "average_score": 6.5
+    },
+    "ycombinator": {
+      "opportunities": 4,
+      "total_score": 26.0,
+      "average_score": 6.5
+    },
+    "quora": {
+      "opportunities": 4,
+      "total_score": 26.0,
+      "average_score": 6.5
+    }
+  }
+}

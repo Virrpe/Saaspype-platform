@@ -1,0 +1,2 @@
+set ANTHROPIC_API_KEY=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
+python master_luciq_api.py

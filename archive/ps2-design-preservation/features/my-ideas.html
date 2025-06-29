@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciq - My Idea Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00ffff',
+                        secondary: '#ff00ff',
+                        surface: '#0a0a0f',
+                        'surface-elevated': '#1a1a2e',
+                        'text-primary': '#ffffff',
+                        'text-secondary': '#64748b',
+                        border: 'rgba(0, 255, 255, 0.1)'
+                    },
+                    fontFamily: {
+                        'sans': ['Geist', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        'mono': ['OCR-A', 'Consolas', 'Monaco', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; }
+        
+        /* PS2 Signal Console Background */
+        body {
+            background: #0a0a0f;
+            background-image: 
+                radial-gradient(circle at 30% 70%, rgba(0, 255, 255, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 0, 255, 0.03) 0%, transparent 50%),
+                linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.005) 25%, rgba(255, 255, 255, 0.005) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.005) 75%, rgba(255, 255, 255, 0.005) 76%, transparent 77%, transparent);
+            background-size: 400% 400%, 400% 400%, 4px 4px;
+            animation: ambientPulse 20s ease infinite;
+            position: relative;
+            overflow-x: hidden;
+            color: #ffffff;
+        }
+        
+        @keyframes ambientPulse {
+            0% { background-position: 0% 50%, 0% 50%, 0 0; }
+            50% { background-position: 100% 50%, 100% 50%, 0 0; }
+            100% { background-position: 0% 50%, 0% 50%, 0 0; }
+        }
+
+        /* Waveform Logo */
+        .waveform-logo {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .waveform-glyph {
+            width: 48px;
+            height: 28px;
+            background: linear-gradient(45deg, #00ffff 0%, #ff00ff 100%);
+            mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 28'><path d='M2 14 L8 6 L14 18 L20 14 L26 2 L32 14 L38 20 L46 8' stroke='black' stroke-width='3' fill='none'/></svg>");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            animation: pulseGlow 10s ease-in-out infinite;
+            position: relative;
+        }
+        
+        .waveform-glyph::before {
+            content: '';
+            position: absolute;
+            inset: -40px;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+            animation: breathe 10s ease-in-out infinite;
+            z-index: -1;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { 
+                transform: scale(1.0);
+                filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 16px #00ffff);
+            }
+            50% { 
+                transform: scale(1.02);
+                filter: drop-shadow(0 0 12px #00ffff) drop-shadow(0 0 24px #00ffff);
+            }
+        }
+        
+        @keyframes breathe {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Signal Analysis Console Cards */
+        .signal-card { 
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .signal-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 255, 255, 0.1);
+            border-color: rgba(0, 255, 255, 0.2);
+        }
+
+        /* PS2 Console Cards */
+        .premium-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .premium-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 255, 255, 0.15);
+            border-color: rgba(0, 255, 255, 0.25);
+        }
+
+        /* Navigation Glass Effect - PS2 Style */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(25px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        /* PS2 Console Animations */
+        .slide-in-up {
+            animation: slideInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-scale {
+            animation: fadeInScale 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* PS2 Console Buttons */
+        .premium-button {
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            color: #0a0a0f;
+            font-weight: 600;
+        }
+        
+        .premium-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 255, 0.4);
+        }
+        
+        .premium-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .premium-button:hover:before {
+            left: 100%;
+        }
+
+        /* Enhanced Button Styles - PS2 Theme */
+        .btn-primary {
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            color: #0a0a0f;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #00ffff;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 255, 255, 0.1);
+            border-color: rgba(0, 255, 255, 0.5);
+        }
+
+        .idea-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .idea-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.15);
+            border-color: rgba(0, 255, 255, 0.2);
+        }
+        
+        .market-potential-high {
+            background: linear-gradient(135deg, #00ffff 0%, #10b981 100%);
+            color: #0a0a0f;
+        }
+        
+        .market-potential-medium {
+            background: linear-gradient(135deg, #ff00ff 0%, #f59e0b 100%);
+            color: #0a0a0f;
+        }
+        
+        .market-potential-low {
+            background: linear-gradient(135deg, #64748b 0%, #4b5563 100%);
+            color: #ffffff;
+        }
+        
+        .empty-state {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        /* Metric counters */
+        .metric-counter {
+            font-family: 'Consolas', monospace;
+            font-variant-numeric: tabular-nums;
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Status indicators */
+        .status-active {
+            color: #00ffff;
+            text-shadow: 0 0 8px #00ffff;
+        }
+
+        .status-processing {
+            color: #ff00ff;
+            text-shadow: 0 0 8px #ff00ff;
+        }
+
+        /* Idea status badges */
+        .status-saved {
+            background: rgba(0, 255, 255, 0.2);
+            color: #00ffff;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+        }
+
+        .status-developing {
+            background: rgba(255, 0, 255, 0.2);
+            color: #ff00ff;
+            border: 1px solid rgba(255, 0, 255, 0.3);
+        }
+
+        .status-launched {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-surface text-text-primary">
+    <!-- Navigation -->
+    <nav class="glass-nav sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <a href="../../index.html" class="flex items-center space-x-3 group">
+                        <div class="waveform-logo">
+                            <div class="waveform-glyph"></div>
+                        </div>
+                        <span class="text-xl font-bold text-white">Luciq</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="dashboard.html" class="text-gray-300 hover:text-primary transition-colors">Dashboard</a>
+                    <a href="discover.html" class="text-gray-300 hover:text-primary transition-colors">Discover</a>
+                    <a href="my-ideas.html" class="text-primary">My Ideas</a>
+                    <a href="trends.html" class="text-gray-300 hover:text-primary transition-colors">Trends</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="btn-secondary px-4 py-2 rounded-lg">Settings</button>
+                    <button class="premium-button px-6 py-2 rounded-lg">Upgrade</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="px-4 py-6 sm:px-0 slide-in-up">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-4xl font-bold text-white mb-2">
+                        <span class="metric-counter">My Idea Bank</span>
+                    </h1>
+                    <p class="text-lg text-gray-300">Your saved SaaS opportunities and concepts from Enhanced Intelligence Network</p>
+                </div>
+                <div class="flex space-x-3">
+                    <button onclick="refreshIdeas()" class="btn-secondary px-4 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-sync-alt mr-1"></i> Refresh
+                    </button>
+                    <a href="discover.html" class="btn-primary px-4 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-plus mr-1"></i> Discover More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Summary -->
+        <div id="statsSection" class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 fade-in-scale">
+            <!-- Stats will be populated here -->
+        </div>
+
+        <!-- Filter and Sort -->
+        <div class="signal-card rounded-lg p-4 mb-6 slide-in-up">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center space-x-4">
+                    <div>
+                        <label for="filterPotential" class="block text-sm font-medium text-gray-300">Filter by Potential</label>
+                        <select id="filterPotential" class="mt-1 block px-3 py-2 bg-surface-elevated border border-cyan-500 border-opacity-20 text-white rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary transition-all">
+                            <option value="all">All Potential</option>
+                            <option value="high">High Potential</option>
+                            <option value="medium">Medium Potential</option>
+                            <option value="low">Low Potential</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="sortBy" class="block text-sm font-medium text-gray-300">Sort by</label>
+                        <select id="sortBy" class="bg-surface-elevated border border-cyan-500 border-opacity-20 text-white rounded-md px-3 py-2 text-sm transition-all focus:outline-none focus:ring-primary focus:border-primary">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="potential">Market Potential</option>
+                            <option value="confidence">Confidence Score</option>
+                            <option value="title">Title A-Z</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-2">
+                    <span class="text-sm text-gray-500">View:</span>
+                    <button id="gridViewBtn" onclick="setView('grid')" class="p-2 text-gray-600 hover:text-blue-600 border rounded transition-colors">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button id="listViewBtn" onclick="setView('list')" class="p-2 text-gray-600 hover:text-blue-600 border rounded transition-colors">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ideas Grid/List -->
+        <div id="ideasContainer">
+            <div id="loadingState" class="text-center py-12">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                <p class="mt-2 text-gray-600">Loading your ideas...</p>
+            </div>
+            
+            <div id="emptyState" class="hidden text-center py-12 empty-state rounded-lg">
+                <div class="max-w-md mx-auto">
+                    <i class="fas fa-lightbulb text-6xl text-gray-400 mb-4"></i>
+                    <h3 class="text-xl font-medium text-gray-900 mb-2">No Ideas Yet</h3>
+                    <p class="text-gray-600 mb-6">Start discovering SaaS opportunities to build your idea bank!</p>
+                    <a href="/pages/features/discover.html" class="btn-primary text-white px-6 py-3 rounded-md font-medium">
+                        <i class="fas fa-search mr-2"></i> Start Discovering
+                    </a>
+                </div>
+            </div>
+            
+            <div id="ideasGrid" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Ideas will be populated here -->
+            </div>
+            
+            <div id="ideasList" class="hidden space-y-4">
+                <!-- Ideas will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Idea Detail Modal -->
+    <div id="ideaDetailModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+        <div class="relative top-10 mx-auto p-5 border w-11/12 max-w-4xl shadow-lg rounded-md glass-card-premium">
+            <div class="mt-3">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 id="modalTitle" class="text-2xl font-bold gradient-text"></h3>
+                    <button onclick="closeDetailModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div id="modalContent" class="space-y-6">
+                    <!-- Modal content will be populated here -->
+                </div>
+                
+                <div class="flex justify-end space-x-3 mt-6 pt-6 border-t">
+                    <button onclick="closeDetailModal()" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 transition-all">Close</button>
+                    <button id="deleteIdeaBtn" class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-all hover:transform hover:-translate-y-1">
+                        <i class="fas fa-trash mr-1"></i> Delete Idea
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create floating social media icons with RGB neon glow
+        function createFloatingSocialIcons() {
+            const icons = [
+                { class: 'fab fa-twitter', color: '#1da1f2', neon: '#00ffff', delay: '0s' },
+                { class: 'fab fa-reddit', color: '#ff4500', neon: '#ff0080', delay: '2s' },
+                { class: 'fab fa-github', color: '#333', neon: '#00ff00', delay: '4s' },
+                { class: 'fab fa-hacker-news', color: '#ff6600', neon: '#ffff00', delay: '6s' },
+                { class: 'fas fa-building', color: '#0077b5', neon: '#00ffff', delay: '8s' },
+                { class: 'fas fa-fire', color: '#ff6b35', neon: '#ff0080', delay: '10s' },
+                { class: 'fas fa-crown', color: '#9333ea', neon: '#ff00ff', delay: '12s' },
+                { class: 'fas fa-chart-line', color: '#10b981', neon: '#00ff80', delay: '14s' }
+            ];
+
+            const container = document.getElementById('floating-social-icons');
+            
+            icons.forEach((icon, index) => {
+                const element = document.createElement('i');
+                element.className = `${icon.class} floating-social-icon`;
+                element.style.color = icon.color;
+                element.style.textShadow = `
+                    0 0 5px ${icon.color},
+                    0 0 10px ${icon.color},
+                    0 0 15px ${icon.color},
+                    0 0 20px ${icon.neon}
+                `;
+                element.style.left = Math.random() * 90 + '%';
+                element.style.top = Math.random() * 90 + '%';
+                element.style.animationDelay = icon.delay;
+                element.style.animationDuration = (15 + Math.random() * 5) + 's';
+                container.appendChild(element);
+            });
+        }
+
+        // Initialize floating icons on page load
+        document.addEventListener('DOMContentLoaded', createFloatingSocialIcons);
+
+        // Check authentication
+        const token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = '/pages/auth.html';
+            return;
+        }
+
+        // API base URL
+        const API_BASE = 'http://localhost:8000';
+        
+        // State
+        let allIdeas = [];
+        let filteredIdeas = [];
+        let currentView = 'grid';
+        let currentIdeaId = null;
+
+        // Load ideas on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadIdeas();
+            
+            // Add event listeners for filters
+            document.getElementById('filterPotential').addEventListener('change', applyFilters);
+            document.getElementById('sortBy').addEventListener('change', applyFilters);
+        });
+
+        async function loadIdeas() {
+            try {
+                const response = await fetch(`${API_BASE}/api/my-ideas`, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+                
+                if (response.status === 401) {
+                    localStorage.removeItem('token');
+                    localStorage.removeItem('luciq_user');
+                    window.location.href = '/pages/auth.html';
+                    return;
+                }
+                
+                if (!response.ok) {
+                    throw new Error('Failed to load ideas');
+                }
+                
+                const data = await response.json();
+                allIdeas = data.ideas;
+                filteredIdeas = [...allIdeas];
+                
+                displayStats();
+                applyFilters();
+                
+                // Hide loading state
+                document.getElementById('loadingState').classList.add('hidden');
+                
+                if (allIdeas.length === 0) {
+                    document.getElementById('emptyState').classList.remove('hidden');
+                }
+                
+            } catch (error) {
+                console.error('Error loading ideas:', error);
+                document.getElementById('loadingState').innerHTML = `
+                    <div class="text-center py-12">
+                        <i class="fas fa-exclamation-triangle text-red-500 text-4xl mb-4"></i>
+                        <p class="text-red-600">Failed to load ideas</p>
+                        <button onclick="loadIdeas()" class="mt-2 text-blue-600 hover:text-blue-800">Try Again</button>
+                    </div>
+                `;
+            }
+        }
+
+        function displayStats() {
+            const stats = {
+                total: allIdeas.length,
+                high: allIdeas.filter(idea => idea.market_potential === 'high').length,
+                medium: allIdeas.filter(idea => idea.market_potential === 'medium').length,
+                low: allIdeas.filter(idea => idea.market_potential === 'low').length
+            };
+            
+            const statsHtml = `
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-lightbulb text-yellow-500 text-2xl"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Total Ideas</dt>
+                                    <dd class="text-lg font-medium text-gray-900">${stats.total}</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-star text-green-500 text-2xl"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">High Potential</dt>
+                                    <dd class="text-lg font-medium text-gray-900">${stats.high}</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-star-half-alt text-yellow-500 text-2xl"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Medium Potential</dt>
+                                    <dd class="text-lg font-medium text-gray-900">${stats.medium}</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-star text-gray-400 text-2xl"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Low Potential</dt>
+                                    <dd class="text-lg font-medium text-gray-900">${stats.low}</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('statsSection').innerHTML = statsHtml;
+        }
+
+        function applyFilters() {
+            const potentialFilter = document.getElementById('filterPotential').value;
+            const sortBy = document.getElementById('sortBy').value;
+            
+            // Filter
+            filteredIdeas = allIdeas.filter(idea => {
+                if (potentialFilter === 'all') return true;
+                return idea.market_potential === potentialFilter;
+            });
+            
+            // Sort
+            filteredIdeas.sort((a, b) => {
+                switch (sortBy) {
+                    case 'newest':
+                        return new Date(b.saved_at) - new Date(a.saved_at);
+                    case 'oldest':
+                        return new Date(a.saved_at) - new Date(b.saved_at);
+                    case 'potential':
+                        const potentialOrder = { high: 3, medium: 2, low: 1 };
+                        return potentialOrder[b.market_potential] - potentialOrder[a.market_potential];
+                    case 'confidence':
+                        // Sort by confidence score if available, fallback to market potential
+                        const getConfidenceScore = (idea) => {
+                            if (idea.confidence_score !== undefined) return idea.confidence_score;
+                            if (idea.concept_data && idea.concept_data.confidence_score !== undefined) return idea.concept_data.confidence_score;
+                            // Fallback to market potential mapping
+                            const potentialToConfidence = { high: 0.8, medium: 0.6, low: 0.4 };
+                            return potentialToConfidence[idea.market_potential] || 0.5;
+                        };
+                        return getConfidenceScore(b) - getConfidenceScore(a);
+                    case 'title':
+                        return a.idea_title.localeCompare(b.idea_title);
+                    default:
+                        return 0;
+                }
+            });
+            
+            displayIdeas();
+        }
+
+        function displayIdeas() {
+            if (currentView === 'grid') {
+                displayGridView();
+            } else {
+                displayListView();
+            }
+        }
+
+        function displayGridView() {
+            const gridContainer = document.getElementById('ideasGrid');
+            const listContainer = document.getElementById('ideasList');
+            
+            listContainer.classList.add('hidden');
+            gridContainer.classList.remove('hidden');
+            
+            const ideasHtml = filteredIdeas.map(idea => {
+                // Extract confidence score
+                let confidence = 0.5; // Default
+                if (idea.confidence_score !== undefined) {
+                    confidence = idea.confidence_score;
+                } else if (idea.concept_data && idea.concept_data.confidence_score !== undefined) {
+                    confidence = idea.concept_data.confidence_score;
+                } else {
+                    // Fallback mapping from market potential
+                    const potentialToConfidence = { high: 0.8, medium: 0.6, low: 0.4 };
+                    confidence = potentialToConfidence[idea.market_potential] || 0.5;
+                }
+                
+                const confidencePercentage = Math.round(confidence * 100);
+                let confidenceClass = 'bg-gray-100 text-gray-800';
+                if (confidence >= 0.8) {
+                    confidenceClass = 'bg-green-100 text-green-800';
+                } else if (confidence >= 0.6) {
+                    confidenceClass = 'bg-blue-100 text-blue-800';
+                } else if (confidence >= 0.4) {
+                    confidenceClass = 'bg-yellow-100 text-yellow-800';
+                }
+                
+                return `
+                    <div class="idea-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" onclick="openDetailModal(${idea.id})">
+                        <div class="market-potential-${idea.market_potential} p-4 text-white">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold mb-2">${idea.idea_title}</h3>
+                                    <span class="text-sm opacity-90 capitalize">${idea.market_potential} Potential</span>
+                                </div>
+                                <span class="inline-block px-2 py-1 text-xs font-semibold bg-white bg-opacity-20 rounded">
+                                    ${confidencePercentage}%
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-4">
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">${idea.idea_description}</p>
+                            
+                            <div class="flex justify-between items-center text-xs text-gray-500 mb-3">
+                                <span><i class="fas fa-source mr-1"></i> ${idea.pain_point_source}</span>
+                                <span><i class="fas fa-calendar mr-1"></i> ${new Date(idea.saved_at).toLocaleDateString()}</span>
+                            </div>
+                            
+                            <!-- Confidence indicator -->
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs text-gray-600">Quality Confidence</span>
+                                <span class="inline-block px-2 py-1 text-xs font-semibold ${confidenceClass} rounded">
+                                    ${confidencePercentage}%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            gridContainer.innerHTML = ideasHtml;
+        }
+
+        function displayListView() {
+            const gridContainer = document.getElementById('ideasGrid');
+            const listContainer = document.getElementById('ideasList');
+            
+            gridContainer.classList.add('hidden');
+            listContainer.classList.remove('hidden');
+            
+            const ideasHtml = filteredIdeas.map(idea => `
+                <div class="idea-card bg-white rounded-lg shadow p-6 cursor-pointer" onclick="openDetailModal(${idea.id})">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <div class="flex items-center mb-2">
+                                <h3 class="text-xl font-bold text-gray-900 mr-3">${idea.idea_title}</h3>
+                                <span class="market-potential-${idea.market_potential} text-white text-xs px-2 py-1 rounded capitalize">${idea.market_potential}</span>
+                            </div>
+                            
+                            <p class="text-gray-600 mb-4">${idea.idea_description}</p>
+                            
+                            <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                <span><i class="fas fa-source mr-1"></i> ${idea.pain_point_source}</span>
+                                <span><i class="fas fa-calendar mr-1"></i> ${new Date(idea.saved_at).toLocaleDateString()}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="ml-4">
+                            <button onclick="event.stopPropagation(); deleteIdea(${idea.id})" class="text-red-600 hover:text-red-800 p-2">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            listContainer.innerHTML = ideasHtml;
+        }
+
+        function setView(view) {
+            currentView = view;
+            
+            // Update button states
+            document.getElementById('gridViewBtn').classList.toggle('bg-blue-600', view === 'grid');
+            document.getElementById('gridViewBtn').classList.toggle('text-white', view === 'grid');
+            document.getElementById('listViewBtn').classList.toggle('bg-blue-600', view === 'list');
+            document.getElementById('listViewBtn').classList.toggle('text-white', view === 'list');
+            
+            displayIdeas();
+        }
+
+        function openDetailModal(ideaId) {
+            const idea = allIdeas.find(i => i.id === ideaId);
+            if (!idea) return;
+            
+            currentIdeaId = ideaId;
+            
+            document.getElementById('modalTitle').textContent = idea.idea_title;
+            
+            let conceptDataHtml = '';
+            if (idea.concept_data) {
+                try {
+                    const conceptData = typeof idea.concept_data === 'string' ? JSON.parse(idea.concept_data) : idea.concept_data;
+                    conceptDataHtml = `
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Original Data</h4>
+                            <pre class="text-sm text-gray-600 whitespace-pre-wrap">${JSON.stringify(conceptData, null, 2)}</pre>
+                        </div>
+                    `;
+                } catch (e) {
+                    conceptDataHtml = `
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Original Data</h4>
+                            <p class="text-sm text-gray-600">${idea.concept_data}</p>
+                        </div>
+                    `;
+                }
+            }
+            
+            const modalContent = `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Description</h4>
+                        <p class="text-gray-600 mb-4">${idea.idea_description}</p>
+                        
+                        <h4 class="font-semibold text-gray-900 mb-2">Market Potential</h4>
+                        <span class="market-potential-${idea.market_potential} text-white px-3 py-1 rounded capitalize">${idea.market_potential}</span>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Source</h4>
+                        <p class="text-gray-600 mb-4">${idea.pain_point_source}</p>
+                        
+                        <h4 class="font-semibold text-gray-900 mb-2">Saved Date</h4>
+                        <p class="text-gray-600">${new Date(idea.saved_at).toLocaleString()}</p>
+                    </div>
+                </div>
+                
+                ${conceptDataHtml}
+            `;
+            
+            document.getElementById('modalContent').innerHTML = modalContent;
+            document.getElementById('ideaDetailModal').classList.remove('hidden');
+        }
+
+        function closeDetailModal() {
+            document.getElementById('ideaDetailModal').classList.add('hidden');
+            currentIdeaId = null;
+        }
+
+        async function deleteIdea(ideaId) {
+            if (!confirm('Are you sure you want to delete this idea?')) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/ideas/${ideaId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Failed to delete idea');
+                }
+                
+                // Remove from local arrays
+                allIdeas = allIdeas.filter(idea => idea.id !== ideaId);
+                filteredIdeas = filteredIdeas.filter(idea => idea.id !== ideaId);
+                
+                // Refresh display
+                displayStats();
+                displayIdeas();
+                
+                // Close modal if this idea was open
+                if (currentIdeaId === ideaId) {
+                    closeDetailModal();
+                }
+                
+                // Show empty state if no ideas left
+                if (allIdeas.length === 0) {
+                    document.getElementById('ideasGrid').classList.add('hidden');
+                    document.getElementById('ideasList').classList.add('hidden');
+                    document.getElementById('emptyState').classList.remove('hidden');
+                }
+                
+            } catch (error) {
+                alert('Failed to delete idea: ' + error.message);
+            }
+        }
+
+        // Delete button in modal
+        document.getElementById('deleteIdeaBtn').addEventListener('click', () => {
+            if (currentIdeaId) {
+                deleteIdea(currentIdeaId);
+            }
+        });
+
+        function refreshIdeas() {
+            document.getElementById('loadingState').classList.remove('hidden');
+            document.getElementById('emptyState').classList.add('hidden');
+            document.getElementById('ideasGrid').classList.add('hidden');
+            document.getElementById('ideasList').classList.add('hidden');
+            loadIdeas();
+        }
+
+        function logout() {
+            console.log('Logout function called');
+            try {
+                // Clear authentication data
+                localStorage.removeItem('token');
+                localStorage.removeItem('luciq_user');
+                console.log('Auth data cleared from localStorage');
+                
+                // Show confirmation
+                alert('You have been logged out successfully');
+                
+                // Redirect to auth page
+                console.log('Redirecting to auth page...');
+                window.location.href = '/pages/auth.html';
+            } catch (error) {
+                console.error('Error during logout:', error);
+                alert('Error during logout: ' + error.message);
+            }
+        }
+
+        // Initialize grid view as default
+        setView('grid');
+    </script>
+</body>
+</html> 

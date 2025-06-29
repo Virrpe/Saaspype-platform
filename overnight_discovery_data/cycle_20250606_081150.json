@@ -1,0 +1,99 @@
+{
+  "cycle_number": 35,
+  "timestamp": "20250606_081150",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Welcome to r/ecommerce! Please Read Before Posting",
+      "problem": "**Table of Contents:**\n\nI. Account Requirements\n\nII. Content Rules\n\nIII. Linking Policies\n\nIV. Dropshipping Guidelines\n\nV. Reporting Violations\n\nVI. Frequently Asked Questions (FAQ)\n\nVII. Encouraged C...",
+      "solution": "Business opportunity addressing r/ecommerce community need",
+      "source": "ecommerce",
+      "cycle": 35,
+      "timestamp": "2025-06-06T08:11:45.001774",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/ecommerce/comments/1j3crv8/welcome_to_recommerce_please_read_before_posting/",
+      "reddit_score": 25,
+      "reddit_comments": 68
+    },
+    {
+      "title": "Reddit Discovery: How did you get your first online shop off the ground?",
+      "problem": "I\u2019m finally ready to launch an online shop (apparel) but overwhelmed with all the options out there. Did you start by choosing a platform like shopify, woo commerce, webflow or framer? What early issu...",
+      "solution": "Business opportunity addressing r/ecommerce community need",
+      "source": "ecommerce",
+      "cycle": 35,
+      "timestamp": "2025-06-06T08:11:45.001774",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/ecommerce/comments/1l422zf/how_did_you_get_your_first_online_shop_off_the/",
+      "reddit_score": 23,
+      "reddit_comments": 11
+    },
+    {
+      "title": "Reddit Discovery: Why is Microsoft Advertising absolute garbage?",
+      "problem": "We have a Shopify site we wanted to get setup with Microsoft Advertising and when we connected our Google merchant account they blocked our account immediately. We fought it and provided all required ...",
+      "solution": "Business opportunity addressing r/ecommerce community need",
+      "source": "ecommerce",
+      "cycle": 35,
+      "timestamp": "2025-06-06T08:11:45.001774",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/ecommerce/comments/1l3zxf3/why_is_microsoft_advertising_absolute_garbage/",
+      "reddit_score": 11,
+      "reddit_comments": 6
+    },
+    {
+      "title": "Reddit Discovery: Starting a new job in consulting? Post here for questions about new hire advice,...",
+      "problem": "As per the title, post anything related to starting a new job / internship in here. PM mods if you don't get an answer after a few days and we'll try to fill in the gaps or nudge a regular to answer f...",
+      "solution": "Business opportunity addressing r/consulting community need",
+      "source": "consulting",
+      "cycle": 35,
+      "timestamp": "2025-06-06T08:11:50.407756",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/consulting/comments/1ifajri/starting_a_new_job_in_consulting_post_here_for/",
+      "reddit_score": 13,
+      "reddit_comments": 84
+    },
+    {
+      "title": "Reddit Discovery: Interested in becoming a consultant? Post here for basic questions, recruitment ...",
+      "problem": "Post anything related to learning about the consulting industry, recruitment advice, company / group research, or general insecurity in here. \n\n**If asking for feedback, please provide...**\n\na) the ty...",
+      "solution": "Business opportunity addressing r/consulting community need",
+      "source": "consulting",
+      "cycle": 35,
+      "timestamp": "2025-06-06T08:11:50.407756",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/consulting/comments/1k629yf/interested_in_becoming_a_consultant_post_here_for/",
+      "reddit_score": 7,
+      "reddit_comments": 94
+    },
+    {
+      "title": "Reddit Discovery: I don\u2019t think I can hack it as a consultant",
+      "problem": "I don\u2019t know why I\u2019m posting this. I\u2019ve been a consultant with the same firm for six years. I\u2019ve been promoted in that time and had good performance reviews. But I\u2019m really struggling. I returned from...",
+      "solution": "Business opportunity addressing r/consulting community need",
+      "source": "consulting",
+      "cycle": 35,
+      "timestamp": "2025-06-06T08:11:50.407756",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/consulting/comments/1l43lg7/i_dont_think_i_can_hack_it_as_a_consultant/",
+      "reddit_score": 75,
+      "reddit_comments": 15
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 30.9,
+    "memory_percent": 71.5,
+    "disk_percent": 78.9,
+    "available_gb": 2.2345428466796875,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 35,
+    "total_ideas": 210,
+    "uptime_minutes": 397.99758927822114,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

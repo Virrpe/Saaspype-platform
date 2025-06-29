@@ -1,0 +1,20 @@
+{
+  "workflow_id": "bi_workflow_1749057897",
+  "step_1": {
+    "agent": "discovery-intelligence-specialist",
+    "status": "completed",
+    "data": "market_analysis_complete"
+  },
+  "step_2": {
+    "agent": "growth-hacker",
+    "status": "completed",
+    "data": "growth_opportunities_identified"
+  },
+  "step_3": {
+    "agent": "product-strategist",
+    "status": "in_progress",
+    "data": "strategy_synthesis_ongoing"
+  },
+  "current_step": 3,
+  "total_steps": 4
+}

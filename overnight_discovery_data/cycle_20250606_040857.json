@@ -1,0 +1,99 @@
+{
+  "cycle_number": 12,
+  "timestamp": "20250606_040857",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Please Read This Before Posting or Commenting",
+      "problem": "**Violating [the rules of this subreddit](https://www.reddit.com/r/freelance/about/rules) will cause your post/comment will be removed and you will be banned PERMANENTLY. This is your only warning!** ...",
+      "solution": "Business opportunity addressing r/freelance community need",
+      "source": "freelance",
+      "cycle": 12,
+      "timestamp": "2025-06-06T04:08:52.182174",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/freelance/comments/9imfv9/please_read_this_before_posting_or_commenting/",
+      "reddit_score": 397,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: Freelance Journey\u2019s Mistake: Being Greedy.",
+      "problem": "4 months ago i applied for a freelance project for an NGO. I was selected for interview, we went over the project details and later i sent quotation. i asked for 10K usd and through mail negotiation w...",
+      "solution": "Business opportunity addressing r/freelance community need",
+      "source": "freelance",
+      "cycle": 12,
+      "timestamp": "2025-06-06T04:08:52.182174",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/freelance/comments/1l31z3s/freelance_journeys_mistake_being_greedy/",
+      "reddit_score": 22,
+      "reddit_comments": 8
+    },
+    {
+      "title": "Reddit Discovery: I filed a legal claim after being unpaid for work I completed \u2014 and I\u2019m done sta...",
+      "problem": "This is a bit of a long story, but here\u2019s the short version:\n\nI\u2019m a creative professional (designer, strategist, art director) with 20+ years of experience. I was hired (by a friend of 25 years) last ...",
+      "solution": "Business opportunity addressing r/freelance community need",
+      "source": "freelance",
+      "cycle": 12,
+      "timestamp": "2025-06-06T04:08:52.182174",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/freelance/comments/1l1vhwi/i_filed_a_legal_claim_after_being_unpaid_for_work/",
+      "reddit_score": 165,
+      "reddit_comments": 84
+    },
+    {
+      "title": "Reddit Discovery: Upcoming AmA: \"Bootstrapped, building 20 products simultaneously, competing on p...",
+      "problem": "Hey folks, Daniel here from\u00a0[r/SaaS](https://www.reddit.com/r/SaaS/)\u00a0with a new upcoming AmA.\n\nThis time, we'll have Neeraj Singh from [BigBinary](https://www.bigbinary.com/) and the [Neeto suite](htt...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 12,
+      "timestamp": "2025-06-06T04:08:57.622727",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1kwi1is/upcoming_ama_bootstrapped_building_20_products/",
+      "reddit_score": 8,
+      "reddit_comments": 5
+    },
+    {
+      "title": "Reddit Discovery: Weekly Feedback Post - SaaS Products, Ideas, Companies",
+      "problem": "This is a weekly post where you're free to post your SaaS ideas, products, companies etc. that need feedback. Here, people who are willing to share feedback are going to join conversations. Posts aski...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 12,
+      "timestamp": "2025-06-06T04:08:57.622727",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l32n01/weekly_feedback_post_saas_products_ideas_companies/",
+      "reddit_score": 3,
+      "reddit_comments": 2
+    },
+    {
+      "title": "Reddit Discovery: Your SaaS isn't dying because of churn. It's dying because you're selling to bro...",
+      "problem": "Everyone obsesses over churn rates. Our churn is 8%! We need to get it down to 3%!\n\nBut here's what I see at every struggling SaaS I work with: they're not losing customers because their product sucks...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 12,
+      "timestamp": "2025-06-06T04:08:57.622727",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l46pff/your_saas_isnt_dying_because_of_churn_its_dying/",
+      "reddit_score": 69,
+      "reddit_comments": 18
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 3.4,
+    "memory_percent": 77.1,
+    "disk_percent": 78.8,
+    "available_gb": 1.8015708923339844,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 12,
+    "total_ideas": 72,
+    "uptime_minutes": 155.1178183555603,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

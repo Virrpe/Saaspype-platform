@@ -1,0 +1,163 @@
+version: '3.8'
+
+services:
+  # Luciq API Service - Core Discovery Engine
+  luciq-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: luciq-api-v2
+    ports:
+      - "8000:8000"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - DATABASE_PATH=/app/luciq_discovery.db
+      - LOG_LEVEL=INFO
+      - SECRET_KEY=luciq-discovery-secret-key-2025-docker-secure
+      - CORS_ORIGINS=http://localhost:3000,http://localhost:8080,http://localhost,http://127.0.0.1:3000
+      - REDIS_URL=redis://redis:6379/0
+      - PYTHONPATH=/app/src:/app
+      - DOCKER_DEPLOYMENT=true
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./working-memory:/app/working-memory
+      - luciq-db:/app/db
+    depends_on:
+      - redis
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Frontend Service - Production UI
+  luciq-frontend:
+    image: nginx:alpine
+    container_name: luciq-frontend-v2
+    ports:
+      - "3000:80"
+    volumes:
+      - ./src/frontend:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - luciq-api
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis for caching and session management
+  redis:
+    image: redis:7-alpine
+    container_name: luciq-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+
+  # Production Database Service (PostgreSQL for scaling)
+  postgres:
+    image: postgres:15-alpine
+    container_name: luciq-postgres
+    environment:
+      - POSTGRES_DB=luciq
+      - POSTGRES_USER=luciq
+      - POSTGRES_PASSWORD=luciq_secure_2025
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./tools/deployment/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    ports:
+      - "5432:5432"
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U luciq"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    profiles:
+      - production
+
+  # Monitoring Service (Lightweight)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: luciq-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus:/etc/prometheus
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+      - '--storage.tsdb.retention.time=7d'
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+  # Dashboard Service (Grafana)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: luciq-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=luciq2025secure
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    depends_on:
+      - prometheus
+    networks:
+      - luciq-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+volumes:
+  redis-data:
+    driver: local
+  postgres-data:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+  luciq-db:
+    driver: local
+
+networks:
+  luciq-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16 

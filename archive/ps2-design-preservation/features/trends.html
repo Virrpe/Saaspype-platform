@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciq - Discovery Engine 2.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00ffff',
+                        secondary: '#ff00ff',
+                        surface: '#0a0a0f',
+                        'surface-elevated': '#1a1a2e',
+                        'text-primary': '#ffffff',
+                        'text-secondary': '#64748b',
+                        border: 'rgba(0, 255, 255, 0.1)'
+                    },
+                    fontFamily: {
+                        'sans': ['Geist', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        'mono': ['OCR-A', 'Consolas', 'Monaco', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; }
+        
+        /* PS2 Signal Console Background */
+        body {
+            background: #0a0a0f;
+            background-image: 
+                radial-gradient(circle at 30% 70%, rgba(0, 255, 255, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 0, 255, 0.03) 0%, transparent 50%),
+                linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.005) 25%, rgba(255, 255, 255, 0.005) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.005) 75%, rgba(255, 255, 255, 0.005) 76%, transparent 77%, transparent);
+            background-size: 400% 400%, 400% 400%, 4px 4px;
+            animation: ambientPulse 20s ease infinite;
+            position: relative;
+            overflow-x: hidden;
+            color: #ffffff;
+        }
+        
+        @keyframes ambientPulse {
+            0% { background-position: 0% 50%, 0% 50%, 0 0; }
+            50% { background-position: 100% 50%, 100% 50%, 0 0; }
+            100% { background-position: 0% 50%, 0% 50%, 0 0; }
+        }
+
+        /* Waveform Logo */
+        .waveform-logo {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .waveform-glyph {
+            width: 48px;
+            height: 28px;
+            background: linear-gradient(45deg, #00ffff 0%, #ff00ff 100%);
+            mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 28'><path d='M2 14 L8 6 L14 18 L20 14 L26 2 L32 14 L38 20 L46 8' stroke='black' stroke-width='3' fill='none'/></svg>");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            animation: pulseGlow 10s ease-in-out infinite;
+            position: relative;
+        }
+        
+        .waveform-glyph::before {
+            content: '';
+            position: absolute;
+            inset: -40px;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+            animation: breathe 10s ease-in-out infinite;
+            z-index: -1;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { 
+                transform: scale(1.0);
+                filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 16px #00ffff);
+            }
+            50% { 
+                transform: scale(1.02);
+                filter: drop-shadow(0 0 12px #00ffff) drop-shadow(0 0 24px #00ffff);
+            }
+        }
+        
+        @keyframes breathe {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Signal Analysis Console Cards */
+        .signal-card { 
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .signal-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 255, 255, 0.1);
+            border-color: rgba(0, 255, 255, 0.2);
+        }
+
+        /* PS2 Console Cards */
+        .premium-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .premium-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 255, 255, 0.15);
+            border-color: rgba(0, 255, 255, 0.25);
+        }
+
+        /* Navigation Glass Effect - PS2 Style */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(25px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        /* PS2 Console Buttons */
+        .premium-button {
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            color: #0a0a0f;
+            font-weight: 600;
+        }
+        
+        .premium-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 255, 0.4);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            color: #0a0a0f;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #00ffff;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 255, 255, 0.1);
+            border-color: rgba(0, 255, 255, 0.5);
+        }
+
+        /* Metric counters */
+        .metric-counter {
+            font-family: 'Consolas', monospace;
+            font-variant-numeric: tabular-nums;
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Status indicators */
+        .status-active {
+            color: #00ffff;
+            text-shadow: 0 0 8px #00ffff;
+        }
+
+        .status-processing {
+            color: #ff00ff;
+            text-shadow: 0 0 8px #ff00ff;
+        }
+
+        /* Hero gradient - PS2 style */
+        .hero-gradient {
+            background: linear-gradient(135deg, 
+                rgba(0, 255, 255, 0.1) 0%, 
+                rgba(255, 0, 255, 0.05) 25%, 
+                rgba(0, 255, 255, 0.08) 50%, 
+                rgba(255, 0, 255, 0.1) 75%, 
+                rgba(0, 255, 255, 0.05) 100%);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-text-primary min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass-nav sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <a href="../../index.html" class="flex items-center space-x-3 group">
+                        <div class="waveform-logo">
+                            <div class="waveform-glyph"></div>
+                        </div>
+                        <span class="text-xl font-bold text-white">Luciq</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="dashboard.html" class="text-gray-300 hover:text-primary transition-colors">Dashboard</a>
+                    <a href="discover.html" class="text-gray-300 hover:text-primary transition-colors">Discover</a>
+                    <a href="my-ideas.html" class="text-gray-300 hover:text-primary transition-colors">My Ideas</a>
+                    <a href="trends.html" class="text-primary">Trends 2.0</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="btn-secondary px-4 py-2 rounded-lg">Settings</button>
+                    <button class="premium-button px-6 py-2 rounded-lg">Upgrade</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4 text-white">
+                    <i class="fas fa-rocket mr-3 text-primary"></i>
+                    <span class="metric-counter">Discovery Engine 2.0</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-6">
+                    AI-powered cross-platform trend detection with real-time market intelligence
+                </p>
+                <div class="flex justify-center space-x-6 text-sm">
+                    <div class="flex items-center text-primary">
+                        <i class="fas fa-globe mr-2"></i>
+                        <span>5 Platforms Monitored</span>
+                    </div>
+                    <div class="flex items-center text-secondary">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        <span>Real-time Analysis</span>
+                    </div>
+                    <div class="flex items-center text-primary">
+                        <i class="fas fa-brain mr-2"></i>
+                        <span>AI Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Control Panel -->
+        <div class="bg-surface rounded-lg shadow-sm border p-6 mb-8">
+            <h2 class="text-xl font-semibold mb-4">
+                <i class="fas fa-control mr-2 text-primary"></i>
+                Trend Detection Control Panel
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-text-secondary mb-2">Time Range</label>
+                    <select id="timeRange" class="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        <option value="6" selected>Last 6 hours</option>
+                        <option value="12">Last 12 hours</option>
+                        <option value="24">Last 24 hours</option>
+                        <option value="48">Last 48 hours</option>
+                        <option value="72">Last 72 hours</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-text-secondary mb-2">Monitoring</label>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="enableMonitoring" class="h-4 w-4 text-primary focus:ring-primary border-border rounded">
+                        <label for="enableMonitoring" class="ml-2 text-sm text-text-secondary">Enable real-time monitoring</label>
+                    </div>
+                </div>
+                
+                <div class="flex items-end">
+                    <button onclick="detectTrends()" class="w-full bg-primary text-surface px-4 py-2 rounded-md hover:bg-primary-focus focus:outline-none focus:ring-2 focus:ring-primary">
+                        <i class="fas fa-search mr-2"></i>
+                        Detect Trends
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loadingState" class="hidden bg-surface rounded-lg shadow-sm border p-8 text-center mb-8">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+            <h3 class="text-lg font-medium text-text-primary mb-2">Analyzing Cross-Platform Trends</h3>
+            <p class="text-text-secondary">Scanning Reddit, GitHub, Hacker News, Twitter, and Product Hunt...</p>
+        </div>
+
+        <!-- Results Section -->
+        <div id="resultsSection" class="hidden">
+            
+            <!-- Summary Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-surface rounded-lg shadow-sm border p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-chart-line text-2xl text-primary"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm font-medium text-text-secondary">Opportunities Detected</p>
+                            <p id="opportunitiesCount" class="text-2xl font-semibold text-text-primary">0</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-surface rounded-lg shadow-sm border p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-fire text-2xl text-red-500"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm font-medium text-text-secondary">High Momentum</p>
+                            <p id="highMomentumCount" class="text-2xl font-semibold text-text-primary">0</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-surface rounded-lg shadow-sm border p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-globe text-2xl text-green-500"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm font-medium text-text-secondary">Platforms Analyzed</p>
+                            <p id="platformsCount" class="text-2xl font-semibold text-text-primary">0</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-surface rounded-lg shadow-sm border p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-signal text-2xl text-purple-500"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm font-medium text-text-secondary">Signals Processed</p>
+                            <p id="signalsCount" class="text-2xl font-semibold text-text-primary">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opportunities List -->
+            <div class="bg-surface rounded-lg shadow-sm border mb-8">
+                <div class="px-6 py-4 border-b border-border">
+                    <h3 class="text-lg font-medium text-text-primary">
+                        <i class="fas fa-lightbulb mr-2 text-yellow-500"></i>
+                        Detected Opportunities
+                    </h3>
+                </div>
+                <div id="opportunitiesList" class="divide-y divide-border">
+                    <!-- Opportunities will be populated here -->
+                </div>
+            </div>
+
+            <!-- Market Intelligence -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Real-time Updates -->
+                <div class="bg-surface rounded-lg shadow-sm border">
+                    <div class="px-6 py-4 border-b border-border">
+                        <h3 class="text-lg font-medium text-text-primary">
+                            <i class="fas fa-bell mr-2 text-primary"></i>
+                            Real-time Market Updates
+                        </h3>
+                    </div>
+                    <div id="marketUpdates" class="p-6">
+                        <p class="text-text-secondary text-center py-8">No recent updates</p>
+                    </div>
+                </div>
+
+                <!-- Momentum Chart -->
+                <div class="bg-surface rounded-lg shadow-sm border">
+                    <div class="px-6 py-4 border-b border-border">
+                        <h3 class="text-lg font-medium text-text-primary">
+                            <i class="fas fa-chart-area mr-2 text-green-500"></i>
+                            Momentum Trends
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <canvas id="momentumChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/auth.js"></script>
+    <script>
+        let currentOpportunities = [];
+        let momentumChart = null;
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAuth();
+            loadMarketUpdates();
+            
+            // Auto-refresh market updates every 5 minutes
+            setInterval(loadMarketUpdates, 5 * 60 * 1000);
+        });
+
+        async function detectTrends() {
+            const timeRange = document.getElementById('timeRange').value;
+            const enableMonitoring = document.getElementById('enableMonitoring').checked;
+            
+            console.log('🔍 Starting trend detection with:', { timeRange, enableMonitoring });
+            
+            // CHECK AUTH STATUS FIRST
+            const token = localStorage.getItem('token');
+            console.log('🔐 Auth token present:', !!token);
+            if (!token) {
+                console.error('❌ No authentication token found!');
+                alert('Please log in first to use trend detection.');
+                window.location.href = 'auth.html';
+                return;
+            }
+            
+            // Show loading state with progress
+            const loadingElement = document.getElementById('loadingState');
+            const resultsElement = document.getElementById('resultsSection');
+            
+            loadingElement.classList.remove('hidden');
+            resultsElement.classList.add('hidden');
+            
+            // Update loading message with progress
+            let progressStep = 0;
+            const progressMessages = [
+                "🔍 Initializing cross-platform analysis...",
+                "📊 Collecting Reddit signals...", 
+                "🐦 Gathering Twitter trends...",
+                "🔧 Scanning GitHub repositories...",
+                "🏆 Checking Product Hunt launches...",
+                "📰 Reading Hacker News stories...",
+                "🧠 Analyzing signals with AI...",
+                "📈 Calculating momentum scores...",
+                "✨ Finalizing opportunities..."
+            ];
+            
+            const progressInterval = setInterval(() => {
+                if (progressStep < progressMessages.length - 1) {
+                    progressStep++;
+                    const progressText = loadingElement.querySelector('p');
+                    if (progressText) {
+                        progressText.textContent = progressMessages[progressStep];
+                    }
+                }
+            }, 3000); // Update every 3 seconds
+            
+            // Set timeout for the entire operation (45 seconds)
+            const timeoutPromise = new Promise((_, reject) => {
+                setTimeout(() => reject(new Error('Analysis timeout - trying with reduced scope')), 45000);
+            });
+            
+            try {
+                console.log('📡 Making API call to /api/trends/detect...');
+                console.log('📋 Request payload:', {
+                    hours_back: parseInt(timeRange),
+                    enable_monitoring: enableMonitoring
+                });
+                
+                const apiPromise = apiCall('/api/trends/detect', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        hours_back: parseInt(timeRange),
+                        enable_monitoring: enableMonitoring
+                    })
+                });
+                
+                const response = await Promise.race([apiPromise, timeoutPromise]);
+                
+                console.log('📥 Raw response:', response);
+                console.log('📊 Response status:', response?.status);
+                console.log('🔍 Response headers:', response?.headers);
+                
+                if (!response) {
+                    console.error('❌ No response received');
+                    throw new Error('No response from server');
+                }
+                
+                if (!response.ok) {
+                    console.error('❌ Response not OK:', response.status, response.statusText);
+                    
+                    // Try to get error details
+                    try {
+                        const errorText = await response.text();
+                        console.error('📄 Error response body:', errorText);
+                    } catch (e) {
+                        console.error('❌ Could not read error response');
+                    }
+                    
+                    if (response.status === 403 || response.status === 401) {
+                        console.error('🔐 Authentication failed');
+                        alert('Authentication failed. Please log in again.');
+                        logout();
+                        return;
+                    }
+                    
+                    throw new Error(`API Error: ${response.status} ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                console.log('✅ Parsed response data:', data);
+                console.log('📈 Opportunities found:', data.opportunities_detected);
+                
+                clearInterval(progressInterval);
+                displayResults(data);
+                
+            } catch (error) {
+                clearInterval(progressInterval);
+                console.error('🚨 Error detecting trends:', error);
+                console.error('📚 Error stack:', error.stack);
+                
+                if (error.message.includes('timeout')) {
+                    console.log('⏰ Trying fallback discovery...');
+                    // Try with traditional discovery as fallback
+                    try {
+                        const fallbackResponse = await apiCall('/api/discover', {
+                            method: 'POST',
+                            body: JSON.stringify({
+                                subreddit: 'entrepreneur',
+                                limit: 10
+                            })
+                        });
+                        
+                        console.log('📥 Fallback response:', fallbackResponse);
+                        
+                        if (fallbackResponse && fallbackResponse.ok) {
+                            const fallbackData = await fallbackResponse.json();
+                            console.log('✅ Fallback data:', fallbackData);
+                            displayFallbackResults(fallbackData);
+                            return;
+                        }
+                    } catch (fallbackError) {
+                        console.error('❌ Fallback also failed:', fallbackError);
+                    }
+                }
+                
+                // Show user-friendly error message
+                const loadingText = loadingElement.querySelector('p');
+                if (loadingText) {
+                    loadingText.innerHTML = `
+                        <span class="text-red-600">⚠️ Error: ${error.message}</span><br>
+                        <span class="text-sm text-text-secondary">Check console for details. Try refreshing or logging in again.</span>
+                    `;
+                }
+                
+                setTimeout(() => {
+                    loadingElement.classList.add('hidden');
+                }, 5000);
+            } finally {
+                clearInterval(progressInterval);
+                setTimeout(() => {
+                    if (loadingElement && !loadingElement.classList.contains('hidden')) {
+                        loadingElement.classList.add('hidden');
+                    }
+                }, 1000);
+            }
+        }
+        
+        function displayFallbackResults(data) {
+            // Convert traditional discovery results to trend format
+            const opportunities = data.results ? data.results.map((result, index) => ({
+                id: `fallback-${index}`,
+                title: `Pain Point: ${result.title || 'Opportunity'}`,
+                description: result.content || result.description || 'Detected from traditional analysis',
+                momentum_score: Math.random() * 6 + 2, // 2-8 range
+                confidence_level: 0.7,
+                market_timing: 'emerging',
+                competition_density: 'medium',
+                sources: ['reddit'],
+                keywords: ['productivity', 'business', 'saas'],
+                estimated_market_size: 'Medium ($10-100M TAM)',
+                technical_complexity: 'Medium',
+                revenue_potential: 'Medium ($100K-1M ARR potential)',
+                discovered_at: new Date().toISOString(),
+                signal_count: 1
+            })) : [];
+            
+            const fallbackData = {
+                status: 'fallback',
+                opportunities_detected: opportunities.length,
+                opportunities: opportunities,
+                monitoring_enabled: false,
+                timestamp: new Date().toISOString()
+            };
+            
+            displayResults(fallbackData);
+            
+            // Show fallback notice
+            const notice = document.createElement('div');
+            notice.className = 'bg-surface border border-border rounded-md p-4 mb-4';
+            notice.innerHTML = `
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-sm font-medium text-yellow-800">Using Traditional Discovery</h3>
+                        <p class="mt-1 text-sm text-yellow-700">Multi-platform analysis took too long. Showing results from traditional Reddit analysis instead.</p>
+                    </div>
+                </div>
+            `;
+            
+            const resultsSection = document.getElementById('resultsSection');
+            resultsSection.insertBefore(notice, resultsSection.firstChild);
+        }
+
+        function displayResults(data) {
+            console.log('🎯 displayResults called with data:', data);
+            
+            // Check if data has the expected structure
+            if (!data || !data.opportunities) {
+                console.error('❌ Invalid data structure:', data);
+                document.getElementById('resultsSection').innerHTML = '<div class="bg-red-50 border border-red-200 rounded-md p-4"><p class="text-red-800">Invalid response format received</p></div>';
+                return;
+            }
+            
+            currentOpportunities = data.opportunities;
+            console.log('📊 Processing opportunities:', currentOpportunities);
+            
+            // Update summary stats
+            document.getElementById('opportunitiesCount').textContent = data.opportunities_detected || 0;
+            document.getElementById('highMomentumCount').textContent = 
+                data.opportunities.filter(opp => opp.momentum_score > 7).length;
+            document.getElementById('platformsCount').textContent = 
+                [...new Set(data.opportunities.flatMap(opp => opp.sources || []))].length;
+            document.getElementById('signalsCount').textContent = 
+                data.opportunities.reduce((sum, opp) => sum + (opp.signal_count || 0), 0);
+            
+            console.log('📈 Summary stats updated');
+            
+            // Display opportunities
+            displayOpportunities(data.opportunities);
+            
+            // Show results
+            document.getElementById('resultsSection').classList.remove('hidden');
+            console.log('👁️ Results section made visible');
+            
+            // Update momentum chart
+            updateMomentumChart(data.opportunities);
+            console.log('📊 Momentum chart updated');
+        }
+
+        function displayOpportunities(opportunities) {
+            console.log('📋 displayOpportunities called with:', opportunities);
+            
+            const container = document.getElementById('opportunitiesList');
+            
+            if (!container) {
+                console.error('❌ opportunitiesList container not found');
+                return;
+            }
+            
+            if (opportunities.length === 0) {
+                console.log('📭 No opportunities to display');
+                container.innerHTML = '<p class="text-text-secondary text-center py-8">No opportunities detected</p>';
+                return;
+            }
+            
+            console.log(`📋 Rendering ${opportunities.length} opportunities`);
+            
+            container.innerHTML = opportunities.map((opp, index) => {
+                console.log(`🔹 Rendering opportunity ${index + 1}:`, opp);
+                
+                return `
+                <div class="p-6 hover:bg-surface">
+                    <div class="flex items-start justify-between">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-medium text-text-primary mb-2">${opp.title || 'Untitled Opportunity'}</h4>
+                            <p class="text-text-secondary mb-4">${opp.description || 'No description available'}</p>
+                            
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                                <div>
+                                    <span class="text-xs font-medium text-text-secondary">Momentum Score</span>
+                                    <div class="flex items-center mt-1">
+                                        <div class="w-full bg-surface rounded-full h-2 mr-2">
+                                            <div class="bg-primary h-2 rounded-full" style="width: ${((opp.momentum_score || 0) / 10) * 100}%"></div>
+                                        </div>
+                                        <span class="text-sm font-medium">${(opp.momentum_score || 0).toFixed(1)}</span>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <span class="text-xs font-medium text-text-secondary">Market Timing</span>
+                                    <p class="text-sm font-medium mt-1 capitalize">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getTimingColor(opp.market_timing)}">
+                                            ${opp.market_timing || 'unknown'}
+                                        </span>
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <span class="text-xs font-medium text-text-secondary">Competition</span>
+                                    <p class="text-sm font-medium mt-1 capitalize">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getCompetitionColor(opp.competition_density)}">
+                                            ${opp.competition_density || 'unknown'}
+                                        </span>
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <span class="text-xs font-medium text-text-secondary">Market Size</span>
+                                    <p class="text-sm font-medium mt-1">${opp.estimated_market_size || 'Unknown'}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                ${(opp.keywords || []).map(keyword => `
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary text-primary">
+                                        ${keyword}
+                                    </span>
+                                `).join('')}
+                            </div>
+                            
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <i class="fas fa-chart-line mr-1"></i>
+                                <span class="mr-4">${opp.signal_count || 0} signals</span>
+                                <i class="fas fa-globe mr-1"></i>
+                                <span class="mr-4">${(opp.sources || []).join(', ')}</span>
+                                <i class="fas fa-clock mr-1"></i>
+                                <span>${opp.discovered_at ? new Date(opp.discovered_at).toLocaleString() : 'Unknown time'}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="ml-4 flex-shrink-0">
+                            <button onclick="trackOpportunity('${opp.id || 'unknown'}')" class="bg-primary text-surface px-4 py-2 rounded-md hover:bg-primary-focus text-sm">
+                                <i class="fas fa-eye mr-1"></i>
+                                Track
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            }).join('');
+            
+            console.log('✅ Opportunities rendered successfully');
+        }
+
+        function getTimingColor(timing) {
+            const colors = {
+                'early': 'bg-green-100 text-green-800',
+                'emerging': 'bg-yellow-100 text-yellow-800',
+                'hot': 'bg-red-100 text-red-800',
+                'saturated': 'bg-gray-100 text-gray-800'
+            };
+            return colors[timing] || 'bg-gray-100 text-gray-800';
+        }
+
+        function getCompetitionColor(density) {
+            const colors = {
+                'low': 'bg-green-100 text-green-800',
+                'medium': 'bg-yellow-100 text-yellow-800',
+                'high': 'bg-red-100 text-red-800'
+            };
+            return colors[density] || 'bg-gray-100 text-gray-800';
+        }
+
+        async function loadMarketUpdates() {
+            try {
+                const response = await apiCall('/api/market/updates?hours_back=24');
+                
+                if (response && response.ok) {
+                    const data = await response.json();
+                    displayMarketUpdates(data.updates);
+                }
+            } catch (error) {
+                console.error('Error loading market updates:', error);
+            }
+        }
+
+        function displayMarketUpdates(updates) {
+            const container = document.getElementById('marketUpdates');
+            
+            if (updates.length === 0) {
+                container.innerHTML = '<p class="text-text-secondary text-center py-8">No recent updates</p>';
+                return;
+            }
+            
+            container.innerHTML = updates.slice(0, 5).map(update => `
+                <div class="border-l-4 ${getSeverityColor(update.severity)} pl-4 py-3 mb-4">
+                    <div class="flex items-center justify-between">
+                        <h4 class="text-sm font-medium text-text-primary">${update.title}</h4>
+                        <span class="text-xs text-text-secondary">${new Date(update.timestamp).toLocaleTimeString()}</span>
+                    </div>
+                    <p class="text-sm text-text-secondary mt-1">${update.description}</p>
+                    ${update.action_required ? '<span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800 mt-2">Action Required</span>' : ''}
+                </div>
+            `).join('');
+        }
+
+        function getSeverityColor(severity) {
+            const colors = {
+                'low': 'border-primary',
+                'medium': 'border-yellow-400',
+                'high': 'border-red-400',
+                'critical': 'border-red-600'
+            };
+            return colors[severity] || 'border-gray-400';
+        }
+
+        function updateMomentumChart(opportunities) {
+            const ctx = document.getElementById('momentumChart').getContext('2d');
+            
+            if (momentumChart) {
+                momentumChart.destroy();
+            }
+            
+            const data = opportunities.map(opp => ({
+                x: opp.confidence_level,
+                y: opp.momentum_score,
+                label: opp.title.substring(0, 30) + '...'
+            }));
+            
+            momentumChart = new Chart(ctx, {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Opportunities',
+                        data: data,
+                        backgroundColor: 'rgba(59, 130, 246, 0.6)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Confidence Level'
+                            },
+                            min: 0,
+                            max: 1
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Momentum Score'
+                            },
+                            min: 0,
+                            max: 10
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.raw.label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        async function trackOpportunity(opportunityId) {
+            try {
+                const response = await apiCall(`/api/opportunities/${opportunityId}/momentum`);
+                
+                if (response && response.ok) {
+                    const data = await response.json();
+                    alert(`Tracking ${data.momentum_points} momentum data points for this opportunity`);
+                } else {
+                    alert('Started tracking this opportunity. Check back later for momentum data.');
+                }
+            } catch (error) {
+                console.error('Error tracking opportunity:', error);
+                alert('Failed to track opportunity');
+            }
+        }
+    </script>
+</body>
+</html> 

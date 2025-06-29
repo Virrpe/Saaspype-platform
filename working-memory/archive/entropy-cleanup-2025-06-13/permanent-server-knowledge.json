@@ -1,0 +1,67 @@
+{
+  "permanent_server_knowledge": {
+    "created": "2025-06-05T23:30:00Z",
+    "priority": "CRITICAL_SYSTEM_KNOWLEDGE",
+    "applies_to": "ALL_AGENTS_MANDATORY",
+    "issue_resolved": "Frontend server directory confusion causing wrong directory serving",
+    
+    "frontend_server_startup": {
+      "NEVER_USE_THESE_COMMANDS": [
+        "python -m http.server 3000",
+        "python -m http.server 8080",
+        "cd src/frontend && python -m http.server"
+      ],
+      
+      "ALWAYS_USE_THIS_COMMAND": {
+        "command": "python -m http.server 8080 --directory \"C:\\Users\\pette\\Documents\\luciqv2\\shelli-devkit-v1.0.1\\luciq\\src\\frontend\"",
+        "reason": "The --directory flag explicitly specifies the serving directory, bypassing shell working directory confusion",
+        "port": 8080,
+        "access_url": "http://localhost:8080/",
+        "serves_from": "src/frontend/ (where index.html exists)"
+      },
+      
+      "WHY_OTHER_METHODS_FAIL": {
+        "working_directory_issue": "Shell working directory doesn't always match the actual serving directory",
+        "cd_command_unreliable": "cd commands don't guarantee the server starts from that directory",
+        "background_process_confusion": "Background processes may inherit wrong working directory"
+      },
+      
+      "VERIFICATION_STEPS": {
+        "step_1": "Check server logs show requests for /js/signal-feed.js, /pages/features/dashboard.html",
+        "step_2": "Verify NO directory listing appears at http://localhost:8080/",
+        "step_3": "Confirm PS2 Signal Console loads with proper styling",
+        "failure_indicator": "If you see 'Directory listing for /' with project files, server is serving from wrong directory"
+      }
+    },
+    
+    "api_server_startup": {
+      "command": "python start_api.py",
+      "port": 8000,
+      "access_url": "http://localhost:8000/",
+      "health_check": "http://localhost:8000/health",
+      "working_directory": "Project root (/luciq/)"
+    },
+    
+    "MANDATORY_AGENT_PROTOCOL": {
+      "rule_1": "ALWAYS use --directory flag for frontend server startup",
+      "rule_2": "NEVER assume working directory matches serving directory",
+      "rule_3": "ALWAYS verify server logs show correct file requests",
+      "rule_4": "If directory listing appears, immediately use --directory flag method",
+      "rule_5": "Update this knowledge file if new server issues are discovered"
+    },
+    
+    "WINDOWS_POWERSHELL_COMPATIBILITY": {
+      "avoid_bash_syntax": "Don't use && operators in PowerShell",
+      "use_semicolons": "Use ; for command chaining in PowerShell",
+      "path_format": "Use Windows path format with backslashes in quotes",
+      "taskkill_syntax": "taskkill /f /im python.exe to kill Python processes"
+    },
+    
+    "TROUBLESHOOTING_CHECKLIST": {
+      "problem": "Directory listing instead of frontend",
+      "solution": "Use --directory flag with full path",
+      "verification": "Check server logs for JS/CSS file requests",
+      "fallback": "Kill all python processes and restart with --directory flag"
+    }
+  }
+} 

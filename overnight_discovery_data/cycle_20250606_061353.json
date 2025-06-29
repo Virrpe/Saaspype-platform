@@ -1,0 +1,99 @@
+{
+  "cycle_number": 24,
+  "timestamp": "20250606_061353",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Join the /r/productivity Discord!",
+      "problem": "Join in on the discussion by clicking [here](https://discord.gg/wrFrTx3Zex)!",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 24,
+      "timestamp": "2025-06-06T06:13:47.678860",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1jas5x9/join_the_rproductivity_discord/",
+      "reddit_score": 8,
+      "reddit_comments": 7
+    },
+    {
+      "title": "Reddit Discovery: Reading a lot of books will never make you smarter.",
+      "problem": "Everyone thinks that by reading 50 books a year, they become wiser. \n\nBut that\u2019s false...\n\nIt\u2019s not the quantity of reading that changes a life.\n\nIt\u2019s what you do with what you read.\n\nRyan Holiday, in...",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 24,
+      "timestamp": "2025-06-06T06:13:47.678860",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1l43mzn/reading_a_lot_of_books_will_never_make_you_smarter/",
+      "reddit_score": 226,
+      "reddit_comments": 89
+    },
+    {
+      "title": "Reddit Discovery: The Fundamental Good Habits have Huge Effects.",
+      "problem": "In military circles, there's the saying:\n\n&gt; Amateurs talk about tactics, but professionals study logistics.\n\nAnd that's cause even the best tactics are shit without enough resources at the right pl...",
+      "solution": "Business opportunity addressing r/productivity community need",
+      "source": "productivity",
+      "cycle": 24,
+      "timestamp": "2025-06-06T06:13:47.678860",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/productivity/comments/1l4hrzf/the_fundamental_good_habits_have_huge_effects/",
+      "reddit_score": 24,
+      "reddit_comments": 0
+    },
+    {
+      "title": "Reddit Discovery: What post flairs should we have?",
+      "problem": "Hey members, **I need your help to improve this sub**. I will start with post-flairs for better content filtering. Please share some suggestions for what post flairs we should have on this sub. \n\n  \nH...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 24,
+      "timestamp": "2025-06-06T06:13:53.150816",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1hb28jr/what_post_flairs_should_we_have/",
+      "reddit_score": 14,
+      "reddit_comments": 8
+    },
+    {
+      "title": "Reddit Discovery: Hey members, meet your new mod!",
+      "problem": "Hello to all the members of r/indiehackers \ud83d\udc4b\n\n# Who am I?\n\nI'm **Prakhar**, a creative web developer, and an aspiring indie hacker. I call myself aspiring because I haven't earned anything from my pro...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 24,
+      "timestamp": "2025-06-06T06:13:53.150816",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1g1qn9y/hey_members_meet_your_new_mod/",
+      "reddit_score": 19,
+      "reddit_comments": 18
+    },
+    {
+      "title": "Reddit Discovery: Share my completely FREE ADHD helper bot",
+      "problem": "When I was little, I didn\u2019t know I had ADHD, and neither did my parents. Back then, the concept wasn\u2019t well known. All I knew was that I had way more imagination than other kids. I was always the lite...",
+      "solution": "Business opportunity addressing r/indiehackers community need",
+      "source": "indiehackers",
+      "cycle": 24,
+      "timestamp": "2025-06-06T06:13:53.150816",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/indiehackers/comments/1l4isg4/share_my_completely_free_adhd_helper_bot/",
+      "reddit_score": 3,
+      "reddit_comments": 0
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 3.2,
+    "memory_percent": 77.4,
+    "disk_percent": 78.9,
+    "available_gb": 1.7741813659667969,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 24,
+    "total_ideas": 144,
+    "uptime_minutes": 280.04328649838766,
+    "avg_ideas_per_cycle": 6.0
+  }
+}

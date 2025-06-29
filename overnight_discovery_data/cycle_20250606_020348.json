@@ -1,0 +1,99 @@
+{
+  "cycle_number": 3,
+  "timestamp": "20250606_020348",
+  "ideas_found": 6,
+  "ideas": [
+    {
+      "title": "Reddit Discovery: Upcoming AmA: \"Bootstrapped, building 20 products simultaneously, competing on p...",
+      "problem": "Hey folks, Daniel here from\u00a0[r/SaaS](https://www.reddit.com/r/SaaS/)\u00a0with a new upcoming AmA.\n\nThis time, we'll have Neeraj Singh from [BigBinary](https://www.bigbinary.com/) and the [Neeto suite](htt...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 3,
+      "timestamp": "2025-06-06T02:03:41.627796",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1kwi1is/upcoming_ama_bootstrapped_building_20_products/",
+      "reddit_score": 7,
+      "reddit_comments": 5
+    },
+    {
+      "title": "Reddit Discovery: Weekly Feedback Post - SaaS Products, Ideas, Companies",
+      "problem": "This is a weekly post where you're free to post your SaaS ideas, products, companies etc. that need feedback. Here, people who are willing to share feedback are going to join conversations. Posts aski...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 3,
+      "timestamp": "2025-06-06T02:03:41.627796",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l32n01/weekly_feedback_post_saas_products_ideas_companies/",
+      "reddit_score": 5,
+      "reddit_comments": 2
+    },
+    {
+      "title": "Reddit Discovery: Your SaaS isn't dying because of churn. It's dying because you're selling to bro...",
+      "problem": "Everyone obsesses over churn rates. Our churn is 8%! We need to get it down to 3%!\n\nBut here's what I see at every struggling SaaS I work with: they're not losing customers because their product sucks...",
+      "solution": "Business opportunity addressing r/SaaS community need",
+      "source": "SaaS",
+      "cycle": 3,
+      "timestamp": "2025-06-06T02:03:41.627796",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/SaaS/comments/1l46pff/your_saas_isnt_dying_because_of_churn_its_dying/",
+      "reddit_score": 58,
+      "reddit_comments": 12
+    },
+    {
+      "title": "Reddit Discovery: The Evil That is American Business",
+      "problem": "I'm an old timer. I began work in the US around 1980. I was there during the monopolies of AT&amp;T, IBM, etc. I had gone to technical school after getting my degree in English and became a programmer...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 3,
+      "timestamp": "2025-06-06T02:03:48.569769",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l3z0j1/the_evil_that_is_american_business/",
+      "reddit_score": 76,
+      "reddit_comments": 59
+    },
+    {
+      "title": "Reddit Discovery: How to start learning business?",
+      "problem": "There are so many different types of businesses out there so you can\u2019t just pick one and learn it. What are some things that you think is worth learning about or how should I go about learning busines...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 3,
+      "timestamp": "2025-06-06T02:03:48.569769",
+      "confidence_score": 3,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l3xxxh/how_to_start_learning_business/",
+      "reddit_score": 6,
+      "reddit_comments": 11
+    },
+    {
+      "title": "Reddit Discovery: Where do you get shipping boxes that dont have obsurd shipping fees.",
+      "problem": "Every site ive looked at charges the cost of the boxes or more for shipping. I need just regular shipping boxes. Ive seen people say \"USPS gives them for free\" but if I get those boxes then I have to ...",
+      "solution": "Business opportunity addressing r/business community need",
+      "source": "business",
+      "cycle": 3,
+      "timestamp": "2025-06-06T02:03:48.569769",
+      "confidence_score": 4,
+      "discovery_type": "reddit_scraping",
+      "reddit_url": "https://reddit.com/r/business/comments/1l4cpjf/where_do_you_get_shipping_boxes_that_dont_have/",
+      "reddit_score": 1,
+      "reddit_comments": 8
+    }
+  ],
+  "system_health": {
+    "cpu_percent": 6.8,
+    "memory_percent": 74.1,
+    "disk_percent": 78.8,
+    "available_gb": 2.0356788635253906,
+    "healthy": true,
+    "warnings": []
+  },
+  "runtime_stats": {
+    "total_cycles": 3,
+    "total_ideas": 18,
+    "uptime_minutes": 29.966983552773794,
+    "avg_ideas_per_cycle": 6.0
+  }
+}
